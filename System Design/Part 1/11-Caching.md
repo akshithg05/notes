@@ -112,3 +112,4 @@ In terms of implementation, LFU can be implemented using key-value pairs, where 
 While this approach seems reasonable, it has limitations when applied to Twitter. For example, tweets from 2013 that have a large number of views might never be evicted due to their frequency, which would prevent new tweets from being stored. Consequently, LRU is a better model for Twitter.
 
 The implementation is more complicated than even an LRU cache. This video I uploaded to YouTube explains the implementation of an LFU cache in detail.
+https://www.youtube.com/watch?v=bLEIHn-DgoA

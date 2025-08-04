@@ -36,7 +36,7 @@ When a request is made to a server using a domain name, the process involves bot
 * The actual request (e.g., an HTTP GET request for a web page) is then sent directly to the server at its resolved IP address.
 * The server processes the request and sends the response directly back to your computer using the established connection.
 Therefore, the DNS lookup is a crucial preliminary step to enable the direct connection and subsequent communication with the server. You do not send the request through the DNS server; rather, you use DNS to find the server's address, and then you communicate directly with that address.
-![[Pasted image 20250728130104.png]]
+![[REST-API-DESIGN.png]]
 
 ![client-server-dns-connection](https://imagedelivery.net/CLfkmk9Wzy8_9HRyug4EVA/605db206-69d8-4fa6-d66c-d935ba975000/sharpen=1)
 

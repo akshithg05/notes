@@ -116,3 +116,58 @@ Choosing between Controlled and Uncontrolled Components: 
     Suitable for simpler forms where you don't need to validate input, or when interacting with legacy code or third-party libraries.
 
 What is specificity, in as much depth as you can give? Would you ever unit test CSS? What are some concerns to keep in mind with web accessibility in HTML and CSS? What is your general workflow when adapting a Figma design for use in a website? When would you use :has() or :not() in your selectors? Why choose SCSS over CSS? What are some common considerations when adapting for different screen sizes? What does it mean for a browser to repaint and reflow? What is a DOM hit? Why might a developer choose to implement aspects of a UI in Javascript over HTML or CSS files, such as animations?
+
+
+## **Unmounting & Mounting vs Re-rendering in React**
+
+### **1. Mounting**
+
+- Happens **when a component is created and inserted into the DOM** for the first time.
+- Functional components: function runs, then `useEffect(..., [])` runs.
+- Class components: `constructor` → `render` → `componentDidMount`.
+- **State starts fresh**.
+
+---
+
+### **2. Unmounting**
+
+- Happens **when a component is removed from the DOM**.
+- Component instance is destroyed; **state is lost**.
+- Cleanup runs:
+    - Class: `componentWillUnmount` 
+    - Functional: cleanup function in `useEffect`.
+- Example:
+    `{show && <MyComponent />} // When show = false → unmounts`
+
+---
+
+### **3. Re-rendering**
+
+- Happens **when a component updates its output due to state, prop, or context change**, without being removed from the DOM.
+- **Same component instance** is reused; state is preserved.
+- Functional: function body runs again; class: `render()` runs again.
+- `useEffect(..., [])` does **not** run again.
+
+- Example:
+    
+    `const [count, setCount] = useState(0); <button onClick={() => setCount(c => c + 1)}>+</button>`
+    
+
+---
+
+### **Key Differences Table**
+
+| Aspect              | Mount / Unmount     | Re-render       |
+| ------------------- | ------------------- | --------------- |
+| Component instance  | Created / Destroyed | Reused          |
+| State               | Reset (lost)        | Preserved       |
+| `useEffect([])` run | Yes (on mount)      | No              |
+| Cleanup             | On unmount          | No              |
+| DOM change          | Insert / Remove     | Update in place |
+
+---
+
+### **Quick Analogy**
+
+- **Mount/Unmount** → Turning a device on/off (new session each time).
+- **Re-render** → Refreshing the screen without turning it off.

@@ -11,10 +11,14 @@
             "id": "99009bd2919320b9",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "React/Interview Notes.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Interview Notes"
             }
           }
         ]
@@ -136,12 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "React/Interview Notes.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of Interview Notes"
             }
           },
           {
@@ -172,8 +177,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "287cd0b28e256593",
+  "active": "99009bd2919320b9",
   "lastOpenFiles": [
+    "Pasted image 20250815164002.png",
+    "Pasted image 20250815163937.png",
     "Untitled.canvas",
     "System Design/Part 1/20-Message Queues.md"
   ]

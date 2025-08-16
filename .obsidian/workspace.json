@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "React/Interview Notes.md",
+                "file": "React/Namaste-react-notes.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Interview Notes"
+              "title": "Namaste-react-notes"
             }
           }
         ]
@@ -140,13 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "React/Interview Notes.md",
+                "file": "React/Namaste-react-notes.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Interview Notes"
+              "title": "Outline of Namaste-react-notes"
             }
           },
           {
@@ -179,6 +179,7 @@
   },
   "active": "99009bd2919320b9",
   "lastOpenFiles": [
+    "React/Interview Notes.md",
     "Pasted image 20250815164002.png",
     "Pasted image 20250815163937.png",
     "Untitled.canvas",

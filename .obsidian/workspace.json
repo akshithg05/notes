@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NodeJS/Season 1.md",
+                "file": "OMSCS/RAIT/Localization.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Season 1"
+              "title": "Localization"
             }
           }
         ]
@@ -179,19 +179,24 @@
   },
   "active": "99009bd2919320b9",
   "lastOpenFiles": [
-    "Pasted image 20250817230241.png",
-    "NodeJS/Pasted image 20250816160031.png",
-    "NodeJS/Pasted image 20250816160026.png",
-    "NodeJS/Season 1.md",
-    "NodeJS/Pasted image 20250816160001.png",
-    "NodeJS/Pasted image 20250816155908.png",
+    "OMSCS/RAIT/Pasted image 20250818210637.png",
+    "OMSCS/RAIT/Pasted image 20250818205733.png",
+    "OMSCS/RAIT/Pasted image 20250818202623.png",
+    "OMSCS/RAIT/Pasted image 20250818201332.png",
+    "OMSCS/RAIT/Pasted image 20250818200615.png",
+    "OMSCS/RAIT/Pasted image 20250818193106.png",
+    "NodeJS/Pasted image 20250816152240.png",
     "NodeJS/Pasted image 20250816153618.png",
+    "NodeJS/Pasted image 20250816155908.png",
+    "NodeJS/Pasted image 20250816160001.png",
+    "NodeJS/Pasted image 20250816160026.png",
+    "OMSCS/RAIT/Localization.md",
+    "NodeJS/Season 1.md",
+    "OMSCS/RAIT",
+    "OMSCS",
     "React/Namaste-react-notes.md",
     "Untitled.canvas",
     "React/Interview Notes.md",
-    "NodeJS/Pasted image 20250816152240.png",
-    "React/Pasted image 20250815164002.png",
-    "React/Pasted image 20250815163937.png",
     "NodeJS",
     "System Design/Part 1/20-Message Queues.md"
   ]

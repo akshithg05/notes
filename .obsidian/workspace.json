@@ -164,7 +164,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 330.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -177,7 +177,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "99009bd2919320b9",
+  "active": "da9253a0220cbe6f",
   "lastOpenFiles": [
     "OMSCS/RAIT/Pasted image 20250818210637.png",
     "OMSCS/RAIT/Pasted image 20250818205733.png",

@@ -1,3 +1,6 @@
+
+
+
 Total probability
 ![[Pasted image 20250818193106.png]]
 
@@ -59,69 +62,44 @@ Let’s break down exactly what’s happening:
 
 
 
+### 🔎 What are we trying to do?
 
-**Multiple sensor measurements** in sequence (refer code 7. in localization.py)
-### 1. Initial belief
+We’re trying to figure out **where the robot is**, given a noisy sensor. The robot sees “red” or “green,” but the sensor isn’t perfect:
+- If it sees **red**, there’s a **60% chance it’s actually red**, but also a **40% chance it’s wrong**.
+- If it sees **green**, there’s a **20% chance it’s actually green**, and an **80% chance it’s wrong**.
 
-`p = [0.2, 0.2, 0.2, 0.2, 0.2]`
-Uniform prior → equally likely to be in any of the 5 cells.
-
----
-### 2. World (map)
-`world = ['green', 'red', 'red', 'green', 'green']`
-So:
-- Cell 0 = green
-- Cell 1 = red
-- Cell 2 = red
-- Cell 3 = green
-- Cell 4 = green
+So every time the robot makes a measurement, we should trust it **a little**, but not completely.
 
 ---
-
-### 3. Measurements
-
-`measurement = ['red','green']`
-This means your robot’s sensor first saw **red**, then **green**.
-
----
-### 4. The `sense` function
-Same as before — it takes a prior distribution `p` and updates it based on one measurement (`Z`).
-- If the cell matches the measurement → multiply by `pHit`.
-- Otherwise → multiply by `pMiss`.
-- Then normalize so the distribution sums to 1.
----
-
-### 5. The loop
-
-`for k in range(len(measurement)):     p = sense(p, measurement[k])`
-- Step 1: Apply `sense(p, 'red')` → posterior after first measurement.
-- Step 2: Apply `sense(p, 'green')` → posterior after second measurement.
-
-So now `p` is the belief **after incorporating both measurements in sequence**.
+### ⚙️ What happens step by step?
+1. **Start with ignorance (prior):**  
+    Initially, the robot has no idea where it is → probability is spread **uniformly** across all cells (each cell = 20%).
+    
+2. **Take a measurement (say “red”):**
+    - If the robot sees “red,” we should lean towards cells that are red.
+    - But we don’t fully trust it → so we only increase probability for red cells by 0.6 and for green cells by 0.2.
+    
+3. **Normalize (renormalize total = 1):**  
+    After this weighting, the total probability may not equal 1. Normalizing just rescales things so probabilities sum to 100%.
+    - Now, red cells have **higher probability** (because the sensor said “red”).
+    - Green cells still have **some probability** (because the sensor might be wrong).
+    
+4. **Repeat with more measurements:**  
+    Each new measurement keeps shifting probabilities.
+    - If the sensor keeps saying “red,” confidence in red cells grows stronger.
+    - If it flips to “green,” probabilities shift towards green cells.
 
 ---
-### 6. The extra line
-`result = sense(p,Z)`
+### 🤯 The intuition
+The robot is **updating its belief about the world**.
+- **Before measurement:** “I could be anywhere equally.”
+- **After measurement:** “Since my sensor said ‘red,’ I’m more likely in a red spot. But I’ll still keep some chance for green, because my sensor might be lying.”
 
-⚠️ Here `Z` is **not defined** in this code snippet (you probably copied it from the previous version).  
-That line will throw a `NameError` unless you still have `Z` defined elsewhere.
-
-If your goal was just to apply the sequence of measurements, the code should simply be:
-
-`for Z in measurement:     p = sense(p, Z)  print("Normalized Result:", p)`
+It’s like a detective who gets **clues**: each clue doesn’t prove the answer, but together they narrow down the possibilities.
 
 ---
+👉 So, when we normalize probabilities, we’re not saying the robot is definitely in green or red.  
+We’re saying:
+- “Given the evidence so far, how should I **weigh** the chances of being in each location?”
 
-### 🚩 What you’re really calculating
 
-You’re performing **sequential Bayesian updates**:
-
-p(X∣Z1,Z2)    ∝    p(Z2∣X) p(Z1∣X) p(X)p(X \mid Z_1, Z_2) \;\;\propto\;\; p(Z_2 \mid X)\,p(Z_1 \mid X)\,p(X)p(X∣Z1​,Z2​)∝p(Z2​∣X)p(Z1​∣X)p(X)
-
-- Start with prior p(X)p(X)p(X).
-- Update with first measurement Z1=redZ_1 = \text{red}Z1​=red.
-- Update again with second measurement Z2=greenZ_2 = \text{green}Z2​=green.
-- End up with the posterior p(X∣Z1,Z2)p(X \mid Z_1, Z_2)p(X∣Z1​,Z2​).
----
-
-👉 In words: You are calculating the robot’s updated belief about its position after sensing `"red"` and then `"green"`.

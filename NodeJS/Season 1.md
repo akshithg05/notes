@@ -15,7 +15,9 @@ NodeJS
 Season 1 EP3
 ![[Pasted image 20250817230241.png]]
 
-Season 1 Ep 5 - 20/8/2025
+
+
+### Season 1 Ep 5 - 20/8/2025
 
 ![[Pasted image 20250820193956.png]]
 
@@ -30,7 +32,7 @@ All code of the modules is wrapped inside a function, when we call require and g
 
 ![[Pasted image 20250820195200.png]]
 
-Q. How are variables and functions provate in different modules - due to IIFE and require statement.
+Q. How are variables and functions private in different modules - due to IIFE and require statement.
 
 Q. How do you get access to module.exports?
 Ans. When code is wrapped inside the IIFE function, the function passes an empty module as a parameter into the function and it is passed inside the function call.
@@ -38,13 +40,22 @@ Ans. When code is wrapped inside the IIFE function, the function passes an empty
 
 Similarly even required is passed into the IFFE function as a parameter. These are given by Node.
 ![[Pasted image 20250820200451.png]]
-There are not the only things passed into the function by node, there are many more things which will be discussed later on.
+These are not the only things passed into the function by node, there are many more things which will be discussed later on.
 
 ![[Pasted image 20250820200737.png]]
+
+![[Pasted image 20250821183810.png]]
+![[Pasted image 20250821183917.png]]
+
 
 
 ### 5 step mechanism of what is happening when we require a module
 
 ![[Pasted image 20250820201336.png]]
 
+
+### Season 1 EP 5 - 21/8/2025
+
+In a **Node.js module (a `.js` file)** at the top level, `this` **does equal** `module.exports`.
+![[Pasted image 20250821194324.png]]
 

@@ -11,14 +11,12 @@
             "id": "2e0d5ea984eed68e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "OMSCS/RAIT/Kalman Filters.md",
-                "mode": "source",
-                "source": false
+                "file": "OMSCS/RAIT/images/Pasted image 20250821204346.png"
               },
-              "icon": "lucide-file",
-              "title": "Kalman Filters"
+              "icon": "lucide-image",
+              "title": "Pasted image 20250821204346"
             }
           }
         ]
@@ -180,21 +178,21 @@
   },
   "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
-    "OMSCS/RAIT/Probability.md",
+    "NodeJS/images/Pasted image 20250821194324.png",
+    "NodeJS/images/Pasted image 20250821183917.png",
+    "NodeJS/images/Pasted image 20250821183810.png",
     "OMSCS/RAIT/Kalman Filters.md",
+    "OMSCS/RAIT/images/Pasted image 20250821205013.png",
+    "OMSCS/RAIT/images/Pasted image 20250821204932.png",
+    "OMSCS/RAIT/images/Pasted image 20250821204346.png",
+    "NodeJS/Season 1.md",
+    "OMSCS/RAIT/Probability.md",
     "OMSCS/RAIT/images/Pasted image 20250821114050.png",
     "OMSCS/RAIT/images/Pasted image 20250821131943.png",
     "OMSCS/RAIT/images/Pasted image 20250821131550.png",
     "OMSCS/RAIT/images/Pasted image 20250821131108.png",
-    "OMSCS/RAIT/images/Pasted image 20250821130907.png",
-    "OMSCS/RAIT/images/Pasted image 20250821130659.png",
-    "OMSCS/RAIT/images/Pasted image 20250821130328.png",
-    "OMSCS/RAIT/images/Pasted image 20250821130140.png",
-    "OMSCS/RAIT/images/Pasted image 20250821130123.png",
     "OMSCS/RAIT/Problem set 1.md",
     "OMSCS/RAIT/images/Localization.md",
-    "OMSCS/RAIT/images/Pasted image 20250821121443.png",
-    "NodeJS/Season 1.md",
     "NodeJS/images",
     "OMSCS/RAIT/images",
     "OMSCS/RAIT",

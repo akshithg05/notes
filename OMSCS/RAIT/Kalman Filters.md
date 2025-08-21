@@ -90,3 +90,14 @@ Question 9 - Calculate new mean and variance
 Question 10 - Same as above but different values
 ![[Pasted image 20250821131943.png]]
 
+Question 11
+
+![[Pasted image 20250821204346.png]]
+
+Answer - B
+
+Question 12-
+![[Pasted image 20250821205013.png]]
+
+When we look at the formula for a new variance, we see that it is independent of the mean. Refer the question 9 image. Hence multiplying the 2 distributions will result in information gain/ reduced variance which will result in a narrower distibution.
+![[Pasted image 20250821204932.png]]

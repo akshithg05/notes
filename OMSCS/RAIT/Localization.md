@@ -251,7 +251,8 @@ Localization summary
 
 # Formal Definition of Probability 1
 
-Baye's rule 
+## Bayes rule
+
 p (Xi/Z) is posterior probability distribution
 p(Xi) - prior belief
 p(Z/Xi) - measurement probability (the weight attached - pHit/pMiss)
@@ -263,3 +264,18 @@ To make it more formalized
 ![[Pasted image 20250819222406.png]]
 
 p bar is non normalized probability, alpha is sum of all non normalized probability vector.
+By dividing we get normalized posterior probability distribution.
+
+# 20/8/2025
+
+Cancer test problem (Bayes rule probability)
+![[Pasted image 20250820092456.png]]
+
+Theorem of Total Probability
+![[Pasted image 20250820092713.png]]
+The above image is the same move (motion function) when written mathematically.
+
+Example - coin toss
+![[Pasted image 20250820093129.png]]
+![[Pasted image 20250820093326.png]]
+

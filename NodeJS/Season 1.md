@@ -14,3 +14,37 @@ NodeJS
 
 Season 1 EP3
 ![[Pasted image 20250817230241.png]]
+
+Season 1 Ep 5 - 20/8/2025
+
+![[Pasted image 20250820193956.png]]
+
+
+We cannot access the a, because it is in the scope of function x, and not in global scope.
+a and fxn b cannot be accessed outside of fxn x().
+
+Modules work the same way in JS.
+All code of the modules is wrapped inside a function, when we call require and give it a path. When it wraps the code it creates a special fxn called IIFE. (read)
+
+![[Pasted image 20250820195440.png]]
+
+![[Pasted image 20250820195200.png]]
+
+Q. How are variables and functions provate in different modules - due to IIFE and require statement.
+
+Q. How do you get access to module.exports?
+Ans. When code is wrapped inside the IIFE function, the function passes an empty module as a parameter into the function and it is passed inside the function call.
+![[Pasted image 20250820195958.png]]
+
+Similarly even required is passed into the IFFE function as a parameter. These are given by Node.
+![[Pasted image 20250820200451.png]]
+There are not the only things passed into the function by node, there are many more things which will be discussed later on.
+
+![[Pasted image 20250820200737.png]]
+
+
+### 5 step mechanism of what is happening when we require a module
+
+![[Pasted image 20250820201336.png]]
+
+

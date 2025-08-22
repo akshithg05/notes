@@ -4,19 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "8b45498d467f288b",
+        "id": "1f02dd3a60d06b10",
         "type": "tabs",
         "children": [
           {
-            "id": "2e0d5ea984eed68e",
+            "id": "32fd36bfcd4dace3",
             "type": "leaf",
             "state": {
               "type": "image",
               "state": {
-                "file": "OMSCS/RAIT/images/Pasted image 20250821204346.png"
+                "file": "OMSCS/RAIT/images/Pasted image 20250822135440.png"
               },
               "icon": "lucide-image",
-              "title": "Pasted image 20250821204346"
+              "title": "Pasted image 20250822135440"
             }
           }
         ]
@@ -178,19 +178,20 @@
   },
   "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
-    "NodeJS/images/Pasted image 20250821194324.png",
-    "NodeJS/images/Pasted image 20250821183917.png",
-    "NodeJS/images/Pasted image 20250821183810.png",
+    "OMSCS/RAIT/images/Pasted image 20250822135115.png",
+    "OMSCS/RAIT/images/Pasted image 20250822120325.png",
     "OMSCS/RAIT/Kalman Filters.md",
-    "OMSCS/RAIT/images/Pasted image 20250821205013.png",
-    "OMSCS/RAIT/images/Pasted image 20250821204932.png",
-    "OMSCS/RAIT/images/Pasted image 20250821204346.png",
+    "Pasted image 20250822142728.png",
+    "Pasted image 20250822141847.png",
+    "OMSCS/RAIT/images/Pasted image 20250822135440.png",
+    "OMSCS/RAIT/images/Pasted image 20250822134808.png",
+    "OMSCS/RAIT/images/Pasted image 20250822134600.png",
+    "OMSCS/RAIT/images/Pasted image 20250822134218.png",
+    "OMSCS/RAIT/images/Pasted image 20250822130313.png",
+    "OMSCS/RAIT/images/Pasted image 20250822121035.png",
+    "OMSCS/RAIT/images/Pasted image 20250822120554.png",
     "NodeJS/Season 1.md",
     "OMSCS/RAIT/Probability.md",
-    "OMSCS/RAIT/images/Pasted image 20250821114050.png",
-    "OMSCS/RAIT/images/Pasted image 20250821131943.png",
-    "OMSCS/RAIT/images/Pasted image 20250821131550.png",
-    "OMSCS/RAIT/images/Pasted image 20250821131108.png",
     "OMSCS/RAIT/Problem set 1.md",
     "OMSCS/RAIT/images/Localization.md",
     "NodeJS/images",

@@ -245,3 +245,48 @@ Requirements-
 ![[Pasted image 20250822142728.png]]
 
 This may not be asked to write from scratch but just see for exam
+
+![[Pasted image 20250823151245.png]]
+
+![[Pasted image 20250823151304.png]]
+![[Pasted image 20250823151323.png]]
+
+
+
+Kalman Filter special notes
+![[Pasted image 20250824182248.png]]
+
+![[Pasted image 20250824183303.png]]
+
+The Kalman Gain
+![[Pasted image 20250824184555.png]]
+
+
+The three Kalman equations-
+
+![[Pasted image 20250824190246.png]]
+
+Example 1
+![[Pasted image 20250824190718.png]]
+
+Example 1 iterated 
+![[Pasted image 20250824191546.png]]
+We can see how the estimated value is tapering down to the true value.
+
+Now doing the same for multimodal inputs with more parameters
+![[Pasted image 20250824193457.png]]
+
+Step 1 - The State Matrix
+![[Pasted image 20250824194816.png]]
+
+2-Dimensions
+![[Pasted image 20250824211107.png]]
+
+
+
+Another Example-
+![[Pasted image 20250824201125.png]]
+
+Finding New F matrix Example - 
+![[Pasted image 20250824210204.png]]
+

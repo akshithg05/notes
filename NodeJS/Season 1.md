@@ -59,3 +59,35 @@ These are not the only things passed into the function by node, there are many m
 In a **Node.js module (a `.js` file)** at the top level, `this` **does equal** `module.exports`.
 ![[Pasted image 20250821194324.png]]
 
+IFFE inside nodeJS code
+![[Pasted image 20250822194730.png]]
+
+The wrapper[0] is the iife starting, script is our entire code in a js file, wrapper[1] closes the iife function.
+End of the day string concatenation is happening that's all!
+
+
+28-8-25
+Example of Sync and Async
+![[Pasted image 20250826231841.png]]
+Synchronous - one has to wait before the other is fulfilled
+
+Async 
+![[Pasted image 20250826232606.png]]
+
+
+Sync vs Async tasks example
+![[Pasted image 20250826233700.png]]
+
+## How JS Engine Executes Synchronous JS code (browser or node anything)
+
+![[Pasted image 20250828000817.png]]
+
+Code within a JS function is executed inside the functional execution context. and the returned value is returned to the variable in the GEC.
+
+![[Pasted image 20250828001146.png]]
+
+
+
+## How JS Engine executes Async JS code
+
+![[Pasted image 20250828002031.png]]

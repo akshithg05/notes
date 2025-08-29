@@ -137,3 +137,12 @@ JS engine waits for nothing, once the async operation is offloaded to libUV, the
 Once the function is executed, the functional execution context moves out of the Call Stack. Once that is done, the garbage collector frees up all the space/ vars utilized by the function.
 
 Once the function execution is complete, console.log(c) will run and then GEC will move out of the call stack.
+
+As soon as the file is read by libUV, libUV sends the callback function back to JS engine. this function will be pushed onto the callstack and then be executed. And then the function will be removed from the callstack.
+
+Similarly, if API call is resolved by this time, this A function will be added to the CS and the function will be executed quickly.
+
+NodeJS is ASYNCHRONOUS
+V8 Engine is SYNCHRONOUS
+
+Therefore, NodeJS can do async I/O or non-blocking I/O. NodeJS is a JavaScript runtime built on Google Chrome's V8 Engine, it is capable of running JS outside the browser and perform async I/O operations.

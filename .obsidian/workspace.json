@@ -4,19 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "416702d915509c1a",
+        "id": "35f3670b9a0fb945",
         "type": "tabs",
         "children": [
           {
-            "id": "b8ed78782a5fd91b",
+            "id": "ad9816e796ac933b",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "NodeJS/images/Pasted image 20250826232606.png"
+                "file": "NodeJS/Season 1.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20250826232606"
+              "icon": "lucide-file",
+              "title": "Season 1"
             }
           }
         ]
@@ -162,7 +164,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 324.5
+    "width": 313.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -176,24 +178,26 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d5df95e868ccabb7",
+  "active": "ad9816e796ac933b",
   "lastOpenFiles": [
-    "NodeJS/images/Pasted image 20250826233700.png",
-    "NodeJS/images/Pasted image 20250828000817.png",
-    "NodeJS/images/Pasted image 20250828001146.png",
-    "NodeJS/images/Pasted image 20250828002031.png",
+    "Pasted image 20250829204649.png",
+    "Pasted image 20250829204506.png",
+    "Pasted image 20250829202630.png",
+    "Pasted image 20250829202542.png",
+    "NodeJS/images/Pasted image 20250829202251.png",
+    "NodeJS/images/Pasted image 20250829201305.png",
+    "Pasted image 20250829201706.png",
     "NodeJS/Season 1.md",
-    "NodeJS/images/Pasted image 20250826232606.png",
-    "NodeJS/images/Pasted image 20250826231841.png",
-    "OMSCS/RAIT/images/Pasted image 20250824211107.png",
-    "OMSCS/RAIT/images/Pasted image 20250824210204.png",
-    "OMSCS/RAIT/images/Pasted image 20250824201125.png",
-    "OMSCS/RAIT/images/Pasted image 20250824194816.png",
+    "NodeJS/images/Pasted image 20250829195547.png",
+    "OMSCS/RAIT/Localization.md",
+    "OMSCS/RAIT/images/Pasted image 20250829144250.png",
+    "OMSCS/RAIT/Particle Filters.md",
+    "OMSCS/RAIT/images/Pasted image 20250829180451.png",
+    "OMSCS/RAIT/images/Pasted image 20250829180256.png",
     "OMSCS/RAIT/Kalman Filters.md",
     "OMSCS/RAIT/Problem set 2.md",
     "OMSCS/RAIT/Problem set 1.md",
     "OMSCS/RAIT/Probability.md",
-    "OMSCS/RAIT/images/Localization.md",
     "NodeJS/images",
     "OMSCS/RAIT/images",
     "OMSCS/RAIT",

@@ -11,14 +11,12 @@
             "id": "ad9816e796ac933b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "NodeJS/Season 1.md",
-                "mode": "source",
-                "source": false
+                "file": "OMSCS/RAIT/images/Pasted image 20250830130116.png"
               },
-              "icon": "lucide-file",
-              "title": "Season 1"
+              "icon": "lucide-image",
+              "title": "Pasted image 20250830130116"
             }
           }
         ]
@@ -178,24 +176,26 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ad9816e796ac933b",
+  "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
-    "NodeJS/images/Pasted image 20250829204649.png",
-    "NodeJS/images/Pasted image 20250829204506.png",
-    "NodeJS/images/Pasted image 20250829202630.png",
-    "NodeJS/images/Pasted image 20250829202542.png",
-    "NodeJS/Season 1.md",
-    "NodeJS/images/Pasted image 20250829202251.png",
-    "NodeJS/images/Pasted image 20250829201305.png",
-    "Pasted image 20250829201706.png",
-    "NodeJS/images/Pasted image 20250829195547.png",
-    "OMSCS/RAIT/Localization.md",
-    "OMSCS/RAIT/images/Pasted image 20250829144250.png",
+    "OMSCS/RAIT/images/Pasted image 20250830131106.png",
+    "OMSCS/RAIT/images/Pasted image 20250831165724.png",
+    "OMSCS/RAIT/images/Pasted image 20250831165847.png",
+    "OMSCS/RAIT/images/Pasted image 20250831173113.png",
+    "OMSCS/RAIT/images/Pasted image 20250831173113 1.png",
+    "OMSCS/RAIT/images/Pasted image 20250831173113 2.png",
+    "OMSCS/RAIT/images/Pasted image 20250831173113 3.png",
+    "OMSCS/RAIT/images/Pasted image 20250830130116.png",
+    "OMSCS/RAIT/images/Pasted image 20250830125956.png",
+    "OMSCS/RAIT/images/Pasted image 20250830125359.png",
+    "OMSCS/RAIT/Kinematic motion model.md",
+    "OMSCS/RAIT/images/Pasted image 20250831173335.png",
     "OMSCS/RAIT/Particle Filters.md",
-    "OMSCS/RAIT/images/Pasted image 20250829180451.png",
+    "OMSCS/RAIT/Problem set 1.md",
+    "NodeJS/Season 1.md",
+    "OMSCS/RAIT/Localization.md",
     "OMSCS/RAIT/Kalman Filters.md",
     "OMSCS/RAIT/Problem set 2.md",
-    "OMSCS/RAIT/Problem set 1.md",
     "OMSCS/RAIT/Probability.md",
     "NodeJS/images",
     "OMSCS/RAIT/images",

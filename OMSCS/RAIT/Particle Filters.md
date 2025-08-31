@@ -33,3 +33,35 @@ The robot class in the Particle filters assignment and classes.
 Creating particles for particle filter
 ![[Pasted image 20250829180451.png]]
 
+
+Importance weight
+![[Pasted image 20250830123239.png]]
+
+Larger the weight, more is the importance.  Importance weight is difference between actual measurement and predicted measurement.
+
+Resampling in particle filters
+![[Pasted image 20250830125359.png]]
+
+Question 5 - Answer to this question is the next question.
+![[Pasted image 20250830125956.png]]
+
+Question 6
+![[Pasted image 20250830130116.png]]
+
+Explanation - Due to the small alpha value and low weight, it is possible that this particle might be dropped and never picked during resampling.
+
+Question 7
+![[Pasted image 20250830130342.png]]
+Explanation - Even though it has a large weight, it is possible that in each of the resampling steps, this particle might never be picked!.
+
+Question 8
+![[Pasted image 20250830131106.png]]
+
+Explanation - 0.6 (probability of not sampling P3), and 5 picks so 0.6 x 0.6 x 0.6 x 0.6 x 0.6.
+
+Question 9
+![[Pasted image 20250831165724.png]]
+
+Explanation - Orientation does matter, especially for the 2nd part of particle filters.
+![[Pasted image 20250831165847.png]]
+

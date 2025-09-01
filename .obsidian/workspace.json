@@ -4,19 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "35f3670b9a0fb945",
+        "id": "df3950e52aae491f",
         "type": "tabs",
         "children": [
           {
-            "id": "ad9816e796ac933b",
+            "id": "be10e457cfcc9f68",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "OMSCS/RAIT/images/Pasted image 20250830130116.png"
+                "file": "OMSCS/RAIT/Kinematic motion model - Bicycle model.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20250830130116"
+              "icon": "lucide-file",
+              "title": "Kinematic motion model - Bicycle model"
             }
           }
         ]
@@ -176,20 +178,20 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d5df95e868ccabb7",
+  "active": "be10e457cfcc9f68",
   "lastOpenFiles": [
-    "OMSCS/RAIT/images/Pasted image 20250830131106.png",
-    "OMSCS/RAIT/images/Pasted image 20250831165724.png",
-    "OMSCS/RAIT/images/Pasted image 20250831165847.png",
-    "OMSCS/RAIT/images/Pasted image 20250831173113.png",
-    "OMSCS/RAIT/images/Pasted image 20250831173113 1.png",
-    "OMSCS/RAIT/images/Pasted image 20250831173113 2.png",
-    "OMSCS/RAIT/images/Pasted image 20250831173113 3.png",
+    "Pasted image 20250831180432.png",
+    "Pasted image 20250831180204.png",
+    "Pasted image 20250831180135.png",
+    "Pasted image 20250831180030.png",
+    "Pasted image 20250831175803.png",
+    "Pasted image 20250831175600.png",
+    "Pasted image 20250831174430.png",
+    "Pasted image 20250831174343.png",
+    "Pasted image 20250831174003.png",
     "OMSCS/RAIT/images/Pasted image 20250830130116.png",
-    "OMSCS/RAIT/images/Pasted image 20250830125956.png",
-    "OMSCS/RAIT/images/Pasted image 20250830125359.png",
-    "OMSCS/RAIT/Kinematic motion model.md",
-    "OMSCS/RAIT/images/Pasted image 20250831173335.png",
+    "OMSCS/RAIT/images/Pasted image 20250830131106.png",
+    "OMSCS/RAIT/Kinematic motion model - Bicycle model.md",
     "OMSCS/RAIT/Particle Filters.md",
     "OMSCS/RAIT/Problem set 1.md",
     "NodeJS/Season 1.md",

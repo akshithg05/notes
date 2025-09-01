@@ -11,17 +11,64 @@
             "id": "be10e457cfcc9f68",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "OMSCS/RAIT/Kinematic motion model - Bicycle model.md",
-                "mode": "source",
-                "source": false
+                "file": "OMSCS/RAIT/images/Pasted image 20250831175803.png"
               },
-              "icon": "lucide-file",
-              "title": "Kinematic motion model - Bicycle model"
+              "icon": "lucide-image",
+              "title": "Pasted image 20250831175803"
+            }
+          },
+          {
+            "id": "d481be5f9a0791f5",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "OMSCS/RAIT/images/Pasted image 20250831175803.png"
+              },
+              "icon": "lucide-image",
+              "title": "Pasted image 20250831175803"
+            }
+          },
+          {
+            "id": "bf4ba94f71c0fc88",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "OMSCS/RAIT/images/Pasted image 20250831180030.png"
+              },
+              "icon": "lucide-image",
+              "title": "Pasted image 20250831180030"
+            }
+          },
+          {
+            "id": "02ca0d14f7d4eeed",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "OMSCS/RAIT/images/Pasted image 20250831180135.png"
+              },
+              "icon": "lucide-image",
+              "title": "Pasted image 20250831180135"
+            }
+          },
+          {
+            "id": "d78cd6bc547283f6",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "OMSCS/RAIT/images/Pasted image 20250901181200.png"
+              },
+              "icon": "lucide-image",
+              "title": "Pasted image 20250901181200"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -178,19 +225,19 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "be10e457cfcc9f68",
+  "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
-    "Pasted image 20250831180432.png",
-    "Pasted image 20250831180204.png",
-    "Pasted image 20250831180135.png",
-    "Pasted image 20250831180030.png",
-    "Pasted image 20250831175803.png",
-    "Pasted image 20250831175600.png",
-    "Pasted image 20250831174430.png",
-    "Pasted image 20250831174343.png",
-    "Pasted image 20250831174003.png",
-    "OMSCS/RAIT/images/Pasted image 20250830130116.png",
-    "OMSCS/RAIT/images/Pasted image 20250830131106.png",
+    "OMSCS/RAIT/images/Pasted image 20250901174655.png",
+    "OMSCS/RAIT/images/Pasted image 20250901174310.png",
+    "OMSCS/RAIT/images/Pasted image 20250901174359.png",
+    "OMSCS/RAIT/images/Pasted image 20250901174117.png",
+    "OMSCS/RAIT/images/Pasted image 20250901174049.png",
+    "OMSCS/RAIT/images/Pasted image 20250901173817.png",
+    "OMSCS/RAIT/images/Pasted image 20250901173643.png",
+    "OMSCS/RAIT/images/Pasted image 20250901172919.png",
+    "OMSCS/RAIT/images/Pasted image 20250901172907.png",
+    "OMSCS/RAIT/images/Pasted image 20250901172730.png",
+    "OMSCS/RAIT/images/Pasted image 20250901172613.png",
     "OMSCS/RAIT/Kinematic motion model - Bicycle model.md",
     "OMSCS/RAIT/Particle Filters.md",
     "OMSCS/RAIT/Problem set 1.md",

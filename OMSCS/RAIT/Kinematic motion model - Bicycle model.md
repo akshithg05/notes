@@ -39,3 +39,39 @@ Circular motion probelm
 ![[Pasted image 20250831180432.png]]
 
 
+Question
+![[Pasted image 20250901172613.png]]
+
+The circle we care about is the circle which is made by the rear axle.
+![[Pasted image 20250901172730.png]]
+
+How to find the radius of the circle -
+![[Pasted image 20250901172907.png]]
+
+![[Pasted image 20250901172919.png]]
+
+Step 2
+
+![[Pasted image 20250901173643.png]]
+
+Question
+![[Pasted image 20250901173817.png]]
+
+step 3
+![[Pasted image 20250901174049.png]]
+
+![[Pasted image 20250901174117.png]]
+
+Final formulae
+![[Pasted image 20250901174310.png]]
+
+Final orientation
+![[Pasted image 20250901174359.png]]
+
+## Final Formulas
+![[Pasted image 20250901174655.png]]
+
+
+Question
+![[Pasted image 20250901181200.png]]
+

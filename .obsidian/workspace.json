@@ -61,10 +61,10 @@
             "state": {
               "type": "image",
               "state": {
-                "file": "OMSCS/RAIT/images/Pasted image 20250901181200.png"
+                "file": "NodeJS/images/Pasted image 20250902230800.png"
               },
               "icon": "lucide-image",
-              "title": "Pasted image 20250901181200"
+              "title": "Pasted image 20250902230800"
             }
           }
         ],
@@ -211,7 +211,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 313.5
+    "width": 314.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -227,21 +227,23 @@
   },
   "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
-    "OMSCS/RAIT/images/Pasted image 20250901174655.png",
-    "OMSCS/RAIT/images/Pasted image 20250901174310.png",
-    "OMSCS/RAIT/images/Pasted image 20250901174359.png",
-    "OMSCS/RAIT/images/Pasted image 20250901174117.png",
-    "OMSCS/RAIT/images/Pasted image 20250901174049.png",
-    "OMSCS/RAIT/images/Pasted image 20250901173817.png",
-    "OMSCS/RAIT/images/Pasted image 20250901173643.png",
-    "OMSCS/RAIT/images/Pasted image 20250901172919.png",
-    "OMSCS/RAIT/images/Pasted image 20250901172907.png",
-    "OMSCS/RAIT/images/Pasted image 20250901172730.png",
-    "OMSCS/RAIT/images/Pasted image 20250901172613.png",
+    "NodeJS/images/Pasted image 20250902220454.png",
+    "OMSCS/RAIT/images/Pasted image 20250902194044.png",
+    "OMSCS/RAIT/images/Pasted image 20250902193953.png",
+    "OMSCS/RAIT/images/Pasted image 20250902193925.png",
+    "OMSCS/RAIT/images/Pasted image 20250902193836.png",
+    "OMSCS/RAIT/images/Pasted image 20250902193741.png",
+    "OMSCS/RAIT/images/Pasted image 20250902193726.png",
+    "OMSCS/RAIT/images/Pasted image 20250902193644.png",
+    "OMSCS/RAIT/images/Pasted image 20250902193436.png",
+    "OMSCS/RAIT/images/Pasted image 20250902193426.png",
+    "OMSCS/RAIT/images/Pasted image 20250902193342.png",
+    "NodeJS/Season 1.md",
+    "OMSCS/RAIT/Particle filter - YT source.md",
     "OMSCS/RAIT/Kinematic motion model - Bicycle model.md",
+    "OMSCS/RAIT/Problem set 3.md",
     "OMSCS/RAIT/Particle Filters.md",
     "OMSCS/RAIT/Problem set 1.md",
-    "NodeJS/Season 1.md",
     "OMSCS/RAIT/Localization.md",
     "OMSCS/RAIT/Kalman Filters.md",
     "OMSCS/RAIT/Problem set 2.md",

@@ -146,3 +146,43 @@ NodeJS is ASYNCHRONOUS
 V8 Engine is SYNCHRONOUS
 
 Therefore, NodeJS can do async I/O or non-blocking I/O. NodeJS is a JavaScript runtime built on Google Chrome's V8 Engine, it is capable of running JS outside the browser and perform async I/O operations.
+
+## 1/9/2025 - Google V8 JS Engine Deep Dive
+
+### Node.js, V8, and libuv – Summary
+
+- **JavaScript (ECMAScript):**  
+    Single-threaded, synchronous language. Cannot perform async I/O on its own.
+- **V8 Engine:**  
+    Executes JavaScript code. Handles parsing, compiling, and running JS, but has **no built-in async or I/O capability**.
+- **libuv:**  
+    A C library bundled with Node.js that:
+    - Implements the **event loop**.
+    - Provides **async I/O** (file system, networking, timers).
+    - Manages a **thread pool** for blocking operations.
+    - Bridges Node.js APIs to **OS-level operations** (uses epoll, kqueue, IOCP, etc.).
+- **Flow:**
+    1. JS calls an async API (e.g., `setTimeout`, `fs.readFile`).
+    2. Node.js hands the request to **libuv**, which interacts with the OS.
+    3. Once complete, libuv schedules the callback back into the **event loop**.
+    4. **V8 executes** the callback in the main JS thread.
+
+👉 In short: **V8 runs JavaScript, libuv connects Node.js to the OS and enables non-blocking async behavior.**
+- `fs`, `http`, `crypto` **are Node.js modules**.
+- They rely on **libuv** (and sometimes external libs like OpenSSL) under the hood to actually perform their async work.
+![[Pasted image 20250901222454.png]]
+
+Steps executed by V8 engine while executing JavaScript code
+![[Pasted image 20250901222940.png]]
+
+Example of AST -
+![[Pasted image 20250901223000.png]]
+
+## 2/9/2025
+
+![[Pasted image 20250902220454.png]]
+
+
+Working of JIT - Just in time compilation.
+![[Pasted image 20250902230800.png]]
+

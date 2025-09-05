@@ -186,3 +186,18 @@ Example of AST -
 Working of JIT - Just in time compilation.
 ![[Pasted image 20250902230800.png]]
 
+
+## 05/09/2025 - LibUV deep dive
+
+![[Pasted image 20250905114844.png]]
+
+
+Recap - how js code is executed
+![[Pasted image 20250905114947.png]]
+
+Event loop working -
+![[Pasted image 20250905121654.png]]
+
+See this in the notes, how EL works. 
+
+Below coding example - 

@@ -59,12 +59,14 @@
             "id": "d78cd6bc547283f6",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "NodeJS/images/Pasted image 20250902230800.png"
+                "file": "NodeJS/Season 1.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20250902230800"
+              "icon": "lucide-file",
+              "title": "Season 1"
             }
           }
         ],
@@ -227,6 +229,10 @@
   },
   "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
+    "NodeJS/images/Pasted image 20250905121654.png",
+    "NodeJS/images/Pasted image 20250905114947.png",
+    "NodeJS/images/Pasted image 20250905114844.png",
+    "NodeJS/images/Pasted image 20250902230800.png",
     "NodeJS/images/Pasted image 20250902220454.png",
     "OMSCS/RAIT/images/Pasted image 20250902194044.png",
     "OMSCS/RAIT/images/Pasted image 20250902193953.png",
@@ -234,10 +240,6 @@
     "OMSCS/RAIT/images/Pasted image 20250902193836.png",
     "OMSCS/RAIT/images/Pasted image 20250902193741.png",
     "OMSCS/RAIT/images/Pasted image 20250902193726.png",
-    "OMSCS/RAIT/images/Pasted image 20250902193644.png",
-    "OMSCS/RAIT/images/Pasted image 20250902193436.png",
-    "OMSCS/RAIT/images/Pasted image 20250902193426.png",
-    "OMSCS/RAIT/images/Pasted image 20250902193342.png",
     "NodeJS/Season 1.md",
     "OMSCS/RAIT/Particle filter - YT source.md",
     "OMSCS/RAIT/Kinematic motion model - Bicycle model.md",

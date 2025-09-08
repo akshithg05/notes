@@ -200,4 +200,80 @@ Event loop working -
 
 See this in the notes, how EL works. 
 
-Below coding example - 
+## 6/9/2025
+
+Below is pseudo coding example (written notes has the explanation but its quite clear from the image as well)- 
+![[Pasted image 20250906125908.png]]
+
+Situation - Every callback queue is full with a callback and ready to execute, so how will the event loop schedule these callbacks in the Call stack ?
+First the CB from Process.mextTick() will be picked and executed, then the promise callback
+Then the timer phase executes and CBS from timer will get executed.
+Event loop again checks the P.NT() and Promise CBs. (if they are there, they will get executed else next phase)
+Next the polling CSs are executed.
+Again P.NT() and Promise CBs.
+Next the check phasde CB is executed (this is the CBs coming from setImmediate)
+Again P.NT() and Promise CBs are executed.
+Then finally the close phase is executed (Socket closing and clean up phase)
+
+Real world coding example -
+
+## Example 1
+Phase 1 , sync execution completes
+![[Pasted image 20250906133737.png]]
+
+Now after last line of file, the CS is empty, EL sees an opportunity to sched
+ule the CBs in CBQs.
+When file read is complete -
+![[Pasted image 20250906134117.png]]
+File is part of poll queue, so once file read is complete it will be added to the poll CBQ. The other CBs have already been executed by this point.
+
+Entire thing completed now -
+![[Pasted image 20250906134248.png]]
+
+My own code implementation from VSC
+![[Pasted image 20250906135315.png]]
+Here one thing to observe is that even though file read operation happens in the poll phase we see that the setImmedieate is printed first. This is because the file read takes some time and it is not in the callback queue still when the EL checks it in the first round.
+Hence it is printed in the second phase and it is printed in the end.
+
+All this executes is just micro seconds.
+## Example 2
+
+This example consists of P.NT() as well as Promise
+![[Pasted image 20250906150523.png]]
+
+End result -
+![[Pasted image 20250906151054.png]]
+
+Same thing in code - 
+![[Pasted image 20250906151201.png]]
+
+First thing - all sync code will finish running
+Then the next tick and promise will be called (As these 2 as highest priority and nextTick is highest priority)
+Then timer will be printed if CBQ available
+Then poll (if something availalable)
+Then check
+Then file read(as part of 2nd round poll phase).
+
+## Example 3
+![[Pasted image 20250906152747.png]]
+
+Above is the phase 1 result until the file read is complete.
+
+Now once the file reading operation is complete , this E callback function is executed-
+![[Pasted image 20250906152954.png]]
+
+When event loop is idle it waits at poll phase, as soon as E comes into CS how will it execute -
+![[Pasted image 20250906153517.png]]
+
+The 2nd setImmediate CB is executed before the 2nd setTimeout CB because the EL was waiting at the poll phase when the CS was idle, expected behavior would be for the setTimeout CB to be executed first but since EL was waiting at poll phase, the setImmediate CB that will be executed first.
+
+Code example and output for the same-
+![[Pasted image 20250906154409.png]]
+![[Pasted image 20250906154429.png]]
+
+
+Example 4 (Importance of Nexttick callback function)
+![[Pasted image 20250906155721.png]]
+
+Until and unless the nextTick queue is empty we will not move to the next phase that is the promise phase.
+

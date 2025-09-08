@@ -8,69 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "be10e457cfcc9f68",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "OMSCS/RAIT/images/Pasted image 20250831175803.png"
-              },
-              "icon": "lucide-image",
-              "title": "Pasted image 20250831175803"
-            }
-          },
-          {
-            "id": "d481be5f9a0791f5",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "OMSCS/RAIT/images/Pasted image 20250831175803.png"
-              },
-              "icon": "lucide-image",
-              "title": "Pasted image 20250831175803"
-            }
-          },
-          {
-            "id": "bf4ba94f71c0fc88",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "OMSCS/RAIT/images/Pasted image 20250831180030.png"
-              },
-              "icon": "lucide-image",
-              "title": "Pasted image 20250831180030"
-            }
-          },
-          {
-            "id": "02ca0d14f7d4eeed",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "OMSCS/RAIT/images/Pasted image 20250831180135.png"
-              },
-              "icon": "lucide-image",
-              "title": "Pasted image 20250831180135"
-            }
-          },
-          {
             "id": "d78cd6bc547283f6",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "NodeJS/Season 1.md",
-                "mode": "source",
-                "source": false
+                "file": "NodeJS/images/Pasted image 20250906155721.png"
               },
-              "icon": "lucide-file",
-              "title": "Season 1"
+              "icon": "lucide-image",
+              "title": "Pasted image 20250906155721"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -229,17 +178,17 @@
   },
   "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
-    "NodeJS/images/Pasted image 20250905121654.png",
-    "NodeJS/images/Pasted image 20250905114947.png",
-    "NodeJS/images/Pasted image 20250905114844.png",
-    "NodeJS/images/Pasted image 20250902230800.png",
-    "NodeJS/images/Pasted image 20250902220454.png",
-    "OMSCS/RAIT/images/Pasted image 20250902194044.png",
-    "OMSCS/RAIT/images/Pasted image 20250902193953.png",
-    "OMSCS/RAIT/images/Pasted image 20250902193925.png",
-    "OMSCS/RAIT/images/Pasted image 20250902193836.png",
-    "OMSCS/RAIT/images/Pasted image 20250902193741.png",
-    "OMSCS/RAIT/images/Pasted image 20250902193726.png",
+    "NodeJS/images/Pasted image 20250906154429.png",
+    "NodeJS/images/Pasted image 20250906154409.png",
+    "NodeJS/images/Pasted image 20250906153517.png",
+    "NodeJS/images/Pasted image 20250906152954.png",
+    "NodeJS/images/Pasted image 20250906152747.png",
+    "NodeJS/images/Pasted image 20250906151201.png",
+    "NodeJS/images/Pasted image 20250906151121.png",
+    "NodeJS/images/Pasted image 20250906151054.png",
+    "NodeJS/images/Pasted image 20250906150523.png",
+    "NodeJS/images/Pasted image 20250906135315.png",
+    "NodeJS/images/Pasted image 20250906135225.png",
     "NodeJS/Season 1.md",
     "OMSCS/RAIT/Particle filter - YT source.md",
     "OMSCS/RAIT/Kinematic motion model - Bicycle model.md",

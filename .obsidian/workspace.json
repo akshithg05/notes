@@ -4,19 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "8bbe02c30293e26b",
+        "id": "e17a05a85f49213b",
         "type": "tabs",
         "children": [
           {
-            "id": "4803526032bbf41d",
+            "id": "50d1ddc6a9f02119",
             "type": "leaf",
             "state": {
               "type": "image",
               "state": {
-                "file": "NodeJS/images/Pasted image 20250910150020.png"
+                "file": "OMSCS/RAIT/images/Pasted image 20250910211511.png"
               },
               "icon": "lucide-image",
-              "title": "Pasted image 20250910150020"
+              "title": "Pasted image 20250910211511"
             }
           }
         ]
@@ -178,19 +178,18 @@
   },
   "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
-    "NodeJS/images/Pasted image 20250910144243.png",
-    "NodeJS/images/Pasted image 20250910144136.png",
-    "NodeJS/images/Pasted image 20250910144030.png",
-    "NodeJS/images/Pasted image 20250910143120.png",
-    "NodeJS/images/Pasted image 20250910142645.png",
-    "NodeJS/images/Pasted image 20250910142311.png",
-    "NodeJS/images/Pasted image 20250910132518.png",
+    "OMSCS/RAIT/images/Pasted image 20250910211341.png",
+    "OMSCS/RAIT/images/Pasted image 20250910202914.png",
+    "OMSCS/RAIT/images/Pasted image 20250910202552.png",
+    "OMSCS/RAIT/images/Pasted image 20250910202410.png",
+    "OMSCS/RAIT/images/Pasted image 20250910164919.png",
+    "OMSCS/RAIT/images/Pasted image 20250910164102.png",
+    "OMSCS/RAIT/Search.md",
+    "OMSCS/RAIT/images/Pasted image 20250910211511.png",
     "NodeJS/Season 1.md",
     "NodeJS/images/Pasted image 20250910150020.png",
-    "New Text Document.txt",
-    "NodeJS/images/Pasted image 20250910132243.png",
-    "NodeJS/images/Pasted image 20250909210926.png",
-    "OMSCS/RAIT/Search.md",
+    "NodeJS/images/Pasted image 20250910144243.png",
+    "NodeJS/images/Pasted image 20250910144136.png",
     "OMSCS/RAIT/Particle filter - YT source.md",
     "OMSCS/RAIT/Kinematic motion model - Bicycle model.md",
     "OMSCS/RAIT/Problem set 3.md",

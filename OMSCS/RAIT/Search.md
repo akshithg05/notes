@@ -36,3 +36,29 @@ Question 5
 Question 6
 ![[Pasted image 20250908181925.png]]
 
+A* Algorithm - Heuristic function 
+
+![[Pasted image 20250910164102.png]]
+
+Here we have additional information called a heuristic function. The main difference here is we will chose the node expanding with the minimum heuristic values.
+This will make sure we do not have to explore other paths, directly we can explore the shortest path.
+![[Pasted image 20250910164919.png]]
+
+## Dynamic Programming -
+
+You dont need a plan just for the most optimal solution but need to have a plan for other paths and solutions as well, This is because the real world is not always ideal, there are lot of obstacles, people and barriers.
+![[Pasted image 20250910202410.png]]
+
+this will not involve A* algorithm, but another approach - 
+![[Pasted image 20250910202552.png]]
+
+Value function -
+![[Pasted image 20250910202914.png]]
+
+
+Question 7
+![[Pasted image 20250910211341.png]]
+
+Question 8
+![[Pasted image 20250910211511.png]]
+

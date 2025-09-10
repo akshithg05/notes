@@ -4,21 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "112c60e3ab476d63",
+        "id": "8bbe02c30293e26b",
         "type": "tabs",
         "children": [
           {
-            "id": "7e03b21470aafd73",
+            "id": "4803526032bbf41d",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "image",
               "state": {
-                "aFile": ".gitignore.txt",
-                "bFile": ".gitignore.txt",
-                "aRef": ""
+                "file": "NodeJS/images/Pasted image 20250910150020.png"
               },
-              "icon": "diff",
-              "title": "Diff: .gitignore.txt"
+              "icon": "lucide-image",
+              "title": "Pasted image 20250910150020"
             }
           }
         ]
@@ -178,20 +176,20 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7e03b21470aafd73",
+  "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
+    "NodeJS/images/Pasted image 20250910144243.png",
+    "NodeJS/images/Pasted image 20250910144136.png",
+    "NodeJS/images/Pasted image 20250910144030.png",
+    "NodeJS/images/Pasted image 20250910143120.png",
+    "NodeJS/images/Pasted image 20250910142645.png",
+    "NodeJS/images/Pasted image 20250910142311.png",
+    "NodeJS/images/Pasted image 20250910132518.png",
     "NodeJS/Season 1.md",
+    "NodeJS/images/Pasted image 20250910150020.png",
     "New Text Document.txt",
-    "Pasted image 20250910132518.png",
-    "Pasted image 20250910132243.png",
+    "NodeJS/images/Pasted image 20250910132243.png",
     "NodeJS/images/Pasted image 20250909210926.png",
-    "OMSCS/RAIT/images/Pasted image 20250908181925.png",
-    "OMSCS/RAIT/images/Pasted image 20250908181622.png",
-    "OMSCS/RAIT/images/Pasted image 20250908181408.png",
-    "OMSCS/RAIT/images/Pasted image 20250908181015.png",
-    "OMSCS/RAIT/images/Pasted image 20250908180737.png",
-    "OMSCS/RAIT/images/Pasted image 20250908180600.png",
-    "OMSCS/RAIT/images/Pasted image 20250908180500.png",
     "OMSCS/RAIT/Search.md",
     "OMSCS/RAIT/Particle filter - YT source.md",
     "OMSCS/RAIT/Kinematic motion model - Bicycle model.md",

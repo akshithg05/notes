@@ -296,3 +296,34 @@ Thread is occupied by operation which is being currently executed.
 If a new operation comes in it will pick the free thread. (See below)
 ![[Pasted image 20250910132518.png]]
 
+Example - 
+![[Pasted image 20250910142311.png]]
+
+In the above example both the pbkdf2 lines are printed immediately after sometime of processing. This is because each function is being executed in a different thread of the thread pool and there happening simultaneously. 
+
+Now let us see the example where we have 4 functions- 
+![[Pasted image 20250910142645.png]]
+
+Each function will be returned around the same time. It is also seen that the order in which they are returned and printed can differ. This is because the order will completely depend on the order in which the thread pool finishes the execution of the function. Whichever function finishes first will be printed first.
+
+
+Now if we have 5 calls it will be interesting :)
+![[Pasted image 20250910143120.png]]
+
+Here the first four functions will execute first and their results will be printed together, but the result of the fifth function will take some time. This is because the 5th function was waiting for one of the threads to free up and then it began its execution.
+
+Changing the thread pool size- 
+Be default we have only 4 threads but we can change it by setting it in our env variables. We can set it to however much we want based on our application load and usage.
+In this example I am setting it to 8 in the environment variables before executing the code
+
+![[Pasted image 20250910144136.png]]
+![[Pasted image 20250910144030.png]]
+
+console.log(process.env.UV_THREADPOOL_SIZE) will give the threadpool size.
+![[Pasted image 20250910144243.png]]
+
+Thread pool is used only for fs crypto dns.lookup and user specified input
+
+Handling multiple API calls and requests-
+![[Pasted image 20250910150020.png]]
+

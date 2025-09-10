@@ -286,3 +286,13 @@ These are some additional phases of the event loop.
 
 ![[Pasted image 20250909210954.png]]
 
+
+## 10/9/2025
+
+Thread pool - 
+![[Pasted image 20250910132243.png]]
+
+Thread is occupied by operation which is being currently executed.
+If a new operation comes in it will pick the free thread. (See below)
+![[Pasted image 20250910132518.png]]
+

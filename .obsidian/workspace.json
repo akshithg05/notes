@@ -12,15 +12,22 @@
             "type": "leaf",
             "state": {
               "type": "markdown",
+              "type": "markdown",
               "state": {
+                "file": "NodeJS/Season 1.md",
+                "mode": "source",
+                "source": false
                 "file": "NodeJS/Season 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
               "title": "Season 1"
+              "icon": "lucide-file",
+              "title": "Season 1"
             }
           }
+        ]
         ]
       }
     ],
@@ -189,8 +196,6 @@
     "OMSCS/RAIT/images/Pasted image 20250908180600.png",
     "OMSCS/RAIT/images/Pasted image 20250908180500.png",
     "OMSCS/RAIT/images/Pasted image 20250908180223.png",
-    "OMSCS/RAIT/images/Pasted image 20250908180056.png",
-    "OMSCS/RAIT/images/Pasted image 20250908175936.png",
     "NodeJS/Season 1.md",
     "OMSCS/RAIT/Search.md",
     "OMSCS/RAIT/Particle filter - YT source.md",

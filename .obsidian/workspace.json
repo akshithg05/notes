@@ -4,37 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "df3950e52aae491f",
+        "id": "112c60e3ab476d63",
         "type": "tabs",
         "children": [
           {
-            "id": "d78cd6bc547283f6",
+            "id": "7e03b21470aafd73",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "NodeJS/images/Pasted image 20250909210954.png"
+                "file": "NodeJS/Season 1.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20250909210954"
-            }
-          },
-          {
-            "id": "e85f2ba8acd1df00",
-            "type": "leaf",
-            "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": ".obsidian/core-plugins.json",
-                "bFile": ".obsidian/core-plugins.json",
-                "aRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: core-plugins.json"
+              "icon": "lucide-file",
+              "title": "Season 1"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -191,7 +178,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e85f2ba8acd1df00",
+  "active": "7e03b21470aafd73",
   "lastOpenFiles": [
     "NodeJS/images/Pasted image 20250909210926.png",
     "OMSCS/RAIT/images/Pasted image 20250908181925.png",

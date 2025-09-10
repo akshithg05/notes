@@ -11,23 +11,16 @@
             "id": "7e03b21470aafd73",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "NodeJS/Season 1.md",
-                "mode": "source",
-                "source": false
-                "file": "NodeJS/Season 1.md",
-                "mode": "source",
-                "source": false
+                "aFile": ".gitignore.txt",
+                "bFile": ".gitignore.txt",
+                "aRef": ""
               },
-              "icon": "lucide-file",
-              "title": "Season 1"
-              "icon": "lucide-file",
-              "title": "Season 1"
+              "icon": "diff",
+              "title": "Diff: .gitignore.txt"
             }
           }
-        ]
         ]
       }
     ],
@@ -187,6 +180,10 @@
   },
   "active": "7e03b21470aafd73",
   "lastOpenFiles": [
+    "NodeJS/Season 1.md",
+    "New Text Document.txt",
+    "Pasted image 20250910132518.png",
+    "Pasted image 20250910132243.png",
     "NodeJS/images/Pasted image 20250909210926.png",
     "OMSCS/RAIT/images/Pasted image 20250908181925.png",
     "OMSCS/RAIT/images/Pasted image 20250908181622.png",
@@ -195,8 +192,6 @@
     "OMSCS/RAIT/images/Pasted image 20250908180737.png",
     "OMSCS/RAIT/images/Pasted image 20250908180600.png",
     "OMSCS/RAIT/images/Pasted image 20250908180500.png",
-    "OMSCS/RAIT/images/Pasted image 20250908180223.png",
-    "NodeJS/Season 1.md",
     "OMSCS/RAIT/Search.md",
     "OMSCS/RAIT/Particle filter - YT source.md",
     "OMSCS/RAIT/Kinematic motion model - Bicycle model.md",

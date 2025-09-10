@@ -277,3 +277,12 @@ Example 4 (Importance of Nexttick callback function)
 
 Until and unless the nextTick queue is empty we will not move to the next phase that is the promise phase.
 
+## 9/9/2025
+
+These images are from NodeJS doc.
+
+![[Pasted image 20250909210926.png]]
+These are some additional phases of the event loop.
+
+![[Pasted image 20250909210954.png]]
+

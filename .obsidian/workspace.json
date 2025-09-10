@@ -13,10 +13,10 @@
             "state": {
               "type": "image",
               "state": {
-                "file": "NodeJS/images/Pasted image 20250906155721.png"
+                "file": "NodeJS/images/Pasted image 20250909210954.png"
               },
               "icon": "lucide-image",
-              "title": "Pasted image 20250906155721"
+              "title": "Pasted image 20250909210954"
             }
           }
         ]
@@ -178,18 +178,19 @@
   },
   "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
-    "NodeJS/images/Pasted image 20250906154429.png",
-    "NodeJS/images/Pasted image 20250906154409.png",
-    "NodeJS/images/Pasted image 20250906153517.png",
-    "NodeJS/images/Pasted image 20250906152954.png",
-    "NodeJS/images/Pasted image 20250906152747.png",
-    "NodeJS/images/Pasted image 20250906151201.png",
-    "NodeJS/images/Pasted image 20250906151121.png",
-    "NodeJS/images/Pasted image 20250906151054.png",
-    "NodeJS/images/Pasted image 20250906150523.png",
-    "NodeJS/images/Pasted image 20250906135315.png",
-    "NodeJS/images/Pasted image 20250906135225.png",
+    "NodeJS/images/Pasted image 20250909210926.png",
+    "OMSCS/RAIT/images/Pasted image 20250908181925.png",
+    "OMSCS/RAIT/images/Pasted image 20250908181622.png",
+    "OMSCS/RAIT/images/Pasted image 20250908181408.png",
+    "OMSCS/RAIT/images/Pasted image 20250908181015.png",
+    "OMSCS/RAIT/images/Pasted image 20250908180737.png",
+    "OMSCS/RAIT/images/Pasted image 20250908180600.png",
+    "OMSCS/RAIT/images/Pasted image 20250908180500.png",
+    "OMSCS/RAIT/images/Pasted image 20250908180223.png",
+    "OMSCS/RAIT/images/Pasted image 20250908180056.png",
+    "OMSCS/RAIT/images/Pasted image 20250908175936.png",
     "NodeJS/Season 1.md",
+    "OMSCS/RAIT/Search.md",
     "OMSCS/RAIT/Particle filter - YT source.md",
     "OMSCS/RAIT/Kinematic motion model - Bicycle model.md",
     "OMSCS/RAIT/Problem set 3.md",

@@ -18,8 +18,23 @@
               "icon": "lucide-image",
               "title": "Pasted image 20250909210954"
             }
+          },
+          {
+            "id": "e85f2ba8acd1df00",
+            "type": "leaf",
+            "state": {
+              "type": "split-diff-view",
+              "state": {
+                "aFile": ".obsidian/core-plugins.json",
+                "bFile": ".obsidian/core-plugins.json",
+                "aRef": ""
+              },
+              "icon": "diff",
+              "title": "Diff: core-plugins.json"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -176,7 +191,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d5df95e868ccabb7",
+  "active": "e85f2ba8acd1df00",
   "lastOpenFiles": [
     "NodeJS/images/Pasted image 20250909210926.png",
     "OMSCS/RAIT/images/Pasted image 20250908181925.png",

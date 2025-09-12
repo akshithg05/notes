@@ -4,19 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "e17a05a85f49213b",
+        "id": "1ef6f431b7cbe71c",
         "type": "tabs",
         "children": [
           {
-            "id": "50d1ddc6a9f02119",
+            "id": "89fb519f5630a4e6",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "OMSCS/RAIT/images/Pasted image 20250910211511.png"
+                "file": "NodeJS/Season 1.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20250910211511"
+              "icon": "lucide-file",
+              "title": "Season 1"
             }
           }
         ]
@@ -176,8 +178,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d5df95e868ccabb7",
+  "active": "89fb519f5630a4e6",
   "lastOpenFiles": [
+    "NodeJS/images/Pasted image 20250911124935.png",
+    "NodeJS/images/Pasted image 20250911121234.png",
+    "NodeJS/Season 1.md",
+    "OMSCS/RAIT/images/Pasted image 20250910211511.png",
     "OMSCS/RAIT/images/Pasted image 20250910211341.png",
     "OMSCS/RAIT/images/Pasted image 20250910202914.png",
     "OMSCS/RAIT/images/Pasted image 20250910202552.png",
@@ -185,11 +191,7 @@
     "OMSCS/RAIT/images/Pasted image 20250910164919.png",
     "OMSCS/RAIT/images/Pasted image 20250910164102.png",
     "OMSCS/RAIT/Search.md",
-    "OMSCS/RAIT/images/Pasted image 20250910211511.png",
-    "NodeJS/Season 1.md",
     "NodeJS/images/Pasted image 20250910150020.png",
-    "NodeJS/images/Pasted image 20250910144243.png",
-    "NodeJS/images/Pasted image 20250910144136.png",
     "OMSCS/RAIT/Particle filter - YT source.md",
     "OMSCS/RAIT/Kinematic motion model - Bicycle model.md",
     "OMSCS/RAIT/Problem set 3.md",

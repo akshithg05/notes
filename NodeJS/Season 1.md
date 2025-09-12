@@ -327,3 +327,104 @@ Thread pool is used only for fs crypto dns.lookup and user specified input
 Handling multiple API calls and requests-
 ![[Pasted image 20250910150020.png]]
 
+## Epoll and Kqueue integration with LibUV - 10/9/25
+
+### 🔹 Node.js async I/O model
+- Node.js uses **libuv**, a C library that abstracts async I/O across platforms.
+- libuv uses:
+    - **epoll** on Linux
+    - **kqueue** on macOS / BSD
+    - **IOCP** on Windows
+- These are all **event notification mechanisms** → they let you wait on many sockets/files without spawning one thread per connection.
+---
+### 🔹 Why _not_ threads for API calls?
+- Imagine you had **10,000 API requests** (sockets open).
+- If each socket required **one dedicated thread**, your process would explode in memory and context-switching overhead.
+- Instead, **epoll/kqueue** let the kernel watch those sockets.
+    - When data is ready (incoming or outgoing), the kernel **wakes up libuv**.
+    - libuv then calls the corresponding JavaScript **callback** in Node.js.
+So instead of tying up threads, Node.js is essentially **waiting for events**.
+---
+### 🔹 Where does the **thread pool** come in?
+
+Node.js thread pool (default size = 4, configurable with `UV_THREADPOOL_SIZE`) is used for things that **cannot** use epoll/kqueue because they block at the OS level, like:
+- File system operations (`fs.readFile`, `fs.writeFile`, etc.)
+- DNS lookups (if not using `dns.resolve()` which is pure async)
+- Crypto operations (`pbkdf2`, `scrypt`, `bcrypt`, etc.)
+- Compression (`zlib`)
+These are dispatched to worker threads in libuv’s pool.
+---
+### 🔹 Network (API calls)
+- Network sockets (`http`, `net`, `tls`, etc.) **do not go through the thread pool**.
+- Instead, they rely on **epoll/kqueue**.
+- When activity happens on a socket, epoll signals libuv → libuv places the callback in the **event loop’s poll phase** → Node.js executes your handler.
+---
+### 🔹 Event Loop tie-in
+
+Here’s the simplified sequence:
+1. Your JS code issues an async HTTP request.
+2. The socket is registered with **epoll/kqueue** (via libuv).
+3. Node.js continues running other code — no thread is blocked.
+4. Later, when epoll/kqueue signals readiness, libuv picks it up.
+5. The callback is queued in the **poll phase** of the Node.js event loop.
+6. JS callback executes.
+
+![[Pasted image 20250911121234.png]]
+
+### 🔹 File Descriptors (FDs)
+
+- In **Unix-like operating systems** (Linux, macOS, BSD), everything is treated as a _file_:
+    - Files on disk
+    - Sockets (network connections)
+    - Pipes
+    - Devices (like `/dev/tty`)
+- A **file descriptor (FD)** is just an **integer handle** the OS gives you when you open or create one of these resources.
+
+Example:
+`int fd = open("data.txt", O_RDONLY); printf("File descriptor: %d\n", fd);   // maybe prints 3`
+- By convention:
+    - `0` → stdin
+    - `1` → stdout
+    - `2` → stderr
+    - `>= 3` → other files/sockets
+
+So **fd = 3, 4, 5, …** are just integers that point into the kernel’s table of open resources.
+
+---
+### 🔹 Socket Descriptors
+
+- A **socket** is an endpoint of a network connection (TCP/UDP).
+- When you create a socket, the OS gives you a **socket descriptor**, which is just another FD.
+
+Example:
+
+`int sock_fd = socket(AF_INET, SOCK_STREAM, 0); printf("Socket FD: %d\n", sock_fd);   // maybe prints 3`
+
+Now `sock_fd` is used to:
+- `bind()` to an address,
+- `listen()` for connections,
+- `accept()` new clients,
+- `read()` / `write()` data,
+- or hand it off to **epoll/kqueue** for monitoring.
+---
+### 🔹 Why does epoll care about FDs?
+- epoll doesn’t deal directly with “HTTP” or “API calls.”
+- It only knows: _“This FD (file/socket) is ready to read/write.”_
+- So you register your FDs (sockets) with epoll.
+- When data arrives on any socket, epoll wakes you up and tells you:
+    > “Hey, fd=5 is ready for reading.”
+    
+Your program then reads from that socket descriptor.
+
+---
+✅ So:
+
+- **FD** = integer handle to an open resource.
+- **Socket FD** = integer handle to a network connection.
+- epoll/kqueue watch these FDs for readiness, instead of blocking a thread on each one.
+
+
+### Learnings to take away
+
+![[Pasted image 20250911124935.png]]
+

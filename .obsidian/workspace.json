@@ -11,14 +11,12 @@
             "id": "89fb519f5630a4e6",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "NodeJS/Season 1.md",
-                "mode": "source",
-                "source": false
+                "file": "NodeJS/images/Pasted image 20250914132326.png"
               },
-              "icon": "lucide-file",
-              "title": "Season 1"
+              "icon": "lucide-image",
+              "title": "Pasted image 20250914132326"
             }
           }
         ]
@@ -178,20 +176,23 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "89fb519f5630a4e6",
+  "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
-    "NodeJS/images/Pasted image 20250911124935.png",
-    "NodeJS/images/Pasted image 20250911121234.png",
+    "NodeJS/images/Pasted image 20250914132030.png",
+    "NodeJS/images/Pasted image 20250914131637.png",
+    "NodeJS/images/Pasted image 20250914130944.png",
+    "NodeJS/images/Pasted image 20250914120024.png",
+    "NodeJS/images/Pasted image 20250914114258.png",
+    "NodeJS/images/Pasted image 20250914114234.png",
+    "NodeJS/images/Pasted image 20250913111819.png",
+    "NodeJS/images/Pasted image 20250913110858.png",
+    "NodeJS/images/Pasted image 20250913110208.png",
+    "NodeJS/images/Pasted image 20250913105324.png",
+    "NodeJS/images/Pasted image 20250913104538.png",
     "NodeJS/Season 1.md",
-    "OMSCS/RAIT/images/Pasted image 20250910211511.png",
-    "OMSCS/RAIT/images/Pasted image 20250910211341.png",
-    "OMSCS/RAIT/images/Pasted image 20250910202914.png",
-    "OMSCS/RAIT/images/Pasted image 20250910202552.png",
-    "OMSCS/RAIT/images/Pasted image 20250910202410.png",
-    "OMSCS/RAIT/images/Pasted image 20250910164919.png",
-    "OMSCS/RAIT/images/Pasted image 20250910164102.png",
+    "System Design/Part 1/4-Networking Basics.md",
+    "System Design/Part 1/5-TCP-UDP.md",
     "OMSCS/RAIT/Search.md",
-    "NodeJS/images/Pasted image 20250910150020.png",
     "OMSCS/RAIT/Particle filter - YT source.md",
     "OMSCS/RAIT/Kinematic motion model - Bicycle model.md",
     "OMSCS/RAIT/Problem set 3.md",

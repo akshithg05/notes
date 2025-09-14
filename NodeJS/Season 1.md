@@ -428,3 +428,80 @@ Your program then reads from that socket descriptor.
 
 ![[Pasted image 20250911124935.png]]
 
+
+### Creating a Server - 12/9/2025
+
+![[Pasted image 20250912232332.png]]
+
+Two types of servers shown above, one with the hardware and another one with software
+
+![[Pasted image 20250912233816.png]]
+
+Basic Client-Server architecture.
+
+TCP IP protocol - data sent in packets and have packet sequence numbers to be ordered.
+![[Pasted image 20250913103846.png]]
+
+DNS server and DNS look up
+![[Pasted image 20250913104538.png]]
+
+How different server applications can run on the same server hardware (computer)
+![[Pasted image 20250913105324.png]]
+By the use of ports , different applications can run on the same server hardware. Whenever a client is making a request he/se must use the port number to send the request. The request will hit the application which is listening on that particular port. So different applications can be mapped to different ports, which enables the same hardware to manage multiple applications.
+
+![[Pasted image 20250913110208.png]]
+
+
+WHen we have client server architecture , some of the data we are requesting might not be on the same server hardware where the application is hosted. For example the DB might be hosted on a different server. The file and videos might be on another server and so on. 
+![[Pasted image 20250913110858.png]]
+
+Depending on the system architecture, hosting can differ.
+
+Summary -
+![[Pasted image 20250913111819.png]]
+
+## Sockets vs Web sockets-
+### Regular Sockets vs WebSockets
+
+**Regular sockets (used in typical HTTP API calls):**
+
+- When a client makes an HTTP request to a server, a TCP socket connection is established.
+- The request travels through this socket, the server processes it, sends back a response, and then the connection is typically closed (unless HTTP persistent connections like _keep-alive_ are used, but still they are not meant for continuous bidirectional communication).
+- At scale (thousands of users), many short-lived connections are continuously created and closed as requests come in. This is efficient for stateless, request–response interactions like REST APIs.
+
+**WebSockets:**
+
+- A WebSocket starts as an HTTP(S) request but then upgrades the connection to a persistent TCP socket.
+- Once established, this connection stays open, allowing continuous **two-way (full-duplex)** communication between client and server.
+- This is ideal for scenarios like chats, live notifications, gaming, stock tickers, or real-time streaming, where constant back-and-forth data is required.
+- Trying to achieve real-time updates with plain HTTP would require repeated polling or creating/destroying sockets rapidly, which is inefficient and resource-heavy.
+
+**Key Point:**
+- Both regular sockets (HTTP over TCP) and WebSockets are important.
+- The choice depends on the application’s needs:
+    - **Stateless, request–response APIs → Regular HTTP sockets**
+    - **Real-time, continuous data flow → WebSockets**
+
+
+## Databases  - 14/9/2025
+
+What is DB
+![[Pasted image 20250914114234.png]]
+
+Types of DBs
+![[Pasted image 20250914114258.png]]
+
+History of RDBMS
+![[Pasted image 20250914120024.png]]
+
+History of NoSQL
+![[Pasted image 20250914130944.png]]
+
+RDBMS vs NoSQL
+
+![[Pasted image 20250914132030.png]]
+
+Differences Between SQL and NoSQL
+![[Pasted image 20250914132326.png]]
+
+

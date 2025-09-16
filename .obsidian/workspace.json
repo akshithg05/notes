@@ -13,10 +13,10 @@
             "state": {
               "type": "image",
               "state": {
-                "file": "NodeJS/images/Pasted image 20250914132326.png"
+                "file": "OMSCS/RAIT/images/Pasted image 20250916195607.png"
               },
               "icon": "lucide-image",
-              "title": "Pasted image 20250914132326"
+              "title": "Pasted image 20250916195607"
             }
           }
         ]
@@ -178,17 +178,17 @@
   },
   "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
-    "NodeJS/images/Pasted image 20250914132030.png",
-    "NodeJS/images/Pasted image 20250914131637.png",
-    "NodeJS/images/Pasted image 20250914130944.png",
-    "NodeJS/images/Pasted image 20250914120024.png",
-    "NodeJS/images/Pasted image 20250914114258.png",
-    "NodeJS/images/Pasted image 20250914114234.png",
-    "NodeJS/images/Pasted image 20250913111819.png",
-    "NodeJS/images/Pasted image 20250913110858.png",
-    "NodeJS/images/Pasted image 20250913110208.png",
-    "NodeJS/images/Pasted image 20250913105324.png",
-    "NodeJS/images/Pasted image 20250913104538.png",
+    "OMSCS/RAIT/PID.md",
+    "OMSCS/RAIT/images/Pasted image 20250916211811.png",
+    "OMSCS/RAIT/images/Pasted image 20250916211309.png",
+    "OMSCS/RAIT/images/Pasted image 20250916211159.png",
+    "OMSCS/RAIT/images/Pasted image 20250916205928.png",
+    "OMSCS/RAIT/images/Pasted image 20250916202143.png",
+    "OMSCS/RAIT/images/Pasted image 20250916201151.png",
+    "OMSCS/RAIT/images/Pasted image 20250916200509.png",
+    "OMSCS/RAIT/images/Pasted image 20250916200312.png",
+    "OMSCS/RAIT/images/Pasted image 20250916195948.png",
+    "OMSCS/RAIT/images/Pasted image 20250916195607.png",
     "NodeJS/Season 1.md",
     "System Design/Part 1/4-Networking Basics.md",
     "System Design/Part 1/5-TCP-UDP.md",

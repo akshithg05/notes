@@ -120,3 +120,18 @@ Question 5
 Question 6
 ![[Pasted image 20250916211811.png]]
 
+
+## 17/9/2025
+
+![[Pasted image 20250917192040.png]]
+
+
+PID controller
+![[Pasted image 20250917201439.png]]
+
+![[Pasted image 20250917201523.png]]
+
+Twiddle
+![[Pasted image 20250917203423.png]]
+
+

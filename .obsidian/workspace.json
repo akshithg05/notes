@@ -11,12 +11,14 @@
             "id": "89fb519f5630a4e6",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "OMSCS/RAIT/images/Pasted image 20250916195607.png"
+                "file": "NodeJS/Season 1.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20250916195607"
+              "icon": "lucide-file",
+              "title": "Season 1"
             }
           }
         ]
@@ -176,19 +178,19 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d5df95e868ccabb7",
+  "active": "89fb519f5630a4e6",
   "lastOpenFiles": [
     "OMSCS/RAIT/PID.md",
+    "OMSCS/RAIT/images/Pasted image 20250917203423.png",
+    "OMSCS/RAIT/images/Pasted image 20250917201523.png",
+    "OMSCS/RAIT/images/Pasted image 20250917201439.png",
+    "OMSCS/RAIT/images/Pasted image 20250917195954.png",
+    "OMSCS/RAIT/images/Pasted image 20250917192040.png",
+    "OMSCS/RAIT/images/Pasted image 20250916195607.png",
     "OMSCS/RAIT/images/Pasted image 20250916211811.png",
     "OMSCS/RAIT/images/Pasted image 20250916211309.png",
     "OMSCS/RAIT/images/Pasted image 20250916211159.png",
     "OMSCS/RAIT/images/Pasted image 20250916205928.png",
-    "OMSCS/RAIT/images/Pasted image 20250916202143.png",
-    "OMSCS/RAIT/images/Pasted image 20250916201151.png",
-    "OMSCS/RAIT/images/Pasted image 20250916200509.png",
-    "OMSCS/RAIT/images/Pasted image 20250916200312.png",
-    "OMSCS/RAIT/images/Pasted image 20250916195948.png",
-    "OMSCS/RAIT/images/Pasted image 20250916195607.png",
     "NodeJS/Season 1.md",
     "System Design/Part 1/4-Networking Basics.md",
     "System Design/Part 1/5-TCP-UDP.md",

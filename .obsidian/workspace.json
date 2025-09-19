@@ -4,19 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "8bbe02c30293e26b",
+        "id": "91abe04d8b5f89fc",
         "type": "tabs",
         "children": [
           {
-            "id": "4803526032bbf41d",
+            "id": "8f781abd11e1c8f5",
             "type": "leaf",
             "state": {
               "type": "image",
               "state": {
-                "file": "NodeJS/images/Pasted image 20250918160523.png"
+                "file": "NodeJS/images/Pasted image 20250919130453.png"
               },
               "icon": "lucide-image",
-              "title": "Pasted image 20250918160523"
+              "title": "Pasted image 20250919130453"
             }
           }
         ]
@@ -178,19 +178,19 @@
   },
   "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
+    "NodeJS/images/Pasted image 20250919125306.png",
+    "NodeJS/images/Pasted image 20250919124707.png",
+    "NodeJS/images/Pasted image 20250919124449.png",
+    "NodeJS/images/Pasted image 20250919121237.png",
     "NodeJS/Season 2.md",
-    "NodeJS/images/Pasted image 20250919100939.png",
+    "NodeJS/images/Pasted image 20250919130453.png",
+    "NodeJS/images/Pasted image 20250919125245.png",
     "NodeJS/images/Pasted image 20250918160523.png",
+    "NodeJS/images/Pasted image 20250919100939.png",
     "NodeJS/images/Pasted image 20250918154817.png",
     "React/Interview Notes.md",
     "NodeJS/images/Pasted image 20250918154601.png",
-    "NodeJS/images/Pasted image 20250918153122.png",
-    "NodeJS/images/Pasted image 20250918152443.png",
     "NodeJS/Season 1.md",
-    "NodeJS/images/Pasted image 20250910150020.png",
-    "OMSCS/RAIT/images/Pasted image 20250917203423.png",
-    "OMSCS/RAIT/images/Pasted image 20250917201523.png",
-    "OMSCS/RAIT/images/Pasted image 20250917201439.png",
     "OMSCS/RAIT/PID.md",
     "New Text Document.txt",
     "OMSCS/RAIT/Search.md",

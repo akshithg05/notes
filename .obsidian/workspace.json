@@ -11,12 +11,14 @@
             "id": "8f781abd11e1c8f5",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "NodeJS/images/Pasted image 20250919130453.png"
+                "file": "NodeJS/Season 2.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20250919130453"
+              "icon": "lucide-file",
+              "title": "Season 2"
             }
           }
         ]
@@ -178,18 +180,19 @@
   },
   "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
+    "NodeJS/images/Pasted image 20250920013701.png",
+    "NodeJS/images/Pasted image 20250920013621.png",
+    "NodeJS/images/Pasted image 20250920013100.png",
+    "NodeJS/images/Pasted image 20250920012647.png",
+    "NodeJS/images/Pasted image 20250919130453.png",
     "NodeJS/images/Pasted image 20250919125306.png",
     "NodeJS/images/Pasted image 20250919124707.png",
     "NodeJS/images/Pasted image 20250919124449.png",
     "NodeJS/images/Pasted image 20250919121237.png",
     "NodeJS/Season 2.md",
-    "NodeJS/images/Pasted image 20250919130453.png",
     "NodeJS/images/Pasted image 20250919125245.png",
     "NodeJS/images/Pasted image 20250918160523.png",
-    "NodeJS/images/Pasted image 20250919100939.png",
-    "NodeJS/images/Pasted image 20250918154817.png",
     "React/Interview Notes.md",
-    "NodeJS/images/Pasted image 20250918154601.png",
     "NodeJS/Season 1.md",
     "OMSCS/RAIT/PID.md",
     "New Text Document.txt",

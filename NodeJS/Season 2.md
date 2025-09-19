@@ -86,3 +86,56 @@ So if Tinder had an API:
 
 Some of the APIS we can create for our project
 ![[Pasted image 20250919130453.png]]
+
+
+## Creating our first server 
+![[Pasted image 20250920012647.png]]
+
+Versioning 
+![[Pasted image 20250920013100.png]]
+
+![[Pasted image 20250920013621.png]]
+
+MAJOR.MINOR.PATCH
+1. Major version (X.0.0)
+Breaking changes.
+
+Updating to a new major version may break backward compatibility (your old code may stop working).
+
+Example:
+
+4.x.x → 5.0.0 could change APIs, remove functions, or alter behavior.
+
+2. Minor version (x.Y.0)
+New features added, but backward compatible.
+
+Existing code should keep working.
+
+Example:
+
+4.17.1 → 4.18.0 might add a new helper function or config option, but won’t break your old code.
+
+3. Patch version (x.x.Z)
+Bug fixes, performance improvements, or small tweaks.
+
+No new features, just stability fixes.
+
+Always backward compatible.
+
+Example:
+
+4.17.1 → 4.17.2 fixes a security issue or small bug.
+
+4. Backward Compatibility
+Means new versions won’t break old code.
+
+Minor + patch updates preserve backward compatibility.
+
+Major updates can break it.
+
+👉 For example,
+if your project depends on express@^4.17.1:
+
+✅ Allowed: 4.17.2, 4.18.0, 4.19.5
+
+❌ Not allowed: 5.0.0 (because it may break old apps).

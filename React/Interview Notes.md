@@ -383,19 +383,53 @@ React **is not a reactive system like Vue or Svelte** where variable mutations c
 Instead, it’s a “pull” model — you **explicitly tell** React to update by calling a state updater (`setState`).
 
 This design keeps React’s mental model predictable:
-
 - **Local vars** → for temporary values that don’t affect rendering.
-    
 - **State vars** → for values that should trigger UI updates.
+
+---
+### What happens when you load a website (React SPA case):
+
+1. **DNS Resolution**
+    - You type a URL (say `www.example.com`).
+    - The browser first checks its cache, OS cache, and then queries a DNS server to resolve that domain into an IP address.
+    - If DNS succeeds, you now know _where_ to connect (IP of the server or CDN).
+        
+2. **Establishing a Connection**
+    - The browser establishes a TCP connection with the server (usually port 80 for HTTP or 443 for HTTPS).
+    - If HTTPS is used (almost always today), an **SSL/TLS handshake** also happens to exchange certificates and negotiate encryption.
+        
+3. **HTTP Request**
+    - The browser sends an HTTP request (GET `/`) to the server.
+    - Headers like cookies, user agent, and caching info may also be sent.
+        
+4. **Server Response**
+    - For an SPA, the server typically sends back a small `index.html` file.
+    - This file often just includes a `<div id="root"></div>` (the React mount point) and `<script>` tags pointing to bundled JS (React build files) and CSS.
+    - Large static assets (JS bundles, CSS, images, fonts) are usually served via a CDN.
+        
+5. **Browser Parsing & Execution**
+    - The browser parses the HTML, encounters the `<script>` tags, and downloads the JavaScript bundles.
+    - The **JS engine** (V8 in Chrome, SpiderMonkey in Firefox, etc.) parses, compiles, and executes the React code.
+    - React mounts the SPA into the DOM (using `ReactDOM.render()` or `createRoot()`), and the app takes over the page.
+    - At this point, routing is handled **client-side** (React Router, for example).
+        
+6. **Subsequent Data Fetching (APIs)**
     
+    - When the app needs data, it makes API calls (via `fetch`, `axios`, etc.).
+    - These calls go out as HTTP requests to the backend (REST, GraphQL, etc.).
+    - The server responds with **JSON** (or other data formats).
+    - React updates its **state** with this data, triggering re-renders of the relevant components.
+7. **SPA Navigation**
+    
+    - When you click links inside the app, React Router (or another routing library) intercepts the navigation.
+    - Instead of fetching a new HTML page from the server, React simply swaps components.
+    - The browser history API (`pushState`, `replaceState`) is used to make it _look_ like page navigation, but the page itself is never reloaded.        
 
 ---
 
-If you want, I can show you a **side-by-side demo** where:
+### In short:
 
-- A `let` variable changes but UI doesn’t update.
-    
-- A `useState` variable changes and UI updates.
-    
-
-Would you like me to make that snippet?
+- First request: browser → DNS → server → HTML shell + JS bundles.
+- Browser runs the JS → React mounts SPA.
+- Data/API requests happen as needed → React updates UI.
+- Navigation is client-side, not full page reloads.

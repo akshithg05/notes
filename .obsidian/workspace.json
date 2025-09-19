@@ -4,21 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "1ef6f431b7cbe71c",
+        "id": "8bbe02c30293e26b",
         "type": "tabs",
         "children": [
           {
-            "id": "89fb519f5630a4e6",
+            "id": "4803526032bbf41d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "NodeJS/Season 1.md",
-                "mode": "source",
-                "source": false
+                "file": "NodeJS/images/Pasted image 20250918160523.png"
               },
-              "icon": "lucide-file",
-              "title": "Season 1"
+              "icon": "lucide-image",
+              "title": "Pasted image 20250918160523"
             }
           }
         ]
@@ -178,22 +176,23 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "89fb519f5630a4e6",
+  "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
-    "OMSCS/RAIT/PID.md",
+    "NodeJS/Season 2.md",
+    "NodeJS/images/Pasted image 20250919100939.png",
+    "NodeJS/images/Pasted image 20250918160523.png",
+    "NodeJS/images/Pasted image 20250918154817.png",
+    "React/Interview Notes.md",
+    "NodeJS/images/Pasted image 20250918154601.png",
+    "NodeJS/images/Pasted image 20250918153122.png",
+    "NodeJS/images/Pasted image 20250918152443.png",
+    "NodeJS/Season 1.md",
+    "NodeJS/images/Pasted image 20250910150020.png",
     "OMSCS/RAIT/images/Pasted image 20250917203423.png",
     "OMSCS/RAIT/images/Pasted image 20250917201523.png",
     "OMSCS/RAIT/images/Pasted image 20250917201439.png",
-    "OMSCS/RAIT/images/Pasted image 20250917195954.png",
-    "OMSCS/RAIT/images/Pasted image 20250917192040.png",
-    "OMSCS/RAIT/images/Pasted image 20250916195607.png",
-    "OMSCS/RAIT/images/Pasted image 20250916211811.png",
-    "OMSCS/RAIT/images/Pasted image 20250916211309.png",
-    "OMSCS/RAIT/images/Pasted image 20250916211159.png",
-    "OMSCS/RAIT/images/Pasted image 20250916205928.png",
-    "NodeJS/Season 1.md",
-    "System Design/Part 1/4-Networking Basics.md",
-    "System Design/Part 1/5-TCP-UDP.md",
+    "OMSCS/RAIT/PID.md",
+    "New Text Document.txt",
     "OMSCS/RAIT/Search.md",
     "OMSCS/RAIT/Particle filter - YT source.md",
     "OMSCS/RAIT/Kinematic motion model - Bicycle model.md",
@@ -210,7 +209,6 @@
     "OMSCS",
     "React/Namaste-react-notes.md",
     "Untitled.canvas",
-    "React/Interview Notes.md",
     "NodeJS",
     "System Design/Part 1/20-Message Queues.md"
   ]

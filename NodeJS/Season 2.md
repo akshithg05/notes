@@ -139,3 +139,110 @@ if your project depends on express@^4.17.1:
 ✅ Allowed: 4.17.2, 4.18.0, 4.19.5
 
 ❌ Not allowed: 5.0.0 (because it may break old apps).
+
+## 21/09/2025
+
+### Why we commit `package.json`
+
+- It defines **what dependencies** the project needs (`express: "^4.17.0"`).
+- When someone clones the repo and runs `npm install`, npm looks at `package.json` to know which packages to fetch.
+---
+### Why we also commit `package-lock.json`
+
+- `package-lock.json` **locks the exact versions** of every package **and all sub-dependencies** installed when you last ran `npm install`.
+- Example:
+    - `package.json` says:
+        `"express": "^4.17.0"`
+        → This allows any version from `4.17.0` up to (but not including) `5.0.0`.
+    - Without `package-lock.json`, two developers could end up installing slightly different versions depending on when they run `npm install`.
+    - With `package-lock.json`, npm installs the exact version tree (e.g., `express 4.17.3` + all its nested dependencies).
+---
+### Benefits of pushing `package-lock.json`
+
+1. **Consistency** → Everyone on the team, and CI/CD servers, get the same dependency versions.
+2. **Reproducibility** → Bugs caused by dependency updates are avoided because versions don’t drift.
+3. **Performance** → npm can install faster because it doesn’t have to resolve dependencies from scratch — it uses the lock file.
+4. **Security** → Easier to audit exact versions of sub-dependencies.
+---
+### Quick analogy 🚀
+- `package.json` = shopping list (“buy milk, bread, eggs, cheese, but cheese can be any brand”).
+- `package-lock.json` = receipt (“you bought Amul cheese, 200g, batch X”).
+
+If you only share the shopping list, teammates may come back with different brands, leading to surprises. With the receipt, everyone gets the same thing.
+
+---
+👉 One exception: In **libraries** (published to npm), some teams choose to **ignore `package-lock.json`** because they don’t want to lock versions for library consumers. But for **applications**, you almost always commit it.
+
+
+Coding example - 
+![[Pasted image 20250921154825.png]]
+When we have something like this, all our routes will be mapped to the first route handler , because it is like a wildcard, anything starting with "/" will be mapped to the first route handler and others will be redundant.
+
+But if we change the order like this -
+![[Pasted image 20250921154940.png]]
+This will make sure that the other routes will match their particular routes, because order of routing matters a lot. The wildcard should go to the end. Because the order of code will determine which request is processed.
+Whenever a request comes to the server it sequentially checks for routes.
+
+Example -
+![[Pasted image 20250921155210.png]]
+
+Now if we go to the route "/hello/2" , it will still go to "/hello" route only as that is matched at first.
+But if  change the route and try the same thing -
+![[Pasted image 20250921155304.png]]
+
+Here it will not match the first route and go to the second route instead and print the required results.
+
+THIS BEHAVIOUR IS ONLY FOR app.use() function.
+
+If we use app.get("/user") it will match only app.get of user and not anything else.
+
+### Advance routing concept - Regex in routing - currently the below examples for older versions of node
+
+1.
+![[Pasted image 20250921162830.png]]
+Here in this query string, b is an optional parameter. Doing /abc or /ac gives the same result.
+
+2.
+![[Pasted image 20250921163046.png]]
+
+Here this means that our string can have as many b's as possible between a and c.
+
+![[Pasted image 20250921190225.png]]
+Here bc is optional.
+
+## 22/09/2025
+
+Routing concepts and tricky conditions -
+
+### Example 1-
+
+![[Pasted image 20250922073142.png]]
+Int this case we are not sending anything back to the client, when it requests our server. Therefore, the request will get stuck and there will be no response. There will be request hanging condition.
+
+Example 2
+
+![[Pasted image 20250922072444.png]]
+
+In routes, we can pass multiple route handler functions. In A such a condition as shown above, only the first route handler will be executed as we are sending  the response from there. Send is like a return statement, so only the first fxn executes.
+
+Example 3 -
+![[Pasted image 20250922072829.png]]
+Here do we think the function will go to the next response or not ?
+
+Here since we are not sending any response from the first function. When we send a request to the server on the given route, our response will get stuck. NodeJS does not automatically move to the next route handler callback function.
+
+For this to happen NodeJS specifies that we have to send another parameter with the route handler callback function. And this function is - next() function
+
+Example 4.
+![[Pasted image 20250922073851.png]]
+
+Now if we pass in the next() function which is given by express, then the 2nd or next route handler is executed whenever the earlier route handler completes. Here notice that the first route handler is still not returning any response. Now let us return a response and see the behavior.
+
+Example 5.
+
+![[Pasted image 20250922074157.png]]
+![[Pasted image 20250922074453.png]]
+
+ Here only the first function will be executed and when the 2nd CB is encountered, NodeJS will throw an error to us. This is because we have used next(). Next will make sure that the next function is also executed. This means that the first function will actually send the response, but still the 2nd function is executed.
+ 
+We cannot send a response to the URL once the response is already sent.

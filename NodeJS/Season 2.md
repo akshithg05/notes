@@ -249,3 +249,38 @@ We cannot send a response to the URL once the response is already sent.
 
 ## 23-9-2025
 
+Example 6
+![[Pasted image 20250923070644.png]]
+
+Here in the code - First the first CB function is added on to the JS call stack. It starts executing line by line. The next() function is encountered. When this is encountered the 2nd CB function is added to the CS and it starts executing line by line. Once the response of the 2nd function is sent to the client, the 2nd function is popped from the CS as it has completed execution and the first function again picks up from where it left off, that is line number 10. Here again we are trying to send the response, hence we get the error at line number 10. But on postman we just see the 2nd functions' return.
+
+Example 7
+![[Pasted image 20250923071218.png]]
+
+Here we will not get any error and output will be the 2nd response itself.
+
+Example 8
+![[Pasted image 20250923071355.png]]
+
+Here on postman we get the 2nd response and on console also we get the above output and then nothing else will happen. This is because we do not call the next function in the 2nd function.
+
+Example 9
+![[Pasted image 20250923071731.png]]
+
+Here we will get the 3rd request and response from the third request on postman.
+
+Example 10 - Here, what if do not sent anything at all and keep calling next?
+![[Pasted image 20250923072425.png]]
+In the console output I will get all the messages as expected. But on postman when a request is made to the endpoint we get -
+![[Pasted image 20250923072458.png]]
+
+This is because when the last next() function was called, ExpressJS is expecting another route handler to handle the request. But there is no other handler. This leads to 404 error on the server.
+Hence on the last request we always have to send some response and not call the next function.
+We have to send response, else request will get stuck / hang.
+
+We can also pass an array of callback functions with these routing functions. -
+![[Pasted image 20250923073139.png]]
+
+We can mix and match array and normal callback functions. Eg - 2 can be inside array, 2 can be outside, all can be outside, all can be inside an array.
+![[Pasted image 20250923073235.png]]
+

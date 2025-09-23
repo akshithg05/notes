@@ -246,3 +246,6 @@ Example 5.
  Here only the first function will be executed and when the 2nd CB is encountered, NodeJS will throw an error to us. This is because we have used next(). Next will make sure that the next function is also executed. This means that the first function will actually send the response, but still the 2nd function is executed.
  
 We cannot send a response to the URL once the response is already sent.
+
+## 23-9-2025
+

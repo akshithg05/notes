@@ -276,11 +276,82 @@ In the console output I will get all the messages as expected. But on postman wh
 
 This is because when the last next() function was called, ExpressJS is expecting another route handler to handle the request. But there is no other handler. This leads to 404 error on the server.
 Hence on the last request we always have to send some response and not call the next function.
-We have to send response, else request will get stuck / hang.
+We have to send response, else error.
 
+Example 11 - 
 We can also pass an array of callback functions with these routing functions. -
 ![[Pasted image 20250923073139.png]]
 
 We can mix and match array and normal callback functions. Eg - 2 can be inside array, 2 can be outside, all can be outside, all can be inside an array.
 ![[Pasted image 20250923073235.png]]
 
+
+Example 12 - We can create multiple route handlers for the callback functions instead of having multiple functions one after the other.
+![[Pasted image 20250924090437.png]]
+So the above is another way of defining route handler functions one after the other.
+
+Example 13
+![[Pasted image 20250924090929.png]]
+This will again throw an error saying cannot get/ user as we have called next from the last route handler function, we are not sending a response and there is no other function after that.
+
+Example 14 - 
+![[Pasted image 20250924091735.png]]
+
+Here, the first function is only executed as it matches every route. It also has a send() function, which means response will be sent to the client. Therefor, only the first function will execute and the functions below will not be executed at all.
+
+Example 15
+If we create a subtle variation of this function above -
+![[Pasted image 20250924092127.png]]
+
+Here the API call will match the first response handler, The first console log will be printed. Since we are not sending any response from here and we are calling next, we will move to the next function, log to the console from here as well. We again call the next function, so express goes to the final route handler, prints the console statement and then finally sends the response as well.
+
+
+## How express works ?
+
+When a client sends a request to an Express server, Express checks the registered route handlers and middleware in the order they were defined in the code.
+- Express scans through the handlers to find matches for the request’s **path** and **HTTP method**.
+- Each matching handler (or middleware) runs **sequentially**.
+- If a handler calls `res.send()`, `res.json()`, or similar response methods, the response is sent back to the client and the request–response cycle ends (unless `next()` is explicitly called after sending, which is not recommended).
+- If a handler calls `next()`, Express moves on to the next matching middleware/handler.
+- If no response is ever sent and no `next()` is called, the request will hang until it times out.
+
+This makes it important to always ensure either:
+1. A response is sent back to the client, or
+2. `next()` is called to pass control onward.
+
+To make it crisp for your notes:
+- Every **API call** in Express passes through a **chain of middleware functions**.
+- Middlewares can modify the request/response objects, perform checks, or decide whether to continue (`next()`).
+- Eventually, the request reaches the **route handler** (the last middleware in the chain) which is responsible for **sending the response** back to the client.
+- If none of the middlewares or handlers send a response, the request will just hang.
+
+👉 Think of it as a **pipeline**:  
+`Client Request → Middleware 1 → Middleware 2 → ... → Route Handler → Response`.
+
+
+A **middleware in Express** is basically:
+- A **function** that sits **between the incoming request** and the **final response**.
+- It has access to `req`, `res`, and a `next()` function.
+- It can do things like:
+    - Log details about the request.
+    - Authenticate/authorize the user.
+    - Parse JSON/form data.
+    - Add or modify properties on `req` or `res`.
+    - End the cycle by sending a response (`res.send()`), **or** pass control to the next middleware (`next()`).
+
+So, yes — middleware is used for **modifying or enriching** the request/response, or for doing extra work **before** the final response is sent.
+
+
+### Practical usage of a middleware function.
+
+Problem statement - We have a set of APIs which can only be accessed by the admin. Hence, we have to make sure that there is authorization logic running before we send the response. if the user is not authorized we will send a 401, unauthorized response.
+
+Code (without middleware)
+![[Pasted image 20250924113640.png]]
+Here, these are 2 admin APIs. We want to make sure they have the right token, only then we can allow them to perform some operation. Else we return 401 error. Suppose there are 100s of such functions, we cannot keep writing the same block of code for every function. This becomes tedious  and increases code duplication. It also makes files unnecessarily large.
+Here we can use middleware. We can write the middleware at the top level so that for all admin requests this token check will run.
+
+Code-
+![[Pasted image 20250924114107.png]]
+
+Now the middleware function runs before every API request which has the route /admin/.

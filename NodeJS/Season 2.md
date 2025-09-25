@@ -352,6 +352,94 @@ Here, these are 2 admin APIs. We want to make sure they have the right token, on
 Here we can use middleware. We can write the middleware at the top level so that for all admin requests this token check will run.
 
 Code-
-![[Pasted image 20250924114107.png]]
+![[Pasted image 20250925081039.png]]
+Now the middleware function runs before every API request which has the route /admin/. Therefore the code is more cleaner and we are only calling the middleware at the top level.
 
-Now the middleware function runs before every API request which has the route /admin/.
+Some more code playing around - 25/9/2025
+
+Example 1-
+
+If I have a function with another route below the middleware function, will the middleware be executed for that route? Will the auth check run?
+![[Pasted image 20250925082041.png]]
+For the above scenario, even though the auth token is not matching the /user, when a request is made to the /user endpoint, the response will be sent successfully because the auth middleware only runs for the /admin endpoint.
+
+We can move the middleware to a separate file as well.
+
+Example 2- 
+![[Pasted image 20250925090438.png]]
+Here we see that we can pass the "userAuth" as an argument in the route handler function as well.
+
+We can pass middleware function like this as we can pass multiple functions as already seen in the above exxplanations. These functions in the arguments run one after the other.
+If the middleware fails, then the 2nd function will not even be called. This is a safe way of handling requests.
+
+### Middleware in Express
+
+- Middleware functions sit **between the client’s request and the server’s response**.
+- They allow you to **intercept, transform, or validate** the request/response before the final handler executes.
+- Common uses:
+    - Logging requests
+    - Validating data
+    - Authentication/authorization
+    - Parsing JSON/form data
+    - Error handling
+### Why Middleware?
+- **Code reuse** → you don’t repeat logic in every route.
+- **Separation of concerns** → keep request processing, validation, and response handling modular.
+- **Maintainability** → cleaner and easier to scale.
+- Without middleware, all these concerns would be duplicated inside each route handler → messy, hard to maintain.
+
+
+Example 3
+![[Pasted image 20250925091810.png]]
+
+Here there are two APIs for /user. One uses the userAuth and one does not. This is because for signUp we do not need any authentication. Hence we do not pass the middleware into that route handler's arguments. So in this way we can actually plug and play with our middleware functions.
+
+Nomenclature-
+- "route handler" → callback inside `.get()` / `.post()`
+- "middleware" → functions registered with `.use()`
+- "routing methods" → `.get()`, `.post()`, `.use()` themselves
+## Error handling
+
+If the route handler takes in 2 arguments it has to be (req ,res)
+if 3 arguments then (req, res, next)
+if 4 arguments then (err, req, res, next)
+
+The order of this is very important and error can only be the first argument.
+
+**The best and most preferred way to handle errors is by wrapping our route handler function within a try, catch block**
+
+Coding Example 1 -
+
+![[Pasted image 20250925102513.png]]
+In the above image, when the error is thrown, we go into the catch block and response will be error.
+
+Coding example 2-
+
+Another way to handle error and add a safety net is to have a wildcard routing method at the end of all our routing methods.
+![[Pasted image 20250925102854.png]]
+- You hit **`/user`**.
+- The `throw new Error()` immediately terminates execution of the handler function.
+    - That means the `res.status(200).send(...)` is never reached.
+- Express catches that thrown error and passes it along to the **error-handling middleware** (notice it has 4 arguments: `(err, req, res, next)` — that’s the signature that marks it as an error handler).
+- Your `app.use("/", (err, req, res, next) => {...})` **does not act like a wildcard normal middleware here**.
+    - Because it has **4 parameters**, Express knows it’s an **error-handling middleware**.
+    - It’s not about the `/` path matching — error-handlers are invoked _only if an error was passed down or thrown_.
+- Inside that middleware, you send the `500 Internal server error` response. ✅
+- Once a response is sent, Express **does not move on to the next route handler**. The request/response cycle ends.
+
+Coding Example 3 -
+![[Pasted image 20250925104530.png]]
+- You hit `/user`.
+- The route handler runs.
+- `throw new Error("Something went wrong");` is triggered.
+- Express **does not just crash** (unless you throw asynchronously). Express automatically catches synchronous `throw` and forwards it to the **next error-handling middleware** in the stack.
+- But here’s the catch: since your error-handling middleware is defined **before** `/user`, Express doesn’t reach it anymore (Express only looks forward in the stack).
+- Result: the error is unhandled, and the client gets an ugly stack trace or a connection reset depending on environment.
+
+Coding example 4-
+
+![[Pasted image 20250925104747.png]]
+
+- `try/catch` in routes → immediate handling, precise control.
+- Error middleware → safety net for unexpected or unhandled errors.
+- Best practice in bigger apps → combine both, but lean on middleware + async handler wrappers to avoid clutter.

@@ -4,24 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "1ef6f431b7cbe71c",
+        "id": "91abe04d8b5f89fc",
         "type": "tabs",
         "children": [
           {
-            "id": "89fb519f5630a4e6",
+            "id": "8f781abd11e1c8f5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OMSCS/RAIT/SLAM.md",
+                "file": "DSA/Companies to apply to -.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SLAM"
+              "title": "Companies to apply to -"
+            }
+          },
+          {
+            "id": "7173b598eb9671bc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DSA/Notes.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Notes"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -178,34 +193,36 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "89fb519f5630a4e6",
+  "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
-    "Pasted image 20250924221330.png",
-    "Pasted image 20250924221032.png",
-    "Pasted image 20250924220850.png",
-    "OMSCS/RAIT/Particle Filters.md",
-    "OMSCS/RAIT/Kalman Filters.md",
-    "OMSCS/RAIT/SLAM.md",
-    "NodeJS/Season 1.md",
-    "NodeJS/images/Pasted image 20250924114107.png",
-    "NodeJS/images/Pasted image 20250924113640.png",
-    "NodeJS/images/Pasted image 20250924100812.png",
-    "NodeJS/images/Pasted image 20250924092127.png",
-    "NodeJS/images/Pasted image 20250924091735.png",
-    "NodeJS/images/Pasted image 20250924090929.png",
-    "NodeJS/images/Pasted image 20250924090437.png",
-    "NodeJS/images/Pasted image 20250923073235.png",
+    "DSA/images/Pasted image 20250925141903.png",
+    "NodeJS/images/Pasted image 20250925104530.png",
+    "DSA/images",
+    "OMSCS/RAIT/images/Pasted image 20250924221330.png",
+    "NodeJS/images/Pasted image 20250925081039.png",
+    "NodeJS/images/Pasted image 20250925082041.png",
+    "OMSCS/RAIT/images/Pasted image 20250924221032.png",
+    "OMSCS/RAIT/images/Pasted image 20250924220850.png",
     "NodeJS/Season 2.md",
+    "NodeJS/images/Pasted image 20250925104747.png",
+    "NodeJS/images/Pasted image 20250925102854.png",
+    "NodeJS/images/Pasted image 20250925102513.png",
+    "NodeJS/images/Pasted image 20250925091810.png",
+    "DSA/Companies to apply to -.md",
+    "OMSCS/RAIT/SLAM.md",
     "NodeJS/HW.md",
+    "React/Interview Notes.md",
+    "NodeJS/Season 1.md",
     "OMSCS/RAIT/PID.md",
-    "System Design/Part 1/4-Networking Basics.md",
-    "System Design/Part 1/5-TCP-UDP.md",
+    "New Text Document.txt",
     "OMSCS/RAIT/Search.md",
     "OMSCS/RAIT/Particle filter - YT source.md",
     "OMSCS/RAIT/Kinematic motion model - Bicycle model.md",
     "OMSCS/RAIT/Problem set 3.md",
+    "OMSCS/RAIT/Particle Filters.md",
     "OMSCS/RAIT/Problem set 1.md",
     "OMSCS/RAIT/Localization.md",
+    "OMSCS/RAIT/Kalman Filters.md",
     "OMSCS/RAIT/Problem set 2.md",
     "OMSCS/RAIT/Probability.md",
     "NodeJS/images",
@@ -214,7 +231,6 @@
     "OMSCS",
     "React/Namaste-react-notes.md",
     "Untitled.canvas",
-    "React/Interview Notes.md",
     "NodeJS",
     "System Design/Part 1/20-Message Queues.md"
   ]

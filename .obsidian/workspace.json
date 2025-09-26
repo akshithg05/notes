@@ -11,14 +11,22 @@
             "id": "c3238603f727a13b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "OMSCS/RAIT/SLAM.md",
-                "mode": "source",
-                "source": false
+                "file": "OMSCS/RAIT/images/Pasted image 20250925201039.png"
               },
+              "icon": "lucide-image",
+              "title": "Pasted image 20250925201039"
+            }
+          },
+          {
+            "id": "a8892b615d4c8737",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "SLAM"
+              "title": "New tab"
             }
           }
         ]
@@ -178,24 +186,24 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c3238603f727a13b",
+  "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
-    "Pasted image 20250925204303.png",
-    "Pasted image 20250925201944.png",
-    "Pasted image 20250925201732.png",
-    "Pasted image 20250925201531.png",
-    "Pasted image 20250925201039.png",
-    "DSA/images/Pasted image 20250925153850.png",
-    "DSA/images/Pasted image 20250925153443.png",
-    "DSA/images/Pasted image 20250925152034.png",
-    "DSA/images/Pasted image 20250925151605.png",
-    "DSA/images/Pasted image 20250925150628.png",
+    "OMSCS/RAIT/images/Pasted image 20250925201531.png",
+    "OMSCS/RAIT/images/Pasted image 20250925201732.png",
+    "OMSCS/RAIT/images/Pasted image 20250925201944.png",
+    "OMSCS/RAIT/images/Pasted image 20250925204303.png",
+    "NodeJS/images/Pasted image 20250926084940.png",
+    "NodeJS/images/Pasted image 20250926084956.png",
+    "NodeJS/images/Pasted image 20250926085009.png",
+    "DSA/images/Pasted image 20250926112512.png",
+    "DSA/images/Pasted image 20250926123045.png",
+    "DSA/images/Pasted image 20250926151006.png",
+    "DSA/Interview Prep.md",
     "DSA/Notes.md",
-    "DSA/images/Pasted image 20250925144418.png",
-    "DSA/Companies to apply to -.md",
-    "DSA/images",
     "NodeJS/Season 2.md",
     "OMSCS/RAIT/SLAM.md",
+    "DSA/Companies to apply to -.md",
+    "DSA/images",
     "NodeJS/HW.md",
     "React/Interview Notes.md",
     "NodeJS/Season 1.md",

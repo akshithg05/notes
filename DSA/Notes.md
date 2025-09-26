@@ -33,3 +33,12 @@ Fun facts -
 
 IN DP the solution of one problem will be required by another subproblem and this pattern will help us identify that this is DP
 And most DP qs are variations of similar problems.
+
+## 26/09/2025
+
+![[Pasted image 20250926112512.png]]
+
+Recursion vs Iteration
+![[Pasted image 20250926123045.png]]
+
+

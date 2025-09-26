@@ -372,7 +372,7 @@ Here we see that we can pass the "userAuth" as an argument in the route handler 
 We can pass middleware function like this as we can pass multiple functions as already seen in the above exxplanations. These functions in the arguments run one after the other.
 If the middleware fails, then the 2nd function will not even be called. This is a safe way of handling requests.
 
-### Middleware in Express
+### Middleware in Express - 25/6/2025
 
 - Middleware functions sit **between the client’s request and the server’s response**.
 - They allow you to **intercept, transform, or validate** the request/response before the final handler executes.
@@ -436,10 +436,54 @@ Coding Example 3 -
 - But here’s the catch: since your error-handling middleware is defined **before** `/user`, Express doesn’t reach it anymore (Express only looks forward in the stack).
 - Result: the error is unhandled, and the client gets an ugly stack trace or a connection reset depending on environment.
 
-Coding example 4-
+Coding example 4- Best Practice
 
 ![[Pasted image 20250925104747.png]]
 
 - `try/catch` in routes → immediate handling, precise control.
 - Error middleware → safety net for unexpected or unhandled errors.
 - Best practice in bigger apps → combine both, but lean on middleware + async handler wrappers to avoid clutter.
+
+## 26/9/2025 - Database, Schema and Mongoose
+
+### Mongoose
+
+**Mongoose** is an ODM (Object Data Modeling) library for MongoDB in Node.js. It acts as a layer on top of MongoDB, providing a structured way to define schemas and models, interact with collections, and perform queries. It also supports built-in validation, middleware, and other powerful features, making MongoDB easier to use and maintain compared to working with the native driver directly.
+While the **native MongoDB driver** lets you interact directly with the database using raw queries, **Mongoose** adds an abstraction layer with schemas, models, and validation, making code more structured and easier to maintain.
+### Schema 
+
+In **MongoDB + Mongoose**, a **Schema** is essentially a **blueprint** for your documents:
+- It defines the **shape** of the document that will be stored in a collection.
+- It specifies the **fields**, their **data types**, and any **constraints/validations** (like required, unique, min, max, default, etc.).
+- It can also define relationships between documents (via references), virtual properties, middleware, and methods.
+
+Think of it like this:
+- MongoDB by itself is **schema-less** → you can put anything inside a document.
+- Mongoose adds a **layer of structure** → ensuring your documents are consistent and follow rules you define.
+
+**MongoDB** itself is **schemaless**. It will happily let you insert a document with any shape:
+
+`db.users.insertOne({ name: "Akshith" }); db.users.insertOne({ car: "BMW", speed: 200 });`
+
+Both would sit in the same `users` collection with no problem.
+
+- **Mongoose**, on top of MongoDB, gives you the option to define a **Schema** so that **your application enforces structure/consistency**.
+
+👉 So yes, **schemas are not mandatory** at the database level, but they are extremely useful at the application level.  
+They help you:
+
+- Avoid accidental bad data (e.g., storing a string where a number is expected).
+- Apply constraints (required fields, uniqueness, min/max, defaults).
+- Keep documents predictable → easier querying and updates.
+- Add business logic (middleware, virtuals, methods).
+
+
+![[Pasted image 20250926084940.png]]
+
+![[Pasted image 20250926084956.png]]
+
+![[Pasted image 20250926085009.png]]
+### Model
+
+A **Model** is then created from a schema using `mongoose.model()`, which serves as a class mapped to a specific MongoDB collection and provides methods to create, query, update, and delete data.
+**Model** → like a **class** that you build from the schema.

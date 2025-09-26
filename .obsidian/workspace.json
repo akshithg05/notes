@@ -11,10 +11,14 @@
             "id": "c3238603f727a13b",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "OMSCS/RAIT/SLAM.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "SLAM"
             }
           }
         ]
@@ -174,21 +178,22 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "da9253a0220cbe6f",
+  "active": "c3238603f727a13b",
   "lastOpenFiles": [
+    "Pasted image 20250925204303.png",
+    "Pasted image 20250925201944.png",
+    "Pasted image 20250925201732.png",
+    "Pasted image 20250925201531.png",
+    "Pasted image 20250925201039.png",
+    "DSA/images/Pasted image 20250925153850.png",
     "DSA/images/Pasted image 20250925153443.png",
     "DSA/images/Pasted image 20250925152034.png",
     "DSA/images/Pasted image 20250925151605.png",
     "DSA/images/Pasted image 20250925150628.png",
     "DSA/Notes.md",
-    "DSA/images/Pasted image 20250925153850.png",
     "DSA/images/Pasted image 20250925144418.png",
     "DSA/Companies to apply to -.md",
-    "DSA/images/Pasted image 20250925141903.png",
-    "NodeJS/images/Pasted image 20250925104530.png",
     "DSA/images",
-    "OMSCS/RAIT/images/Pasted image 20250924221330.png",
-    "NodeJS/images/Pasted image 20250925081039.png",
     "NodeJS/Season 2.md",
     "OMSCS/RAIT/SLAM.md",
     "NodeJS/HW.md",

@@ -11,12 +11,14 @@
             "id": "c3238603f727a13b",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "OMSCS/RAIT/images/Pasted image 20250925201039.png"
+                "file": "NodeJS/Season 2.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20250925201039"
+              "icon": "lucide-file",
+              "title": "Season 2"
             }
           },
           {
@@ -186,8 +188,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d5df95e868ccabb7",
+  "active": "c3238603f727a13b",
   "lastOpenFiles": [
+    "Pasted image 20250928063736.png",
+    "NodeJS/HW.md",
+    "NodeJS/images/Pasted image 20250927060612.png",
+    "NodeJS/Season 2.md",
+    "OMSCS/RAIT/images/Pasted image 20250925201039.png",
     "OMSCS/RAIT/images/Pasted image 20250925201531.png",
     "OMSCS/RAIT/images/Pasted image 20250925201732.png",
     "OMSCS/RAIT/images/Pasted image 20250925201944.png",
@@ -196,15 +203,11 @@
     "NodeJS/images/Pasted image 20250926084956.png",
     "NodeJS/images/Pasted image 20250926085009.png",
     "DSA/images/Pasted image 20250926112512.png",
-    "DSA/images/Pasted image 20250926123045.png",
-    "DSA/images/Pasted image 20250926151006.png",
     "DSA/Interview Prep.md",
     "DSA/Notes.md",
-    "NodeJS/Season 2.md",
     "OMSCS/RAIT/SLAM.md",
     "DSA/Companies to apply to -.md",
     "DSA/images",
-    "NodeJS/HW.md",
     "React/Interview Notes.md",
     "NodeJS/Season 1.md",
     "OMSCS/RAIT/PID.md",

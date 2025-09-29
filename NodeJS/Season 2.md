@@ -487,3 +487,50 @@ They help you:
 
 A **Model** is then created from a schema using `mongoose.model()`, which serves as a class mapped to a specific MongoDB collection and provides methods to create, query, update, and delete data.
 **Model** → like a **class** that you build from the schema.
+The Model provides us with methods to add, query and delete data.
+
+### 27-9-2025 All about APIs
+
+|Feature|JavaScript Object|JSON (JavaScript Object Notation)|
+|---|---|---|
+|**Type**|Native data structure (in-memory)|Text/string format (for storage & transfer)|
+|**Keys**|Strings, Symbols (sometimes numbers)|Must be double-quoted strings|
+|**Values allowed**|Strings, numbers, booleans, null, objects, arrays, functions, `undefined`, symbols|Strings, numbers, booleans, null, objects, arrays (❌ no functions/undefined/symbols)|
+|**Flexibility**|Very flexible, can include logic|Strict, schema-like, only data|
+|**Usage**|Used directly in JavaScript code|Data exchange between systems (e.g., APIs)|
+|**Conversion**|Already executable in JS|Needs `JSON.parse()` → JS object `JSON.stringify()` → JSON string|
+
+This is a subtle but important difference.
+
+- ✅ **`app.use(express.json())`**
+    - This applies the `express.json()` middleware to **all incoming requests**, regardless of the path.
+    - Commonly used because you usually want to parse JSON bodies across the entire app.
+- ⚠️ **`app.use('/', express.json())`**
+    - This also applies `express.json()` to all routes, since `/` matches everything that starts with `/`.
+    - In practice, it behaves the same as `app.use(express.json())` for most apps.
+
+👉 But the nuance is:
+- `app.use(express.json())` is the idiomatic, clean way.
+- `app.use('/', express.json())` explicitly ties the middleware to routes beginning with `/`. It’s redundant but not wrong.
+
+So: **Yes, functionally they are the same here**, but the first form is preferred for clarity.
+
+## 28/9/2025
+
+1. **find({})** - returns all documents in the collection. {} takes in filter
+2. **findOne({name: "Akshith"})** - That's not necessarily the case, and it's a common misconception. If you call `findOne()` without specifying a sort order, it returns the first document according to the collection's "natural" order. 
+
+The natural order is generally the insertion order, but it is not guaranteed and can change based on disk storage, updates, and other background operations in MongoDB. 
+
+Here is a more detailed explanation:
+
+- **Natural order**: The document's on-disk storage order is its natural order. While this often corresponds to insertion order (so older documents come first), it is not a guarantee. If documents are updated to a larger size, they might be moved to a new location on the disk, changing the natural order.
+
+If I don't send any filter or anything inside the {}, then mongoDB will return the first document on the natural occurring order on the disk.
+
+If we try to update a field not there in the schema, will be ignored by the API function.
+
+![[Pasted image 20250928063736.png]]
+
+this returnDocument here is an option which is passed into findByIdAndUpdate. It takes in 2 values - 'before' and 'after'. If we use 'before', it returns the document before update and if we use 'after' it returns the value after the document has been updated.
+Ultimately the document will be updated but the user returned is different.

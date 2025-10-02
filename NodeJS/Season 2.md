@@ -534,3 +534,27 @@ If we try to update a field not there in the schema, will be ignored by the API 
 
 this returnDocument here is an option which is passed into findByIdAndUpdate. It takes in 2 values - 'before' and 'after'. If we use 'before', it returns the document before update and if we use 'after' it returns the value after the document has been updated.
 Ultimately the document will be updated but the user returned is different.
+
+### 30/9/2025
+
+By passing a "timestamps" attribute to the mongoose model along with schema, we can get the createdAt and updatedAt fields automatically on the objects which are created and updated in the DB.
+
+## 1/10/2025
+
+Run validators using npm validator library. -  read more about it and use it to validate proper mail ID, strong password / proper URL format.
+
+
+### 1/10/2025
+
+We can have validation in the DB schema / or even in the code we can have our own validation.
+We have to always encrypt the passwords and save it.
+We use the npm library to "bcrypt" to encrypt the password.
+
+Bcrypt hashing password
+
+- **bcrypt.hash(password, saltRounds)** → hashes a plaintext password.
+- **Salt**: a random string added to the password before hashing (prevents rainbow-table attacks).
+- **saltRounds (cost factor)**: number of iterations (2^saltRounds) the algorithm runs → controls hashing difficulty.
+- **Trade-off**: higher saltRounds = more secure but slower.
+- **Common values**: 10–12 in production, 14+ for highly sensitive data.
+- **Verify**: use `bcrypt.compare(plain, hash)` → internally re-hashes and checks equality.

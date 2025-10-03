@@ -4,3 +4,5 @@ NetApp
 Target
 Volvo
 Ikea
+Maersk
+Canonical

@@ -558,3 +558,42 @@ Bcrypt hashing password
 - **Trade-off**: higher saltRounds = more secure but slower.
 - **Common values**: 10–12 in production, 14+ for highly sensitive data.
 - **Verify**: use `bcrypt.compare(plain, hash)` → internally re-hashes and checks equality.
+
+
+### Authentication JWT and Cookies
+
+How cookies work and how a user is authenticated and logged in 
+
+### JWT Authentication Flow (with Cookies)
+
+- User logs in with email + password.
+- Server verifies credentials; if valid, it generates a **JWT token**.
+- Token is sent back to the client, usually stored inside a **cookie** (often HTTP-only for security).
+- For each subsequent API request, the browser automatically includes the cookie.
+- Server extracts and **validates the JWT** from the cookie header:
+    - If valid → user is authenticated, request proceeds.
+    - If invalid/expired → authentication fails, user must log in again.
+- This ensures **stateless authentication** (server does not store session data; validation happens via JWT).
+![[Pasted image 20251003064054.png]]
+
+When will cookies not work ?
+If cookie has already expired.
+
+![[Pasted image 20251003064408.png]]
+
+Some notes -
+
+- `express.json()` is indeed **middleware** in Express.
+- It parses the **incoming request body** (not the response) if it’s in **JSON format**.
+- After parsing, it converts the raw JSON into a **JavaScript object** and attaches it to `req.body`.
+- Without it, `req.body` would be `undefined` when you send JSON data in a request (like in `POST`, `PUT`, `PATCH`).
+
+#### Cookie Parser-
+
+You’ve got it right — **cookie-parser** is also middleware, and its role is similar to `express.json()`, but for cookies:
+- Cookies come in as a **raw header string** in `req.headers.cookie`.
+- `cookie-parser` parses that string into a neat **JavaScript object** and attaches it to `req.cookies`.
+- This makes it super easy to read cookie values in your routes.
+
+![[Pasted image 20251003071833.png]]
+

@@ -118,6 +118,7 @@ When you type a URL like `www.google.com`, the system **does not immediately hit
 
 - If the browser cache doesn’t have it, your computer’s OS resolver (e.g., `nscd` in Linux, `DNS Client` in Windows) checks its cache.
 - This cache is shared by all apps in the system.
+- ![[Pasted image 20251006070842.png]]
 #### **3. Router Cache**
 - Many modern routers (home/office) maintain a DNS cache too.
 - If your laptop doesn’t have the record, the router may have recently resolved it for another device on the same network.
@@ -133,3 +134,167 @@ You can think of DNS resolution like asking increasingly bigger circles of “pe
 
 > **Browser → OS → Router → ISP → Root/TLD/Authoritative Servers**
 ![[Pasted image 20251005145637.png]]
+
+### 6/10/2025
+Service workers are proxies that sit between the web page and the network, providing cached versions of the site when no network connectivity is available. This is the foundation of Google’s [Progressive Web App](https://developers.google.com/web/fundamentals/codelabs/your-first-pwapp/) (PWA) standard that provides potential performance improvements by leveraging the cache for almost instant page loads. The service worker script runs in the background making the decision to serve network or cached content based on availability. The older form of browser caching, [AppCache](https://appcachefacts.info/), was a more error-prone solution for [offline-first](http://diveintohtml5.info/offline.html) ready applications. You can think of [service workers as their successor](https://medium.com/@firt/service-workers-replacing-appcache-a-sledgehammer-to-crack-a-nut-5db6f473cc9b).
+
+![service worker diagram](https://www.netlify.com/v3/img/blog/service-worker-diagram.png)
+
+[yeti sourced from codepen](https://codepen.io/theskinnyghost/pen/MbXXrw?limit=all&page=3&q=yeti)
+
+The cache is not solely for offline. It also benefits the user during moments of slow or lowered connectivity. Rather than waiting endless seconds for the page to load, a previous cache is presented initially. Even high speed internet can be unpredictable, connectivity can drop intermittently throughout a session. Caching your site ensures there’s always a version ready to go despite the shortcomings of ISP or cell providers.
+
+It is also important to note that, service worker scripts run on a separate thread in the browser from the pages they control. There are ways to communicate between workers and pages, but they execute in a separate [scope](https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope) (Thanks to the [Making a service worker case study](https://www.smashingmagazine.com/2016/02/making-a-service-worker/) for that revelation). Service workers are not meant to and do not have the ability to manipulate the DOM directly.
+
+### 🧠 1️⃣ Browser Cache (a.k.a. Disk / Memory Cache)
+
+- **Managed automatically by the browser.**
+    
+- It caches files based on **HTTP cache headers** (`Cache-Control`, `ETag`, `Expires`, etc.) sent by the **server**.
+    
+- When you revisit the page, the browser checks:
+    
+    - “Do I still have this file in my cache?”
+        
+    - “Has the server told me it’s still fresh?”
+        
+- If yes → it uses the cached version.
+    
+- If no → it re-downloads or revalidates with the server.
+    
+
+🧩 **You (the developer) have limited control**. It’s mostly server → browser logic.
+
+### ⚙️ 2️⃣ Service Worker Cache (a.k.a. Application Cache via `Cache API`)
+
+- **Fully controlled by the developer** through JavaScript.
+    
+- Service workers sit between the **browser** and **network**, acting like programmable proxies.
+    
+- You can choose what to cache, when to update it, and how to respond (even offline).
+    
+
+Example (inside a service worker):
+![[Pasted image 20251006072947.png]]
+This means:
+
+> “If I have this request cached, serve it instantly.  
+> If not, go fetch it from the internet.”
+
+This gives you _precise control_ over:
+
+- Offline access (like PWAs)
+    
+- Cache versioning
+    
+- Background updates
+    
+- Fallbacks for poor connectivity
+
+
+When you visit **YouTube**:
+
+- The **browser cache** keeps static assets like the YouTube logo, CSS, etc.
+    
+- A **service worker** (if installed) can cache the homepage shell, so even offline you can open YouTube and see the layout, history, etc.
+    
+
+---
+
+👉 **In short:**
+
+- **Browser cache** = “Passive” caching (automatic).
+    
+- **Service worker cache** = “Active” caching (programmable).
+
+
+TCP handshake 
+![[Pasted image 20251006074013.png]]
+## 🌐 TCP Handshake — The Foundation of Communication
+
+When your browser (client) wants to talk to a web server, they need to **establish a reliable connection** first.  
+That’s what the **TCP 3-way handshake** does.
+
+---
+
+### ⚙️ Step-by-Step Breakdown
+
+1. **Client → Server: SYN**
+    
+    - The client (browser) sends a packet with the **SYN** (synchronize) flag.
+        
+    - This says: “Hey server, I’d like to start a TCP connection. Here’s my initial sequence number.”
+        
+2. **Server → Client: SYN + ACK**
+    
+    - The server replies with **SYN + ACK** (synchronize and acknowledge).
+        
+    - This says: “Got your request. Here’s my sequence number, and I acknowledge yours.”
+        
+3. **Client → Server: ACK**
+    
+    - The client sends back an **ACK** to confirm receipt.
+        
+    - Connection established ✅
+        
+
+Now both sides know how to track packets, and they can begin **sending actual data** — like your HTTP request (e.g., `GET /index.html`).
+
+---
+
+### 🔒 If HTTPS is used (which is standard today)
+
+After the TCP handshake, there’s an **additional TLS handshake** on top of it:
+
+1. Client says “I want to use HTTPS.”
+    
+2. Server provides its **SSL/TLS certificate**.
+    
+3. Client verifies it and agrees on encryption keys.
+    
+4. Then, encrypted communication begins.
+    
+
+So for HTTPS:
+
+> Total setup = TCP handshake + TLS handshake  
+> (both happen in milliseconds, but they’re separate steps)
+
+---
+
+### 🧭 Sequence of Events (simplified)
+
+Here’s what happens when you type a URL like `https://www.google.com`:
+
+1. **Browser cache check**
+    
+2. **Service worker cache check (if registered)**
+    
+3. **DNS resolution** – find the IP address of `www.google.com`
+    
+4. **TCP handshake** – establish connection
+    
+5. **TLS handshake** – negotiate encryption (for HTTPS)
+    
+6. **HTTP request sent** – `GET /`
+    
+7. **Server responds** – HTML, CSS, JS, etc.
+    
+8. **Browser renders** the page
+    
+
+---
+
+### 🧩 Analogy
+
+Think of it like a phone call:
+
+- **DNS** = Looking up the phone number in the directory
+    
+- **TCP handshake** = Dialing the number and both parties saying “Hello, can you hear me?”
+    
+- **TLS handshake** = Agreeing to talk in a secret code so no one else can listen
+    
+- **HTTP request** = Actually starting the conversation (“Send me index.html please”)
+
+![[Pasted image 20251006074227.png]]

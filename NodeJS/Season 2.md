@@ -603,3 +603,14 @@ You’ve got it right — **cookie-parser** is also middleware, and its role is 
 ![[Pasted image 20251004065754.png]]
 In the above code the userAuth() middleware is a custom middleware function which will run before the actual route handler. When all the code inside the middleware runs successfully, the middleware will call next(). Once the next() is called the route handler will run.
 Using this auth middleware simplifies and abstracts the Authentication logic.
+
+### 7/10/2025
+
+Logging out user-
+
+Using `res.clearCookie()` is the correct and recommended practice for deleting a cookie in a Node.js Express application. Setting a cookie's value to `null` or an empty string is less reliable and can lead to confusion.
+
+Check source code
+![[Pasted image 20251007060951.png]]
+
+Logout APIS are generally simple, mostly just cleaning work.

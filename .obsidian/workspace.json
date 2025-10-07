@@ -4,19 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "e53e3e5c60769a12",
+        "id": "6bbb3b84b94b8ff5",
         "type": "tabs",
         "children": [
           {
-            "id": "b204211b3164c242",
+            "id": "c02fe4bb7c554fd4",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Front End System Design/images/Pasted image 20251005135132.png"
+                "file": "NodeJS/Season 2.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20251005135132"
+              "icon": "lucide-file",
+              "title": "Season 2"
             }
           }
         ]
@@ -178,19 +180,20 @@
   },
   "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
+    "NodeJS/images/Pasted image 20251007060951.png",
+    "Front End System Design/images/Pasted image 20251006074227.png",
+    "Front End System Design/images/Pasted image 20251006074013.png",
+    "Front End System Design/images/Pasted image 20251006072947.png",
+    "Front End System Design/images/Pasted image 20251006070842.png",
     "Front End System Design/Networking.md",
+    "Front End System Design/images/Pasted image 20251005135132.png",
     "Front End System Design/images/Pasted image 20251005145637.png",
     "Front End System Design/images/Pasted image 20251005145113.png",
     "Front End System Design/images/Pasted image 20251005144747.png",
     "Front End System Design/images/Pasted image 20251005144243.png",
     "Front End System Design/images/Pasted image 20251005144159.png",
-    "Front End System Design/images/Pasted image 20251005135132.png",
-    "Front End System Design/images/Pasted image 20251003121730.png",
     "NodeJS/Season 2.md",
     "Front End System Design/images",
-    "Front End System Design/images/Pasted image 20251004143754.png",
-    "Front End System Design/images/Pasted image 20251004065754.png",
-    "Front End System Design/images/Pasted image 20251004152230.png",
     "Front End System Design/Networking/Untitled.md",
     "Front End System Design/Networking",
     "Front End System Design",

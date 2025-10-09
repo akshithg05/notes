@@ -220,23 +220,14 @@ That’s what the **TCP 3-way handshake** does.
 ### ⚙️ Step-by-Step Breakdown
 
 1. **Client → Server: SYN**
-    
     - The client (browser) sends a packet with the **SYN** (synchronize) flag.
-        
     - This says: “Hey server, I’d like to start a TCP connection. Here’s my initial sequence number.”
-        
 2. **Server → Client: SYN + ACK**
-    
     - The server replies with **SYN + ACK** (synchronize and acknowledge).
-        
     - This says: “Got your request. Here’s my sequence number, and I acknowledge yours.”
-        
 3. **Client → Server: ACK**
-    
     - The client sends back an **ACK** to confirm receipt.
-        
     - Connection established ✅
-        
 
 Now both sides know how to track packets, and they can begin **sending actual data** — like your HTTP request (e.g., `GET /index.html`).
 
@@ -245,15 +236,10 @@ Now both sides know how to track packets, and they can begin **sending actual da
 ### 🔒 If HTTPS is used (which is standard today)
 
 After the TCP handshake, there’s an **additional TLS handshake** on top of it:
-
 1. Client says “I want to use HTTPS.”
-    
 2. Server provides its **SSL/TLS certificate**.
-    
 3. Client verifies it and agrees on encryption keys.
-    
 4. Then, encrypted communication begins.
-    
 
 So for HTTPS:
 
@@ -263,38 +249,146 @@ So for HTTPS:
 ---
 
 ### 🧭 Sequence of Events (simplified)
-
 Here’s what happens when you type a URL like `https://www.google.com`:
-
 1. **Browser cache check**
-    
 2. **Service worker cache check (if registered)**
-    
 3. **DNS resolution** – find the IP address of `www.google.com`
-    
 4. **TCP handshake** – establish connection
-    
 5. **TLS handshake** – negotiate encryption (for HTTPS)
-    
 6. **HTTP request sent** – `GET /`
-    
 7. **Server responds** – HTML, CSS, JS, etc.
-    
 8. **Browser renders** the page
-    
-
 ---
-
 ### 🧩 Analogy
-
 Think of it like a phone call:
-
 - **DNS** = Looking up the phone number in the directory
-    
 - **TCP handshake** = Dialing the number and both parties saying “Hello, can you hear me?”
-    
 - **TLS handshake** = Agreeing to talk in a secret code so no one else can listen
-    
 - **HTTP request** = Actually starting the conversation (“Send me index.html please”)
 
 ![[Pasted image 20251006074227.png]]
+
+SSL and TLS certificate exchange -
+![[Pasted image 20251007223317.png]]
+
+### 7/10/2025 How a web page actually loads
+
+![[Pasted image 20251007224922.png]]
+
+### Web Page Loading Notes
+
+- **CSS is render-blocking**: The browser waits for all CSS files to load before painting the content. This ensures the page layout is correct before displaying it.
+- **JS is parser-blocking**: By default, the browser stops parsing HTML until the JavaScript file is fully downloaded and executed. This is because JS may modify the DOM or CSSOM.
+- **Impact**: Render-blocking resources delay the time to first paint, and parser-blocking JS delays interactivity.
+---
+
+You can later expand this with `async` and `defer` for JS and strategies to reduce render-blocking.
+
+### Web Page Rendering Flow
+
+1. **DOM Construction**: Browser parses HTML to build the **DOM tree**.
+2. **CSSOM Construction**: CSS is parsed to build the **CSSOM (CSS Object Model)**.
+3. **Render Tree**: DOM + CSSOM are combined to form the **Render Tree**, which represents what will actually be displayed on the screen.
+
+- **CSSOM** may have multiple rules affecting the same element.
+- During the merge with the **DOM**, the browser calculates the **final computed style** for each element.
+- The resulting **Render Tree** contains only the elements that are actually visible and their **consolidated styles**.
+
+Before the render tree is created JS is executed- 
+**JavaScript Execution in Browser**
+
+1. **JS Parsing & AST Creation**
+    - JavaScript code is tokenized and parsed.
+    - An **Abstract Syntax Tree (AST)** is created representing the code structure.
+        
+2. **Execution via JIT (Just-In-Time) Compilation**
+    - Browser uses both **interpreter** and **compiler**.
+    - **V8 Engine (Chrome/Edge):**
+        - **Ignition:** Interpreter → converts JS to **bytecode**.
+        - **Turbofan:** Optimizing compiler → identifies **hot code** (frequently executed), compiles it for faster execution.
+
+3. **Bytecode Execution**
+    - Bytecode is executed by the CPU.
+    - Optimizations for hot code improve performance on repeated executions.
+
+**Key points:**
+- Execution is **synchronous** during initial JS parsing.
+- Hot code is compiled and cached for **speed optimization**.
+- Combines **interpretation** and **compilation** to balance speed and memory.
+
+
+**Post-Render Tree Steps (Browser Rendering Pipeline)**
+1. **Layout (Reflow)**
+    - Determines **exact position and size** of each element on the page.
+    - Uses the **render tree** to calculate coordinates for every node.
+2. **Painting**
+    - Fills in **pixels** for each element on the screen.
+    - Applies styles like **colors, borders, shadows, text**.
+3. **Compositing**
+    - Combines all painted layers into the **final visual output**.
+    - Handles overlapping elements, transparency, and z-index.
+        
+**Key points:**
+- Layout → Painting → Compositing is the **final rendering phase** after DOM & CSSOM merge.
+- Optimizations in this phase improve **scrolling, animations, and responsiveness**.
+
+Steps pictorially -
+![[Pasted image 20251007230714.png]]
+![[Pasted image 20251007230841.png]]
+
+![[Pasted image 20251007230922.png]]
+
+![[Pasted image 20251007231005.png]]
+![[Pasted image 20251007231137.png]]
+
+Last step is composting - setting z indexes, overlaying what should be on which layer etc.
+
+
+Summary -
+
+# **Browser Rendering Flow**
+
+## 1. **Request & Response**
+
+- Client (browser) makes a request to the server for a webpage.
+- Before sending request, browser checks caches:
+    - **Browser cache (disk cache)**
+    - **Service worker cache**
+    - **Router cache**
+    - **ISP cache**
+- If not cached, request goes to the server over **TCP** (handshake occurs).
+- Server responds with HTML, CSS, JS, images, etc.
+---
+## 2. **HTML Parsing → DOM**
+- Browser parses HTML and creates the **DOM tree**.
+- Represents the **document structure and elements**.
+---
+## 3. **CSS Parsing → CSSOM**
+- Browser parses CSS files to create **CSSOM (CSS Object Model)**.
+- **Render-blocking:** CSS must fully load before rendering.
+- Multiple CSS rules can target the same element → CSSOM keeps all rules.
+---
+
+## 4. **Render Tree Construction**
+- DOM + CSSOM are merged → **Render Tree**.
+- Render tree contains **only visible elements** with **final computed styles**.
+- This merging resolves **conflicting CSS rules**, applying the **consolidated final styles**.
+---
+## 5. **JavaScript Execution**
+- JS is **parser-blocking**: execution waits until file is loaded.
+- Execution steps:
+    1. **Tokenization** → break JS into tokens.
+    2. **AST (Abstract Syntax Tree) creation** → represents code structure.
+    3. **Just-in-Time (JIT) Compilation**:
+        - **Interpreter** (Ignition) executes code initially.
+        - **Compiler** (Turbofan) optimizes “hot” code.
+        - Bytecode is executed by CPU.
+---
+## 6. **Layout (Reflow)**
+- Calculates **exact positions and sizes** of each element.
+- Uses render tree information.
+
+---
+## 7. **Painting**
+
+- Fills in pixels for elements: **colors, text, borders, shadows, images**.

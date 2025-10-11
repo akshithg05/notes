@@ -614,3 +614,206 @@ Check source code
 ![[Pasted image 20251007060951.png]]
 
 Logout APIS are generally simple, mostly just cleaning work.
+
+
+11/10/2025
+
+### 🧠 The Intuitive Analogy
+
+Think of a **book**.
+- Without an **index**, if you want to find all pages mentioning “Machine Learning,” you’d have to **read every page** until you find them — that’s like **a full collection scan** in MongoDB.
+- With an **index at the back of the book**, you can directly jump to the pages that mention “Machine Learning.” You don’t need to scan the entire book — just look up the keyword and go to the right page numbers.
+
+That’s exactly what MongoDB indexes do.
+
+---
+### ⚙️ What is an Index in MongoDB?
+
+An **index** is a **data structure** (usually a **B-tree**) that MongoDB maintains **alongside your collection** to make searching faster.
+
+It’s like a **sorted list** of key values that MongoDB can binary search through very quickly.
+
+#### Example:
+
+Suppose you have a `users` collection:
+![[Pasted image 20251011060812.png]]
+
+MongoDB has two options:
+1. **Without an index**: It has to check every document — one by one — to see if `name` equals `"Akshith"`.  
+    → O(n) time complexity (linear scan).
+2. **With an index on `name`**:
+
+db.users.createIndex({ name: 1 })
+
+MongoDB maintains a **sorted structure of all names** internally.  
+It can now use **binary search** or tree traversal to find `"Akshith"` directly.  
+→ O(log n) time complexity (much faster).
+
+### 📈 How MongoDB Stores Indexes
+
+Internally, MongoDB uses a **B-tree (balanced tree)** structure for most indexes.  
+This means:
+
+- Each node contains a **sorted range of key values**.
+- Searching, inserting, and updating in the index tree is efficient.
+- The index stores **pointers to the actual documents** in the collection.
+
+So when MongoDB runs a query:
+1. It first searches the **index** (fast).
+2. Then follows pointers to only those documents that match (no full scan).
+
+### ⚡ Why Indexes Make Queries Faster
+
+✅ **Fewer documents scanned** – only matching entries are looked up.  
+✅ **Faster sorting** – if you query with `sort()`, MongoDB can use the index order instead of sorting all results in memory.  
+✅ **Efficient range queries** – like `age > 20 && age < 30`, since the index is sorted.
+
+### 🚨 But There’s a Trade-off
+
+Indexes come with **costs**:
+
+- **Storage**: Each index takes up disk space.
+- **Write overhead**: Every `insert`, `update`, or `delete` must also update the index.
+- **Maintenance**: Too many indexes slow down writes.
+
+So you should only create indexes that match your **frequent query patterns**.
+![[Pasted image 20251011061038.png]]
+
+
+
+Trade offs with indexes
+## ⚠️ When Not to Use Too Many Indexes
+
+While indexes make **read operations (find, sort, etc.)** faster, they come with real trade-offs.
+
+### 🚫 1. Increased Disk Space Usage
+- Each index is a separate data structure (a B-tree) stored on disk.
+- Large collections with many indexes consume significant storage.
+- The more indexes you create, the more your disk space grows — sometimes larger than the collection itself.
+
+### 🐢 2. Slower Write Operations
+Whenever you **insert, update, or delete** a document:
+- MongoDB must also **update all relevant indexes**.
+- This means:
+  - Inserts → new keys added to the index.
+  - Updates → key positions recalculated.
+  - Deletes → keys removed from the index.
+- Each of these adds extra processing and I/O overhead.
+
+So, if your application performs a lot of writes, **too many indexes can noticeably slow it down**.
+
+### ⚙️ 3. Increased Maintenance Complexity
+- Indexes must be kept consistent with the data.
+- Dropping or rebuilding them can be expensive for large collections.
+- Frequent schema changes make managing indexes more complicated.
+
+---
+
+## 🧭 Best Practices for Indexing
+
+✅ **Index only fields used in queries or sorting**  
+If a field is rarely used in a query, it probably doesn’t need an index.
+
+✅ **Monitor with `.explain()` and performance metrics**  
+Use:
+```
+db.collection.find({...}).explain("executionStats")
+```
+
+✅ **Avoid redundant indexes**  
+An index on `{ name: 1, age: 1 }` already covers a query on `{ name: 1 }`.
+
+✅ **Balance read vs write performance**  
+If your app is read-heavy → more indexes help.  
+If it’s write-heavy → fewer indexes perform better.
+
+Over-indexing is as harmful as no indexing.  
+Index wisely — focus on fields that are _frequently queried_, not _every field you create_.
+
+When we are starting slow, we do not need indices, for 100/1000 users. Only if our docs cross 1 lakh 1 million indices it is good to create indixes.
+
+
+## 🧩 Compound Indexes in MongoDB
+
+### 🧠 What They Are
+
+A **compound index** is an index built on **multiple fields** in a document.  
+It allows MongoDB to efficiently support queries that filter or sort on **those fields together**.
+
+Example:
+```js
+db.users.createIndex({ age: 1, city: 1 });
+```
+This creates a **compound index** on both `age` and `city` fields.
+- `1` → ascending order
+- `-1` → descending order
+ So, the index is sorted first by `age`, then by `city` _within each age group_.
+
+### ⚙️ How It Works
+
+Think of it like sorting a spreadsheet:
+1. First, sort by **age**.
+2. If two users have the same age, sort them by **city**.
+
+So MongoDB can now quickly find:
+`db.users.find({ age: 25, city: "Chennai" });`
+
+or even:
+`db.users.find({ age: 25 });`
+(because `age` is the **prefix field**)
+
+---
+
+### ⚡ Performance Benefit
+Without a compound index, MongoDB would need to scan:
+- The index on `age`, then filter by `city`, **or**
+- The index on `city`, then filter by `age`.
+
+With a compound index, it can find the match directly — no filtering required.
+
+---
+
+### 🔢 Index Prefix Rule (Very Important)
+
+MongoDB can use **a left-prefix subset** of a compound index.
+For an index like:
+`{ age: 1, city: 1, name: 1 }`
+
+MongoDB can use it for queries on:
+- `{ age: ... }`
+- `{ age: ..., city: ... }`
+- `{ age: ..., city: ..., name: ... }`
+
+❌ But **not** for `{ city: ... }` or `{ name: ... }` alone,  
+because they don’t start with the **first indexed field (`age`)**.
+
+> **Rule of thumb:** Query fields should follow the same order as the index definition.
+---
+### 📦 Example Use Case
+
+Let’s say your app frequently runs queries like:
+`db.orders.find({ customerId: 123, status: "delivered" });`
+
+A good compound index would be:
+`db.orders.createIndex({ customerId: 1, status: 1 });`
+
+Now MongoDB can quickly jump to all “delivered” orders for customer 123,  
+instead of scanning all orders.
+
+---
+### ⚖️ Trade-offs
+
+|Benefit|Cost|
+|---|---|
+|Speeds up multi-field queries|Increases storage size|
+|Reduces sorting cost|Write operations slower|
+|Covers prefix queries|Doesn’t help if query skips prefix field|
+
+---
+### 🧭 Best Practice
+
+- Always put **the most selective field first** (the one that filters the most data).
+- Avoid creating separate single-field indexes on fields already covered by a compound index.
+- Use `.explain("executionStats")` to verify index usage.
+
+

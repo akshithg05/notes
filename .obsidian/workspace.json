@@ -11,14 +11,12 @@
             "id": "c02fe4bb7c554fd4",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "NodeJS/Season 2.md",
-                "mode": "source",
-                "source": false
+                "file": "NodeJS/images/Pasted image 20251011061038.png"
               },
-              "icon": "lucide-file",
-              "title": "Season 2"
+              "icon": "lucide-image",
+              "title": "Pasted image 20251011061038"
             }
           },
           {
@@ -48,9 +46,22 @@
               "icon": "lucide-file",
               "title": "2 Communication protocols"
             }
+          },
+          {
+            "id": "2614b4802c75bb15",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Front End System Design/Networking/3 REST APIs.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "3 REST APIs"
+            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -209,20 +220,21 @@
   },
   "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
+    "NodeJS/images/Pasted image 20251011060812.png",
+    "Front End System Design/images/Pasted image 20251010122416.png",
+    "Front End System Design/images/Pasted image 20251010122049.png",
+    "Front End System Design/images/Pasted image 20251010120131.png",
+    "Front End System Design/images/Pasted image 20251010120016.png",
+    "NodeJS/Season 2.md",
+    "NodeJS/images/Pasted image 20251011061038.png",
+    "Front End System Design/Networking/3 REST APIs.md",
+    "Front End System Design/Networking/2 Communication protocols.md",
     "Front End System Design/Networking/1 How web page loads.md",
     "Front End System Design/images/Pasted image 20251007230714.png",
     "Front End System Design/images/Pasted image 20251007224922.png",
     "Front End System Design/images/Pasted image 20251007223317.png",
-    "Front End System Design/Networking/2 Communication protocols.md",
     "Front End System Design/images/Pasted image 20251008131327.png",
-    "Front End System Design/images/Pasted image 20251008130900.png",
     "Front End System Design/Networking",
-    "Front End System Design/images/Pasted image 20251007231137.png",
-    "Front End System Design/images/Pasted image 20251007231005.png",
-    "Front End System Design/images/Pasted image 20251007230922.png",
-    "Front End System Design/images/Pasted image 20251007230841.png",
-    "NodeJS/Season 2.md",
-    "NodeJS/images/Pasted image 20251007060951.png",
     "Front End System Design/images",
     "Front End System Design/Networking",
     "Front End System Design",

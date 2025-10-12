@@ -469,15 +469,15 @@ Used mainly for navigation within a page (e.g., scrolling to a heading).
 
 ## 🧭 Full URL Example Breakdown
 
-| Component | Example | Description |
-|------------|----------|--------------|
-| **Scheme** | `https` | Protocol used for communication |
-| **Subdomain** | `www` | Section or category of the main domain |
-| **Domain Name** | `example` | The main readable name |
-| **Top-Level Domain (TLD)** | `.com` | Defines the domain category or region |
-| **Path / Subdirectory** | `/learn` | Route to a resource |
-| **Query String** | `?page=2` | Extra parameters for filtering/customization |
-| **Fragment** | `#intro` | Section of the web page (not sent to server) |
+| Component                  | Example   | Description                                  |
+| -------------------------- | --------- | -------------------------------------------- |
+| **Scheme**                 | `https`   | Protocol used for communication              |
+| **Subdomain**              | `www`     | Section or category of the main domain       |
+| **Domain Name**            | `example` | The main readable name                       |
+| **Top-Level Domain (TLD)** | `.com`    | Defines the domain category or region        |
+| **Path / Subdirectory**    | `/learn`  | Route to a resource                          |
+| **Query String**           | `?page=2` | Extra parameters for filtering/customization |
+| **Fragment**               | `#intro`  | Section of the web page (not sent to server) |
 
 **Full URL:** https://www.example.com/learn?page=2#intro
 

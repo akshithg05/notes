@@ -491,5 +491,67 @@ Used mainly for navigation within a page (e.g., scrolling to a heading).
 
 
 
+## 12/10/2025
+
+# ⚙️ Advanced HTTP Methods
+
+Beyond the common CRUD methods (`GET`, `POST`, `PUT`, `DELETE`), HTTP defines several **special-purpose methods** that serve diagnostic, connectivity, and permission-related roles.  
+These methods are less frequently used in application development but are crucial for understanding how the web handles connections and security under the hood.
+
+## 🧠 1. `HEAD` Method
+
+**Purpose:**  
+Requests the **headers** of a resource **without fetching the actual body/content**.
+
+**Use Case:**  
+- To check if a resource exists or is accessible.  
+- To get **metadata** (like content length, last modified date, or type) before downloading large files.
 
 
+🧩 **Note:**  
+`HEAD` behaves exactly like a `GET` request — except the response **omits the body**.  
+This helps clients check information *without downloading the entire resource.*
+
+---
+
+## 🌐 2. `OPTIONS` Method
+
+**Purpose:**  
+Used to **describe the communication options** available for a given resource or server.  
+Commonly used for **CORS (Cross-Origin Resource Sharing)** preflight checks.
+
+**CORS Preflight Scenario:**
+- When a browser makes a request to a **different origin** (domain, port, or protocol), it first sends an `OPTIONS` request.  
+- This “preflight” call asks the server if the actual request (like a `POST` or `PUT`) is allowed.
+- The server responds with headers specifying what is permitted.
+
+
+💡 **Key Insight:**  
+If the browser receives a response allowing the origin and method, it proceeds with the actual request.  
+Otherwise, the main request is **blocked** for security reasons.
+
+---
+
+## 🔗 3. `CONNECT` Method
+
+**Purpose:**  
+Used to **establish a tunnel** between the client and the target server — often through an **HTTP proxy**.
+
+**Primary Use Case:**  
+- Commonly used for **HTTPS connections** via proxies.
+- Allows clients to set up an encrypted channel (TCP tunnel) through which subsequent requests can flow securely and efficiently.
+
+🔒 **In short:**  
+`CONNECT` sets up the secure link, after which the client can send encrypted HTTPS data through that tunnel — improving security and speed for subsequent requests.
+
+---
+
+## 🧰 4. `TRACE` Method
+
+**Purpose:**  
+Used for **diagnostic purposes** — it echoes back the received request so that the client can see how intermediate servers (proxies, gateways) modify the message.
+
+
+Whenever we send data over the network we send serialized stringified data. We have to parse it on the server side and use it. We can use express.json() in express or bodyParser.
+
+IN our browser whenever we make a request its always a get call. We need a client to do this.

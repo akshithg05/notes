@@ -816,4 +816,18 @@ instead of scanning all orders.
 - Avoid creating separate single-field indexes on fields already covered by a compound index.
 - Use `.explain("executionStats")` to verify index usage.
 
+13/10/2025
+
+As a dev we have to think like a security guard for a Db.
+
+### POST API vs GET API Though process
+
+POST - User is trying to enter data in DB. An attacker can attack by sending random data into the db. We have to validate and not trust any data coming into the db. We have to verify each and everything coming in.
+
+GET - The data I am sending back to the user should be the only data which is required and allowed in the users scope. Data is the new oil. Data leaks should be prevented completely. We need to make sure the User is authenticated.
+
+Building relation between collections - 
+Using 'ref' and creating a link.
+While using ref it is always recommended only to populate the necessary fields, we should not be sending the entire object, that is a bad practice.
+We should not over fetch the data unnecessarily. 
 

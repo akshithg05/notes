@@ -53,12 +53,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NodeJS/Season 2.md",
+                "file": "Front End System Design/Networking/1 How web page loads.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Season 2"
+              "title": "1 How web page loads"
             }
           }
         ],
@@ -219,21 +219,21 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d5df95e868ccabb7",
+  "active": "7e1bdfb2ba675320",
   "lastOpenFiles": [
-    "Front End System Design/Networking/3 REST APIs.md",
     "Front End System Design/Networking/2 Communication protocols.md",
+    "Front End System Design/Networking/3 REST APIs.md",
+    "Front End System Design/images/Pasted image 20251015072757.png",
+    "Front End System Design/images/Pasted image 20251016092309.png",
+    "Front End System Design/images/Pasted image 20251016091945.png",
+    "Front End System Design/images/Pasted image 20251016081818.png",
+    "Front End System Design/images/Pasted image 20251015075723.png",
+    "Front End System Design/images/Pasted image 20251015073030.png",
+    "NodeJS/Season 2.md",
     "Front End System Design/images/Pasted image 20251011075921.png",
     "Front End System Design/images/Pasted image 20251011071332.png",
     "Front End System Design/images/Pasted image 20251011072456.png",
     "Front End System Design/images/Pasted image 20251011071705.png",
-    "NodeJS/images/Pasted image 20251011061038.png",
-    "NodeJS/images/Pasted image 20251011060812.png",
-    "Front End System Design/images/Pasted image 20251010122416.png",
-    "Front End System Design/images/Pasted image 20251010122049.png",
-    "Front End System Design/images/Pasted image 20251010120131.png",
-    "Front End System Design/images/Pasted image 20251010120016.png",
-    "NodeJS/Season 2.md",
     "Front End System Design/Networking/1 How web page loads.md",
     "Front End System Design/Networking",
     "Front End System Design/images",

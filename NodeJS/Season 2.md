@@ -831,3 +831,8 @@ Using 'ref' and creating a link.
 While using ref it is always recommended only to populate the necessary fields, we should not be sending the entire object, that is a bad practice.
 We should not over fetch the data unnecessarily. 
 
+### 15/10/2025 
+
+Read about ref and populate. This is basically a replacement for joins in SQL.
+
+

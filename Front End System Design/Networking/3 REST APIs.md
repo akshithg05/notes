@@ -555,3 +555,349 @@ Used for **diagnostic purposes** — it echoes back the received request so that
 Whenever we send data over the network we send serialized stringified data. We have to parse it on the server side and use it. We can use express.json() in express or bodyParser.
 
 IN our browser whenever we make a request its always a get call. We need a client to do this.
+
+
+## 14/10/2025
+
+## Request Headers
+
+![[Pasted image 20251015073030.png]]
+### 🏠 Host
+
+**Definition:**  
+Specifies the **target server (domain and port)** to which the request is being sent.
+
+**Purpose:**  
+- Identifies the destination host for the HTTP request.  
+- Essential for servers hosting multiple domains (virtual hosting).  
+- Without it, the server wouldn’t know *which site* you want (when several share the same IP).
+
+Example - api.example.com
+
+---
+## 🌍 Origin
+
+**Definition:**  
+Indicates the **source (scheme + domain + port)** from which the request originated.
+
+Example - Origin: https://frontend.example.com
+
+**Purpose:**  
+- Used primarily for **CORS (Cross-Origin Resource Sharing)**.  
+- Helps the server decide whether to allow or block a request based on the requesting site.  
+- Unlike `Referer`, it **never includes paths or query strings** — only identifies the origin for security checks.
+
+**Typical Usage:**
+- Sent automatically by browsers in **cross-origin requests** (like `fetch` or `XHR`).
+- Server responds with headers like:
+
+## 🔗 Referer
+
+**Definition:**  
+Specifies the **URL of the page** that made the request — i.e., where the user came from.
+
+**Example:** https://google.com/search?q=laptops
+
+**Purpose:**  
+- Lets the server know which page or site referred the request.  
+- Used for analytics, logging, and sometimes security (e.g., detecting CSRF).
+
+**Privacy Notes:**
+- Can leak sensitive info (like tokens or query params).  
+- Controlled by the browser via the `Referrer-Policy` header.
+
+**Common Referrer Policies:**
+| Policy | Behavior |
+|--------|-----------|
+| `no-referrer` | Don’t send any referrer info. |
+| `origin` | Send only scheme + domain. |
+| `strict-origin-when-cross-origin` | Default in most browsers. |
+| `unsafe-url` | Always send full URL (not recommended). 
+
+## 🧑‍💻 User-Agent
+
+---
+#### 🧩 Definition
+The **`User-Agent`** header identifies the **client software** making the HTTP request — typically a web browser, mobile app, or other HTTP client.
+
+It includes detailed information such as:
+- Browser name and version  
+- Operating system and version  
+- Rendering engine (like Blink, Gecko, or WebKit)  
+- Device type (desktop, mobile, tablet, etc.)
+
+---
+#### 🧠 Purpose
+- Helps the **server understand the client’s environment** and send optimized resources accordingly.  
+- For example:
+  - A mobile browser may receive lighter images or a responsive layout.  
+  - Older browsers might get polyfilled JS bundles or fallback CSS.
+#### Example-
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64)  
+AppleWebKit/537.36 (KHTML, like Gecko)  
+Chrome/118.0.5993.88 Safari/537.36
+
+## 📦 Accept Header
+
+### Definition
+The **`Accept`** header tells the server what **content types (MIME types)** the client is willing to receive in the response.  
+This lets the server choose the most suitable format (like JSON, HTML, or XML) for the reply.
+
+---
+### Purpose
+It specifies **preferred response formats** so that the server can perform **content negotiation**.
+
+---
+Example
+application/json
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,_/_;q=0.8
+
+## 🌐 Accept-Language
+
+The **`Accept-Language`** header tells the server which languages the client prefers for the response. It’s mainly used for localization, allowing servers to send content in the user’s preferred language. For example,  
+`Accept-Language: en-US,en;q=0.9,fr;q=0.8`  
+means the client prefers English (US) first, then English in general, and finally French. This helps servers deliver region-specific or translated content for a better user experience.
+
+![[Pasted image 20251015072757.png]]
+
+## ⚙️ Accept-Encoding
+
+The **`Accept-Encoding`** header tells the server what types of **content encoding (compression algorithms)** the client can handle in the response. This helps reduce payload size and improve performance. For example:  
+`Accept-Encoding: gzip, deflate, br`  
+means the client supports compressed responses using **gzip**, **deflate**, or **Brotli** (`br`). The server then chooses one supported method and includes it in the `Content-Encoding` header of its response.
+
+## 🔗 Connection
+
+The **`Connection`** header controls whether the **TCP connection** between the client and server should remain open after the current request.  
+If set to `keep-alive`, the same connection is reused for multiple requests, avoiding repeated TCP handshakes and improving performance.  
+If set to `close`, the connection is terminated after the response.  
+Example:  
+`Connection: keep-alive`
+
+
+## 🔐 Authorization
+
+The **`Authorization`** header is used by the client to send **credentials** to the server for authentication.  
+It verifies whether the user or client has permission to access a resource.  
+Common examples include:  
+- `Authorization: Basic <base64encoded-credentials>`  
+- `Authorization: Bearer <JWT-token>`  
+This helps implement authentication mechanisms like **Basic Auth**, **Bearer Tokens**, and **OAuth**.
+
+---
+
+## 🍪 Cookie
+
+The **`Cookie`** header allows the client to send small pieces of **data** (like session IDs, JWTs, or authentication tokens) back to the server with each request.  
+These cookies are usually set by the server using the `Set-Cookie` response header and stored on the client side.  
+They enable **stateful sessions**, user tracking, and persistent logins.  
+Example:  
+`Cookie: session_id=abc123; token=xyz789`
+
+## ⏳ If-Modified-Since
+
+The **`If-Modified-Since`** header is used by the client to make **conditional requests**.  
+It tells the server: “Only send the data if it has been modified since this specific date and time.”  
+If the resource hasn’t changed, the server responds with **`304 Not Modified`**, saving bandwidth and improving performance.  
+Example:  
+`If-Modified-Since: Wed, 09 Oct 2025 10:00:00 GMT`
+
+---
+
+## 🗃️ Cache-Control
+
+The **`Cache-Control`** header defines **caching policies** for both clients and intermediate proxies (like CDNs).  
+It tells them **how, where, and for how long** a resource can be cached.  
+Examples:  
+- `Cache-Control: no-cache` → Always revalidate before using cached data.  
+- `Cache-Control: no-store` → Don’t cache this response at all.  
+- `Cache-Control: max-age=3600` → Cache for 1 hour (3600 seconds).  
+- `Cache-Control: public` / `private` → Specifies who can cache the response.  
+
+This header helps optimize performance by reducing redundant requests and speeding up data delivery.
+
+We will comeback to cache control in detail later on.
+
+
+
+# Response Headers
+
+![[Pasted image 20251015075723.png]]
+![[Pasted image 20251016081818.png]]
+## 🕒 Date
+
+The **`Date`** header shows the **exact time and date** when the response was generated on the server (in GMT format).  
+It helps with **cache validation**, ensuring freshness, and is often used along with headers like `If-Modified-Since` and `Cache-Control`.  
+Example:  
+`Date: Fri, 10 Oct 2025 12:30:00 GMT`
+
+---
+
+## 🖥️ Server
+
+The **`Server`** header identifies the **software** used by the server to handle the request — e.g., Apache, Nginx, or Node.js.  
+While useful for diagnostics, it can expose **sensitive infrastructure details**, making it a **potential security risk**.  
+Best practice: either **omit** or **anonymize** this header in production.  
+Example:  
+`Server: nginx/1.24.0`
+
+---
+
+## 📦 Content-Type
+
+The **`Content-Type`** header specifies the **media type (MIME type)** and **character encoding** of the response body.  
+It tells the client how to interpret the returned content.  
+Examples:  
+- `Content-Type: application/json; charset=utf-8`  
+- `Content-Type: text/html`  
+- `Content-Type: image/png`
+
+This header is essential for **data interpretation** and **proper rendering** on the client side.
+
+## 📏 Content-Length
+
+The **`Content-Length`** header indicates the **size of the response body** in **bytes**.  
+It tells the client how much data to expect, which helps in tracking **download progress**, managing **data streams**, and verifying **complete data transfer**.  
+Example:  
+`Content-Length: 2048`  
+This means the response body is 2048 bytes long.
+
+## 🍪 Set-Cookie
+
+The **`Set-Cookie`** header is sent by the **server** to the **client** to store cookies for future requests.  
+It defines key–value pairs along with optional attributes like expiration, path, domain, and security flags.  
+These cookies are then sent back to the server in subsequent requests using the `Cookie` header.  
+Example:  
+`Set-Cookie: session_id=abc123; Expires=Wed, 15 Oct 2025 10:00:00 GMT; Path=/; Secure; HttpOnly`
+
+## ⚙️ Content-Encoding
+
+The **`Content-Encoding`** header tells the client what kind of **compression or encoding** the server applied to the response body.  
+It helps the client correctly **decode** and **decompress** the received data before using it.  
+Common values include:  
+- `gzip`  
+- `deflate`  
+- `br` (Brotli)  
+Example:  
+`Content-Encoding: gzip`
+
+
+## 🗃️ Cache-Control / Expires / Last-Modified
+
+These headers help control **how responses are cached** by the browser or intermediate proxies.
+
+- **Cache-Control:** Defines caching rules like duration, visibility, and revalidation.  
+  Example: `Cache-Control: max-age=3600` → cache for 1 hour.  
+
+- **Expires:** Specifies an **absolute date/time** after which the response is considered stale.  
+  Example: `Expires: Wed, 15 Oct 2025 10:00:00 GMT`  
+
+- **Last-Modified:** Indicates the **timestamp of the resource’s last change**.  
+  Clients can use this with `If-Modified-Since` to check if cached data is still fresh.  
+  Example: `Last-Modified: Tue, 14 Oct 2025 09:30:00 GMT`
+
+## 🏷️ ETag (Entity Tag)
+
+- **ETag** is a unique identifier assigned by the server to a specific version of a resource.  
+- When the resource changes, its ETag value also changes.  
+- The browser can send this ETag back to the server using `If-None-Match` to check if the cached version is still valid.  
+- If unchanged → server returns **304 Not Modified**, saving bandwidth. 
+
+
+# Status Codes
+
+Status codes help identify the outcome of an HTTP request — whether it was **successful**, **redirected**, **unauthorized**, or resulted in an **error**.  
+They act as identifiers that communicate the **status of the response** from the server to the client.
+
+![[Pasted image 20251016091945.png]]
+![[Pasted image 20251016092309.png]]
+
+### HTTP Status Codes  
+
+Status codes indicate the **result of an HTTP request**, helping the client understand whether it was successful, redirected, failed due to client error, or failed due to a server issue.
+
+---
+
+#### 🟦 1XX — Informational  
+Used to convey **information or acknowledgements** before the final response.  
+- **100 Continue** → The client can continue sending the request body.  
+- **101 Switching Protocols** → The server agrees to switch protocols (e.g., HTTP → WebSocket). *(Rare)*  
+
+🧠 *Think of it like a waiter saying, “I’ve noted your order, it’s being prepared.”*
+
+---
+
+#### 🟩 2XX — Success  
+Indicates that the **request was successfully received, understood, and processed**.  
+- **200 OK** → Request processed successfully.  
+- **201 Created** → Resource successfully created.  
+- **202 Accepted** → Request accepted for processing, response will come later.  
+- **204 No Content** → Request processed, no response body (e.g., after deletion).  
+- **206 Partial Content** → Partial data sent (useful for large downloads or media streaming).  
+
+💡 *Backend developers should use specific codes instead of returning 200 for everything.*
+
+---
+
+#### 🟨 3XX — Redirection  
+Indicates that the **client must take additional action** to complete the request, usually following a new URL.  
+- **301 Moved Permanently** → Resource moved to a new location.  
+- **302 Found (Temporary Redirect)** → Temporary redirect, original URL may be valid later.  
+- **307 Temporary Redirect** → Like 302, but retains the original HTTP method.  
+- **308 Permanent Redirect** → Like 301, but also retains the HTTP method.  
+
+🌐 *Useful when APIs or endpoints are moved or restructured.*
+
+---
+
+#### 🟥 4XX — Client Errors  
+Indicates **errors caused by the client**, such as invalid requests, authentication issues, or missing resources.  
+- **400 Bad Request** → Invalid or improperly formatted request.  
+- **401 Unauthorized** → Authentication required or invalid credentials.  
+- **403 Forbidden** → Authenticated but not authorized (e.g., no admin rights).  
+- **404 Not Found** → Resource doesn’t exist.  
+- **405 Method Not Allowed** → HTTP method not supported on this route.  
+- **429 Too Many Requests** → Rate limit exceeded, try again later.  
+
+🚫 *These are typically caused by incorrect client-side input or permissions.*
+
+---
+
+#### ⛔ 5XX — Server Errors  
+Indicates **problems on the server side** while processing a valid client request.  
+- **500 Internal Server Error** → General server failure.  
+- **502 Bad Gateway** → Invalid response from an upstream server.  
+- **503 Service Unavailable** → Server down or overloaded.  
+- **504 Gateway Timeout** → Upstream server didn’t respond in time.  
+- **507 Insufficient Storage** → Server out of space (e.g., large uploads).  
+
+🔥 *These indicate issues that need backend or infrastructure attention.*
+
+---
+
+💭 **Summary Table**
+
+| Range | Category | Meaning |
+|-------|-----------|----------|
+| 1XX | Informational | Request received, continuing process |
+| 2XX | Success | Request successfully processed |
+| 3XX | Redirection | Client must follow another location |
+| 4XX | Client Error | Problem with the request |
+| 5XX | Server Error | Problem with the server |
+
+###  Why Status Codes Matter for Frontend Engineers  
+
+Status codes are crucial for frontend developers because they help determine **how the UI should respond** to different situations.  
+
+They allow developers to **write smart error-handling logic** — deciding when to retry a request, show an error message, or prompt the user to take action.  
+
+For example:  
+- If the error is **404 (Not Found)** or **403 (Forbidden)** → there’s **no point retrying**, since the issue is permanent (wrong URL or insufficient permissions).  
+- If the error is **429 (Too Many Requests)**, **500 (Internal Server Error)**, or **504 (Gateway Timeout)** → it’s likely **temporary**, and the request can be **retried automatically** or after a short delay.  
+
+💡 **In short:**  
+Status codes help the frontend **react intelligently** — avoiding unnecessary retries, improving user experience, and providing meaningful feedback instead of generic “something went wrong” messages.
+
+Therefore status codes matter for every type of web developer, not only for front end or backend engineer.
+
+

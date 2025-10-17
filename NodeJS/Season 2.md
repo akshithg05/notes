@@ -835,4 +835,19 @@ We should not over fetch the data unnecessarily.
 
 Read about ref and populate. This is basically a replacement for joins in SQL.
 
+### 16/10/2025
+
+##### Pagination -
+10 users at a time
+MongoDB makes it very easy to add pagination
+
+
+.skip() - How many documents to skip from the beginning
+.limit() - How many documents to send
+
+![[Pasted image 20251016212935.png]]
+
+
+
+
 

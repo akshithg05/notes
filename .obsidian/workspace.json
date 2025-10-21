@@ -36,18 +36,6 @@
             }
           },
           {
-            "id": "35c3ff97de450759",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Front End System Design/images/Pasted image 20251018090254.png"
-              },
-              "icon": "lucide-image",
-              "title": "Pasted image 20251018090254"
-            }
-          },
-          {
             "id": "1203db615b6662f2",
             "type": "leaf",
             "state": {
@@ -60,9 +48,37 @@
               "icon": "lucide-file",
               "title": "Dev-tinder-UI using React"
             }
+          },
+          {
+            "id": "fcd4eecbd04a29bf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "NodeJS/Dev-tinder-UI using React.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Dev-tinder-UI using React"
+            }
+          },
+          {
+            "id": "f14291538cb84acd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Front End System Design/Networking/4 - graphQL.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "4 - graphQL"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -219,8 +235,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d5df95e868ccabb7",
+  "active": "f14291538cb84acd",
   "lastOpenFiles": [
+    "Pasted image 20251020104723.png",
+    "Pasted image 20251020092732.png",
+    "NodeJS/Dev-tinder-UI using React.md",
+    "Javascript/NamasteJS Notes.md",
+    "Front End System Design/Networking/4 - graphQL.md",
+    "Javascript",
+    "Front End System Design/images/Pasted image 20251018090254.png",
     "Front End System Design/images/Pasted image 20251018085153.png",
     "Front End System Design/images/Pasted image 20251018085124.png",
     "Front End System Design/images/Pasted image 20251018072016.png",
@@ -230,16 +253,12 @@
     "Front End System Design/images/Pasted image 20251017083653.png",
     "Front End System Design/images/Pasted image 20251017082612.png",
     "NodeJS/images/Pasted image 20251016212935.png",
-    "Front End System Design/Networking/4 - graphQL.md",
-    "Front End System Design/images/Pasted image 20251018090254.png",
-    "NodeJS/Dev-tinder-UI using React.md",
     "NodeJS/Season 1.md",
     "NodeJS/Season 2.md",
     "NodeJS/HW.md",
     "Front End System Design/Networking/1 How web page loads.md",
     "Front End System Design/Networking/2 Communication protocols.md",
     "Front End System Design/Networking/3 REST APIs.md",
-    "Front End System Design/images/Pasted image 20251015072757.png",
     "Front End System Design/Networking",
     "Front End System Design/images",
     "Front End System Design/Networking",
@@ -261,11 +280,9 @@
     "OMSCS/RAIT/Localization.md",
     "OMSCS/RAIT/Kalman Filters.md",
     "OMSCS/RAIT/Problem set 2.md",
-    "OMSCS/RAIT/Probability.md",
     "NodeJS/images",
     "OMSCS/RAIT/images",
     "OMSCS/RAIT",
-    "OMSCS",
     "Untitled.canvas"
   ]
 }

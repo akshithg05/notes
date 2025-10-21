@@ -281,6 +281,8 @@ GraphQL applications consist of:
 
 ## 7 . GraphQL Building Blocks
 
+![[Pasted image 20251020092732.png]]
+
 ### 1. Schema / Types
 
 A GraphQL schema defines the structure of data that can be queried or modified through the API.  
@@ -385,9 +387,29 @@ Example:
       }
     }
 
+args - filters etc
+context 
+info - common info
 Explanation:
 - `Query.countries` resolver is executed whenever the client requests the `countries` field.  
 - `Mutation.addCountry` resolver handles creating a new country and returning it.  
 - Resolvers act as the **bridge between the GraphQL schema and the underlying data sources** (databases, APIs, or other services).
 
 
+When a client sends a request to the GraphQL server, the server parses the query or mutation and identifies the requested fields. For each field, the corresponding resolver function is executed, which fetches or updates data from the underlying data sources such as databases or APIs. The server then combines the results from all resolvers into a single, structured response and sends it back to the client. In essence, resolvers act as the bridge between the schema and the actual data, ensuring that queries and mutations are executed correctly and efficiently.
+
+
+## Diving into the code
+
+![[Pasted image 20251020104723.png]]
+
+This is how we define Schema,
+'!' this means that the field is a required field.
+
+Resolvers are one to one mapping of the Schema fields.
+
+In this setup, the actual GraphQL server is created using the `ApolloServer` class, which takes in two main components — the schema (`typeDefs`) and the resolver functions (`resolvers`). These define the structure of the data and how each query or mutation should be executed. 
+
+The `startStandaloneServer` function is a helper provided by Apollo that internally creates a minimal HTTP server (based on Express-like behavior) to handle incoming requests. It automatically sets up all necessary routes, middleware, and JSON parsing for GraphQL. 
+
+So technically, there is only **one server running** — the standalone HTTP server created by `startStandaloneServer()`, which integrates the ApolloServer instance. The Apollo server acts as the **GraphQL engine** that processes the queries and mutations, while the standalone server is the **HTTP layer** that listens for requests and passes them to Apollo for execution. This allows the client to send requests to the standalone server, which delegates them to Apollo Server, processes them, and returns the structured GraphQL response back to the client.

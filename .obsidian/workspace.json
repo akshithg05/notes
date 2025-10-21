@@ -67,14 +67,12 @@
             "id": "f14291538cb84acd",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Front End System Design/Networking/4 - graphQL.md",
-                "mode": "source",
-                "source": false
+                "file": "Front End System Design/images/Pasted image 20251020104723.png"
               },
-              "icon": "lucide-file",
-              "title": "4 - graphQL"
+              "icon": "lucide-image",
+              "title": "Pasted image 20251020104723"
             }
           }
         ],
@@ -235,13 +233,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f14291538cb84acd",
+  "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
-    "Pasted image 20251020104723.png",
-    "Pasted image 20251020092732.png",
+    "Front End System Design/images/Pasted image 20251020092732.png",
+    "Front End System Design/Networking/4 - graphQL.md",
+    "Front End System Design/images/Pasted image 20251020104723.png",
     "NodeJS/Dev-tinder-UI using React.md",
     "Javascript/NamasteJS Notes.md",
-    "Front End System Design/Networking/4 - graphQL.md",
     "Javascript",
     "Front End System Design/images/Pasted image 20251018090254.png",
     "Front End System Design/images/Pasted image 20251018085153.png",
@@ -252,7 +250,6 @@
     "NodeJS/images/Pasted image 20251018063440.png",
     "Front End System Design/images/Pasted image 20251017083653.png",
     "Front End System Design/images/Pasted image 20251017082612.png",
-    "NodeJS/images/Pasted image 20251016212935.png",
     "NodeJS/Season 1.md",
     "NodeJS/Season 2.md",
     "NodeJS/HW.md",

@@ -8,75 +8,20 @@
         "type": "tabs",
         "children": [
           {
-            "id": "4e82462944d36d1d",
+            "id": "6ddaa18506e0f17c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Front End System Design/Networking/1 How web page loads.md",
+                "file": "Front End System Design/Networking/5 gRPC.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1 How web page loads"
-            }
-          },
-          {
-            "id": "51464225ed330bf2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Front End System Design/Networking/3 REST APIs.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "3 REST APIs"
-            }
-          },
-          {
-            "id": "1203db615b6662f2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "NodeJS/Dev-tinder-UI using React.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Dev-tinder-UI using React"
-            }
-          },
-          {
-            "id": "fcd4eecbd04a29bf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "NodeJS/Dev-tinder-UI using React.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Dev-tinder-UI using React"
-            }
-          },
-          {
-            "id": "f14291538cb84acd",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Front End System Design/images/Pasted image 20251020104723.png"
-              },
-              "icon": "lucide-image",
-              "title": "Pasted image 20251020104723"
+              "title": "5 gRPC"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -233,12 +178,17 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d5df95e868ccabb7",
+  "active": "6ddaa18506e0f17c",
   "lastOpenFiles": [
-    "Front End System Design/images/Pasted image 20251020092732.png",
+    "Pasted image 20251022145130.png",
+    "Pasted image 20251022143839.png",
+    "Pasted image 20251022143101.png",
+    "Pasted image 20251022142330.png",
     "Front End System Design/Networking/4 - graphQL.md",
-    "Front End System Design/images/Pasted image 20251020104723.png",
+    "Front End System Design/Networking/5 gRPC.md",
     "NodeJS/Dev-tinder-UI using React.md",
+    "Front End System Design/images/Pasted image 20251020104723.png",
+    "Front End System Design/images/Pasted image 20251020092732.png",
     "Javascript/NamasteJS Notes.md",
     "Javascript",
     "Front End System Design/images/Pasted image 20251018090254.png",
@@ -247,9 +197,6 @@
     "Front End System Design/images/Pasted image 20251018072016.png",
     "Untitled.md",
     "Front End System Design/images/Pasted image 20251018071305.png",
-    "NodeJS/images/Pasted image 20251018063440.png",
-    "Front End System Design/images/Pasted image 20251017083653.png",
-    "Front End System Design/images/Pasted image 20251017082612.png",
     "NodeJS/Season 1.md",
     "NodeJS/Season 2.md",
     "NodeJS/HW.md",
@@ -276,7 +223,6 @@
     "OMSCS/RAIT/Problem set 1.md",
     "OMSCS/RAIT/Localization.md",
     "OMSCS/RAIT/Kalman Filters.md",
-    "OMSCS/RAIT/Problem set 2.md",
     "NodeJS/images",
     "OMSCS/RAIT/images",
     "OMSCS/RAIT",

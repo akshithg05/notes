@@ -413,3 +413,10 @@ In this setup, the actual GraphQL server is created using the `ApolloServer` cla
 The `startStandaloneServer` function is a helper provided by Apollo that internally creates a minimal HTTP server (based on Express-like behavior) to handle incoming requests. It automatically sets up all necessary routes, middleware, and JSON parsing for GraphQL. 
 
 So technically, there is only **one server running** — the standalone HTTP server created by `startStandaloneServer()`, which integrates the ApolloServer instance. The Apollo server acts as the **GraphQL engine** that processes the queries and mutations, while the standalone server is the **HTTP layer** that listens for requests and passes them to Apollo for execution. This allows the client to send requests to the standalone server, which delegates them to Apollo Server, processes them, and returns the structured GraphQL response back to the client.
+
+21/10/2025
+
+GQL is so powerful I dont even need to ask the backend for any kind of schema.
+Relations in GraphQL
+
+Apollo client - wrapper on top of 

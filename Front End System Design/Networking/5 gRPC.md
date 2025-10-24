@@ -275,4 +275,158 @@ The generated code contains:
 > 🧠 This ensures that clients and servers in different languages can **communicate seamlessly**, without worrying about data format conversions.
 
 
+23/10/2025
 
+## 🧩 1. Protobuf as an **IDL (Interface Definition Language)**
+
+- The `.proto` file defines:
+    - **Data structures (messages)**
+    - **Service interfaces (RPCs)**
+- It acts as a **contract** between client and server — describing what data can be exchanged and how.
+
+## ⚙️ 2. Protobuf as a **Binary Serialization Format**
+
+- When data is transmitted over the network, gRPC serializes these messages into a **compact binary format** defined by the `.proto` schema.
+- This binary format is:
+    - **Smaller** than JSON or XML
+    - **Faster** to parse
+    - **Cross-language** compatible
+
+At runtime:
+1. You write `.proto` → **acts as IDL**
+2. `protoc` generates language-specific classes
+3. Those classes serialize/deserialize your data → **binary format**
+4. gRPC sends the **binary bytes** over **HTTP/2**
+
+
+## ⚡ Benefits of Protocol Buffers (Protobuf)
+
+### 💨 1. High Performance and Low Resource Usage
+- **Protobuf uses less CPU and memory** compared to text-based formats like JSON or XML.  
+- Ideal for **low-RAM or low-power devices** such as **mobile and IoT systems**.  
+- **Efficient binary encoding** allows fast data transmission even on constrained hardware.
+
+---
+
+### 🚀 2. Fast Serialization and Deserialization
+- **Serialization** (converting structured data → binary) and  
+  **Deserialization** (binary → structured data) happen extremely quickly.  
+- Especially beneficial when dealing with **large payloads** or **frequent network calls**.
+
+---
+
+### ⚙️ 3. Compact Binary Format
+- Protobuf transmits data in **binary**, not human-readable text.  
+- This results in:
+  - Smaller message sizes  
+  - Lower bandwidth usage  
+  - Faster send/receive cycles
+
+> 🧠 In short — Protobuf is optimized for **speed**, **efficiency**, and **lightweight communication** — making it ideal for microservices, mobile clients, and real-time systems.
+
+
+
+In coding assessment the following is covered - 
+
+Browser to gRPC client, we will use REST
+
+gRPC client to gRPC server will be using gRPC.
+![[Pasted image 20251023112049.png]]
+
+Google uses gRPC a lot for server to server comms.
+
+We are going to do -
+
+CRUD operations on customer - Create, Update , Get, Delete customers.
+we have to create these in out customer.proto file.
+
+### 🧠 Why `= 1` (Sequence Number) is Used
+- Each field in a Protobuf message has a **unique tag number** (like `1`, `2`, `3`, ...).
+- These numbers are used during **serialization** instead of field names — making the binary data **smaller and faster to parse**.
+#### 📌 Rules for Field Numbers:
+- Must be **unique** within a message.
+- Range: `1–15` use **1 byte** for encoding → preferred for frequently used fields.
+- Range: `16–2047` use **2 bytes** → for less common fields.
+- Tags **19000–19999** are reserved for internal Protobuf use.
+
+> 🧩 In short: `id = 1` means “assign this field the unique tag number 1 for efficient binary encoding.”
+
+![[Pasted image 20251023115130.png]]
+
+
+## 🧾 CustomerService — Explanation
+
+### 🧩 Overview
+This defines a **gRPC service** called `CustomerService` which provides a full set of **CRUD (Create, Read, Update, Delete)** operations for customer data.  
+It uses **Protocol Buffers (Proto3)** as the Interface Definition Language (IDL) to define structured messages exchanged between client and server.
+
+---
+
+### 🧱 Service Definition — `CustomerService`
+
+The service exposes the following **remote procedure calls (RPCs):**
+
+| RPC Method | Request Type | Response Type | Description |
+|-------------|--------------|----------------|--------------|
+| **GetAll** | `Empty` | `CustomerList` | Retrieves all customers. |
+| **Get** | `CustomerRequestId` | `Customer` | Retrieves a customer by ID. |
+| **Insert** | `Customer` | `Customer` | Adds a new customer record. |
+| **Update** | `Customer` | `Customer` | Updates an existing customer record. |
+| **Remove** | `CustomerRequestId` | `Empty` | Deletes a customer by ID. |
+
+Each RPC method specifies **input** and **output message types** — these define the exact structure of the data sent and received.
+
+---
+
+### 📦 Message Definitions
+
+#### 1. `Empty`
+Used when an RPC method **doesn’t require input or output data**.  
+Example:  
+- `GetAll` takes no input.  
+- `Remove` may not return any data after deletion.
+
+---
+
+#### 2. `CustomerRequestId`
+- Contains a single field:  
+  - `string id = 1` → represents the unique identifier of a customer.
+- The number `1` is a **field tag number**, used by Protobuf during binary serialization.  
+  Tags help encode and decode fields efficiently.
+
+---
+
+#### 3. `CustomerList`
+- Contains a **repeated field** — meaning it can hold multiple `Customer` objects.  
+- Used as the return type for `GetAll` RPCs.
+
+---
+
+#### 4. `Customer`
+Defines the structure of a **single customer record** with the following fields:
+
+| Field | Type | Tag | Description |
+|--------|------|-----|--------------|
+| `id` | `string` | `1` | Unique identifier for the customer |
+| `name` | `string` | `2` | Customer’s name |
+| `age` | `int32` | `3` | Customer’s age |
+| `address` | `string` | `4` | Customer’s address |
+
+---
+
+### 🧠 Why Tag Numbers Like `= 1`, `= 2` Matter
+
+- Tag numbers are **identifiers used for binary encoding** instead of field names.  
+- This makes messages **compact** and **fast to serialize/deserialize**.  
+- They also allow **backward and forward compatibility** — you can add new fields later with new tag numbers without breaking existing clients.
+
+---
+
+### 🚀 Key Takeaways
+
+- `.proto` files define both **service interfaces** and **message schemas**.
+- gRPC generates **client and server code** automatically in multiple languages.
+- Protobuf uses **binary encoding**, which is much faster and smaller than JSON or XML.
+- This makes gRPC ideal for **microservices**, **mobile**, and **low-bandwidth** environments.
+
+---

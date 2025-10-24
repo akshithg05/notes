@@ -13,10 +13,10 @@
             "state": {
               "type": "image",
               "state": {
-                "file": "Front End System Design/images/Pasted image 20251022142330.png"
+                "file": "Front End System Design/images/Pasted image 20251023115130.png"
               },
               "icon": "lucide-image",
-              "title": "Pasted image 20251022142330"
+              "title": "Pasted image 20251023115130"
             }
           }
         ]
@@ -178,11 +178,13 @@
   },
   "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
+    "Front End System Design/images/Pasted image 20251023112049.png",
     "Front End System Design/Networking/5 gRPC.md",
+    "Front End System Design/images/Pasted image 20251023115130.png",
+    "Front End System Design/images/Pasted image 20251022142330.png",
     "Front End System Design/images/Pasted image 20251022145130.png",
     "Front End System Design/images/Pasted image 20251022143839.png",
     "Front End System Design/images/Pasted image 20251022143101.png",
-    "Front End System Design/images/Pasted image 20251022142330.png",
     "Front End System Design/Networking/4 - graphQL.md",
     "NodeJS/Dev-tinder-UI using React.md",
     "Front End System Design/images/Pasted image 20251020104723.png",
@@ -191,8 +193,6 @@
     "Javascript",
     "Front End System Design/images/Pasted image 20251018090254.png",
     "Front End System Design/images/Pasted image 20251018085153.png",
-    "Front End System Design/images/Pasted image 20251018085124.png",
-    "Front End System Design/images/Pasted image 20251018072016.png",
     "Untitled.md",
     "NodeJS/Season 1.md",
     "NodeJS/Season 2.md",

@@ -11,12 +11,14 @@
             "id": "6ddaa18506e0f17c",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Front End System Design/images/Pasted image 20251023115130.png"
+                "file": "Javascript/NamasteJS Notes.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20251023115130"
+              "icon": "lucide-file",
+              "title": "NamasteJS Notes"
             }
           }
         ]
@@ -176,16 +178,19 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d5df95e868ccabb7",
+  "active": "6ddaa18506e0f17c",
   "lastOpenFiles": [
-    "Front End System Design/images/Pasted image 20251023112049.png",
     "Front End System Design/Networking/5 gRPC.md",
+    "Front End System Design/Networking/4 - graphQL.md",
+    "Front End System Design/Networking/3 REST APIs.md",
+    "Front End System Design/Networking/2 Communication protocols.md",
+    "Front End System Design/Networking/1 How web page loads.md",
     "Front End System Design/images/Pasted image 20251023115130.png",
+    "Front End System Design/images/Pasted image 20251023112049.png",
     "Front End System Design/images/Pasted image 20251022142330.png",
     "Front End System Design/images/Pasted image 20251022145130.png",
     "Front End System Design/images/Pasted image 20251022143839.png",
     "Front End System Design/images/Pasted image 20251022143101.png",
-    "Front End System Design/Networking/4 - graphQL.md",
     "NodeJS/Dev-tinder-UI using React.md",
     "Front End System Design/images/Pasted image 20251020104723.png",
     "Front End System Design/images/Pasted image 20251020092732.png",
@@ -197,9 +202,6 @@
     "NodeJS/Season 1.md",
     "NodeJS/Season 2.md",
     "NodeJS/HW.md",
-    "Front End System Design/Networking/1 How web page loads.md",
-    "Front End System Design/Networking/2 Communication protocols.md",
-    "Front End System Design/Networking/3 REST APIs.md",
     "Front End System Design/Networking",
     "Front End System Design/images",
     "Front End System Design/Networking",

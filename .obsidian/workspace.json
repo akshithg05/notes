@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Javascript/NamasteJS Notes.md",
+                "file": "Front End System Design/1-Networking/1 How web page loads.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "NamasteJS Notes"
+              "title": "1 How web page loads"
             }
           }
         ]
@@ -180,11 +180,16 @@
   },
   "active": "6ddaa18506e0f17c",
   "lastOpenFiles": [
-    "Front End System Design/Networking/5 gRPC.md",
-    "Front End System Design/Networking/4 - graphQL.md",
-    "Front End System Design/Networking/3 REST APIs.md",
-    "Front End System Design/Networking/2 Communication protocols.md",
-    "Front End System Design/Networking/1 How web page loads.md",
+    "Front End System Design/images/Pasted image 20251025110950.png",
+    "Front End System Design/2-Communication/1 Communication Overview.md",
+    "Front End System Design/1-Networking/1 How web page loads.md",
+    "Front End System Design/images/Pasted image 20251025112409.png",
+    "Front End System Design/2-Communication",
+    "Javascript/NamasteJS Notes.md",
+    "Front End System Design/1-Networking/5 gRPC.md",
+    "Front End System Design/1-Networking/4 - graphQL.md",
+    "Front End System Design/1-Networking/3 REST APIs.md",
+    "Front End System Design/1-Networking/2 Communication protocols.md",
     "Front End System Design/images/Pasted image 20251023115130.png",
     "Front End System Design/images/Pasted image 20251023112049.png",
     "Front End System Design/images/Pasted image 20251022142330.png",
@@ -194,17 +199,14 @@
     "NodeJS/Dev-tinder-UI using React.md",
     "Front End System Design/images/Pasted image 20251020104723.png",
     "Front End System Design/images/Pasted image 20251020092732.png",
-    "Javascript/NamasteJS Notes.md",
     "Javascript",
-    "Front End System Design/images/Pasted image 20251018090254.png",
-    "Front End System Design/images/Pasted image 20251018085153.png",
     "Untitled.md",
     "NodeJS/Season 1.md",
     "NodeJS/Season 2.md",
     "NodeJS/HW.md",
-    "Front End System Design/Networking",
+    "Front End System Design/1-Networking",
     "Front End System Design/images",
-    "Front End System Design/Networking",
+    "Front End System Design/1-Networking",
     "Front End System Design",
     "DSA/Companies to apply to -.md",
     "DSA/Interview Prep.md",
@@ -221,10 +223,8 @@
     "OMSCS/RAIT/Particle Filters.md",
     "OMSCS/RAIT/Problem set 1.md",
     "OMSCS/RAIT/Localization.md",
-    "OMSCS/RAIT/Kalman Filters.md",
     "NodeJS/images",
     "OMSCS/RAIT/images",
-    "OMSCS/RAIT",
     "Untitled.canvas"
   ]
 }

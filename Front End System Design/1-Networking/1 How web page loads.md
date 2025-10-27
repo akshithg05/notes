@@ -149,30 +149,20 @@ It is also important to note that, service worker scripts run on a separate thre
 ### 🧠 1️⃣ Browser Cache (a.k.a. Disk / Memory Cache)
 
 - **Managed automatically by the browser.**
-    
 - It caches files based on **HTTP cache headers** (`Cache-Control`, `ETag`, `Expires`, etc.) sent by the **server**.
-    
 - When you revisit the page, the browser checks:
-    
     - “Do I still have this file in my cache?”
-        
     - “Has the server told me it’s still fresh?”
-        
 - If yes → it uses the cached version.
-    
 - If no → it re-downloads or revalidates with the server.
-    
 
 🧩 **You (the developer) have limited control**. It’s mostly server → browser logic.
 
 ### ⚙️ 2️⃣ Service Worker Cache (a.k.a. Application Cache via `Cache API`)
 
 - **Fully controlled by the developer** through JavaScript.
-    
 - Service workers sit between the **browser** and **network**, acting like programmable proxies.
-    
 - You can choose what to cache, when to update it, and how to respond (even offline).
-    
 
 Example (inside a service worker):
 ![[Pasted image 20251006072947.png]]
@@ -184,29 +174,17 @@ This means:
 This gives you _precise control_ over:
 
 - Offline access (like PWAs)
-    
 - Cache versioning
-    
 - Background updates
-    
 - Fallbacks for poor connectivity
 
-
 When you visit **YouTube**:
-
 - The **browser cache** keeps static assets like the YouTube logo, CSS, etc.
-    
 - A **service worker** (if installed) can cache the homepage shell, so even offline you can open YouTube and see the layout, history, etc.
-    
-
 ---
-
 👉 **In short:**
-
 - **Browser cache** = “Passive” caching (automatic).
-    
 - **Service worker cache** = “Active” caching (programmable).
-
 
 TCP handshake 
 ![[Pasted image 20251006074013.png]]
@@ -265,6 +243,9 @@ Think of it like a phone call:
 - **TCP handshake** = Dialing the number and both parties saying “Hello, can you hear me?”
 - **TLS handshake** = Agreeing to talk in a secret code so no one else can listen
 - **HTTP request** = Actually starting the conversation (“Send me index.html please”)
+
+SSL stands for Secure Sockets Layer and TLS stands for Transport Layer Security
+The client first establishes a TCP connection. Then, during the TLS handshake, the server presents its SSL certificate containing its public key. The client verifies the certificate and exchanges key material (often encrypted with the server’s public key) to generate a shared session key. From then on, both communicate using symmetric encryption over HTTPS.
 
 ![[Pasted image 20251006074227.png]]
 
@@ -368,13 +349,7 @@ Summary -
 - **Render-blocking:** CSS must fully load before rendering.
 - Multiple CSS rules can target the same element → CSSOM keeps all rules.
 ---
-
-## 4. **Render Tree Construction**
-- DOM + CSSOM are merged → **Render Tree**.
-- Render tree contains **only visible elements** with **final computed styles**.
-- This merging resolves **conflicting CSS rules**, applying the **consolidated final styles**.
----
-## 5. **JavaScript Execution**
+## 4. **JavaScript Execution**
 - JS is **parser-blocking**: execution waits until file is loaded.
 - Execution steps:
     1. **Tokenization** → break JS into tokens.
@@ -383,6 +358,11 @@ Summary -
         - **Interpreter** (Ignition) executes code initially.
         - **Compiler** (Turbofan) optimizes “hot” code.
         - Bytecode is executed by CPU.
+---
+## 5. **Render Tree Construction**
+- DOM + CSSOM are merged → **Render Tree**.
+- Render tree contains **only visible elements** with **final computed styles**.
+- This merging resolves **conflicting CSS rules**, applying the **consolidated final styles**.
 ---
 ## 6. **Layout (Reflow)**
 - Calculates **exact positions and sizes** of each element.

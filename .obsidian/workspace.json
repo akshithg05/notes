@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Front End System Design/1-Networking/1 How web page loads.md",
+                "file": "Front End System Design/2-Communication/1 Communication Overview.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1 How web page loads"
+              "title": "1 Communication Overview"
             }
           }
         ]
@@ -180,9 +180,10 @@
   },
   "active": "6ddaa18506e0f17c",
   "lastOpenFiles": [
+    "Pasted image 20251027065730.png",
+    "Front End System Design/1-Networking/1 How web page loads.md",
     "Front End System Design/images/Pasted image 20251025110950.png",
     "Front End System Design/2-Communication/1 Communication Overview.md",
-    "Front End System Design/1-Networking/1 How web page loads.md",
     "Front End System Design/images/Pasted image 20251025112409.png",
     "Front End System Design/2-Communication",
     "Javascript/NamasteJS Notes.md",

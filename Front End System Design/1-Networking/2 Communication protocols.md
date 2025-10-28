@@ -129,5 +129,3 @@ HTTP/3 is the latest version of the Hypertext Transfer Protocol and is built on 
 - **Notes:**  
   - Supports authentication (username/password).  
   - Has a secure version: **FTPS (FTP Secure)** or **SFTP (SSH File Transfer Protocol)**.
-
-

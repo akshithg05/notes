@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NodeJS/Season 3.md",
+                "file": "Front End System Design/1-Networking/3 REST APIs.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Season 3"
+              "title": "3 REST APIs"
             }
           }
         ]
@@ -178,13 +178,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "fb868b308142faeb",
+  "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
+    "NodeJS/Season 3.md",
     "Front End System Design/2-Communication/3 Long Polling.md",
     "Pasted image 20251029194804.png",
     "Front End System Design/2-Communication/2 Short Polling.md",
     "Pasted image 20251029193527.png",
-    "NodeJS/Season 3.md",
     "Front End System Design/1-Networking/3 REST APIs.md",
     "NodeJS/images/Pasted image 20250906133737.png",
     "Front End System Design/images/Pasted image 20251027065730.png",

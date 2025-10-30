@@ -97,7 +97,7 @@ Architecture
 > - *RESTful vs gRPC Communication Models*  
 
 ---
-
+ 
 # 🌐 API Communication & REST
 
 ## 🧩 Why APIs?

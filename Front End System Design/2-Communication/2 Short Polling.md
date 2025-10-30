@@ -130,3 +130,15 @@ clearInterval(intervalId);
     Reduces CPU/network usage on the client and request load on the server.
 - **Ensures proper cleanup in React:**  
     In frameworks like React, you should clear the interval in the `useEffect` cleanup function:
+
+If you don’t clear the `setInterval` when leaving or re-entering a page/component, **a new interval is created each time** the code runs again. The old one keeps running in the background, so over time:
+- Multiple intervals pile up.
+- Each keeps executing its callback at the defined interval.
+- The browser ends up doing duplicate work, increasing CPU usage and memory consumption.
+- Eventually, the page becomes **laggy or unresponsive** — especially if the callback involves DOM updates or network calls.
+
+In React, for example, this commonly happens if you set up `setInterval` inside a component without cleaning it up in the `useEffect` return function:
+![[Pasted image 20251029193527.png]]
+
+So yes — always clear your intervals when you leave the page, unmount a component, or when the condition for running it is no longer valid. Otherwise, you’ll create a “leak” of intervals that keeps multiplying in the background.
+

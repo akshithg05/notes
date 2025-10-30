@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Front End System Design/1-Networking/3 REST APIs.md",
+                "file": "NodeJS/Season 3.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3 REST APIs"
+              "title": "Season 3"
             }
           }
         ]
@@ -180,9 +180,14 @@
   },
   "active": "fb868b308142faeb",
   "lastOpenFiles": [
+    "Front End System Design/2-Communication/3 Long Polling.md",
+    "Pasted image 20251029194804.png",
+    "Front End System Design/2-Communication/2 Short Polling.md",
+    "Pasted image 20251029193527.png",
+    "NodeJS/Season 3.md",
+    "Front End System Design/1-Networking/3 REST APIs.md",
     "NodeJS/images/Pasted image 20250906133737.png",
     "Front End System Design/images/Pasted image 20251027065730.png",
-    "Front End System Design/2-Communication/2 Short Polling.md",
     "Front End System Design/images/Pasted image 20251028064245.png",
     "Front End System Design/2-Communication/1 Communication Overview.md",
     "Front End System Design/1-Networking/2 Communication protocols.md",
@@ -193,13 +198,9 @@
     "Javascript/NamasteJS Notes.md",
     "Front End System Design/1-Networking/5 gRPC.md",
     "Front End System Design/1-Networking/4 - graphQL.md",
-    "Front End System Design/1-Networking/3 REST APIs.md",
     "Front End System Design/images/Pasted image 20251023115130.png",
     "Front End System Design/images/Pasted image 20251023112049.png",
     "Front End System Design/images/Pasted image 20251022142330.png",
-    "Front End System Design/images/Pasted image 20251022145130.png",
-    "Front End System Design/images/Pasted image 20251022143839.png",
-    "Front End System Design/images/Pasted image 20251022143101.png",
     "NodeJS/Dev-tinder-UI using React.md",
     "Javascript",
     "Untitled.md",
@@ -222,8 +223,6 @@
     "OMSCS/RAIT/Particle filter - YT source.md",
     "OMSCS/RAIT/Kinematic motion model - Bicycle model.md",
     "OMSCS/RAIT/Problem set 3.md",
-    "OMSCS/RAIT/Particle Filters.md",
-    "OMSCS/RAIT/Problem set 1.md",
     "NodeJS/images",
     "OMSCS/RAIT/images",
     "Untitled.canvas"

@@ -11,12 +11,14 @@
             "id": "fb868b308142faeb",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Front End System Design/images/Pasted image 20251029194804.png"
+                "file": "DSA/Notes.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20251029194804"
+              "icon": "lucide-file",
+              "title": "Notes"
             }
           }
         ]
@@ -178,27 +180,29 @@
   },
   "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
+    "DSA/images/Pasted image 20251030202304.png",
+    "DSA/images/Pasted image 20251030201045.png",
+    "DSA/images/Pasted image 20251030195414.png",
+    "DSA/images/Pasted image 20251030195055.png",
+    "DSA/images/Pasted image 20251030194902.png",
+    "DSA/images/Pasted image 20251030194312.png",
+    "DSA/images/Pasted image 20251030194152.png",
+    "DSA/images/Pasted image 20251030193917.png",
+    "DSA/Notes.md",
+    "DSA/images/Pasted image 20251030193225.png",
+    "Front End System Design/images/Pasted image 20251029194804.png",
     "Front End System Design/images/Pasted image 20251029193527.png",
     "Front End System Design/1-Networking/3 REST APIs.md",
     "NodeJS/Season 3.md",
     "Front End System Design/2-Communication/3 Long Polling.md",
-    "Front End System Design/images/Pasted image 20251029194804.png",
     "Front End System Design/2-Communication/2 Short Polling.md",
-    "NodeJS/images/Pasted image 20250906133737.png",
-    "Front End System Design/images/Pasted image 20251027065730.png",
-    "Front End System Design/images/Pasted image 20251028064245.png",
     "Front End System Design/2-Communication/1 Communication Overview.md",
     "Front End System Design/1-Networking/2 Communication protocols.md",
     "Front End System Design/1-Networking/1 How web page loads.md",
-    "Front End System Design/images/Pasted image 20251025110950.png",
-    "Front End System Design/images/Pasted image 20251025112409.png",
     "Front End System Design/2-Communication",
     "Javascript/NamasteJS Notes.md",
     "Front End System Design/1-Networking/5 gRPC.md",
     "Front End System Design/1-Networking/4 - graphQL.md",
-    "Front End System Design/images/Pasted image 20251023115130.png",
-    "Front End System Design/images/Pasted image 20251023112049.png",
-    "Front End System Design/images/Pasted image 20251022142330.png",
     "NodeJS/Dev-tinder-UI using React.md",
     "Javascript",
     "Untitled.md",
@@ -211,7 +215,6 @@
     "Front End System Design",
     "DSA/Companies to apply to -.md",
     "DSA/Interview Prep.md",
-    "DSA/Notes.md",
     "OMSCS/RAIT/SLAM.md",
     "DSA/images",
     "React/Interview Notes.md",

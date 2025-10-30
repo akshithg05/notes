@@ -42,3 +42,33 @@ Recursion vs Iteration
 ![[Pasted image 20250926123045.png]]
 
 
+
+# Graphs - 30/10/25
+
+![[Pasted image 20251030193225.png]]
+
+Tree is a special kind of a graph
+
+![[Pasted image 20251030193917.png]]
+
+Real world analogy
+![[Pasted image 20251030194152.png]]
+
+Cities
+![[Pasted image 20251030194312.png]]
+
+
+Directed and Undirected graphs - 
+![[Pasted image 20251030194902.png]]
+
+Weighted and unweighted graphs
+![[Pasted image 20251030195055.png]]
+
+Cyclic and Acyclic graphs
+![[Pasted image 20251030195414.png]]
+
+Connected / Disconnected Graph (Less used in problem solving)
+![[Pasted image 20251030201045.png]]
+
+![[Pasted image 20251030202304.png]]
+

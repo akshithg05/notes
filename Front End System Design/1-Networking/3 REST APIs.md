@@ -637,7 +637,7 @@ User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 AppleWebKit/537.36 (KHTML, like Gecko)  
 Chrome/118.0.5993.88 Safari/537.36
 
-## 📦 Accept Header
+## 📦 Accept 
 
 ### Definition
 The **`Accept`** header tells the server what **content types (MIME types)** the client is willing to receive in the response.  

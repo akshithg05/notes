@@ -90,3 +90,10 @@ We will be using AWS for deploying the application on the server.
 - We need to restart nginx - sudo systemctl restart nginx
 
 - Modify BASE_URL in front end to /api
+
+
+
+## Payment Gateways - 3/11/2035
+![[Pasted image 20251103220518.png]]
+
+See notes from book / see from 23 mins of video.

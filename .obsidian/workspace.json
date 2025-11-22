@@ -13,6 +13,34 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "DSA/Notes.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Notes"
+            }
+          },
+          {
+            "id": "d32b6aa5ae2b648c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Front End System Design/1-Networking/4 graphQL.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "4 graphQL"
+            }
+          },
+          {
+            "id": "488c7493974e6349",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "NodeJS/Season 3.md",
                 "mode": "source",
                 "source": false
@@ -180,22 +208,25 @@
   },
   "active": "fb868b308142faeb",
   "lastOpenFiles": [
+    "Pasted image 20251122103132.png",
+    "Pasted image 20251122102921.png",
+    "NodeJS/Season 3.md",
+    "NodeJS/Season 2.md",
+    "DSA/Notes.md",
+    "Pasted image 20251121160159.png",
+    "Front End System Design/2-Communication/5 Server side events.md",
+    "Pasted image 20251121155614.png",
+    "Pasted image 20251121144045.png",
+    "Front End System Design/2-Communication/3 Long Polling.md",
+    "Front End System Design/1-Networking/4 graphQL.md",
     "NodeJS/images/Pasted image 20251103220518.png",
     "Front End System Design/1-Networking/3 REST APIs.md",
     "Front End System Design/images/Pasted image 20251031192037.png",
     "Front End System Design/2-Communication/4 Websockets.md",
     "Front End System Design/images/Pasted image 20251102151033.png",
     "Front End System Design/images/Pasted image 20251102150926.png",
-    "DSA/Notes.md",
     "DSA/images/Pasted image 20251030202304.png",
     "DSA/images/Pasted image 20251030201045.png",
-    "DSA/images/Pasted image 20251030195414.png",
-    "DSA/images/Pasted image 20251030195055.png",
-    "DSA/images/Pasted image 20251030194902.png",
-    "DSA/images/Pasted image 20251030194312.png",
-    "DSA/images/Pasted image 20251030194152.png",
-    "NodeJS/Season 3.md",
-    "Front End System Design/2-Communication/3 Long Polling.md",
     "Front End System Design/2-Communication/2 Short Polling.md",
     "Front End System Design/2-Communication/1 Communication Overview.md",
     "Front End System Design/1-Networking/2 Communication protocols.md",
@@ -203,12 +234,10 @@
     "Front End System Design/2-Communication",
     "Javascript/NamasteJS Notes.md",
     "Front End System Design/1-Networking/5 gRPC.md",
-    "Front End System Design/1-Networking/4 - graphQL.md",
     "NodeJS/Dev-tinder-UI using React.md",
     "Javascript",
     "Untitled.md",
     "NodeJS/Season 1.md",
-    "NodeJS/Season 2.md",
     "NodeJS/HW.md",
     "Front End System Design/1-Networking",
     "Front End System Design/images",
@@ -223,7 +252,6 @@
     "New Text Document.txt",
     "OMSCS/RAIT/Search.md",
     "OMSCS/RAIT/Particle filter - YT source.md",
-    "OMSCS/RAIT/Kinematic motion model - Bicycle model.md",
     "NodeJS/images",
     "OMSCS/RAIT/images",
     "Untitled.canvas"

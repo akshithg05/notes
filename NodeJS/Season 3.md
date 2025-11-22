@@ -97,3 +97,39 @@ We will be using AWS for deploying the application on the server.
 ![[Pasted image 20251103220518.png]]
 
 See notes from book / see from 23 mins of video.
+
+
+# MongoDB & Mongoose `ref` Explained
+
+## What It Actually Does
+When you define a field like `{ type: mongoose.Schema.Types.ObjectId, ref: "User" }` in a Mongoose schema, that field simply stores an ObjectId. This ObjectId is the `_id` of a document from the referenced collection. The `ref` value is only a Mongoose hint telling it which model this ObjectId belongs to.
+
+## What It Does NOT Do
+`ref` does not create a foreign key, does not enforce relationships, does not auto-join anything, and MongoDB does not verify whether the referenced ID exists. The database stores only the raw ObjectId.
+
+## How You Get the Actual Linked Document
+Mongoose will only fetch the referenced document when you explicitly use `.populate("user")`. Without populate, you will just see the ObjectId. With populate, Mongoose performs the lookup and replaces the ObjectId with the full document.
+
+## Key Idea
+MongoDB = stores ObjectId only, no enforced relationship.  
+Mongoose = uses `ref` + `populate()` to simulate relational behavior.
+
+
+If you `.populate()` an ID that doesn’t exist, nothing dramatic happens — Mongoose just shrugs and gives you **null** in place of the populated document.
+
+Literally like:
+
+`{   _id: "111",   title: "Hello",   user: null }`
+
+### Why?
+
+Because populate is basically:  
+“Bro, go find me this document.”  
+MongoDB: “There’s nothing there.”  
+Mongoose: “Cool, I’ll just put `null`.”
+
+No errors, no crashes, nothing fancy.  
+You just get a populated field with `null`.
+
+If you want it to error or validate, you'd have to add your own checks.
+

@@ -72,3 +72,18 @@ Connected / Disconnected Graph (Less used in problem solving)
 
 ![[Pasted image 20251030202304.png]]
 
+
+## BFS Traversal - (21/11/2025)
+
+BFS Traversal
+![[Pasted image 20251121160159.png]]
+
+
+BFS Traversal example 2
+![[Pasted image 20251122102921.png]]
+
+BFS Example 3
+![[Pasted image 20251122103132.png]]
+
+One thing to remember is that BFS traversal can start from anywhere and have multiple solutions, there is no one single correct answer, we can also interchange Agra and Jaipur in the above example.
+

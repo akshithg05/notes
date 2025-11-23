@@ -98,6 +98,8 @@ We will be using AWS for deploying the application on the server.
 
 See notes from book / see from 23 mins of video.
 
+![[Pasted image 20251123101831.png]]
+
 
 # MongoDB & Mongoose `ref` Explained
 

@@ -135,3 +135,8 @@ You just get a populated field with `null`.
 
 If you want it to error or validate, you'd have to add your own checks.
 
+
+## WebHooks
+
+We can create webhooks in Razorpay, basically razorpay will call a particular API on actions we specify. We can specify razorpay to call our api when there is a payment failure or payment success.
+

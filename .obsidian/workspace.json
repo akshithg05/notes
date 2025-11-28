@@ -39,12 +39,14 @@
             "id": "488c7493974e6349",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "NodeJS/images/Pasted image 20251123101831.png"
+                "file": "Front End System Design/2-Communication/6 Webhooks.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20251123101831"
+              "icon": "lucide-file",
+              "title": "6 Webhooks"
             }
           }
         ],
@@ -207,12 +209,15 @@
   },
   "active": "488c7493974e6349",
   "lastOpenFiles": [
+    "Pasted image 20251127202355.png",
+    "Pasted image 20251127202303.png",
+    "NodeJS/Season 3.md",
+    "Front End System Design/2-Communication/6 Webhooks.md",
+    "NodeJS/images/Pasted image 20251123101831.png",
     "DSA/images/Pasted image 20251122103132.png",
     "DSA/images/Pasted image 20251122102921.png",
     "DSA/images/Pasted image 20251121160159.png",
     "Front End System Design/images/Pasted image 20251121144045.png",
-    "NodeJS/Season 3.md",
-    "NodeJS/images/Pasted image 20251123101831.png",
     "DSA/Notes.md",
     "NodeJS/Season 2.md",
     "Front End System Design/2-Communication/5 Server side events.md",
@@ -224,7 +229,6 @@
     "Front End System Design/images/Pasted image 20251031192037.png",
     "Front End System Design/2-Communication/4 Websockets.md",
     "Front End System Design/images/Pasted image 20251102151033.png",
-    "Front End System Design/images/Pasted image 20251102150926.png",
     "Front End System Design/2-Communication/2 Short Polling.md",
     "Front End System Design/2-Communication/1 Communication Overview.md",
     "Front End System Design/1-Networking/2 Communication protocols.md",
@@ -249,7 +253,6 @@
     "OMSCS/RAIT/PID.md",
     "New Text Document.txt",
     "OMSCS/RAIT/Search.md",
-    "OMSCS/RAIT/Particle filter - YT source.md",
     "NodeJS/images",
     "OMSCS/RAIT/images",
     "Untitled.canvas"

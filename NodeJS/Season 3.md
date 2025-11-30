@@ -140,3 +140,19 @@ If you want it to error or validate, you'd have to add your own checks.
 
 We can create webhooks in Razorpay, basically razorpay will call a particular API on actions we specify. We can specify razorpay to call our api when there is a payment failure or payment success.
 
+
+## Websockets and socket.io  28/11/2025
+
+This is coding + theory session together blended
+
+Three major things about socket.io - 
+1. Low Latency - Fast, quick messages
+2. Bi-directional - Live connection, server and client can keep sending data in both directions until connection is kept alive.
+3. Event based - Everything in socket programming and web sockets are event based.
+
+For this we need an external library called - socket.io
+We need to configure server API and client API
+
+Generally better to finish server API, then move to client API.
+
+Server API is the API we will usually find in the backend and client API is what will find in the front-end or UI.

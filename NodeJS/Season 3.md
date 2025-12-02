@@ -156,3 +156,10 @@ We need to configure server API and client API
 Generally better to finish server API, then move to client API.
 
 Server API is the API we will usually find in the backend and client API is what will find in the front-end or UI.
+
+We can send emit events from the front end using the websockets client. like joining the chatroom.
+When we emit an event from the front end , it will be received at the backend.
+
+It is very important t disconnect the socket as well, else we will have many random open dangling sockets.
+
+Two people, connected to the backend server, if they are connected to the same room, whenever they send a message, both of them receive the message. All members who are connected to that room will receive that message.

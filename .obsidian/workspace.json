@@ -11,14 +11,15 @@
             "id": "fb868b308142faeb",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "Front End System Design/1-Networking/1 How web page loads.md",
-                "mode": "source",
-                "source": false
+                "aFile": ".obsidian/workspace.json",
+                "bFile": ".obsidian/workspace.json",
+                "aRef": "HEAD",
+                "bRef": ""
               },
-              "icon": "lucide-file",
-              "title": "1 How web page loads"
+              "icon": "diff",
+              "title": "Diff: workspace.json"
             }
           },
           {
@@ -194,6 +195,7 @@
   },
   "active": "fb868b308142faeb",
   "lastOpenFiles": [
+    "Front End System Design/1-Networking/1 How web page loads.md",
     "DSA/Notes.md",
     "Front End System Design/3-Security/Introduction.md",
     "Front End System Design/images/Pasted image 20251202071143.png",
@@ -218,7 +220,6 @@
     "Front End System Design/2-Communication/2 Short Polling.md",
     "Front End System Design/2-Communication/1 Communication Overview.md",
     "Front End System Design/1-Networking/2 Communication protocols.md",
-    "Front End System Design/1-Networking/1 How web page loads.md",
     "Front End System Design/2-Communication",
     "Javascript/NamasteJS Notes.md",
     "Front End System Design/1-Networking/5 gRPC.md",

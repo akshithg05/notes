@@ -87,3 +87,12 @@ BFS Example 3
 
 One thing to remember is that BFS traversal can start from anywhere and have multiple solutions, there is no one single correct answer, we can also interchange Agra and Jaipur in the above example.
 
+
+Depth First Search
+![[Pasted image 20251202180156.png]]
+
+Another example
+![[Pasted image 20251202180251.png]]
+
+
+In BFS we use Queue, in DFS we use Stack

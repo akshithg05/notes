@@ -251,6 +251,88 @@ The client first establishes a TCP connection. Then, during the TLS handshake, t
 
 SSL and TLS certificate exchange -
 ![[Pasted image 20251007223317.png]]
+# 🔐 TLS/SSL Handshake — Notes
+
+## 🔹 1. TCP Handshake (Happens First)
+Before HTTPS begins, a normal TCP connection is created:
+- SYN  
+- SYN + ACK  
+- ACK  
+
+Only after this, TLS/SSL handshake starts.
+
+---
+
+## 🔹 2. ClientHello
+The client initiates a secure connection:
+- Sends supported TLS versions  
+- Sends supported cipher suites  
+- Sends a random number (**Client Random**)  
+- Says “I want to create an HTTPS connection.”
+
+---
+
+## 🔹 3. ServerHello + Certificate
+The server responds with:
+- Selected TLS version  
+- Selected cipher suite  
+- A random number (**Server Random**)  
+- **Server’s certificate** (contains the public key)
+
+---
+
+## 🔹 4. Certificate Verification (Client Side)
+The client verifies the server certificate using:
+
+### ✔️ Certificate Chain Validation  
+Checks if the certificate is signed by a **trusted Certificate Authority (CA)**—from the OS/browser’s built-in trust store.
+
+### ✔️ Domain Validation  
+Ensures the certificate’s domain (CN/SAN) matches the URL.
+
+### ✔️ Expiry Check  
+Ensures the certificate is still valid.
+
+If all checks pass → certificate is trusted.
+
+---
+
+## 🔹 5. Key Exchange (Modern TLS)
+Modern TLS (1.2/1.3) uses **Diffie-Hellman key exchange**.
+
+- Client and server exchange **ephemeral keys**.
+- **Ephemeral keys** are _temporary_, _short-lived_ cryptographic keys used only for a **single TLS session** (or even a single handshake). They are generated **dynamically during the TLS handshake** and discarded immediately after the session ends.
+- Both sides independently compute a **shared secret**, never transmitted directly.
+- The server’s public key ensures authenticity and prevents MITM attacks.
+
+This derived secret becomes the **session key**.
+
+---
+
+## 🔹 6. Establishing the Session Key
+Both sides now generate the same **symmetric encryption key** using:
+- Client Random  
+- Server Random  
+- Diffie-Hellman shared secret  
+
+All further communication is encrypted using symmetric algorithms (AES / ChaCha20).
+
+---
+
+## 🔹 7. Finished Messages
+Client and server send encrypted **Finished** messages confirming:
+- Handshake is complete  
+- Encryption is now active  
+
+---
+
+## 🧩 Summary
+- TCP handshake → establishes connection  
+- TLS handshake → establishes encryption  
+- Certificate ensures server identity  
+- Diffie-Hellman creates a secure shared session key  
+- Communication continues with symmetric encryption for speed  
+
 
 ### 7/10/2025 How a web page actually loads
 
@@ -261,9 +343,28 @@ SSL and TLS certificate exchange -
 - **CSS is render-blocking**: The browser waits for all CSS files to load before painting the content. This ensures the page layout is correct before displaying it.
 - **JS is parser-blocking**: By default, the browser stops parsing HTML until the JavaScript file is fully downloaded and executed. This is because JS may modify the DOM or CSSOM.
 - **Impact**: Render-blocking resources delay the time to first paint, and parser-blocking JS delays interactivity.
+
+### What happens:
+
+1. Browser starts reading HTML
+2. Encounters `<script>`
+3. **Stops parsing HTML**
+4. Downloads the JS file
+5. Executes the JS
+6. Resumes HTML parsing
+### Why it's called _parser-blocking_:
+
+The **HTML parser is blocked** until the script finishes executing.
+### Problems:
+- Slower page load
+- Page appears blank longer
+- Bad for performance
 ---
 
 You can later expand this with `async` and `defer` for JS and strategies to reduce render-blocking.
+![[Pasted image 20251203081021.png]]
+“Load it whenever, run it at the end.”
+![[Pasted image 20251203081117.png]]
 
 ### Web Page Rendering Flow
 

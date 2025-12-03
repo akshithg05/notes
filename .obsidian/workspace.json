@@ -11,14 +11,12 @@
             "id": "fb868b308142faeb",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Front End System Design/1-Networking/1 How web page loads.md",
-                "mode": "source",
-                "source": false
+                "file": "DSA/images/Pasted image 20251202180156.png"
               },
-              "icon": "lucide-file",
-              "title": "1 How web page loads"
+              "icon": "lucide-image",
+              "title": "Pasted image 20251202180156"
             }
           },
           {
@@ -34,8 +32,23 @@
               "icon": "lucide-file",
               "title": "4 graphQL"
             }
+          },
+          {
+            "id": "633b5be5e09a1b66",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Front End System Design/1-Networking/1 How web page loads.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "1 How web page loads"
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -178,7 +191,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 314.5
+    "width": 315.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -192,9 +205,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "fb868b308142faeb",
+  "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
+    "DSA/images/Pasted image 20251202180156.png",
+    "DSA/images/Pasted image 20251202180251.png",
     "Front End System Design/1-Networking/1 How web page loads.md",
+    "Front End System Design/images/Pasted image 20251203081117.png",
+    "Front End System Design/images/Pasted image 20251203081021.png",
     "DSA/Notes.md",
     "Front End System Design/3-Security/Introduction.md",
     "Front End System Design/images/Pasted image 20251202071143.png",
@@ -207,10 +224,6 @@
     "Front End System Design/images/Pasted image 20251127202355.png",
     "Front End System Design/images/Pasted image 20251127202303.png",
     "Front End System Design/2-Communication/4 Websockets.md",
-    "NodeJS/images/Pasted image 20251123101831.png",
-    "DSA/images/Pasted image 20251122103132.png",
-    "DSA/images/Pasted image 20251122102921.png",
-    "DSA/images/Pasted image 20251121160159.png",
     "NodeJS/Season 2.md",
     "Front End System Design/2-Communication/5 Server side events.md",
     "Front End System Design/2-Communication/3 Long Polling.md",

@@ -39,3 +39,8 @@ When to use Cookies, Session storage, Local storage, input validation , input sa
 Businesses deal with security in a very high regard.
 Security - very important
 
+
+## 3/12/2025 Security Overview
+
+
+

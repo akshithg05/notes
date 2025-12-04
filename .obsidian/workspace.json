@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "fb868b308142faeb",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "DSA/images/Pasted image 20251202180156.png"
-              },
-              "icon": "lucide-image",
-              "title": "Pasted image 20251202180156"
-            }
-          },
-          {
             "id": "d32b6aa5ae2b648c",
             "type": "leaf",
             "state": {
@@ -39,16 +27,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Front End System Design/1-Networking/1 How web page loads.md",
+                "file": "Front End System Design/1-Networking/2 Communication protocols.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1 How web page loads"
+              "title": "2 Communication protocols"
+            }
+          },
+          {
+            "id": "8548b9baaaaf8e1f",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -205,15 +203,17 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d5df95e868ccabb7",
+  "active": "633b5be5e09a1b66",
   "lastOpenFiles": [
+    "Front End System Design/1-Networking/2 Communication protocols.md",
+    "Front End System Design/3-Security/Security Overview.md",
+    "Front End System Design/3-Security/Introduction.md",
+    "Front End System Design/1-Networking/1 How web page loads.md",
     "DSA/images/Pasted image 20251202180156.png",
     "DSA/images/Pasted image 20251202180251.png",
-    "Front End System Design/1-Networking/1 How web page loads.md",
     "Front End System Design/images/Pasted image 20251203081117.png",
     "Front End System Design/images/Pasted image 20251203081021.png",
     "DSA/Notes.md",
-    "Front End System Design/3-Security/Introduction.md",
     "Front End System Design/images/Pasted image 20251202071143.png",
     "Front End System Design/images/Pasted image 20251202070441.png",
     "Front End System Design/images/Pasted image 20251202070240.png",
@@ -231,7 +231,6 @@
     "Front End System Design/1-Networking/3 REST APIs.md",
     "Front End System Design/2-Communication/2 Short Polling.md",
     "Front End System Design/2-Communication/1 Communication Overview.md",
-    "Front End System Design/1-Networking/2 Communication protocols.md",
     "Front End System Design/2-Communication",
     "Javascript/NamasteJS Notes.md",
     "Front End System Design/1-Networking/5 gRPC.md",

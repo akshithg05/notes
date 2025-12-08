@@ -22,30 +22,21 @@
             }
           },
           {
-            "id": "633b5be5e09a1b66",
+            "id": "8548b9baaaaf8e1f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interview List.md",
+                "file": "Front End System Design/3-Security/3 Cross site-scripting (XSS).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Interview List"
-            }
-          },
-          {
-            "id": "8548b9baaaaf8e1f",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "title": "3 Cross site-scripting (XSS)"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -202,18 +193,29 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d32b6aa5ae2b648c",
+  "active": "8548b9baaaaf8e1f",
   "lastOpenFiles": [
+    "Front End System Design/images/Pasted image 20251206144512.png",
+    "Front End System Design/1-Networking/3 REST APIs.md",
+    "Front End System Design/3-Security/3 Cross site-scripting (XSS).md",
+    "Front End System Design/2-Communication/6 Webhooks.md",
+    "Front End System Design/2-Communication/5 Server side events.md",
+    "Front End System Design/2-Communication/4 Websockets.md",
+    "Front End System Design/2-Communication/3 Long Polling.md",
+    "Front End System Design/2-Communication/2 Short Polling.md",
+    "Front End System Design/2-Communication/1 Communication Overview.md",
+    "Front End System Design/1-Networking/5 gRPC.md",
     "Front End System Design/1-Networking/4 graphQL.md",
+    "Front End System Design/images/Pasted image 20251206174334.png",
+    "Front End System Design/images/Pasted image 20251206181016.png",
+    "Front End System Design/images/Pasted image 20251206182657.png",
     "Interview List.md",
     "README.md",
     "Untitled.md",
     "Front End System Design/images/Pasted image 20251204122445.png",
-    "Front End System Design/3-Security/3 Cross site-scripting (XSS).md",
     "Front End System Design/3-Security/2 Security Overview.md",
     "Front End System Design/3-Security/1 Introduction.md",
     "Product knowledge and features worked",
-    "Front End System Design/1-Networking/3 REST APIs.md",
     "Front End System Design/1-Networking/2 Communication protocols.md",
     "Front End System Design/1-Networking/1 How web page loads.md",
     "DSA/images/Pasted image 20251202180156.png",
@@ -222,22 +224,11 @@
     "Front End System Design/images/Pasted image 20251203081021.png",
     "DSA/Notes.md",
     "Front End System Design/images/Pasted image 20251202071143.png",
-    "Front End System Design/images/Pasted image 20251202070441.png",
-    "Front End System Design/images/Pasted image 20251202070240.png",
-    "Front End System Design/images/Pasted image 20251202065927.png",
     "NodeJS/Season 3.md",
     "Front End System Design/3-Security",
-    "Front End System Design/2-Communication/6 Webhooks.md",
-    "Front End System Design/images/Pasted image 20251127202355.png",
-    "Front End System Design/2-Communication/4 Websockets.md",
     "NodeJS/Season 2.md",
-    "Front End System Design/2-Communication/5 Server side events.md",
-    "Front End System Design/2-Communication/3 Long Polling.md",
-    "Front End System Design/2-Communication/2 Short Polling.md",
-    "Front End System Design/2-Communication/1 Communication Overview.md",
     "Front End System Design/2-Communication",
     "Javascript/NamasteJS Notes.md",
-    "Front End System Design/1-Networking/5 gRPC.md",
     "NodeJS/Dev-tinder-UI using React.md",
     "Javascript",
     "NodeJS/Season 1.md",
@@ -247,7 +238,6 @@
     "Front End System Design/1-Networking",
     "Front End System Design",
     "DSA/Companies to apply to -.md",
-    "DSA/Interview Prep.md",
     "DSA/images",
     "New Text Document.txt",
     "Untitled.canvas"

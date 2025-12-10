@@ -41,28 +41,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Front End System Design/1-Networking/3 REST APIs.md",
+                "file": "Typescript/Typescript notes.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3 REST APIs"
+              "title": "Typescript notes"
             }
           },
           {
             "id": "b801b1e3084bd1bd",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Typescript/images/Pasted image 20251208221927.png"
+                "file": "Front End System Design/1-Networking/4 graphQL.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20251208221927"
+              "icon": "lucide-file",
+              "title": "4 graphQL"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -221,7 +223,15 @@
   },
   "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
+    "Typescript/images/Pasted image 20251210154933.png",
+    "Typescript/images/Pasted image 20251210154438.png",
+    "Front End System Design/images/Pasted image 20251209064332.png",
     "Typescript/Typescript notes.md",
+    "Front End System Design/1-Networking/4 graphQL.md",
+    "Front End System Design/3-Security/4 iFrame protection.md",
+    "Front End System Design/3-Security/3 Cross site-scripting (XSS).md",
+    "Front End System Design/1-Networking/3 REST APIs.md",
+    "Untitled.md",
     "Typescript/images/Pasted image 20251208221927.png",
     "Typescript/JS type coercion.md",
     "Typescript/images/Pasted image 20251208215524.png",
@@ -229,10 +239,7 @@
     "Typescript/images/Pasted image 20251208214804.png",
     "Typescript/images/Pasted image 20251208214251.png",
     "Javascript/NamasteJS Notes.md",
-    "Front End System Design/1-Networking/4 graphQL.md",
     "Typescript",
-    "Front End System Design/1-Networking/3 REST APIs.md",
-    "Front End System Design/3-Security/3 Cross site-scripting (XSS).md",
     "Front End System Design/images/Pasted image 20251206144512.png",
     "Front End System Design/2-Communication/6 Webhooks.md",
     "Front End System Design/2-Communication/5 Server side events.md",
@@ -243,17 +250,13 @@
     "Front End System Design/1-Networking/5 gRPC.md",
     "Front End System Design/images/Pasted image 20251206174334.png",
     "Front End System Design/images/Pasted image 20251206181016.png",
-    "Front End System Design/images/Pasted image 20251206182657.png",
     "Interview List.md",
     "README.md",
-    "Untitled.md",
-    "Front End System Design/images/Pasted image 20251204122445.png",
     "Front End System Design/3-Security/2 Security Overview.md",
     "Front End System Design/3-Security/1 Introduction.md",
     "Product knowledge and features worked",
     "Front End System Design/1-Networking/2 Communication protocols.md",
     "Front End System Design/1-Networking/1 How web page loads.md",
-    "DSA/images/Pasted image 20251202180156.png",
     "DSA/Notes.md",
     "NodeJS/Season 3.md",
     "Front End System Design/3-Security",
@@ -261,7 +264,6 @@
     "Front End System Design/2-Communication",
     "NodeJS/Dev-tinder-UI using React.md",
     "Javascript",
-    "NodeJS/Season 1.md",
     "Front End System Design/1-Networking",
     "Front End System Design/images",
     "Front End System Design/1-Networking",

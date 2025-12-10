@@ -1,7 +1,7 @@
 ![[Pasted image 20251208214251.png]]
 
 ![[Pasted image 20251208214804.png]]
-# TypeScript — Intro Notes (Enhanced)
+# 1. TypeScript — Intro Notes (Enhanced)
 
 ## What TypeScript Is
 - TypeScript is a **superset of JavaScript** — meaning:
@@ -49,7 +49,7 @@ It helps ensure your program behaves the way you intended, *before* it even runs
 
 ![[Pasted image 20251208221927.png]]
 
-# What TypeScript Is NOT — Notes
+# 2. What TypeScript Is NOT — Notes
 
 ## TypeScript is NOT a new programming language
 - TS is not a replacement for JavaScript.
@@ -92,3 +92,115 @@ let email = user.email;   // TS error: 'email' does not exist
 
 TypeScript is **not** a new language or a runtime.  
 It is a **static analysis + type-checking layer** that makes JavaScript safer and more reliable.
+
+## Two ways to install TypeScript
+1. Global installation
+2. Project-level installation using config files
+
+Right now we focus only on the global installation.
+
+### Global installation
+npm install -g typescript  
+This installs TypeScript system-wide so you can use the tsc command anywhere.
+
+---
+
+# 3. What is tsc?
+tsc = TypeScript Compiler
+
+## What tsc does
+- Converts .ts files into .js files
+- Performs static type checking before producing JavaScript
+- Shows errors directly in the terminal while compiling
+- Ensures the final output is valid, runnable JavaScript
+
+## Basic usage
+tsc filename.ts  
+This creates: filename.js
+
+---
+# Why TS Code Cannot Run in Production
+
+If we put TypeScript code directly into production, it will not work because browsers and Node.js cannot understand `.ts` files. This is where the tsc (TypeScript Compiler) comes in. When we run:
+
+tsc filename.ts
+
+the compiler converts the TypeScript file into a plain JavaScript file that the runtime can execute. The resulting JavaScript file is what actually goes into production.  
+
+# 4. Data types
+
+![[Pasted image 20251210154438.png]]
+
+
+Some situations where typescript can be used -
+![[Pasted image 20251210154933.png]]
+
+# Common Types in TypeScript
+number  
+string  
+boolean  
+null  
+undefined  
+void  
+object  
+array  
+tuple  
+never  
+unknown  
+(and many more built-in or custom types)
+
+These types allow TypeScript to understand what kind of data we intend to work with.
+
+---
+
+# Why TypeScript Helps in Real Situations
+
+## 1. Preventing incorrect return types
+When working in a team, a function might be expected to always return a specific type (for example, a string). If another developer accidentally changes the return value to a number, JavaScript will happily accept it, but TypeScript will immediately catch this mistake through static type checking.
+
+## 2. Ensuring correct parameter types
+If a function is supposed to receive two numbers, JavaScript allows passing anything — strings, null, objects, etc. This often causes runtime errors.
+
+TypeScript enforces type safety by ensuring that the function receives only the expected types. If you pass something else, TS will flag it during development before the code runs.
+
+`number` is for numbers like `42`. JavaScript does not have a special runtime value for integers, so there’s no equivalent to `int` or `float` - everything is simply `number`
+
+
+
+
+
+# 5. Type Inference in TypeScript
+
+Type annotation is optional when TypeScript can infer the type from the assigned value.
+
+Example with explicit annotation (correct but unnecessary):
+let userId: number = 3.4;
+
+Preferred version using inference:
+let userId = 3.4;
+
+TypeScript internally treats it as:
+let userId: number;
+
+Now the type is enforced:
+userId = "abc"; // Error: Type 'string' is not assignable to type 'number'
+
+When explicit annotations are needed:
+- Variables without initialization
+- Function parameters
+- Function return types
+- Complex objects
+- Union and generic types
+- Public APIs
+- Async patterns
+
+Case where inference fails:
+let userId; // becomes 'any' (unsafe)
+userId = 5;
+userId = "text"; // allowed
+
+Correct version:
+let userId: number;
+
+Key takeaway:
+Type inference reduces code, keeps type safety, and improves readability when used properly.

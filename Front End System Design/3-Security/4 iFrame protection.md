@@ -426,6 +426,3 @@ res.cookie("sessionId", token, {
 | **sameSite: 'strict'** | Prevents cookies from being sent to other domains |
 
 These flags together help strengthen cookie-based authentication security.
-
-
-

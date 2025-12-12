@@ -1,3 +1,4 @@
+## 9/12/2025
 ![[Pasted image 20251208214251.png]]
 
 ![[Pasted image 20251208214804.png]]
@@ -128,6 +129,7 @@ tsc filename.ts
 the compiler converts the TypeScript file into a plain JavaScript file that the runtime can execute. The resulting JavaScript file is what actually goes into production.  
 
 # 4. Data types
+## 10/12/2025
 
 ![[Pasted image 20251210154438.png]]
 
@@ -165,10 +167,6 @@ TypeScript enforces type safety by ensuring that the function receives only the 
 
 `number` is for numbers like `42`. JavaScript does not have a special runtime value for integers, so there’s no equivalent to `int` or `float` - everything is simply `number`
 
-
-
-
-
 # 5. Type Inference in TypeScript
 
 Type annotation is optional when TypeScript can infer the type from the assigned value.
@@ -204,3 +202,103 @@ let userId: number;
 
 Key takeaway:
 Type inference reduces code, keeps type safety, and improves readability when used properly.
+
+
+# 6. ANY Keyword
+
+## What is `any`?
+The `any` keyword is often used by developers to “get away” from TypeScript’s type system. It is not a good practice because it essentially turns off all type checking for that variable.
+
+`any` is not a special advanced type — it simply disables TypeScript’s safety checks. When we use `any`, we lose all the benefits TS provides, making it almost the same as plain JavaScript. Even the official TypeScript documentation strongly recommends avoiding `any` whenever possible.
+
+---
+
+## Example
+If we write something like:
+
+let hero;
+
+function getHero() {
+  return "thor";
+}
+
+hero = getHero();
+console.log(hero);
+
+In this case, `hero` becomes `any` because we did not specify a type and TypeScript cannot infer one. This means `hero` can later be reassigned to anything without TypeScript warning us.
+
+---
+
+## noImplicitAny
+When you don’t specify a type and TypeScript cannot infer one from the context, the compiler defaults the variable to `any`.
+
+This is usually undesirable because `any` bypasses type checking.
+
+The compiler option noImplicitAny forces TypeScript to report an error whenever it encounters a variable that ends up with an implicit `any`. Enabling this flag helps maintain stricter and safer code by ensuring that every variable has a known, predictable type.
+
+---
+
+## Summary
+- `any` disables TypeScript’s type safety.
+- It should be avoided unless absolutely necessary.
+- The compiler flag noImplicitAny prevents accidental or unintentional usage of `any`.
+
+
+
+# 7. Functions
+![[Pasted image 20251211174150.png]]
+In this function which is a regular function, again we see that the type is any, which is not a good practice.
+We can easily do operations like num.toUpperCase(), we should not be allowed to do this.
+
+## Why Type Annotations Matter
+In JavaScript, functions allow anything to be passed in, which can lead to unexpected behavior. Example:
+
+function addTwo(num) {
+  return num + "2";
+}
+
+addTwo(5);
+
+Here, JS allows mixing a number with a string. In TypeScript, if we don’t specify the type, `num` becomes `any`, which is bad practice because it disables type safety.
+
+---
+## Correct Approach: Explicit Parameter Types
+function addTwo(num: number) {
+  return num + 3;
+}
+
+addTwo(5);
+
+By specifying `num: number`, TypeScript ensures:
+- Only numbers can be passed  
+- The return value is consistent  
+- The editor shows number-related methods and prevents invalid operations  
+
+---
+## Multiple Parameters Example
+function login(username: string, password: string, name: string) {
+  const data = { username, password, name };
+  return data;
+}
+
+login(1, 2, 3);
+
+JavaScript would accept this, but TypeScript will stop it immediately. Each parameter must match the declared type, ensuring correct usage.
+
+---
+## Default Parameters in TypeScript
+let signUp = (username: string, password: string, isPaid: boolean = false) => {
+  const data = { username, password };
+};
+
+signUp("Akshith", "pass");
+
+Here, `isPaid` has a default value (`false`). This means:
+- You can omit the parameter when calling the function  
+- TypeScript still enforces correct types if you choose to pass it  
+
+---
+## Summary
+- Always type your function parameters to avoid implicit `any`.
+- TypeScript prevents incorrect arguments and enforces predictable behavior.
+- Default parameters work exactly the same as in JavaScript but with type safety added.

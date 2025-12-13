@@ -141,4 +141,3 @@ In React, for example, this commonly happens if you set up `setInterval` inside 
 ![[Pasted image 20251029193527.png]]
 
 So yes — always clear your intervals when you leave the page, unmount a component, or when the condition for running it is no longer valid. Otherwise, you’ll create a “leak” of intervals that keeps multiplying in the background.
-

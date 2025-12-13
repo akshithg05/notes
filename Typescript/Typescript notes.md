@@ -302,3 +302,230 @@ Here, `isPaid` has a default value (`false`). This means:
 - Always type your function parameters to avoid implicit `any`.
 - TypeScript prevents incorrect arguments and enforces predictable behavior.
 - Default parameters work exactly the same as in JavaScript but with type safety added.
+
+## 12/12/2025
+
+# 8. Function Return Types in TypeScript — Notes
+
+## Parameter Type ≠ Return Type
+In TypeScript, typing only the parameter does not restrict the return value:
+
+function addTwo(num: number) {
+  return "hello";
+}
+
+This is allowed because the function has **no declared return type**, so TS infers the return type as `string`.
+
+---
+
+## Enforcing the Return Type
+To ensure the function returns the correct type, explicitly specify it:
+
+function addTwo(num: number): number {
+  return num + 2;
+}
+
+Now, returning anything other than a number will throw an error.
+
+---
+
+## Summary
+- Parameter types control *inputs*.
+- Declared return types control *outputs*.
+- Always specify a return type when you want predictable, safe behavior.
+
+
+# Type Inference in Array Methods 
+
+When working with arrays, TypeScript is smart enough to infer the types of elements automatically.
+
+Example:
+
+const heros = ["thor", "ironman", "superman"];
+
+heros.map((hero): string => {
+  return hero;
+});
+
+TypeScript understands that:
+- `heros` is an array of strings  
+- therefore, each `hero` inside `.map()` is also a string  
+
+Even though TS can infer the type of the **parameter**, we still explicitly specify the **return type** (`: string`) to ensure the function returns the correct and expected value.
+
+This automatic inference keeps code clean while maintaining type safety.
+
+## `void`
+`void` is used when a function **does not return any value**.  
+It may perform an action (like logging) but it does not return anything meaningful.
+
+Example:
+function consoleError(errmsg: string): void {
+  console.log(errmsg);
+}
+
+A `void` function finishes normally but returns `undefined` behind the scenes.
+
+---
+
+## `never`
+`never` is used when a function **never returns at all**.
+
+This happens when:
+- the function throws an error, or  
+- the function enters an infinite loop  
+
+Example:
+function handleError(errmsg: string): never {
+  throw new Error(errmsg);
+}
+
+Here the function will **never reach a return statement** — not even `null` or `undefined`.  
+It simply stops execution by throwing an error, so the correct return type is `never`.
+
+---
+
+## Summary
+- Use **void** when the function ends normally but returns nothing.
+- Use **never** when the function cannot complete normally and will never return a value of any kind.
+
+
+# 9. Bad behavior of objects in JS
+
+## Typing Objects in Function Parameters
+We can define object parameter types directly inside a function:
+
+function createCourse(
+  { name, fees }: { name: string; fees: number }
+): { name: string; fees: number } {
+  return { name, fees };
+}
+
+This syntax defines:
+- the type of the object passed into the function  
+- and the type of the object returned by the function  
+
+However, this inline typing can be confusing and hard to read for larger objects.
+
+---
+
+## The "Bad Behaviour" of Objects
+Consider the example:
+
+function createUser({ name: string, isPaid: boolean }) {}
+
+let newUser = { name: "hitesh", isPaid: false, email: "h@h.com" };
+
+createUser(newUser);
+
+Here’s the issue:
+- If we pass the object **directly** into the function call, TypeScript will complain if there are extra properties.
+- But if we assign the object to a variable **first**, and then pass that variable, TypeScript does **not** complain — even if the object contains extra properties like `email`.
+
+This is a known loophole in how TypeScript handles *excess property checks*:
+- **Direct object literals** → strictly checked  
+- **Objects stored in variables** → allowed to have extra properties  
+
+This can sometimes lead to unexpected or “bad” behaviour.
+
+---
+
+## Future Topic: Interfaces
+To fix this and avoid confusing inline types, we will later use **interfaces** which provide a cleaner, stricter, and more readable way of typing objects.
+
+We will revisit this in the upcoming section.
+
+## 13/12/2025
+
+# 10. Type Aliases
+
+## What are Type Aliases?
+Type aliases allow us to define a **custom named type** and reuse it across our codebase.  
+This helps avoid passing complex inline type definitions directly into function parameters and return types.
+
+They are similar to creating a **custom data type** and then using it across our code, which results in cleaner and more maintainable code.
+
+## Example
+
+    type Point = {
+      x: number;
+      y: number;
+    };
+
+    function distance(point1: Point, point2: Point): number {
+      const distance = Math.sqrt(
+        Math.pow(point1.x - point2.x, 2) +
+        Math.pow(point1.y - point2.y, 2)
+      );
+      return distance;
+    }
+
+    const dist = distance({ x: 2, y: 0 }, { x: 4, y: 0 });
+    console.log(dist);
+
+## Why Type Aliases Are Useful
+- They help avoid repeating complex object type definitions.
+- They make function signatures cleaner and easier to read.
+- They improve maintainability by allowing changes in one place.
+- They clearly communicate intent by naming data structures.
+
+## Summary
+Type aliases help write cleaner, more readable, and more maintainable TypeScript code by defining and reusing custom data types consistently.
+
+# 11. Readonly, Optional Properties & Type Composition 
+
+## `readonly`
+The `readonly` keyword is used to prevent modification of a property after it has been set.  
+If someone tries to change a `readonly` field, TypeScript will throw an error during development.
+
+This is useful for fields like IDs that should never change.
+
+## Optional Properties
+Optional fields can be defined using the `?` symbol.  
+This means the property may or may not be present on the object.
+
+TypeScript will not force the user to provide that field, but if it exists, it must match the specified type.
+
+## Combining Types Using `&`
+TypeScript allows us to **mix and match multiple types** using the intersection operator `&`.  
+This is useful when a type is composed of multiple smaller, reusable parts.
+
+A common use case is modeling structured data like credit card details.
+
+## Example
+
+    type User = {
+      readonly _id: number;
+      name: string;
+      email?: string;
+      isActive: boolean;
+      creditCard?: CardDetails;
+    };
+
+    type CardNumber = {
+      number: string;
+    };
+
+    type CardDate = {
+      date: string;
+    };
+
+    type CardDetails = CardNumber & CardDate & { cvv: number };
+
+    const user: User = {
+      _id: 12345,
+      name: "Akshith",
+      email: "akshithg01@gmail.com",
+      isActive: false,
+      creditCard: {
+        number: "123 123 123",
+        date: "12/12/25",
+        cvv: 123,
+      },
+    };
+
+## Summary
+- `readonly` prevents modification of important fields.
+- `?` allows optional properties.
+- `&` helps combine multiple types into a single, meaningful structure.
+- These features make TypeScript models more expressive and maintainable.

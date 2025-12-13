@@ -1,1 +1,13 @@
 .obsidian
+https://cp.certmetrics.com/amazon/en/schedule/schedule-exam
+
+
+"Docker",
+        "Kubernetes",
+        "Terraform",
+        "Jenkins",
+        "GitHub Actions"
+
+"Socket.io",
+        "Shell",
+        "Ansible"

@@ -529,3 +529,77 @@ A common use case is modeling structured data like credit card details.
 - `?` allows optional properties.
 - `&` helps combine multiple types into a single, meaningful structure.
 - These features make TypeScript models more expressive and maintainable.
+
+## 14/12/2025
+
+# Arrays in TypeScript — Notes
+
+In TypeScript, arrays can be strongly typed to ensure that only specific data types are stored in them.
+
+## Basic Array Type Definitions
+We can define arrays by specifying the type followed by `[]`:
+
+    const superHeros: string[] = [];
+    const heroPower: number[] = [];
+
+Another way to define arrays is using the generic `Array<Type>` syntax:
+
+    const heroPower2: Array<number> = [];
+
+Both approaches are valid and behave the same. The choice is mostly stylistic.
+
+## Arrays of Objects
+We can also create arrays that hold objects of a specific shape using type aliases:
+
+    type User = {
+      name: string;
+      isActive: boolean;
+    };
+
+    const allUsers: User[] = [];
+
+This ensures that every object pushed into the array matches the `User` structure.
+
+## Multi-dimensional Arrays (Matrix)
+TypeScript supports multi-dimensional arrays by nesting array types:
+
+    const matrix: number[][] = [[], []];
+
+Here, `number[][]` represents an array of arrays of numbers (a matrix).
+
+## Type Safety in Action
+TypeScript enforces type safety when adding elements:
+
+    superHeros.push("thor");
+    heroPower.push(2);
+    allUsers.push({ name: "Akshith", isActive: false });
+
+Trying to push a value of the wrong type will result in a compile-time error.
+
+If an array is declared **empty** without a type, TypeScript assigns it the type `any[]`.
+
+Example:
+
+    const arr = [];
+
+Here, TypeScript cannot infer the element type, so it allows **any value** to be pushed into the array, which removes type safety.
+
+If the array is initialized with values, TypeScript can infer the type:
+
+    const nums = [1, 2, 3];
+
+In this case, the inferred type is `number[]`.
+
+## Best Practice
+Always explicitly type empty arrays:
+
+    const users: User[] = [];
+    const scores: number[] = [];
+
+This ensures type safety and prevents accidental misuse.
+
+## Summary
+- Arrays in TypeScript are strongly typed.
+- You can define arrays using `Type[]` or `Array<Type>`.
+- Arrays of objects and multi-dimensional arrays are fully supported.
+- Type safety prevents invalid values from being added to arrays.

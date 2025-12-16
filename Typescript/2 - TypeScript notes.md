@@ -92,3 +92,74 @@ This restricts the variable to only predefined values.
 - Union placement matters for arrays
 - Literal unions restrict values to exact allowed options
 - Unions provide flexibility without losing type safety
+
+# 2. Tuples in TS - Only in TS not in JS
+
+# Tuples in TypeScript — Notes
+
+## What are Tuples?
+Tuples are a **TypeScript-only feature** (not present in JavaScript) that represent a special kind of array where:
+- The **length is fixed**
+- Each position has a **specific type**
+
+They are similar to tuples in languages like Python.
+
+## Basic Tuple Definition
+A tuple explicitly defines the type and order of elements.
+
+    let tUser: [string, number, boolean];
+
+    tUser = ["hc", 131, true];
+
+Here:
+- index 0 → string  
+- index 1 → number  
+- index 2 → boolean  
+
+TypeScript enforces both **order** and **type**.
+
+## More Examples
+
+    let rgb: [number, number, number] = [255, 123, 112];
+
+    type User = [number, string];
+
+    const newUser: User = [112, "example@google.com"];
+
+This guarantees:
+- exactly two elements
+- first is a number
+- second is a string
+
+## Why Tuples Are Useful
+- They provide **strong guarantees** about data structure
+- Useful when the meaning of each position is fixed
+- More strict than normal arrays
+
+## Ambiguous / Bad Behaviour of Tuples
+Although tuples are fixed-length, TypeScript still allows array methods like:
+
+- push()
+- pop()
+- shift()
+- unshift()
+- splice()
+
+This means we can do things like:
+
+    tUser.push("extra value");
+
+Even though this **breaks the tuple guarantee**, TypeScript allows it due to compatibility with JavaScript array behavior.
+
+This is a known limitation in TypeScript and is considered **not ideal**, but changing it would be a breaking change for existing codebases.
+
+## Important Note
+- Tuples are type-safe at **assignment time**
+- But some array methods can bypass tuple constraints
+- Developers should avoid mutating tuples using array methods
+
+## Summary
+- Tuples are fixed-length, ordered arrays with specific types
+- They are a TypeScript-only feature
+- They provide stronger guarantees than normal arrays
+- Some array methods can still break tuple safety, so they must be used carefully

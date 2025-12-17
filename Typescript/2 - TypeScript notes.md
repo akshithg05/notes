@@ -163,3 +163,8 @@ This is a known limitation in TypeScript and is considered **not ideal**, but ch
 - They are a TypeScript-only feature
 - They provide stronger guarantees than normal arrays
 - Some array methods can still break tuple safety, so they must be used carefully
+
+[[2025-12-17]]
+
+
+

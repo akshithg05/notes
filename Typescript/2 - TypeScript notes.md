@@ -166,5 +166,169 @@ This is a known limitation in TypeScript and is considered **not ideal**, but ch
 
 [[2025-12-17]]
 
+# 3. Enums in TypeScript 
+
+## What are Enums?
+Enums are used to **restrict user choices** to a predefined set of values.  
+They are a TypeScript feature that helps make code more readable and less error-prone by avoiding arbitrary values.
+
+---
+
+## Basic Enum
+By default, enum values are **numeric** and start from `0`.
+
+    enum SeatAllocation {
+      AISLE,
+      MIDDLE,
+      WINDOW,
+    }
+
+    const mySeat = SeatAllocation.WINDOW;
+    console.log(mySeat); // outputs 2
+
+Here:
+- AISLE → 0  
+- MIDDLE → 1  
+- WINDOW → 2  
+
+---
+
+## Custom Numeric Values
+We can explicitly set the starting value. The rest will auto-increment.
+
+    enum SeatAllocation2 {
+      AISLE = 10,
+      MIDDLE,
+      WINDOW,
+    }
+
+Here:
+- AISLE → 10  
+- MIDDLE → 11  
+- WINDOW → 12  
+
+---
+
+## String Enums
+If we start using strings, **every enum member must have an explicit value**.
+
+    enum SeatAllocation3 {
+      AISLE = "AISLE",
+      MIDDLE = "MIDDLE",
+      WINDOW = "WINDOW",
+    }
+
+TypeScript enforces this to avoid ambiguity.
+
+---
+
+## Mixed Enums
+We can mix string and number enums, but once a string is used, values must be explicitly defined.
+
+    enum SeatAllocation4 {
+      AISLE = "AISLE",
+      MIDDLE = 3,
+      WINDOW,
+    }
+
+Here:
+- WINDOW will continue numeric incrementing after `MIDDLE`.
+
+---
+
+## `const enum` (Performance Optimization)
+Sometimes TypeScript generates **extra JavaScript** for enums.  
+To reduce this, we can use `const enum`.
+
+    const enum SeatAllocation5 {
+      AISLE,
+      MIDDLE,
+      WINDOW,
+    }
+
+This tells TypeScript to **inline the values** directly and generate less JS code.
+
+---
+
+## Summary
+- Enums restrict values to a fixed set of options
+- Default enums are numeric and start from 0
+- Numeric values can be customized
+- String enums require explicit values
+- `const enum` reduces generated JavaScript and improves performance
 
 
+# 4. Interfaces in TypeScript 
+
+## What are Interfaces?
+Interfaces are like a **blueprint** or a **loose form of a class**.  
+They define the **structure** of an object — fields and method signatures — but **do not provide implementations**.
+
+They are superficial in the sense that they describe *what* an object should look like, not *how* it works.
+
+---
+
+## Defining an Interface
+An interface can define:
+- properties (including `readonly` and optional ones)
+- methods (with parameters and return types)
+
+Example:
+
+    interface User {
+      readonly dbId: number;
+      userId: number;
+      name: string;
+      googleId?: string;
+      isActive: boolean;
+
+      // Different ways of defining functions in interfaces
+      startTrial: () => string;
+      startTrial2(): string;
+      getDiscount(couponcode: string): number;
+    }
+
+---
+
+## Implementing an Interface
+When an object implements an interface, it **must** follow the structure exactly.
+
+    const user: User = {
+      dbId: 123,
+      userId: 1,
+      name: "Akshith",
+      isActive: true,
+
+      startTrial: () => {
+        return "trial started";
+      },
+
+      startTrial2: () => {
+        return "trial 2 started";
+      },
+
+      getDiscount: (name: "NEWUSER") => {
+        return 10;
+      },
+    };
+
+- `readonly` properties cannot be modified
+- Optional properties may be omitted
+- All required methods must be implemented
+- Method parameter names can differ, but **types must match**
+
+---
+
+## Why Interfaces Are Useful
+- Enforce consistent object structure
+- Improve readability and maintainability
+- Great for defining contracts in teams
+- Widely used with objects, classes, and APIs
+
+---
+
+## Summary
+- Interfaces define the shape of objects
+- They contain no implementation logic
+- Methods can be defined in multiple syntactic ways
+- Interfaces act as contracts for objects in TypeScript

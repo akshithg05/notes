@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ee90a63ce48eec33",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Typescript/images/Pasted image 20251216071005.png"
-              },
-              "icon": "lucide-image",
-              "title": "Pasted image 20251216071005"
-            }
-          },
-          {
             "id": "cf48fb28e67a8c4e",
             "type": "leaf",
             "state": {
@@ -192,11 +180,11 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "d5df95e868ccabb7",
+  "active": "cf48fb28e67a8c4e",
   "lastOpenFiles": [
+    "Typescript/images/Pasted image 20251216071005.png",
     "Front End System Design/2-Communication/4 Websockets.md",
     "Typescript/2 - TypeScript notes.md",
-    "Typescript/images/Pasted image 20251216071005.png",
     "Front End System Design/3-Security/3 Cross site-scripting (XSS).md",
     "Front End System Design/3-Security/13 Permission policy - Feature policy.md",
     "Front End System Design/images/Pasted image 20251216063959.png",
@@ -230,7 +218,6 @@
     "Untitled.md",
     "Front End System Design/images/Pasted image 20251211072545.png",
     "Front End System Design/1-Networking/3 REST APIs.md",
-    "Interview List.md",
     "Typescript/images",
     "Typescript",
     "Product knowledge and features worked",

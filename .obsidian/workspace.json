@@ -68,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "git help pull",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -89,7 +89,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -194,7 +195,7 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "da9253a0220cbe6f",
+  "active": "59c586dfa3efdd6b",
   "lastOpenFiles": [
     "Front End System Design/2-Communication/4 Websockets.md",
     "Typescript/2 - TypeScript notes.md",

@@ -68,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "git help pull",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -128,11 +128,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Typescript/2 - TypeScript notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from 2 - TypeScript notes"
             }
           },
           {
@@ -195,7 +196,7 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "59c586dfa3efdd6b",
+  "active": "da9253a0220cbe6f",
   "lastOpenFiles": [
     "Front End System Design/2-Communication/4 Websockets.md",
     "Typescript/2 - TypeScript notes.md",

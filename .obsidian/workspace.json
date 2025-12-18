@@ -20,8 +20,23 @@
               "icon": "lucide-file",
               "title": "2 - TypeScript notes"
             }
+          },
+          {
+            "id": "2342efdf4de7a540",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Front End System Design/2-Communication/5 Server side events.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "5 Server side events"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -141,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Typescript/images/Pasted image 20251216071005.png",
+                "file": "Front End System Design/2-Communication/5 Server side events.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Pasted image 20251216071005"
+              "title": "Outline of 5 Server side events"
             }
           },
           {
@@ -180,11 +195,16 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "cf48fb28e67a8c4e",
+  "active": "da9253a0220cbe6f",
   "lastOpenFiles": [
+    "Front End System Design/images/Pasted image 20251218081521.png",
+    "Front End System Design/2-Communication/5 Server side events.md",
+    "Front End System Design/3-Security/15 Cross-origin resource sharing.md",
+    "Front End System Design/3-Security/14 Subresource Integrity (SRI).md",
+    "Typescript/2 - TypeScript notes.md",
+    "Front End System Design/images/Pasted image 20251218080740.png",
     "Typescript/images/Pasted image 20251216071005.png",
     "Front End System Design/2-Communication/4 Websockets.md",
-    "Typescript/2 - TypeScript notes.md",
     "Front End System Design/3-Security/3 Cross site-scripting (XSS).md",
     "Front End System Design/3-Security/13 Permission policy - Feature policy.md",
     "Front End System Design/images/Pasted image 20251216063959.png",
@@ -211,13 +231,8 @@
     "Front End System Design/images/Pasted image 20251212075233.png",
     "Front End System Design/1-Networking/1 How web page loads.md",
     "Front End System Design/images/Pasted image 20251212071326.png",
-    "Front End System Design/images/Pasted image 20251211174150.png",
     "Front End System Design/3-Security/5 Security headers.md",
     "Front End System Design/3-Security/2 Security Overview.md",
-    "Front End System Design/3-Security/4 iFrame protection.md",
-    "Untitled.md",
-    "Front End System Design/images/Pasted image 20251211072545.png",
-    "Front End System Design/1-Networking/3 REST APIs.md",
     "Typescript/images",
     "Typescript",
     "Product knowledge and features worked",

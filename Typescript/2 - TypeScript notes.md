@@ -332,3 +332,150 @@ When an object implements an interface, it **must** follow the structure exactly
 - They contain no implementation logic
 - Methods can be defined in multiple syntactic ways
 - Interfaces act as contracts for objects in TypeScript
+
+[[2025-12-18]]
+
+# 5. Interfaces vs Type Aliases 
+
+## Re-opening Interfaces
+One key feature of interfaces is that they can be **re-opened** and extended by declaring them multiple times.
+
+    interface User {
+      readonly dbId: number;
+      userId: number;
+      name: string;
+      googleId?: string;
+      isActive: boolean;
+
+      startTrial: () => string;
+      startTrial2(): string;
+      getDiscount(couponcode: string): number;
+    }
+
+    interface User {
+      githubToken: string;
+    }
+
+Here, the second `User` interface automatically **merges** with the first one, adding `githubToken`.
+
+---
+
+## Interface Inheritance
+Interfaces support **inheritance** using the `extends` keyword.
+
+    interface Admin extends User {
+      role: "ADMIN" | "STUDENT" | "TA";
+    }
+
+This means `Admin` inherits all properties of `User` and adds its own.
+
+---
+
+## Using Interfaces
+Any object typed as an interface must fully follow its structure.
+
+    const user: User = {
+      dbId: 123,
+      userId: 1,
+      name: "Akshith",
+      isActive: true,
+      githubToken: "abc",
+
+      startTrial: () => {
+        return "trial started";
+      },
+
+      startTrial2: () => {
+        return "trial 2 started";
+      },
+
+      getDiscount: (name: "NEWUSER") => {
+        return 10;
+      },
+    };
+
+    const admin: Admin = {
+      dbId: 456,
+      userId: 1,
+      name: "Anu",
+      isActive: true,
+      githubToken: "def",
+
+      startTrial: () => {
+        return "trial started";
+      },
+
+      startTrial2: () => {
+        return "trial 2 started";
+      },
+
+      getDiscount: (name: "NEWUSER") => {
+        return 20;
+      },
+      role: "ADMIN",
+    };
+
+---
+
+## Key Differences Between Interfaces and Type Aliases
+
+### Extending an Interface
+Interfaces use `extends` for inheritance.
+
+    interface Animal {
+      name: string;
+    }
+
+    interface Bear extends Animal {
+      honey: boolean;
+    }
+
+---
+
+### Extending a Type Alias
+Type aliases use **intersection types (`&`)** to combine structures.
+
+    type Animal = {
+      name: string;
+    };
+
+    type Bear = Animal & {
+      honey: boolean;
+    };
+
+---
+
+### Adding New Fields
+Interfaces can be augmented after creation.
+
+    interface Window {
+      title: string;
+    }
+
+    interface Window {
+      ts: TypeScriptAPI;
+    }
+
+This is commonly used in real-world scenarios like extending global browser objects.
+
+Type aliases **cannot** be re-opened.
+
+    type Window = {
+      title: string;
+    };
+
+    type Window = {
+      ts: TypeScriptAPI;
+    };
+
+This causes an error: duplicate identifier.
+
+---
+
+## Summary
+- Interfaces are **extendable and mergeable**
+- Interfaces support inheritance using `extends`
+- Type aliases are **fixed once defined**
+- Type aliases use intersections (`&`) instead of inheritance
+- Prefer interfaces for object shapes and public APIs
+- Prefer type aliases for unions, primitives, and complex compositions

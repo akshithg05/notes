@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Front End System Design/3-Security/16 CSRF — Cross-Site Request Forgery.md",
+                "file": "Front End System Design/2-Communication/6 Webhooks.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "16 CSRF — Cross-Site Request Forgery"
+              "title": "6 Webhooks"
             }
           }
         ],
@@ -197,8 +197,8 @@
   },
   "active": "2342efdf4de7a540",
   "lastOpenFiles": [
-    "Front End System Design/2-Communication/6 Webhooks.md",
     "Front End System Design/3-Security/16 CSRF — Cross-Site Request Forgery.md",
+    "Front End System Design/2-Communication/6 Webhooks.md",
     "Typescript/3 TypeScript for production.md",
     "Typescript/2 - TypeScript notes.md",
     "Front End System Design/2-Communication/5 Server side events.md",

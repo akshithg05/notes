@@ -24,3 +24,8 @@ These changes significantly **improved UI responsiveness**, reduced API failures
 # 2. Talk about some security features of COM
 
 - How we implemented some security CI pipelines, dependabot, secret scanner for leaking secrets, regular dependency auditing.
+
+# 3. Talk about testing
+
+- Initially test case coverage of COM UI was at 75% when we wrote test cases manually without using any kind of AI tools and it used to take addition 2-3 days effort per feature to write these. Once we started embracing AI tools, we could write tests within the development estimate as well as cover a higher % of code.
+- We wrote unit and isolated test cases using jest for all components and aimed at 95% test coverage. We reached approximately 93% test coverage with the help of Co-pilot and other AI tools.

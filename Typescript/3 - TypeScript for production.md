@@ -1,4 +1,4 @@
-# Setting Up TypeScript for Production — Notes
+# 1. Setting Up TypeScript for Production
 
 ## Initializing TypeScript
 To set up TypeScript in a project, we run:
@@ -55,7 +55,7 @@ We write TypeScript during development, but the application always runs on the c
 
 [[2025-12-23]]
 
-# 4 - Classes in TypeScript — Notes
+# 2. - Classes in TypeScript 
 
 ## Basic Classes
 TypeScript classes are very similar to JavaScript classes, but with **type annotations** for properties and constructor parameters.
@@ -123,7 +123,7 @@ Here:
 
 [[2025-12-24]]
 
-# Getters and Setters in TypeScript — Notes
+# 3. Getters and Setters in TypeScript
 
 ## Getters and Setters Overview
 TypeScript supports **getters** and **setters** to control how class properties are accessed and modified.  
@@ -190,3 +190,194 @@ console.log(akshith);
 - Use setters to control how values are assigned
 - Use getters to safely expose or compute values
 - TypeScript enforces stricter rules on setters compared to JavaScript
+
+
+# 4. Protected Access Modifier in TypeScript
+
+## Access Modifiers Recap
+TypeScript provides **three access modifiers** that can be applied to both variables and methods:
+- `public`
+- `private`
+- `protected`
+
+If no modifier is specified, the member is **public by default**.
+
+---
+
+## `private`
+- Accessible **only within the class where it is defined**
+- **Not accessible** in child (inheriting) classes
+- **Not accessible** outside the class
+
+Example behavior:
+- A `private` property cannot be used inside a subclass
+- Attempting to do so will cause a TypeScript error
+
+---
+
+## Problem with `private` in Inheritance
+In the following example, `_courseCount` is marked as `private`, so it cannot be accessed in the subclass:
+
+    class User {
+      private _courseCount: number = 1;
+      public email: string;
+      public name: string;
+
+      constructor(email: string, name: string) {
+        this.email = email;
+        this.name = name;
+      }
+
+      set setCourseCount(courseNum: number) {
+        if (courseNum <= 0) {
+          throw new Error("Enter valid course count");
+        }
+        this._courseCount = courseNum;
+      }
+
+      get courseCount(): number {
+        return this._courseCount;
+      }
+    }
+
+    class SubUser extends User {
+      isFamily: boolean = true;
+
+      changeCourseCount(courseCount: number) {
+        this._courseCount = courseCount; // ❌ Error: private property
+      }
+    }
+
+This fails because `private` members are **not inherited**.
+
+---
+
+## `protected`
+- Accessible **within the class**
+- Accessible in **subclasses**
+- **Not accessible** outside the class hierarchy
+
+To fix the issue above, we change `private` to `protected`:
+
+    protected _courseCount: number = 1;
+
+Now the subclass can access `_courseCount`, but external code still cannot.
+
+---
+
+## Why `protected` Is Useful
+- Allows controlled inheritance
+- Keeps internal state hidden from outside usage
+- Enables subclasses to extend behavior safely
+
+---
+
+## Summary
+- `public` → accessible everywhere (default)
+- `private` → accessible only within the same class
+- `protected` → accessible within the class and its subclasses
+- Use `protected` when a property should be shared with child classes but hidden from the outside
+
+
+
+# 5. Implementing Interfaces in Classes 
+
+In TypeScript, the `implements` keyword is used in a class declaration to ensure that the class adheres to a specific `interface`. 
+
+- **Contract Enforcement**: An `interface` defines a "contract" that specifies the required properties and methods that a class must have. When a class uses `implements`, TypeScript checks that the class provides a concrete implementation for every member defined in that interface.
+- **Abstraction and Reusability**: This mechanism promotes abstraction and code reusability by ensuring objects adhere to a predictable structure, which is a key concept in object-oriented programming.
+- **Multiple Interfaces**: Unlike class inheritance (which uses `extends`, and a class can only extend one other class), a single class can implement multiple interfaces at once.
+
+## Importance of Interfaces
+Interfaces define a **contract**.  
+They do **not** provide implementations — they only enforce **what properties and methods must exist**.
+
+A class:
+- **can do more** than what an interface asks for
+- **cannot do less** than what the interface defines
+
+Interfaces ensure consistency while still allowing flexibility.
+
+---
+
+## Basic Interface Implementation
+When a class implements an interface, it must define **all the required fields**.
+
+    interface TakePhoto {
+      cameraMode: string;
+      filter: string;
+      burst: number;
+    }
+
+    class Instagram implements TakePhoto {
+      constructor(
+        public cameraMode: string,
+        public filter: string,
+        public burst: number
+      ) {}
+    }
+
+Here, the class must contain everything defined in `TakePhoto`.
+
+---
+
+## Extra Properties Are Allowed
+A class can add **extra fields** beyond what the interface defines.
+
+    class Youtube implements TakePhoto {
+      constructor(
+        public cameraMode: string,
+        public filter: string,
+        public burst: number,
+        public short: string
+      ) {}
+    }
+
+This is valid because the required interface fields are still present.
+
+---
+
+## Implementing Multiple Interfaces
+A class can implement **more than one interface**.
+
+    interface TakePhoto {
+      filter: string;
+      short: string;
+      burst: number;
+    }
+
+    interface Story {
+      createStory: () => void;
+    }
+
+    class Instagram implements TakePhoto, Story {
+      constructor(
+        public filter: string,
+        public short: string,
+        public burst: number
+      ) {}
+
+      public createStory(): void {
+        console.log("Created story");
+      }
+    }
+
+Here:
+- `Instagram` must satisfy **both** interfaces
+- All required properties and methods must be implemented
+
+---
+
+## Key Rules
+- Interfaces enforce structure, not implementation
+- Classes can implement **multiple interfaces**
+- Classes may add extra properties or methods
+- Missing required members causes TypeScript errors
+
+---
+
+## Summary
+- Interfaces define what a class **must have**
+- Classes can extend behavior beyond interfaces
+- Multiple interfaces can be implemented together
+- Interfaces are essential for scalable, consistent design

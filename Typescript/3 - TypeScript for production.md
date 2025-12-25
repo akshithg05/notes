@@ -52,3 +52,141 @@ We write TypeScript during development, but the application always runs on the c
 - `outDir` controls where JS output is generated
 - Watch mode (`-w`) recompiles automatically on changes
 - Production always runs JavaScript, not TypeScript
+
+[[2025-12-23]]
+
+# 4 - Classes in TypeScript — Notes
+
+## Basic Classes
+TypeScript classes are very similar to JavaScript classes, but with **type annotations** for properties and constructor parameters.
+
+    class User {
+      email: string;
+      name: string;
+      city?: string;
+
+      constructor(email: string, name: string) {
+        this.email = email;
+        this.name = name;
+      }
+    }
+
+    const akshith: User = new User("akshithg01@gmail.com", "Akshith");
+    akshith.city = "Bengaluru";
+
+    console.log(akshith);
+
+Here:
+- Class properties are explicitly typed
+- Optional properties can be marked using `?`
+- TypeScript ensures correct values are assigned
+
+---
+
+## Public and Private Access Modifiers
+TypeScript introduces **access modifiers** to control visibility.
+
+- `public` → accessible everywhere (default)
+- `private` → accessible only within the class
+
+If no modifier is specified, the property is **public by default**.
+
+    class User {
+      public email: string;
+      public name: string;
+      private city?: string;
+
+      constructor(email: string, name: string) {
+        this.email = email;
+        this.name = name;
+      }
+    }
+
+    const akshith: User = new User("akshithg01@gmail.com", "Akshith");
+    akshith.city = "Bengaluru"; // ❌ Not allowed (private)
+
+    console.log(akshith);
+
+Here:
+- `email` and `name` can be accessed freely
+- `city` cannot be accessed or modified outside the class
+
+---
+
+## Summary
+- TypeScript classes extend JavaScript classes with type safety
+- Properties must be declared with types
+- Access modifiers control visibility
+- `public` is the default
+- `private` restricts access to within the class only
+
+
+[[2025-12-24]]
+
+# Getters and Setters in TypeScript — Notes
+
+## Getters and Setters Overview
+TypeScript supports **getters** and **setters** to control how class properties are accessed and modified.  
+They are commonly used with **private fields** to add validation or computed logic.
+
+Both private and public properties can be accessed through getters and setters.
+
+---
+
+## Important Gotcha with Setters
+In TypeScript, **setters cannot return any value**.
+
+If you try to specify a return type for a setter, TypeScript throws an error:
+
+A `set` accessor cannot have a return type annotation.
+
+This means:
+- Setters are only for **updating values**
+- They must return `void` implicitly
+
+---
+
+## Example
+
+```ts
+class User {
+  private _courseCount: number = 1;
+  public email: string;
+  public name: string;
+  private city?: string;
+
+  constructor(email: string, name: string) {
+    this.email = email;
+    this.name = name;
+  }
+
+  set setCourseCount(courseNum: number) {
+    if (courseNum <= 0) {
+      throw new Error("Enter valid course count");
+    }
+    this._courseCount = courseNum;
+  }
+
+  get appleEmailId(): string {
+    return `apple${this.email}`;
+  }
+
+  get courseCount(): number {
+    return this._courseCount;
+  }
+}
+
+const akshith: User = new User("akshithg01@gmail.com", "Akshith");
+console.log(akshith);
+```
+## Key Points
+- Setters **cannot** return values
+- Getters **must** return a value
+- Setters are ideal for validation logic
+- Getters are useful for computed or derived values
+- Private fields are commonly exposed via getters/setters
+
+## Summary
+- Use setters to control how values are assigned
+- Use getters to safely expose or compute values
+- TypeScript enforces stricter rules on setters compared to JavaScript

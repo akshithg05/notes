@@ -6,7 +6,7 @@ What is covered
 ![[Pasted image 20251224120537.png]]
 
 
-- Test driven development  - Takes a lot of time almost 2x time, but 100% coverage.
+- Test driven development  - Takes a lot of time almost 2x time, but 100% code coverage.
 
 ### Senior Engineer knowledge
 

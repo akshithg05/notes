@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Typescript/1 - Typescript.md",
+                "file": "Typescript/4 - Typescript.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1 - Typescript"
+              "title": "4 - Typescript"
             }
           }
         ],
@@ -121,7 +121,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 255.5
   },
   "right": {
     "id": "c1359012abc4e269",
@@ -223,9 +223,10 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "d5df95e868ccabb7",
+  "active": "1f8034f4873a5fa9",
   "lastOpenFiles": [
     "Typescript/3 - TypeScript for production.md",
+    "Typescript/4 - Typescript.md",
     "Typescript/1 - Typescript.md",
     "Typescript/2 - TypeScript notes.md",
     "Front End System Design/4-Testing/2 Unit testing and Integration testing.md",
@@ -261,7 +262,6 @@
     "Front End System Design/3-Security/10 Input validation and sanitization.md",
     "Front End System Design/images/Pasted image 20251214184722.png",
     "Front End System Design/3-Security/8 Dependency security.md",
-    "Front End System Design/2-Communication/1 Communication Overview.md",
     "OMSCS/KBAI",
     "Typescript/images",
     "Typescript",

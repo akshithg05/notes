@@ -1,4 +1,4 @@
-# 1 -Abstract Classes in TypeScript — Notes
+# 1. Abstract Classes in TypeScript — Notes
 
 ## Understanding the Context
 Before abstract classes, it’s important to understand **interfaces**.
@@ -194,3 +194,60 @@ This shows how TypeScript uses generics internally for reusable structures.
 - Input and output types stay consistent
 - Widely used across TypeScript (arrays, promises, APIs)
 - One of the most powerful features of TypeScript
+
+
+# 3. Generics with Arrays in TypeScript — Notes
+
+## Using Generics with Arrays
+Generics work very naturally with arrays and are commonly used when writing reusable functions that operate on lists of values.
+
+Instead of fixing the array to a single type, we use a generic type parameter so the function can work with **any array type**, while still preserving type safety.
+
+---
+
+## Example: Generic Function with Array
+    function getSearchedProduct<T>(products: T[]): T {
+      // some database operations
+      const myIndex = 2;
+      return products[myIndex];
+    }
+
+Here:
+- `T[]` means an array of some generic type `T`
+- The function returns a value of type `T`
+- Whatever type the array contains, the returned value will be of the **same type**
+
+This ensures:
+- No use of `any`
+- Full type inference
+- Reusable logic
+
+---
+
+## Arrow Function with Generics
+Generics can also be used with arrow functions.
+
+    const getMoreSearchProducts = <T>(products: T[]): T => {
+      const myIndex = 4;
+      return products[myIndex];
+    };
+
+Important note:
+- The `<T>` is placed **before** the function parameters
+- This syntax tells TypeScript that the function is generic
+
+---
+
+## Why This Is Useful
+- Maintains strict type safety
+- Works for arrays of numbers, strings, objects, etc.
+- Ensures the return value matches the array element type
+- Avoids unions and `any`
+
+---
+
+## Summary
+- Arrays work seamlessly with generics
+- `T[]` represents an array of a generic type
+- Generic array functions are reusable and type-safe
+- Arrow functions support generics using `<T>` syntax

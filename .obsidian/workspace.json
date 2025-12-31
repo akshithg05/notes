@@ -55,16 +55,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Typescript/4 - Typescript.md",
+                "file": "Typescript/4 - Typescript Abstract classes.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "4 - Typescript"
+              "title": "4 - Typescript Abstract classes"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -208,7 +208,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 291.5
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -223,13 +223,14 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "1f8034f4873a5fa9",
+  "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
+    "Typescript/4 - Typescript Abstract classes.md",
+    "Front End System Design/4-Testing/3 Automation and E2E Testing.md",
+    "Front End System Design/4-Testing/2 Unit testing and Integration testing.md",
     "Typescript/3 - TypeScript for production.md",
-    "Typescript/4 - Typescript.md",
     "Typescript/1 - Typescript.md",
     "Typescript/2 - TypeScript notes.md",
-    "Front End System Design/4-Testing/2 Unit testing and Integration testing.md",
     "Front End System Design/4-Testing/1 Introduction.md",
     "Front End System Design/3-Security/3 Cross site-scripting (XSS).md",
     "Front End System Design/3-Security/2 Security Overview.md",
@@ -261,7 +262,6 @@
     "Front End System Design/images/Pasted image 20251215195407.png",
     "Front End System Design/3-Security/10 Input validation and sanitization.md",
     "Front End System Design/images/Pasted image 20251214184722.png",
-    "Front End System Design/3-Security/8 Dependency security.md",
     "OMSCS/KBAI",
     "Typescript/images",
     "Typescript",

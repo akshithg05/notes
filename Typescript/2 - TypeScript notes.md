@@ -3,8 +3,6 @@
 
 # 1. Unions
 
-# Unions in TypeScript — Notes
-
 ## What are Unions?
 Instead of using `any`, TypeScript provides **union types**, which allow a variable to hold **one of a few specific types**.
 
@@ -94,8 +92,6 @@ This restricts the variable to only predefined values.
 - Unions provide flexibility without losing type safety
 
 # 2. Tuples in TS - Only in TS not in JS
-
-# Tuples in TypeScript — Notes
 
 ## What are Tuples?
 Tuples are a **TypeScript-only feature** (not present in JavaScript) that represent a special kind of array where:

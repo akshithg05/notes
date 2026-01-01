@@ -208,7 +208,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 345.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -223,16 +223,17 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "d5df95e868ccabb7",
+  "active": "9930024b510d01d8",
   "lastOpenFiles": [
     "Typescript/4 - Typescript Abstract classes.md",
-    "Front End System Design/4-Testing/3 Automation and E2E Testing.md",
-    "Front End System Design/4-Testing/2 Unit testing and Integration testing.md",
-    "Typescript/3 - TypeScript for production.md",
-    "Typescript/1 - Typescript.md",
     "Typescript/2 - TypeScript notes.md",
-    "Front End System Design/4-Testing/1 Introduction.md",
+    "Typescript/3 - TypeScript for production.md",
+    "Front End System Design/4-Testing/2 Unit testing and Integration testing.md",
+    "Front End System Design/4-Testing/4 AB Testing.md",
     "Front End System Design/3-Security/3 Cross site-scripting (XSS).md",
+    "Front End System Design/4-Testing/3 Automation and E2E Testing.md",
+    "Typescript/1 - Typescript.md",
+    "Front End System Design/4-Testing/1 Introduction.md",
     "Front End System Design/3-Security/2 Security Overview.md",
     "Front End System Design/3-Security/1 Introduction.md",
     "Product knowledge and features worked/2. Web Accessibility -COM WCAG.md",
@@ -260,7 +261,6 @@
     "Front End System Design/2-Communication/3 Long Polling.md",
     "Front End System Design/2-Communication/2 Short Polling.md",
     "Front End System Design/images/Pasted image 20251215195407.png",
-    "Front End System Design/3-Security/10 Input validation and sanitization.md",
     "Front End System Design/images/Pasted image 20251214184722.png",
     "OMSCS/KBAI",
     "Typescript/images",

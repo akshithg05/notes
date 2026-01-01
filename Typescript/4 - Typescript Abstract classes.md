@@ -1,4 +1,4 @@
-# 1. Abstract Classes in TypeScript — Notes
+# 1. Abstract Classes in TypeScript 
 
 ## Understanding the Context
 Before abstract classes, it’s important to understand **interfaces**.
@@ -98,7 +98,7 @@ Abstract methods:
 ## Summary
 Abstract classes provide a powerful way to define a base class with shared logic and required methods, combining the strengths of interfaces and classes while enforcing correct inheritance.
 
-# 2. Generics in TypeScript — Notes
+# 2. Generics in TypeScript 
 
 ## What are Generics?
 Generics allow us to write **reusable and flexible code** while still preserving **type safety**.  
@@ -196,7 +196,7 @@ This shows how TypeScript uses generics internally for reusable structures.
 - One of the most powerful features of TypeScript
 
 
-# 3. Generics with Arrays in TypeScript — Notes
+# 3. Generics with Arrays in TypeScript
 
 ## Using Generics with Arrays
 Generics work very naturally with arrays and are commonly used when writing reusable functions that operate on lists of values.
@@ -251,3 +251,90 @@ Important note:
 - `T[]` represents an array of a generic type
 - Generic array functions are reusable and type-safe
 - Arrow functions support generics using `<T>` syntax
+
+# 4. Generics classes
+
+## Multiple Generics in Functions
+Generic functions can accept **more than one generic type**.
+
+    function anotherFunction<T, U>(valueOne: T, valueTwo: U): object {
+      return { valueOne, valueTwo };
+    }
+
+    anotherFunction(1, "2");
+
+Here:
+- `T` and `U` can be different types
+- The function remains reusable
+- TypeScript infers types automatically
+
+---
+
+## Constraining Generics Using `extends`
+We can restrict a generic type using `extends`.
+
+    function anotherFunction2<T, U extends number>(
+      valueOne: T,
+      valueTwo: U
+    ): object {
+      return { valueOne, valueTwo };
+    }
+
+In this case:
+- `U` must be a number
+- Passing a non-number for `valueTwo` causes an error
+- This gives flexibility while still enforcing rules
+
+This same idea can also be applied using object shapes or interfaces, not just primitives.
+
+---
+
+## Generic Classes
+
+### What is a Generic Class?
+A generic class allows the class to work with **any type**, while keeping strict type safety.
+
+Instead of fixing the type inside the class, we use a generic placeholder.
+
+    class Sellable<T> {
+      public cart: T[] = [];
+
+      addToCart(product: T) {
+        this.cart.push(product);
+      }
+    }
+
+---
+
+## How to Understand Generic Classes
+- `T` represents the type of items stored in the class
+- The type is decided **when creating an instance**
+- After that, the class only accepts that type
+
+Example usage:
+
+    const productCart = new Sellable<string>();
+    productCart.addToCart("Shoes");
+    // productCart.addToCart(123); ❌ not allowed
+
+    const numberCart = new Sellable<number>();
+    numberCart.addToCart(99);
+
+Same class, different types, no duplication, full type safety.
+
+---
+
+## Why Generic Classes Are Useful
+- Avoid code duplication
+- Strong type safety without using `any`
+- Reusable data containers (carts, lists, services)
+- Very common in real-world TypeScript code
+
+---
+
+## Summary
+- Functions can use multiple generics
+- `extends` constrains generic types
+- Generic classes store and operate on a chosen type
+- The type is fixed at instantiation time
+- Generics make TypeScript highly reusable and safe

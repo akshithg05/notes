@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Front End System Design/3-Security/3 Cross site-scripting (XSS).md",
+                "file": "Typescript/4 - Typescript Abstract classes.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3 Cross site-scripting (XSS)"
+              "title": "4 - Typescript Abstract classes"
             }
           },
           {
@@ -196,8 +196,8 @@
   },
   "active": "6afc80be7f8740bf",
   "lastOpenFiles": [
-    "Product knowledge and features worked/3 Hackathon ideas.md",
     "Front End System Design/3-Security/3 Cross site-scripting (XSS).md",
+    "Product knowledge and features worked/3 Hackathon ideas.md",
     "Front End System Design/3-Security/4 iFrame protection.md",
     "Front End System Design/4-Testing/5 Performance testing.md",
     "Front End System Design/4-Testing/4 AB Testing.md",

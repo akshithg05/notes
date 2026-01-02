@@ -338,3 +338,101 @@ Same class, different types, no duplication, full type safety.
 - Generic classes store and operate on a chosen type
 - The type is fixed at instantiation time
 - Generics make TypeScript highly reusable and safe
+
+
+# 5. TypeScript Narrowing (Type Guards)
+
+## What is Type Narrowing?
+TypeScript narrowing is the process of **reducing a union type** to a more specific type using checks.  
+These checks are called **type guards** and help TypeScript understand what operations are safe to perform.
+
+---
+
+## Using `typeof` for Narrowing
+A common type guard is the `typeof` check.
+
+    function myFunction(val: string | number) {
+      if (typeof val === "string") {
+        return val.toLowerCase();
+      }
+      return val + 3;
+    }
+
+Here:
+- Inside the `if`, `val` is narrowed to `string`
+- Outside, it is treated as `number`
+- This allows safe use of string and number methods
+
+---
+
+## Null Checks as Type Guards
+When a union includes `null`, we must explicitly guard against it.
+
+    function provideId(id: string | null) {
+      if (!id) {
+        throw new Error("Enter correct id!");
+      }
+      return id.toLowerCase();
+    }
+
+The `if (!id)` check ensures:
+- `id` is not `null`
+- TypeScript safely treats `id` as `string` afterward
+
+---
+
+## Narrowing with Arrays and Objects
+Another common case is handling `string | string[] | null`.
+
+    function stringDecoding(strs: string | string[] | null) {
+      if (strs) {
+        if (typeof strs === "object") {
+          for (const str of strs) {
+            console.log(str);
+          }
+        } else if (typeof strs === "string") {
+          console.log(strs);
+        }
+      }
+    }
+
+Important detail:
+- `typeof []` is `"object"`
+- So arrays are detected using `typeof strs === "object"`
+
+---
+
+## Handling the Empty String Case
+An empty string (`""`) is a **falsy value**, so it can be accidentally skipped.
+
+To handle it explicitly:
+
+    function stringDecodingWithEmpty(strs: string | string[] | null) {
+      if (strs === "") {
+        console.log("Empty string!");
+        return;
+      }
+
+      if (strs) {
+        if (typeof strs === "object") {
+          for (const str of strs) {
+            console.log(str);
+          }
+        } else if (typeof strs === "string") {
+          console.log(strs);
+        }
+      }
+    }
+
+This ensures:
+- Empty strings are handled correctly
+- No valid case is silently ignored
+
+---
+
+## Summary
+- Type narrowing makes union types safe to use
+- `typeof`, null checks, and truthy checks act as type guards
+- Arrays return `"object"` from `typeof`
+- Always handle edge cases like `null` and empty strings
+- Proper narrowing prevents runtime errors and improves correctness

@@ -20,20 +20,47 @@
             }
           },
           {
-            "id": "1ee247f90878bdd1",
+            "id": "b2570ee7af37a1d1",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Interview questions/js-interview-question-by-namastedev.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "js-interview-question-by-namastedev"
+            }
+          },
+          {
+            "id": "8170b5ba0ad90d66",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Product knowledge and features worked/3 Hackathon ideas.md",
+                "file": "Front End System Design/4-Testing/6 Test driven development.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3 Hackathon ideas"
+              "title": "6 Test driven development"
+            }
+          },
+          {
+            "id": "ac3228e9e3e43c5d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Front End System Design/3-Security/4 iFrame protection.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "4 iFrame protection"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -192,8 +219,9 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "6afc80be7f8740bf",
+  "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
+    "Front End System Design/4-Testing/6 Test driven development.md",
     "Interview questions/js-interview-question-by-namastedev.pdf",
     "Interview questions/react-75-by-namastedev.pdf",
     "Interview questions/react-75-by-namastedev.pdf.crdownload",
@@ -239,7 +267,6 @@
     "OMSCS/KBAI",
     "Typescript/images",
     "Typescript",
-    "Product knowledge and features worked",
     "Untitled.canvas"
   ]
 }

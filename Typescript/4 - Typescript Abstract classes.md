@@ -436,3 +436,44 @@ This ensures:
 - Arrays return `"object"` from `typeof`
 - Always handle edge cases like `null` and empty strings
 - Proper narrowing prevents runtime errors and improves correctness
+
+# 6. TypeScript Narrowing Using `in` Operator
+
+Another way to perform type narrowing in TypeScript is by using the **`in` operator**.  
+This is especially useful when working with **union types of objects** that share some properties but differ in others.
+
+## Example
+
+    interface User {
+      name: string;
+      email: string;
+    }
+
+    interface Admin {
+      name: string;
+      email: string;
+      isAdmin: boolean;
+    }
+
+    function returnIsAdmin(account: User | Admin) {
+      if ("isAdmin" in account) {
+        return account.isAdmin;
+      }
+    }
+
+## How This Works
+- Both `User` and `Admin` have `name` and `email`
+- Only `Admin` has the `isAdmin` property
+- The check `"isAdmin" in account` acts as a **type guard**
+- Inside the `if` block, TypeScript safely narrows `account` to `Admin`
+
+## When to Use the `in` Operator
+- When narrowing between object types
+- When interfaces share common fields
+- When a specific property exists only on one type
+
+## Summary
+- The `in` operator is a type guard for objects
+- It helps TypeScript narrow union types safely
+- Very useful for distinguishing between related interfaces
+- Prevents unsafe property access at runtime

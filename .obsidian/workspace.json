@@ -32,31 +32,31 @@
             }
           },
           {
-            "id": "8170b5ba0ad90d66",
+            "id": "2a8c583003797e62",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Front End System Design/4-Testing/6 Test driven development.md",
+                "file": "Front End System Design/3-Security/4 iFrame protection.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "6 Test driven development"
+              "title": "4 iFrame protection"
             }
           },
           {
-            "id": "ac3228e9e3e43c5d",
+            "id": "36c2d3273d410e61",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Typescript/4 - Typescript Abstract classes.md",
+                "file": "Typescript/5 - TS Advanced type narrowing.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "4 - Typescript Abstract classes"
+              "title": "5 - TS Advanced type narrowing"
             }
           }
         ],
@@ -204,7 +204,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 345.5
+    "width": 341.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -219,14 +219,17 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "ac3228e9e3e43c5d",
+  "active": "36c2d3273d410e61",
   "lastOpenFiles": [
+    "Front End System Design/4-Testing/7 Security testing.md",
+    "Typescript/5 - TS Advanced type narrowing.md",
+    "Typescript/Untitled",
     "Front End System Design/3-Security/4 iFrame protection.md",
-    "Front End System Design/4-Testing/6 Test driven development.md",
-    "Interview questions/js-interview-question-by-namastedev.pdf",
     "Interview questions/react-75-by-namastedev.pdf",
-    "Interview questions/react-75-by-namastedev.pdf.crdownload",
+    "Interview questions/js-interview-question-by-namastedev.pdf",
+    "Front End System Design/4-Testing/6 Test driven development.md",
     "Typescript/4 - Typescript Abstract classes.md",
+    "Interview questions/react-75-by-namastedev.pdf.crdownload",
     "Interview questions/js-interview-question-by-namastedev.pdf.crdownload",
     "Interview questions",
     "New folder",
@@ -258,15 +261,12 @@
     "Front End System Design/images/Pasted image 20251218080740.png",
     "Typescript/images/Pasted image 20251216071005.png",
     "Front End System Design/2-Communication/4 Websockets.md",
-    "Front End System Design/3-Security/13 Permission policy - Feature policy.md",
     "Front End System Design/images/Pasted image 20251216063959.png",
     "Front End System Design/images/Pasted image 20251216063752.png",
-    "Typescript/images/2 - Typescript notes part 2.md",
     "Front End System Design/images/Pasted image 20251215195407.png",
     "Front End System Design/images/Pasted image 20251214184722.png",
     "OMSCS/KBAI",
     "Typescript/images",
-    "Typescript",
     "Untitled.canvas"
   ]
 }

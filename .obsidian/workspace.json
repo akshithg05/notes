@@ -51,12 +51,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Typescript/5 - TS Advanced type narrowing.md",
+                "file": "Front End System Design/3-Security/5 Security headers.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "5 - TS Advanced type narrowing"
+              "title": "5 Security headers"
             }
           }
         ],
@@ -219,10 +219,13 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "36c2d3273d410e61",
+  "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
-    "Front End System Design/4-Testing/7 Security testing.md",
+    "Front End System Design/5-Performance/1 Performance overview.md",
+    "Front End System Design/images/Pasted image 20260105062914.png",
     "Typescript/5 - TS Advanced type narrowing.md",
+    "Front End System Design/5-Performance",
+    "Front End System Design/4-Testing/7 Security testing.md",
     "Typescript/Untitled",
     "Front End System Design/3-Security/4 iFrame protection.md",
     "Interview questions/react-75-by-namastedev.pdf",
@@ -257,16 +260,12 @@
     "Front End System Design/2-Communication/5 Server side events.md",
     "Front End System Design/images/Pasted image 20251218081521.png",
     "Front End System Design/3-Security/15 Cross-origin resource sharing.md",
-    "Front End System Design/3-Security/14 Subresource Integrity (SRI).md",
     "Front End System Design/images/Pasted image 20251218080740.png",
     "Typescript/images/Pasted image 20251216071005.png",
-    "Front End System Design/2-Communication/4 Websockets.md",
     "Front End System Design/images/Pasted image 20251216063959.png",
     "Front End System Design/images/Pasted image 20251216063752.png",
     "Front End System Design/images/Pasted image 20251215195407.png",
-    "Front End System Design/images/Pasted image 20251214184722.png",
     "OMSCS/KBAI",
-    "Typescript/images",
     "Untitled.canvas"
   ]
 }

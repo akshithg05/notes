@@ -76,7 +76,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -220,7 +220,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 347.5
+    "width": 322.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -235,10 +235,10 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "e114f0f23ded2882",
+  "active": "36c2d3273d410e61",
   "lastOpenFiles": [
-    "Front End System Design/5-Performance/1 Performance overview.md",
     "Front End System Design/5-Performance/3 Performance monitoring.md",
+    "Front End System Design/5-Performance/1 Performance overview.md",
     "Front End System Design/5-Performance/2 Performance importance.md",
     "Typescript/5 - TS Advanced type narrowing.md",
     "Interview questions/js-interview-question-by-namastedev.pdf",

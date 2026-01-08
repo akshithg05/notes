@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Front End System Design/3-Security/7 HTTPS Communication.md",
+                "file": "Interview questions/DSA revision Namaste DSA.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "7 HTTPS Communication"
+              "title": "DSA revision Namaste DSA"
             }
           },
           {
@@ -220,13 +220,15 @@
   },
   "active": "6afc80be7f8740bf",
   "lastOpenFiles": [
+    "Front End System Design/5-Performance/3 Performance monitoring.md",
+    "Front End System Design/3-Security/7 HTTPS Communication.md",
+    "Front End System Design/5-Performance/4 Performance tools.md",
     "Front End System Design/3-Security/6 Client side security.md",
     "Interview questions/JS interview questions better understanding.md",
     "Interview questions/react-75-by-namastedev.pdf",
     "Front End System Design/3-Security/4 iFrame protection.md",
     "Interview questions/js-interview-question-by-namastedev.pdf",
     "Interview questions/DSA revision Namaste DSA.md",
-    "Front End System Design/5-Performance/3 Performance monitoring.md",
     "Front End System Design/images/Pasted image 20260107082436.png",
     "Front End System Design/images/Pasted image 20260107074901.png",
     "Front End System Design/images/Pasted image 20260107074659.png",
@@ -261,7 +263,6 @@
     "Typescript/1 - Typescript.md",
     "Front End System Design/4-Testing/1 Introduction.md",
     "Front End System Design/3-Security/2 Security Overview.md",
-    "Front End System Design/3-Security/1 Introduction.md",
     "Front End System Design/images/Pasted image 20251224122320.png",
     "Pasted image 20251224125332.png",
     "Front End System Design/4-Testing",

@@ -255,3 +255,171 @@ Each network request has overhead:
 ---
 
 
+# 3. Network Optimization — Redirects & Resource Hinting
+
+---
+
+## Avoid Redirections
+
+Redirections add **extra network hops**, increasing latency and slowing down page load.
+
+### HTTP → HTTPS Redirection Problem
+- If a user enters `http://example.com`
+- Browser first hits HTTP
+- Server redirects (301/302) to HTTPS
+- Extra round trip = slower load
+
+### Optimized Approach (HSTS Preload)
+- Using **HSTS preload**, the browser already knows the site is HTTPS-only
+- Browser upgrades request to HTTPS **before** sending it
+- HTTP request never reaches the server
+
+### How It Works
+- Site is registered at **hstspreload.org**
+- Browser ships with a preloaded HSTS list
+- Automatic HTTPS upgrade at browser level
+
+✅ Improves performance  
+✅ Improves security  
+
+---
+
+## Resource Hinting
+
+Resource hinting helps the browser **prepare early** for resources that will be needed later.
+
+Problem:
+- Resources are discovered late (fonts via CSS, images via API, third-party JS)
+- Each discovery triggers DNS lookup + TLS + request
+- Delays rendering and interaction
+
+Solution:
+- Tell the browser **in advance** what it should prepare for
+
+---
+
+## Types of Resource Hints
+
+### 1. `preconnect`
+Establishes early connection (DNS + TCP + TLS) to a domain.
+
+```html
+<link rel="preconnect" href="https://cdn.example.com" crossorigin />
+```
+
+Best for:
+- Third-party APIs
+- CDNs
+- Fonts
+
+---
+
+### 2. `dns-prefetch`
+Performs only DNS lookup in advance.
+
+```html
+<link rel="dns-prefetch" href="https://cdn.example.com" />
+```
+
+Best for:
+- Low-priority third-party domains
+
+---
+
+### 3. `preload`
+Fetches a **critical resource early** with high priority.
+
+```html
+<link rel="preload" href="/hero-image.png" as="image" />
+```
+
+Best for:
+- Hero images
+- Fonts
+- Critical CSS/JS
+
+---
+
+### 4. `prefetch`
+Fetches resources needed in the **near future** with low priority.
+
+```html
+<link rel="prefetch" href="/next-page.js" />
+```
+
+Best for:
+- Next page navigation
+- Likely user actions
+
+---
+
+### 5. `prerender`
+Loads an entire page and its dependencies in the background (hidden).
+
+```html
+<link rel="prerender" href="/dashboard" />
+```
+
+⚠️ Heavy operation — use carefully
+
+---
+
+## Key Takeaways
+
+- Avoid redirects using **HSTS preload**
+- Use `preconnect` for critical third-party domains
+- Use `dns-prefetch` for low-priority domains
+- Use `preload` only for **critical render path**
+- Use `prefetch` for **future navigation**
+- Resource hints run **in parallel with HTML parsing**
+
+---
+
+# 4. Resource Hint Priority (fetchpriority)
+
+`fetchpriority` allows us to tell the browser how important a resource is during page load so that critical resources are not delayed by non-critical ones.
+
+### Why fetchpriority is needed
+Not all resources are equally important. Some are required for first paint and interaction, while others (images, analytics, secondary scripts) can be delayed. Without priority hints, the browser may waste bandwidth on low-value resources early.
+
+---
+
+### Using fetchpriority with scripts
+Non-critical scripts should be deprioritized so they do not block important resources.
+
+Example:
+<link rel="preload" href="/js/script.js" as="script" fetchpriority="low">
+
+---
+
+### Preloading CSS without blocking rendering
+CSS is render-blocking by default. We can preload it without blocking HTML parsing and apply it after loading.
+
+Example:
+<link rel="preload" as="style" href="theme.css" fetchpriority="low" onload="this.rel='stylesheet'">
+
+What this does:
+- CSS downloads early
+- HTML parsing is not blocked
+- Styles are applied only after the file is ready
+
+---
+
+### Using fetchpriority with images
+Images that are below the fold should be loaded with lower priority.
+
+Example:
+<img src="image.jpg" fetchpriority="low">
+
+This prevents images from delaying HTML, CSS, or critical JavaScript.
+
+---
+
+![[Pasted image 20260110084845.png]]
+![[Pasted image 20260110084859.png]]
+
+### Summary
+- fetchpriority="high" → critical resources
+- fetchpriority="low" → non-critical resources
+- Helps improve FCP and LCP
+- Gives the browser better control over download scheduling

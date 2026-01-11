@@ -255,7 +255,7 @@ Each network request has overhead:
 ---
 
 
-# 3. Network Optimization — Redirects & Resource Hinting
+# 3. Redirects & Resource Hinting
 
 ---
 
@@ -423,3 +423,112 @@ This prevents images from delaying HTML, CSS, or critical JavaScript.
 - fetchpriority="low" → non-critical resources
 - Helps improve FCP and LCP
 - Gives the browser better control over download scheduling
+
+# 5. Early Hints
+![[namastedev.com_learn_namaste-frontend-system-design_network-optimization (2).png]]
+### Early Hints (HTTP 103)
+Early Hints allow the server to send **preload hints** (like CSS, fonts, JS) to the browser **before** the final HTML response is ready.
+
+- Uses HTTP status code **103 Early Hints**
+- Browser can start downloading critical resources early
+- Reduces waiting time caused by server “think time”
+- Improves **FCP** and **LCP**
+
+Purpose:  
+Start loading CSS / JS while the server is still processing the main HTML response.
+
+---
+
+# 6. HTTP Upgrade (HTTP/1.1 vs HTTP/2 vs HTTP/3)
+
+#### HTTP/1.1
+Limitations:
+- One request per connection at a time
+- No multiplexing
+- No header compression
+- Head-of-line blocking
+- Multiple TCP connections required (6–8 per domain)
+
+---
+
+#### HTTP/2
+Improvements:
+- **Multiplexing**: multiple requests over a single TCP connection
+- **Header compression** (HPACK)
+- **Stream prioritization**
+- **Server Push** (experimental / limited use)
+- Better parallel loading of CSS, JS, images
+
+Result:  
+Fewer connections, better bandwidth usage, faster page loads.
+
+---
+
+#### HTTP/3
+Key changes:
+- Uses **UDP** instead of TCP
+- Built on **QUIC**
+- No TCP handshake or head-of-line blocking
+- Faster connection establishment
+- Better performance on unstable networks
+
+Result:  
+Lower latency and improved reliability, especially on mobile networks.
+
+---
+
+# 7. Compression Techniques
+
+Compression reduces payload size sent over the network.
+
+#### Gzip
+- Widely supported
+- Good compression ratio
+- Fast compression and decompression
+
+#### Brotli
+- Better compression than Gzip
+- Smaller bundle sizes
+- Especially effective for JS, HTML, and CSS
+- Slower compression → better done at build time
+
+Examples:
+- `.js.br` → Brotli-compressed file
+- `.js.gz` → Gzip-compressed file
+
+Build-time compression:
+- Use tools like `brotli-webpack-plugin`
+- Avoid runtime compression overhead
+
+---
+
+# 8. Caching
+Caching avoids re-downloading unchanged resources.
+
+- HTTP cache headers control freshness
+- Reduces network calls
+- Improves repeat-visit performance
+- Essential for static assets (JS, CSS, images)
+
+---
+
+# 10. Service Workers
+Service workers act as a programmable network proxy in the browser.
+
+- Intercept network requests
+- Cache responses
+- Enable offline support
+- Improve performance on repeat visits
+
+Used heavily in:
+- PWAs
+- Offline-first applications
+- Advanced caching strategies
+
+---
+
+### Summary
+- Early Hints → faster resource discovery
+- HTTP/2 & HTTP/3 → better parallelism and lower latency
+- Compression → smaller payloads
+- Caching & Service Workers → faster repeat loads

@@ -77,6 +77,20 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "Front End System Design/3-Security/9 Compliance and Regulation.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "9 Compliance and Regulation"
+            }
+          },
+          {
+            "id": "dba637979ad5caa7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "Front End System Design/5-Performance/5 Network Optimization.md",
                 "mode": "source",
                 "source": false
@@ -86,7 +100,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -245,20 +259,22 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "d5df95e868ccabb7",
+  "active": "dba637979ad5caa7",
   "lastOpenFiles": [
+    "Front End System Design/3-Security/10 Input validation and sanitization.md",
+    "Front End System Design/5-Performance/5 Network Optimization.md",
+    "namastedev.com_learn_namaste-frontend-system-design_network-optimization (2).png",
+    "Interview questions/js-interview-question-by-namastedev.pdf",
+    "Interview questions/JS interview questions better understanding.md",
+    "Front End System Design/3-Security/9 Compliance and Regulation.md",
     "Front End System Design/images/Pasted image 20260110084859.png",
     "Front End System Design/images/Pasted image 20260110084845.png",
     "Interview questions/react-75-by-namastedev.pdf",
     "Interview questions/React Interview Notes.md",
-    "Interview questions/js-interview-question-by-namastedev.pdf",
-    "Front End System Design/3-Security/9 Compliance and Regulation.md",
-    "Interview questions/JS interview questions better understanding.md",
     "Front End System Design/3-Security/8 Dependency security.md",
     "OMSCS/2 KBAI",
     "NodeJS/Season 1.md",
     "Front End System Design/3-Security/7 HTTPS Communication.md",
-    "Front End System Design/5-Performance/5 Network Optimization.md",
     "Front End System Design/1-Networking/1 How web page loads.md",
     "Interview questions/DSA revision Namaste DSA.md",
     "Front End System Design/5-Performance/3 Performance monitoring.md",
@@ -278,7 +294,6 @@
     "Interview questions/images/Pasted image 20260105204724.png",
     "Interview questions/images/Pasted image 20260105204631.png",
     "Interview questions/images/Pasted image 20260105204607.png",
-    "Front End System Design/images/Pasted image 20260105062914.png",
     "Front End System Design/5-Performance",
     "Front End System Design/4-Testing/7 Security testing.md",
     "Typescript/Untitled",
@@ -292,7 +307,6 @@
     "Product knowledge and features worked/3 Hackathon ideas.md",
     "Front End System Design/4-Testing/5 Performance testing.md",
     "Front End System Design/4-Testing/4 AB Testing.md",
-    "Front End System Design/images/Pasted image 20251224122320.png",
     "Untitled.canvas"
   ]
 }

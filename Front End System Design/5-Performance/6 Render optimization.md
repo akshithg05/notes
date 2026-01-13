@@ -18,7 +18,7 @@ Characteristics:
 
 ---
 
-## Server-Side Rendering (SSR)
+## b. Server-Side Rendering (SSR)
 
 Rendering happens on the **server** and HTML is sent to the browser.
 
@@ -33,7 +33,7 @@ Use case:
 
 ---
 
-### Static Site Generation (SSG)
+### c. Static Site Generation (SSG)
 
 - HTML is generated **at build time**
 - Served as static files
@@ -46,7 +46,7 @@ Use case:
 
 ---
 
-## React Server Components (RSC)
+## d. React Server Components (RSC)
 
 - Hybrid approach combining **CSR and SSR**
 - Some components render on the server

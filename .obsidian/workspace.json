@@ -37,12 +37,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OMSCS/2 KBAI/Topic wise notes.md",
+                "file": "Front End System Design/5-Performance/6 Render optimization.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Topic wise notes"
+              "title": "6 Render optimization"
             }
           }
         ],
@@ -166,13 +166,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "OMSCS/2 KBAI/Topic wise notes.md",
+                "file": "Front End System Design/5-Performance/6 Render optimization.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Topic wise notes"
+              "title": "Outline of 6 Render optimization"
             }
           },
           {
@@ -205,8 +205,12 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "d5df95e868ccabb7",
+  "active": "3784131c41eaca6c",
   "lastOpenFiles": [
+    "Pasted image 20260113071148.png",
+    "namastedev.com_learn_namaste-frontend-system-design_rendering-pattern.png",
+    "OMSCS/2 KBAI/Topic wise notes.md",
+    "Front End System Design/5-Performance/6 Render optimization.md",
     "OMSCS/2 KBAI/images/Pasted image 20260112231613.png",
     "OMSCS/2 KBAI/images/Pasted image 20260112231608.png",
     "OMSCS/2 KBAI/images/Pasted image 20260112230023.png",
@@ -215,7 +219,6 @@
     "OMSCS/2 KBAI/images/Pasted image 20260112223318.png",
     "OMSCS/2 KBAI/images/Pasted image 20260112222940.png",
     "OMSCS/2 KBAI/1 General information.md",
-    "OMSCS/2 KBAI/Topic wise notes.md",
     "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_network-optimization (2).png",
     "OMSCS/2 KBAI/images",
     "OMSCS/2 KBAI/Pasted image 20260112200931.png",
@@ -226,8 +229,6 @@
     "Front End System Design/3-Security/10 Input validation and sanitization.md",
     "Front End System Design/3-Security/5 Security headers.md",
     "Front End System Design/5-Performance/5 Network Optimization.md",
-    "Front End System Design/images/Pasted image 20260110084859.png",
-    "Front End System Design/images/Pasted image 20260110084845.png",
     "Interview questions/react-75-by-namastedev.pdf",
     "Interview questions/React Interview Notes.md",
     "Front End System Design/3-Security/8 Dependency security.md",
@@ -252,7 +253,6 @@
     "Interview questions/react-75-by-namastedev.pdf.crdownload",
     "Interview questions/js-interview-question-by-namastedev.pdf.crdownload",
     "Interview questions",
-    "Front End System Design/3-Security/3 Cross site-scripting (XSS).md",
     "Untitled.canvas"
   ]
 }

@@ -140,3 +140,4 @@ If the XML parser is insecure:
 - Both exploit **server trust and internal access**
 
 Proper validation, whitelisting, and secure parsers are essential to prevent these attacks.
+

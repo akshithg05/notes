@@ -63,10 +63,14 @@
             "id": "a08dab11935c9d5d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Front End System Design/5-Performance/6 Render optimization.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "6 Render optimization"
             }
           }
         ],
@@ -190,12 +194,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Front End System Design/5-Performance/6 Render optimization.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of 6 Render optimization"
             }
           },
           {
@@ -230,6 +235,8 @@
   },
   "active": "a08dab11935c9d5d",
   "lastOpenFiles": [
+    "Front End System Design/3-Security/11 SSRF - Server side resource forgery.md",
+    "Front End System Design/5-Performance/6 Render optimization.md",
     "OMSCS/2 KBAI/2 Introduction to CS7673.md",
     "OMSCS/2 KBAI/1 Introduction to KBAI.md",
     "OMSCS/2 KBAI/0 General information.md",
@@ -243,11 +250,9 @@
     "OMSCS/2 KBAI/images/Pasted image 20260113165812.png",
     "OMSCS/2 KBAI/images/Pasted image 20260113165751.png",
     "OMSCS/2 KBAI/images/Pasted image 20260113165700.png",
-    "Front End System Design/3-Security/11 SSRF - Server side resource forgery.md",
     "Front End System Design/3-Security/10 Input validation and sanitization.md",
     "Front End System Design/3-Security/9 Compliance and Regulation.md",
     "Front End System Design/3-Security/8 Dependency security.md",
-    "Front End System Design/5-Performance/6 Render optimization.md",
     "OMSCS/2 KBAI/images",
     "Interview questions/js-interview-question-by-namastedev.pdf",
     "Interview questions/DSA revision Namaste DSA.md",

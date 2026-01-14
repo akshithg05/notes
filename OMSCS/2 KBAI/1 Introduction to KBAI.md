@@ -215,3 +215,191 @@ If you want, next we can:
 
 - Contrast this with **modern ML-heavy AI**, or
 - Discuss **why CS7637 emphasizes “thinking” over “acting.”**
+
+
+[[2026-01-13]]
+
+Quiz 
+![[Pasted image 20260113161804.png]]
+
+Answers -
+![[Pasted image 20260113161939.png]]
+
+
+## 1. Cognitive Systems
+
+![[Pasted image 20260113162615.png]]
+
+
+Cognitive systems are **systems that exhibit human-like intelligence** through the interaction of processes such as **learning, reasoning, and memory**.
+
+## 2. Cognitive Systems Architecture
+
+![[Pasted image 20260113164042.png]]
+The system takes input from the physical world and outputs the results back to the physical world.
+
+![[Pasted image 20260113164112.png]]
+
+There can be multiple cognitive systems in the world and each ones' output has the ability to determine and influence the input/ output of the other system.
+
+Architecture
+![[Pasted image 20260113164211.png]]
+
+The three layer architecture of the cognitive system - 
+
+#### Layer 1 Reaction
+
+The **reaction layer** handles:
+- fast
+- automatic
+- low-latency responses
+It does **not** involve deep reasoning.
+
+**Your example (braking when the car in front brakes)** fits perfectly:
+- You perceive the red brake lights
+- You respond immediately
+- No planning or analysis is required
+This is classic **reactive behavior**.
+
+#### Layer 2 Deliberation
+
+The **deliberation layer** is responsible for:
+- reasoning
+- planning
+- evaluating alternatives
+- making informed decisions using knowledge and memory
+
+Your lane-change example works well:
+- You assess traffic in adjacent lanes
+- Consider safety constraints
+- Choose whether and when to change lanes
+
+This involves:
+- memory (driving rules, past experience)
+- reasoning (is there enough space?)
+- possibly learning (adjusting behavior over time)
+
+So yes — lane changing is a **deliberative process**.
+
+
+#### Layer 3 Metacognition
+
+Metacognition is **not just reacting when something goes wrong**.
+
+It is:
+- monitoring the reasoning process
+- evaluating whether the current strategy is working
+- deciding _how_ to think, not _what_ to do
+
+In your driving analogy:
+
+- Realizing that your lane-change strategy is too risky in heavy traffic
+- Deciding to switch from “change lanes” to “slow down and wait”
+- Choosing to rely more on reaction than deliberation in a stressful situation
+
+So metacognition:
+
+- oversees deliberation
+- can modify or redirect it
+- operates at a higher level of control
+
+
+### Summary
+
+The reaction layer handles fast, automatic responses to stimuli without deep reasoning, such as braking immediately when the car in front slows down.
+
+The deliberation layer involves reasoning and planning, such as analyzing surrounding traffic and deciding whether it is safe to change lanes.
+
+Metacognition monitors and controls the deliberation process itself, evaluating whether the current reasoning strategy is effective and adjusting it when necessary.
+
+
+## KBAI Topics and course structure
+
+![[Pasted image 20260113165700.png]]
+
+1. Fundamentals
+![[Pasted image 20260113165751.png]]
+
+2. Planning
+![[Pasted image 20260113165812.png]]
+
+3. Common Sense Reasoning
+![[Pasted image 20260113200040.png]]
+
+4. Learning 
+![[Pasted image 20260113200057.png]]
+
+5. Analogical Reasoning 
+![[Pasted image 20260113200126.png]]
+
+6.
+![[Pasted image 20260113200206.png]]
+
+7. Design and creativity
+![[Pasted image 20260113200228.png]]
+
+8. Metacognition
+![[Pasted image 20260113200256.png]]
+
+
+## Two Approaches to Artificial Intelligence
+
+### 1. Knowledge-Based AI (KBAI)
+
+- Rooted in **cognitive science, psychology, and human reasoning**.
+- Focuses on:
+    - explicit knowledge representations
+    - reasoning processes
+    - explanations and justification
+- Models intelligence at a **high level of abstraction**, closer to how humans _think_.
+
+In short:
+> Intelligence is studied by modeling cognition directly.
+
+
+Cognition is the set of mental processes by which an agent perceives, thinks, learns, and makes decisions.
+
+
+---
+
+### 2. Machine Learning–Based AI
+- Rooted in **neuroscience, statistics, and optimization**.
+- Focuses on:
+    
+    - learning from data
+    - pattern recognition
+    - neural networks and deep learning
+- Models intelligence at a **low level of abstraction**, inspired by how the brain _learns_.
+
+In short:
+> Intelligence is studied by training systems to behave intelligently.
+---
+
+## Reductionism vs Holism
+
+- **Machine Learning** is largely **reductionist**:
+    - Break intelligence down into neurons, weights, gradients, and loss functions.
+    - Intelligence emerges from low-level mechanisms.
+
+- **Knowledge-Based AI** is more **holistic**:
+    - Treats reasoning, memory, and learning as interacting cognitive processes.
+    - Focuses on the system as a whole rather than its smallest components.
+
+---
+
+## Convergence (Open Question)
+
+In theory:
+- High-level cognitive models (KBAI)
+- and low-level learning models (ML)
+
+**should converge** toward a unified theory of intelligence.
+
+In practice:
+
+- We do **not yet know**
+    - where this convergence will happen
+    - how it will happen
+    - or what the correct level of abstraction is
+
+This gap is an **open research question**, not a solved problem.

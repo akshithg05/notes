@@ -37,12 +37,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Front End System Design/3-Security/11 SSRF - Server side resource forgery.md",
+                "file": "Front End System Design/3-Security/12 SSJI - Server Side JavaScript Injection.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "11 SSRF - Server side resource forgery"
+              "title": "12 SSJI - Server Side JavaScript Injection"
             }
           },
           {
@@ -74,7 +74,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -194,13 +194,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Front End System Design/5-Performance/6 Render optimization.md",
+                "file": "Front End System Design/3-Security/12 SSJI - Server Side JavaScript Injection.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 6 Render optimization"
+              "title": "Outline of 12 SSJI - Server Side JavaScript Injection"
             }
           },
           {
@@ -233,9 +233,10 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "a08dab11935c9d5d",
+  "active": "3784131c41eaca6c",
   "lastOpenFiles": [
     "Front End System Design/3-Security/11 SSRF - Server side resource forgery.md",
+    "Front End System Design/3-Security/12 SSJI - Server Side JavaScript Injection.md",
     "Front End System Design/5-Performance/6 Render optimization.md",
     "OMSCS/2 KBAI/2 Introduction to CS7673.md",
     "OMSCS/2 KBAI/1 Introduction to KBAI.md",
@@ -277,7 +278,6 @@
     "Front End System Design/5-Performance",
     "Front End System Design/4-Testing/7 Security testing.md",
     "Typescript/Untitled",
-    "Front End System Design/4-Testing/6 Test driven development.md",
     "Interview questions/react-75-by-namastedev.pdf.crdownload",
     "Interview questions/js-interview-question-by-namastedev.pdf.crdownload",
     "Interview questions",

@@ -204,17 +204,11 @@ It emphasizes:
 - explicit knowledge representations
 - reasoning processes
 - explanations of thought
-
 rather than purely optimal action or black-box behavior.
 ---
 ### One-line summary
 
 > The four schools of AI differ in whether they prioritize **thought or action**, and whether intelligence is defined as **optimal performance or human-like behavior**.
-
-If you want, next we can:
-
-- Contrast this with **modern ML-heavy AI**, or
-- Discuss **why CS7637 emphasizes “thinking” over “acting.”**
 
 
 [[2026-01-13]]

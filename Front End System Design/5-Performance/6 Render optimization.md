@@ -394,3 +394,137 @@ export async function getStaticProps() {
 ```
 
 
+### [[2026-01-15]]
+
+## CSR vs SSR vs SSG — Final Interview Cheat Sheet
+
+| Aspect | Client Side Rendering (CSR) | Server Side Rendering (SSR) | Static Site Generation (SSG) |
+|------|-----------------------------|-----------------------------|------------------------------|
+| Initial Page Load | Slower (JS required before render) | Faster (pre-rendered HTML) | Fastest (pre-built HTML) |
+| LCP / FID | Higher (worse initially) | Better than CSR | Best |
+| SEO Friendliness | Poor by default, needs extra effort | SEO-friendly (HTML from server) | SEO-friendly (HTML at build time) |
+| User Interaction | Fast after hydration | Fast after hydration | Fast after hydration |
+| Data Fetching | Client-side (useEffect, hooks) | Server-side (per request) | Build-time |
+| Hydration | Required | Required | Required |
+| Real-time Updates | Excellent | Excellent | Poor (needs rebuild) |
+| Server Load | Low | High (every request) | Very Low |
+| Scalability | High | Limited by server | Extremely High (CDN) |
+| Development Complexity | High (state + effects) | Moderate | Low–Moderate |
+| Hosting Requirements | Static hosting / CDN | Requires server | Static hosting / CDN |
+| Best Use Cases | Dashboards, SPAs, logged-in apps | Personalized pages, auth | Blogs, docs, marketing |
+| Example Frameworks | React, Angular, Vue | Next.js, Nuxt.js | Next.js, Gatsby |
+| Next.js API | useEffect / client fetch | getServerSideProps | getStaticProps |
+
+---
+
+## One-Line Memory Trick (Very Important)
+
+- **CSR** → Browser does everything  
+- **SSR** → Server renders on every request  
+- **SSG** → Build once, serve forever  
+
+---
+
+## Golden Interview Line
+
+> If content is the same for all users, rendering it on every request is a waste — prebuild it using SSG.
+
+
+
+
+![[namastedev.com_learn_namaste-frontend-system-design_rendering-pattern.png]]
+
+
+## React Server Components (RSC) — Quick Notes & Interview Cheat Sheet
+
+### What is RSC?
+React Server Components (RSC) allow you to **mix Server-Side Rendering (SSR) and Client-Side Rendering (CSR) at the component level**.  
+You decide **which components run on the server and which run on the client**.
+
+Implemented using **Next.js App Router (`app/` folder)**.
+
+---
+
+### Key Rules
+- ❌ No `pages/` folder — use `app/`
+- ✅ Components are **Server Components by default**
+- ✅ Add `"use client"` at the top of a file to make it a **Client Component**
+- ❌ Server Components cannot use hooks like `useState`, `useEffect`
+- ✅ Client Components can use hooks and browser APIs
+
+---
+
+### How It Works
+- Root components render on the **server**
+- Child components can selectively render on the **client**
+- Server renders HTML + data
+- Browser hydrates only interactive parts
+
+**Debug tip:**
+- `console.log` in terminal → Server Component  
+- `console.log` in browser console → Client Component
+
+---
+
+### Keywords to Remember
+- `"use client"` → runs on browser
+- Server Components → default
+- App Router → required
+- Partial hydration → only client components hydrate
+
+---
+
+### Benefits of RSC
+1. **Efficient Data Fetching**  
+   - Fetch data directly on server (no waterfalls)
+
+2. **Better Security**  
+   - Secrets & DB access stay on server
+
+3. **Smaller Bundle Size**  
+   - Server-only code never sent to browser
+
+4. **Built-in Caching**  
+   - Automatic request & component-level caching
+
+5. **Faster Initial Load**  
+   - HTML is ready before JS loads
+
+6. **Streaming (Superpower)**  
+   - Page renders in chunks → faster FCP & LCP
+
+7. **SEO Friendly**  
+   - Fully rendered HTML sent to browser
+
+---
+
+### Drawbacks / Limitations
+1. **Learning Curve**
+   - Mental shift from pure CSR
+
+2. **Restricted APIs**
+   - No browser APIs in Server Components
+
+3. **Debugging Complexity**
+   - Mixed execution environments
+
+4. **Tooling Ecosystem Still Evolving**
+   - Not all libraries are RSC-safe
+
+5. **Overuse Can Hurt Performance**
+   - Too much server logic can delay HTML (slow FCP)
+
+---
+
+### When to Use RSC
+- Data-heavy pages
+- SEO-critical pages
+- Apps needing fast first load
+- Reducing JS bundle size
+
+---
+
+### One-Line Interview Summary
+> React Server Components let us choose, per component, whether rendering happens on the server or client—giving us faster loads, smaller bundles, and better security.
+
+

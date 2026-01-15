@@ -29,6 +29,13 @@ The browser will reload the page and possibly submit the form data via HTTP — 
 ## UseRef()
 ### 🧠 What is `useRef`?
 
+**`useRef`** is a React hook that returns a **mutable object** whose `.current` value **persists across renders** but **does not trigger a re-render when updated**.
+
+It is mainly used for:
+
+1. **Accessing DOM elements directly**
+2. **Storing mutable values that should survive re-renders without affecting the UI**
+
 `useRef` is a React Hook that lets you reference a value that’s not needed for rendering.
 `useRef` is a tool in React that lets you:
 

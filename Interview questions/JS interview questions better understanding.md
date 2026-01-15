@@ -73,3 +73,66 @@ Generators are lazy by nature, producing values only when requested. They return
 
 **Interview one-liner:**  
 A generator is a special function that simplifies iterator creation by allowing execution to pause and resume using `yield`, with iteration ending when the generator completes execution.
+
+
+#### [[2026-01-15]]
+
+## Property Flags & Property Descriptors (JavaScript)
+
+In JavaScript, every object property has **metadata** associated with it, called **property flags**. These flags define how the property behaves when accessed, modified, or iterated over. Together, the property’s value and its flags are represented using a **property descriptor**.
+
+### Property Flags
+There are three main property flags for data properties:
+
+- **writable** → determines if the property value can be changed
+- **enumerable** → determines if the property appears in loops like `for...in` or `Object.keys`
+- **configurable** → determines if the property can be deleted or reconfigured
+
+By default, properties created normally have all flags set to `true`.
+
+---
+
+### Property Descriptor
+A **property descriptor** is an object that describes a property’s value and its flags.
+
+
+You can access it using:
+```js
+Object.getOwnPropertyDescriptor(obj, prop)
+```
+
+```js
+const user = {
+  name: "Akshith"
+};
+
+console.log(Object.getOwnPropertyDescriptor(user, "name"));
+```
+
+
+Output: 
+```js
+{
+  value: "Akshith",
+  writable: true,
+  enumerable: true,
+  configurable: true
+}
+```
+
+#### Defining Property Flags Manually
+```js
+const user = {};
+
+Object.defineProperty(user, "id", {
+  value: 101,
+  writable: false,
+  enumerable: false,
+  configurable: false
+});
+
+```
+
+#### Interview answer 
+
+Property flags define how an object property behaves, and property descriptors expose and control these flags using methods like `Object.getOwnPropertyDescriptor` and `Object.defineProperty`.

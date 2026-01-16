@@ -1,4 +1,4 @@
-![[namastedev.com_learn_namaste-frontend-system-design_rendering-pattern.png]]
+![[namastedev.com_learn_namaste-frontend-system-design_rendering-pattern 1.png]]
 
 
 Rendering patterns define **where and when** the UI is rendered — on the client, on the server, or a mix of both.  
@@ -432,7 +432,7 @@ export async function getStaticProps() {
 
 
 
-![[namastedev.com_learn_namaste-frontend-system-design_rendering-pattern.png]]
+![[namastedev.com_learn_namaste-frontend-system-design_rendering-pattern 1.png]]
 
 
 ## React Server Components (RSC) — Quick Notes & Interview Cheat Sheet

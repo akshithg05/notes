@@ -225,3 +225,6 @@ Weights
 
 Both are correct but, whichever has higher will get preference, hence answer 5 is correct.
 
+
+![[Pasted image 20260117154826.png]]
+

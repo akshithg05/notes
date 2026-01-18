@@ -49,12 +49,12 @@
             "id": "8a4c5ae983a6c50d",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "image",
               "state": {
-                "file": "Interview questions/react-75-by-namastedev.pdf"
+                "file": "OMSCS/2 KBAI/images/Pasted image 20260117154826.png"
               },
-              "icon": "lucide-file-text",
-              "title": "react-75-by-namastedev"
+              "icon": "lucide-image",
+              "title": "Pasted image 20260117154826"
             }
           },
           {
@@ -72,7 +72,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -231,28 +231,30 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "23462cf23668182b",
+  "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
+    "Front End System Design/3-Security/16 CSRF — Cross-Site Request Forgery.md",
+    "OMSCS/2 KBAI/4 Generate and test.md",
+    "OMSCS/2 KBAI/images/Pasted image 20260117161427.png",
+    "OMSCS/2 KBAI/images/Pasted image 20260117161237.png",
+    "OMSCS/2 KBAI/images/Pasted image 20260117160402.png",
+    "OMSCS/2 KBAI/images/Pasted image 20260117160022.png",
+    "OMSCS/2 KBAI/images/Pasted image 20260117155857.png",
+    "OMSCS/2 KBAI/3 Semantic Networks.md",
+    "OMSCS/2 KBAI/images/Pasted image 20260117154826.png",
+    "Interview questions/react-75-by-namastedev.pdf",
+    "Interview questions/js-interview-question-by-namastedev.pdf",
+    "Front End System Design/5-Performance/3 Performance monitoring.md",
     "Front End System Design/3-Security/15 Cross-origin resource sharing.md",
     "Front End System Design/5-Performance/7 Build Optmization.md",
     "Interview questions/JS interview questions better understanding.md",
     "2026-01-17.md",
-    "Front End System Design/5-Performance/3 Performance monitoring.md",
-    "OMSCS/2 KBAI/3 Semantic Networks.md",
     "OMSCS/2 KBAI/images/Pasted image 20260116155744.png",
     "OMSCS/2 KBAI/images/Pasted image 20260116214658.png",
     "OMSCS/2 KBAI/images/Pasted image 20260116212620.png",
     "OMSCS/2 KBAI/images/Pasted image 20260116212508.png",
-    "OMSCS/2 KBAI/images/Pasted image 20260116183402.png",
-    "OMSCS/2 KBAI/images/Pasted image 20260116183217.png",
-    "OMSCS/2 KBAI/images/Pasted image 20260116183136.png",
-    "OMSCS/2 KBAI/images/Pasted image 20260116163833.png",
-    "OMSCS/2 KBAI/images/Pasted image 20260116163712.png",
-    "OMSCS/2 KBAI/images/Pasted image 20260116163130.png",
     "Front End System Design/3-Security/14 Subresource Integrity (SRI).md",
-    "Interview questions/react-75-by-namastedev.pdf",
     "Interview questions/React Interview Notes.md",
-    "Interview questions/js-interview-question-by-namastedev.pdf",
     "Front End System Design/3-Security/1 Introduction.md",
     "Front End System Design/3-Security/2 Security Overview.md",
     "Front End System Design/3-Security/3 Cross site-scripting (XSS).md",
@@ -269,8 +271,6 @@
     "OMSCS/2 KBAI/1 Introduction to KBAI.md",
     "Untitled.md",
     "Interview questions/DSA revision Namaste DSA.md",
-    "Front End System Design/5-Performance/6 Render optimization.md",
-    "OMSCS/2 KBAI/0 General information.md",
     "OMSCS/2 KBAI/images",
     "OMSCS/2 KBAI",
     "Interview questions/images",

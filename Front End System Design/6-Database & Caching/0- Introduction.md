@@ -95,3 +95,7 @@ Caching works best when **multiple layers are combined intelligently**.
 
 ![[namastedev.com_learn_namaste-frontend-system-design_database-caching-overview 1.png]]
 
+
+
+### Normalization -
+will be discussed.

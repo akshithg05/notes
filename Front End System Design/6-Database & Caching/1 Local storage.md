@@ -106,3 +106,8 @@ export default function App() {
     </div>
   );
 }
+```
+
+### Interview One-Liner
+
+Local Storage is a synchronous, persistent, key-value browser storage (≈5 MB per origin) best suited for non-sensitive, long-lived UI preferences.

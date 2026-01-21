@@ -46,35 +46,7 @@
             }
           },
           {
-            "id": "59f5aebff60a163d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Front End System Design/3-Security/16 CSRF — Cross-Site Request Forgery.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "16 CSRF — Cross-Site Request Forgery"
-            }
-          },
-          {
             "id": "c256aae1e5c72634",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Front End System Design/4-Testing/1 Introduction.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "1 Introduction"
-            }
-          },
-          {
-            "id": "50155baf2cf135e0",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -86,9 +58,23 @@
               "icon": "lucide-file",
               "title": "1 Local storage"
             }
+          },
+          {
+            "id": "50155baf2cf135e0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Front End System Design/6-Database & Caching/2 Session storage.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2 Session storage"
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -247,12 +233,15 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "d5df95e868ccabb7",
+  "active": "50155baf2cf135e0",
   "lastOpenFiles": [
+    "Front End System Design/4-Testing/2 Unit testing and Integration testing.md",
+    "Front End System Design/6-Database & Caching/2 Session storage.md",
+    "Front End System Design/6-Database & Caching/1 Local storage.md",
     "Front End System Design/4-Testing/1 Introduction.md",
+    "Interview questions/js-interview-question-by-namastedev.pdf",
     "Front End System Design/6-Database & Caching/0- Introduction.md",
     "OMSCS/2 KBAI/4 Generate and test.md",
-    "Front End System Design/6-Database & Caching/1 Local storage.md",
     "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_database-caching-overview 1.png",
     "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_database-caching-overview.png",
     "OMSCS/2 KBAI/images/Pasted image 20260119212103.png",
@@ -271,7 +260,6 @@
     "OMSCS/2 KBAI/images/Pasted image 20260117161237.png",
     "OMSCS/2 KBAI/3 Semantic Networks.md",
     "Interview questions/react-75-by-namastedev.pdf",
-    "Interview questions/js-interview-question-by-namastedev.pdf",
     "Front End System Design/3-Security/15 Cross-origin resource sharing.md",
     "Front End System Design/5-Performance/7 Build Optmization.md",
     "2026-01-17.md",
@@ -286,8 +274,6 @@
     "Front End System Design/3-Security/8 Dependency security.md",
     "Front End System Design/3-Security/9 Compliance and Regulation.md",
     "Front End System Design/3-Security/10 Input validation and sanitization.md",
-    "Front End System Design/3-Security/13 Permission policy - Feature policy.md",
-    "OMSCS/2 KBAI/2 Introduction to CS7673.md",
     "OMSCS/2 KBAI/images",
     "OMSCS/2 KBAI",
     "Interview questions/images",

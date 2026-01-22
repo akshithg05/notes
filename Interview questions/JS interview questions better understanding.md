@@ -136,3 +136,103 @@ Object.defineProperty(user, "id", {
 #### Interview answer 
 
 Property flags define how an object property behaves, and property descriptors expose and control these flags using methods like `Object.getOwnPropertyDescriptor` and `Object.defineProperty`.
+
+[[2026-01-21]]
+
+## call, apply, bind (JavaScript)
+
+call, apply, and bind are JavaScript methods used to explicitly control the value of `this` when invoking a function. They are useful when a function needs to run with a specific execution context.
+
+call() invokes the function immediately and accepts arguments one by one.
+
+Example:
+    function greet(city) {
+      console.log(this.name + " from " + city);
+    }
+
+    const user = { name: "Akshith" };
+    greet.call(user, "Bangalore");
+
+apply() also invokes the function immediately, but it accepts arguments as an array, which is helpful when arguments are already grouped.
+
+Example:
+    greet.apply(user, ["Bangalore"]);
+
+bind() does not invoke the function immediately. Instead, it returns a new function with `this` permanently bound to the provided object, which can be executed later.
+
+Example:
+    const boundGreet = greet.bind(user, "Bangalore");
+    boundGreet();
+
+Key differences:
+- call → immediate invocation, arguments passed individually
+- apply → immediate invocation, arguments passed as an array
+- bind → returns a new function, executed later
+
+Interview one-liner:
+call and apply invoke a function immediately with a specific `this` value, while bind returns a new function with `this` bound for future invocation.
+
+
+### Arrow functions vs functions with "function" keyword caveat
+
+**Arrow functions do not have their own `this`; they lexically bind `this` from their surrounding scope.**  
+Functions declared with the `function` keyword have a **dynamic `this`**, which is determined by how the function is called.
+
+So:
+
+- ✅ Arrow functions **fix `this` at creation time**
+    
+- ❌ `function` keyword functions **do not fix `this` automatically**, but **can be fixed using `bind`, `call`, or `apply`**
+    
+
+---
+
+## Why Arrow Functions “Fix” `this`
+
+Arrow functions:
+
+- Do **not** create their own `this`
+    
+- Inherit `this` from the enclosing scope
+    
+
+`const obj = {   name: "Akshith",   greet: () => {     console.log(this.name);   } };  obj.greet(); // undefined (or global this)`
+
+📌 `this` comes from where the function is **defined**, not how it’s called.
+
+---
+
+## `function` Keyword Has Dynamic `this`
+
+`const obj = {   name: "Akshith",   greet: function () {     console.log(this.name);   } };  obj.greet(); // Akshith`
+
+Here, `this` depends on the **call-site**.
+
+---
+
+## Fixing `this` with `function`
+
+Even though `function` does not fix `this` by default, you **can** fix it explicitly:
+
+`const greet = function () {   console.log(this.name); };  const boundGreet = greet.bind({ name: "Akshith" }); boundGreet(); // Akshith`
+
+---
+
+## Interview-Safe Summary (Say This)
+
+> Arrow functions lexically bind `this` from their surrounding scope, whereas functions declared with the `function` keyword have a dynamic `this` that depends on how they are called, though it can be fixed explicitly using `bind`.
+
+---
+
+## Common Interview Trap ❌
+
+> “Arrow functions always have `this` bound to the object”
+
+❌ False  
+Arrow functions **do not bind to the object**, they bind to the **lexical scope**.
+
+---
+
+## Ultra-Short Version
+
+> Arrow functions capture `this` lexically, while normal functions determine `this` at runtime based on the call-site.

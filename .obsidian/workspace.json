@@ -53,7 +53,7 @@
             "state": {
               "type": "image",
               "state": {
-                "file": "Pasted image 20260123113238.png"
+                "file": "OMSCS/2 KBAI/images/Pasted image 20260123113238.png"
               },
               "icon": "lucide-image",
               "title": "Pasted image 20260123113238"
@@ -219,11 +219,12 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "17a97124c55afdee",
+  "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
+    "Front End System Design/4-Testing/4 AB Testing.md",
+    "OMSCS/2 KBAI/images/Pasted image 20260123113238.png",
     "OMSCS/2 KBAI/images/Pasted image 20260123112930.png",
     "OMSCS/2 KBAI/6 Production Systems.md",
-    "Pasted image 20260123113238.png",
     "Typescript/4 - Typescript Abstract classes.md",
     "Typescript/5 - TS Advanced type narrowing.md",
     "Typescript/2 - TypeScript notes.md",

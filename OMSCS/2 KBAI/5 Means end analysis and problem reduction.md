@@ -35,3 +35,8 @@ Problem 2
 ![[Pasted image 20260121204959.png]]
 
  --Just Check lectures for more--
+
+### [[2026-01-22]]
+
+## Problem Reduction
+

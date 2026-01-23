@@ -53,12 +53,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Front End System Design/6-Database & Caching/4 IndexDB.md",
+                "file": "Typescript/2 - TypeScript notes.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "4 IndexDB"
+              "title": "2 - TypeScript notes"
             }
           }
         ],
@@ -223,8 +223,9 @@
   },
   "active": "17a97124c55afdee",
   "lastOpenFiles": [
-    "OMSCS/2 KBAI/6 Production Systems.md",
+    "Typescript/1 - Typescript.md",
     "Front End System Design/6-Database & Caching/4 IndexDB.md",
+    "OMSCS/2 KBAI/6 Production Systems.md",
     "OMSCS/2 KBAI/images/Pasted image 20260122201518.png",
     "OMSCS/2 KBAI/images/Pasted image 20260122200501.png",
     "OMSCS/2 KBAI/images/Pasted image 20260122200038.png",
@@ -262,7 +263,6 @@
     "2026-01-17.md",
     "Front End System Design/3-Security/14 Subresource Integrity (SRI).md",
     "Front End System Design/3-Security/1 Introduction.md",
-    "Front End System Design/3-Security/2 Security Overview.md",
     "OMSCS/2 KBAI/images",
     "OMSCS/2 KBAI",
     "Interview questions/images",

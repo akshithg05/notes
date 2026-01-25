@@ -236,3 +236,15 @@ Arrow functions **do not bind to the object**, they bind to the **lexical scope*
 ## Ultra-Short Version
 
 > Arrow functions capture `this` lexically, while normal functions determine `this` at runtime based on the call-site.
+
+
+## Interview-Ready Explanation - DOM
+
+The **DOM (Document Object Model)** is a **programming interface for web documents**.  
+It represents an HTML or XML document as a **hierarchical tree of nodes**, where each node corresponds to a part of the document such as elements, attributes, or text.
+
+The browser creates the DOM after parsing the HTML. JavaScript can then **read, modify, add, or remove nodes** using DOM APIs, which allows web pages to become **dynamic and interactive**.
+
+The DOM tree starts with the `document` object at the top, followed by elements like `<html>`, `<head>`, and `<body>`, and continues down to individual elements and text nodes.
+
+Event listeners can be attached to DOM nodes to handle user interactions, and styles can be applied via CSS or modified dynamically through JavaScript.

@@ -1,3 +1,5 @@
+
+### [[2026-01-27]]
 ## What Kind of Language Is Go?
 - Go is a **systems programming language**
 - **Statically (strictly) typed**
@@ -139,11 +141,8 @@ GOOS=linux GOARCH=amd64 go build
 ## Summary
 
 - Go is fast, simple, and production-oriented
-    
 - Single compiler, single binary output
-    
 - Strong standard library reduces dependency sprawl
-    
 - Excellent for backend, systems, CLI, and distributed applications
 
 
@@ -345,6 +344,11 @@ go build:
 
 ---
 
+How Other Packages Are Handled
+
+- **Utility Packages**: Packages with any name other than `main` are considered utility or library packages. These packages contain reusable functions and code that can be imported by other programs, but they cannot be built into a standalone executable themselves because they lack the necessary entry point (`func main()`).
+- **Compilation**: When you use the `go build` command on a non-`main` package, Go compiles it and stores the results in a build cache for use by other projects, but it does not produce an executable binary file.
+- **Multiple Executables in a Project**: A single Go project or module can contain multiple executables, provided each one is in its own separate directory and each of those directories declares `package main` and includes a `main()` function. A common convention is to place these in a `cmd/` directory, e.g., `cmd/cli/main.go` and `cmd/web/main.go`.
 ## Go Package Registry
 - https://pkg.go.dev/
 - Central index of all **published Go packages and modules**
@@ -356,466 +360,403 @@ go build:
 - Packages listed here are published and accessible worldwide
 
 
-#### Session 2
+#### Session 2 - Post lunch
 
 
-### Comments in go 
-
-Comments placed above the package statement with starts with Package capital P , is package documentation. It is placed in the packers docs. packages should always be documented
-
-If the top level package name has the same name as the last part of the module name then module name and package name is the same.
 
 
-### Variables
-Vars in go can be declared at package level, function level and block level
+## Comments and Documentation
+- Comments placed above the package statement starting with the word Package (capital P) are treated as package documentation
+- These comments appear in package docs
+- Packages should always be documented
 
-Package level vars are available in the entire package, in functions and block.
-
-Outside the package depends on the name of the variable. Capital letter means it will be available outside the package as well. small letter means .
-
-vars can be written as -
-
-```
-var <name> <type>
-
-or
-
-var <name> = <value>  // Array literal 
-```
-
-Variables must have a type
-
-Go is a very strict language, other types cannot be assigned to other types at all.
-
-### Data Types 
-Integer, signed, unsigned. int/ uint - size based on architecture 64 or 32.
-Float - float
-Complex - complex
-Boolean - bool ?
-string - GO strings are unicode., not an array of chars, unicode code points, runes, fully internationalized. 
-rune (not used much) , can use one single unicode character
-
-Go is a garbage collected language. No difference between declaration and definition. As soon as declared it will declare memory for the variable.
-
-The moment you run a program package level variable memory is allocated. Memory will be de allocated when the program terminates itself, not before. Because packages are unloaded only when program terminates.
-
-0 value for integer is 0, for string ' ', 
-For Boolean it is false 
-zero value of float and complex is 0.00
-
-if you declare a variable and dont give a value it will take the zero value.
-
-When the var goes out of scope the memory will deallocate.
-
-In terms of performance, declaring a variable is allocating memory in go lang.
-
-Do not declare pkg level vars unless absolutely required
-
-### Collections in golang
-
-#### Arrays
-
-Array - in go arrays data size is part of the data type , code -
+Example:
 
 ```go
- var x = [10]int
- x[0] = 1
- x[1] = 2
- 
- var y = [10]int
- 
- y = x
+// Package mathutils provides helper math functions
+package mathutils
 ```
 
-Entire array of x is copied to y.
+- If the top-level package name matches the last part of the module name, the module and package names are effectively the same
+
+---
+
+## Variables
+- Variables can be declared at:
+  - Package level
+  - Function level
+  - Block level
+- Package-level variables are accessible throughout the package
+- Export rules:
+  - Capitalized → exported
+  - Lowercase → package-private
+
+### Variable Declarations
 
 ```go
- var x = [10]int
- x[0] = 1
- x[1] = 2
- 
- var y = [11]int
- 
- y = x
+var count int
+var name = "Go"
 ```
 
-This will throw a compile error , because size is part of datatype in arrays
+- Variables always have a type (explicit or inferred)
+- Go is strictly typed; incompatible assignments are not allowed
+
+---
+
+## Data Types
+- Integers: signed and unsigned
+  - int and uint are architecture-dependent
+- Floating point: float32, float64
+- Complex: complex64, complex128
+- Boolean: bool
+- String:
+  - Unicode by default
+  - Represents Unicode code points (runes)
+- Rune:
+  - Alias for int32
+  - Represents a single Unicode character
+
+---
+
+## Memory and Zero Values
+- Go is garbage collected
+- Memory is allocated at declaration time
+- Package-level variables are allocated at program start
+- Memory is released only when the program terminates
+
+Zero values:
+- int → 0
+- string → empty string
+- bool → false
+- float and complex → 0
+
+Example:
 
 ```go
-var x = [10]int{22,23,24}
+var x int
+var s string
+var b bool
 ```
+- Variables automatically receive zero values if not initialized
+- Avoid package-level variables unless required
 
-The above x variable is 10 element integer array where the first 3 elements are 22 23 and 24, and the rest of the elements are the default 0 value , which is 0.
+---
 
+## Arrays
+- Array size is part of the type
+- Assigning arrays copies all elements
 
-### Constants
+Example:
 
 ```go
-// MaxNumber is the largest number that can be used in this go version
+var x = [10]int
+x[0] = 1
+x[1] = 2
+
+var y = [10]int
+y = x
+```
+- Arrays of different sizes are incompatible
+
+  ```GO
+var a = [10]int
+var b = [11]int
+b = a   // compile-time error
+  ```
+
+- Partial initialization fills remaining values with zero
+
+ ```go
+var z = [10]int{22, 23, 24}
+ ```
+---
+## Constants
+- Constants are immutable
+- Exported constants must be documented
+
+Example:
+
+```go
+// MaxNumber is the largest number supported
 const MaxNumber = 9999
 ```
 
+---
 
-Capital MaxNumber means it is exported and can be used outside the package.
-The moment we are exporting something , we need to document it. Best practice is to use the same name as the name as the constant name as starting word.
+## Functions
+- Functions can return multiple values
+- error is conventionally returned as the last value
+- Early returns improve clarity and performance
 
-### Functions
-
-```go
-func Convert(number int) (string, error) {}
-```
-
-The function takes one argument of integer and can return either string or error. Go functions can return how many ever types of datatypes as needed.
-
-The practice in go is to always include error as a return type and return an error. If any function is void and likely to cause an error , just then return error.
-
-Early returns are a good practice, for better performance and memory allocation practices.
+Example:
 
 ```go
-return "", errors.New("number not in valid range")
+func Convert(number int) (string, error) {
+	if number < 0 {
+		return "", errors.New("number not in valid range")
+	}
+	return "ok", nil
+}
 ```
-We have to return all datatypes while returning.
+Rules:
+- All return values must be returned
+- Error messages should be lowercase and have no punctuation
 
-In error messages, following the idiomatic go convention, we need to put error message in all lowercase and not have any punctuation marks.
+---
 
-Inside functions this is the convention of declaring and defining variables. All variables are function scoped if declared inside the function and not inside a block
+## Variable Declaration Inside Functions
+- := creates a new variable
+- = assigns to an existing variable
+
+Example:
 
 ```go
 result := ""
+result = "done"
 ```
 
-Similar documentation rules for exporting functions.
-
-Variable shadowing occurs in golang as well.
-
-= means assigning a variable
-:= means creating a new variable
-
-if we are not going to use a returned value we can use __
-
-### If else blocks
+- Variable shadowing is allowed
+- Unused return values can be ignored using _
 
 ```go
-if var x= 0, v=1; condition1
+    value, _ := Convert(10)
 ```
 
-We can define variables in the if else block condition , and the scope is only the if else block. 
+---
 
-Slices: Dynamic arrays
-Maps: key value pairs
+## Control Flow
+- If statements can declare variables scoped to the block
 
-Slices and maps internally use ararys only.
+Example:
 
-### nil
-Nil means there is no error. Nil can be assigned only to certain data types. It can be used with error.
-It cannot be used with int , str, bool as they have a default 0 value.
+```go
+if x := 10; x > 5 {
+	fmt.Println(x)
+}
+```
+- Go has no ternary operator
+- Prefer early returns instead of else blocks
 
-Go does not have ternery operator or single line if statement. If has to be written in full, no other value.
-As far as possible do not write else statements. Try and avoid else. Makes logic clear.
+---
 
+## nil
+- nil represents absence of value
+- Allowed for:
+  - pointers
+  - slices
+  - maps
+  - interfaces
+  - functions
+  - channels
+- Not allowed for int, string, bool
 
+---
 
-## Pointers in Go
+## Pointers
+- Pointers are typed
+- No void pointers
+- Pointer zero value is nil
 
-Less flexible, more powerful than C pointers
-
-Pointers are data types in go. There is nothing as void pointer. Pointer points to a particular data type only.
-They point to some reference variable
+Example:
 
 ```go
 var x *int
-```
-This can only point to a block of memory which is an integer
-
-Any pointer based data type has 0 value nil.
-
-```go
-var x *int
-y: = 42
-x  = &y
-z: = *x
+y := 42
+x = &y
+z := *x
 *x = *x + 1
-return x
 ```
 
-Explain above code
+- Used to:
+  - Refer to shared data
+  - Avoid copying large values
+  - Modify data in-place
 
-Error is a type pointer.
+---
 
-When do we use pointers - 
-When we want to refer to a single object in memory.
-To conserve memory and want to change these objects.
+## Testing in Go
+- Test files end with _test.go
+- Package name can match the source package or use _test suffix
+- Test functions:
+  - Start with Test
+  - Accept *testing.T
+
+Example:
 
 ```go
-a := &[2]int{33,44}
-z :=a[1]
-a = &[2]int{55,66} // Allowed
-a = &[3]int{1,2,3} // Compilation error
+func TestAdd(t *testing.T) {
+	if Add(2, 3) != 5 {
+		t.Fail()
+	}
+}
 ```
+- t.Fatal stops execution
+- t.Fail marks failure but continues
+- If neither is called, the test passes
+- go test compiles tests into a temporary executable and runs them
 
-## Go internal testing library
+---
 
-Use same package name with underscore test or same package name as package.
-Name file with undesrcore test.
+## Maps
+- Maps store key-value pairs
+- Key type must be comparable
+- Value type can be anything
 
-Package name can be same package name of what we are building or it can be that of the (underscore)test package we named.
-
-order is not guaranteed.
-
-Name of the test starts with Test and it should have a data type with ``` *testing.T```
-
-
-### Map - collection data structure
-
-A map is a dictionary, collection of key value pairs. We need to give unique key and corresponding value.
-
-There is no such thing as only map, it is map of some key and some value.
-
-Example - 
-```go
-map[int]string
-```
-
-The keys will be integer and values will be string.
-Value can be any data type whatsoever. Key can be any datatype which is comparable (integers, boolean, strings). No pointers, as they cant be keys and non comparable, pointers can be values.
+Example:
 
 ```go
 var xx map[int]string
-
 xx = make(map[int]string)
-```
 
-Make is a function given by go language itself, rare function.
-
-when we use make , there is some memory allocated to hold N number of keys and values
-
-```go
 xx = make(map[int]string, 5)
+xx[22] = "Go"
 ```
-Here we are initially allocating memory for 5 keys and 5 values.
-
-Then we can do this -
+Lookup with ok idiom:
 
 ```go
-x[22] = "Go"
+yy, ok := xx[23]
 ```
 
-Unless actually memory is required it will not allocate more than required memory. If key already exists value will be over written.
+Delete entry:
+
 ```go
-yy, ok:=xx[23]
+delete(xx, 22)
 ```
-If 23 key exists then yy will have the value and ok will be true, else if 23 index does not exist , ok will contain false and yy will contain the 0 value of string which is empty string.
 
-ok is not a keyword, its a variable.
+Map literal:
 
 ```go
-xx=delete(xx,22)
-```
-Deleting the 22 index
-
-
-We can also use the map literal
-```go
-xx:= map[int]string{
+xx := map[int]string{
 	22: "Twenty two",
-	23: "Twenty three"
+	23: "Twenty three",
 }
+
 ```
+---
 
-### Go has only 1 loop: For loops
+## Loops
+- Go has only one loop: for
 
-1. Simplest form of for loop
+Infinite loop:
 
-Infinite loop
 ```go
 for {
-	}
-```
-
-2. For condition
-
-```go
-for <condition>{
-
 }
 ```
 
-Until condition is true keep executing 
+Condition-only loop:
 
-3. For condition statement
 ```go
-for <int>;<condition>; <statement>{
+for x < 10 {
+	x++
 }
 ```
 
-4. For with iterator
-```go
-for <variable>:= condition
-   
-```
-
-For arrays and maps -
+Classic loop:
 
 ```go
-for key,value := range tests{
+for i := 0; i < 10; i++ {
 }
 ```
 
-
-t.Fatal() vs t.Fail()
-
-t.Fatal() - full test fails.
-t.Fail() - that particular iteration in the loop failed.
-
-If there is no t.Fatal() or t.Fail() called, it means that the test case has passed.
-
-
-go test complies all the tests into an executables and puts them in a certain location and executes them and returns a pass fail result.
-
-
-Steps to run go files - 
-
-Write code
-run go mod tidy to get all packages in go.mod file
-then run go build
-run the .exe file
-
-If we want a package manually , run - go get (package name)
-
-
-Go proxy server collects , and servers go packages.
-we can run our own go proxy server as well.
-GOPROXY=https://proxy.golang.org,direct - this is the global proxy
-
-
-Aliases for package names
+Range loop:
 
 ```go
-package main
-
-import (
-    "fmt"
-    n2 "github.com/rajch/numbertowords"
-)
-
-
-func main(){
-    result ,_ := n2.Convert(1234)
-    fmt.Println(result)
+for key, value := range tests {
 }
 ```
+---
 
+## go run vs go build
+- go run:
+  - Runs only main package
+  - Hides compilation
+  - Uses temporary binary
+  - Not recommended for real development
 
-We can only publish to src control, not publish to a proxy
-
-We can read docs with the following command - go doc github.com/rajch/numbertowords.Convert
-
-
-# go.sum – Notes
-
-## What is go.sum
-- go.sum is a file used for **dependency integrity verification**
-- It is automatically maintained by the Go toolchain
-- It records **cryptographic hashes** of module versions that your project depends on
+- go build:
+  - Explicit compilation
+  - Builds current package only
+  - Compiles dependencies
+  - Produces predictable binary
 
 ---
 
-## How go.sum is Generated
-- go.sum is updated when you run:
-  - go mod tidy
-  - go get
-  - go build (if new dependencies are introduced)
-- Hashes are fetched from the module source (usually a source control system)
+## go.sum
+- Stores cryptographic hashes of module versions
+- Ensures dependency integrity
+- Prevents tampering
+- Similar to package-lock.json
+- Must always be committed
 
 ---
 
-## What go.sum Contains
-- Hashes of:
-  - Direct dependencies
-  - Indirect (transitive) dependencies
-- Each entry ensures that the **exact same source code** is used every time
+## Project Structure Best Practices
+- Only main packages produce executables
+- Multiple executables:
+  - Use cmd directory with subdirectories
+- Non-main packages:
+  - Use subdirectories directly
+- internal directory:
+  - Packages cannot be imported outside the module
 
 ---
 
-## Security Guarantee
-- If a dependency’s source code is **tampered with** or altered:
-  - The hash will not match
-  - Go will **fail the build**
-- This prevents:
-  - Supply chain attacks
-  - Silent dependency modification
-  - Inconsistent builds across machines
+## Structs and Custom Types
+
+Example:
+
+    type expense struct {
+        Id          int64
+        Description string
+        Amount      complex64
+    }
+
+    var a expense
+    var b = expense{
+        Id:          1,
+        Description: "Breakfast",
+        Amount:      200.00,
+    }
+
+    var c = expense{0, "Taxi", 234.345}
 
 ---
 
-## Why go.sum Exists
-- Ensures **reproducible builds**
-- Guarantees **dependency integrity**
-- Makes builds deterministic across:
-  - Developers
-  - CI systems
-  - Production environments
+## Slices
+- Slices are dynamic views over arrays
+- Slice type does not include size
+
+Example:
+
+    s := []int{1, 2, 3}
+    s = append(s, 4)
+
+- If capacity allows, append reuses memory
+- If capacity exceeded, new array is allocated
+- Length changes when elements are removed
+- Capacity remains until reallocation occurs
 
 ---
 
-## Comparison to Other Ecosystems
-- go.sum is conceptually similar to:
-  - package-lock.json in npm
-- Both lock down dependency integrity
-- Difference:
-  - go.sum stores **hashes**, not a full dependency tree
-  - Version selection logic remains in go.mod
+## Imports and Aliases
+
+Example:
+
+    import (
+        "fmt"
+        n2 "github.com/rajch/numbertowords"
+    )
+
+    func main() {
+        result, _ := n2.Convert(1234)
+        fmt.Println(result)
+    }
 
 ---
 
-
-The moment our module has multiple packages, use subdirectories, avoid root directory.
-
-If we are creating one or more executables, create a folder cmd and create subdirectories there and each of the package there will have a main package.
-Only main package can create executables (.exe).
-
-For library packages, create a directory called pkg, then create subdirectories for every package.
-
-This was the old practice, now just create sub directories directly for non main packages.
-
-If we publish our module and do not want some of the packages to be published or available to everyone put those packages inside internal
-
-
-### Composite data types
-
-struct
-struct of something
-
-typedef can be used to create a new data type of the existing type.
-
-```go
-package model
-
-type expense struct {
-    Id          int64
-    Description string
-    Amount      complex64
-}
-
-var aa expense
-var xx = expense{
-    Id:          1,
-    Description: "Breakfast",
-    Amount:      200.00,
-}
-
-var yy = expense{0, "Taxi", 234.345}
-```
-
-### Slices
-
-Slice is like array, does not have size as part of its size definition.
-Slice is like a pointer, it points to some array or some part of an array.
-I can append to a slice, add another entry to the slice, slices length will increase by 1.
-
-When we append to a slice, if appending does not exceed capacity, then no extra memory allocation. 
-
-When we exceed capacity, the slice is copied to a new array with new capacity and slice points to that.
-
-Only length will change when we delete , capacity remains the same.
-
+## Go Proxy
+- Default proxy:
+  GOPROXY=https://proxy.golang.org,direct
+- Modules are published to source control, not directly to proxies
+- pkg.go.dev lists all publicly available Go modules and packages

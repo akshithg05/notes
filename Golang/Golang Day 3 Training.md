@@ -1,0 +1,1 @@
+Encoder in go converts slices to arrays, maps to objects and arrays into arrays.

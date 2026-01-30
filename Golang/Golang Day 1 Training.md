@@ -706,20 +706,22 @@ for key, value := range tests {
 
 Example:
 
-    type expense struct {
-        Id          int64
-        Description string
-        Amount      complex64
-    }
+```go
+type expense struct {
+	Id          int64
+	Description string
+	Amount      complex64
+}
 
-    var a expense
-    var b = expense{
-        Id:          1,
-        Description: "Breakfast",
-        Amount:      200.00,
-    }
+var a expense
+var b = expense{
+	Id:          1,
+	Description: "Breakfast",
+	Amount:      200.00,
+}
 
-    var c = expense{0, "Taxi", 234.345}
+var c = expense{0, "Taxi", 234.345}
+```
 
 ---
 

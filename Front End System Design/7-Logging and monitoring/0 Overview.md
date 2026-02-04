@@ -15,3 +15,14 @@ Some features should be prioritized more than others. We have to weight which is
 
 What to log, how to log and how to fix this. This is not only from a dev perspective but also from a consumer perspective.
 
+1. Collecting data
+2. Monitoring the data
+3. Fixing
+
+These are the steps covered.
+
+![[namastedev.com_learn_namaste-frontend-system-design_logging-monitoring-overview.png]]
+
+
+
+

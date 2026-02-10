@@ -146,6 +146,12 @@ In this model, the server does **not** send fully rendered content. Instead, it 
 - In some apps, hydration can be delayed or partial
 - Interactivity depends on hydration completion
 
+1. **Initial Load & Render:** The browser downloads the HTML, parses it, builds the DOM and CSSOM, and constructs the render tree. This initial, non-interactive content is painted to the screen as quickly as possible.
+2. **JavaScript Execution:** The browser then downloads and executes the necessary JavaScript bundles (which were often used to generate the initial server-side rendered HTML).
+3. **Hydration:** The JavaScript "wakes up" the static HTML on the client side, attaching event listeners and application logic. This process transforms the static content into a fully interactive web application.
+
+Therefore, hydration is a separate phase that occurs _after_ the initial visual rendering is complete
+
 ---
 
 ## Key Takeaway

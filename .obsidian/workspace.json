@@ -63,16 +63,44 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Front End System Design/7-Logging and monitoring/2 Alerting.md",
+                "file": "Front End System Design/5-Performance/7 Build Optmization.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2 Alerting"
+              "title": "7 Build Optmization"
+            }
+          },
+          {
+            "id": "2a7db26f57990c5c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "OMSCS/2 KBAI/9 Case based reasoning.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "9 Case based reasoning"
+            }
+          },
+          {
+            "id": "edeb9ef6f2180fa5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Front End System Design/7-Logging and monitoring/3 Fixing.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "3 Fixing"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -129,7 +157,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 306.5
+    "width": 309.5
   },
   "right": {
     "id": "c1359012abc4e269",
@@ -231,30 +259,35 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "ba7771f920ef14f2",
+  "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
-    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_alerting (2).png",
+    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_fixing.png",
+    "Front End System Design/7-Logging and monitoring/3 Fixing.md",
+    "OMSCS/2 KBAI/9 Case based reasoning.md",
+    "OMSCS/2 KBAI/images/Pasted image 20260210204213.png",
+    "OMSCS/2 KBAI/images/Pasted image 20260210203813.png",
+    "OMSCS/2 KBAI/images/Pasted image 20260210203254.png",
+    "OMSCS/2 KBAI/images/Pasted image 20260210202714.png",
+    "OMSCS/2 KBAI/images/Pasted image 20260210201758.png",
+    "OMSCS/2 KBAI/images/Pasted image 20260210201048.png",
+    "OMSCS/2 KBAI/images/Pasted image 20260210200944.png",
+    "OMSCS/2 KBAI/images/Pasted image 20260210200532.png",
+    "OMSCS/2 KBAI/images/Pasted image 20260210200257.png",
+    "OMSCS/2 KBAI/images/Pasted image 20260210195917.png",
+    "Untitled.md",
+    "Front End System Design/5-Performance/7 Build Optmization.md",
+    "OMSCS/2 KBAI/9 Case based reasoning/9 Case based reasoning.md",
+    "OMSCS/2 KBAI/9 Case based reasoning",
     "Front End System Design/5-Performance/6 Render optimization.md",
     "Front End System Design/7-Logging and monitoring/2 Alerting.md",
     "Interview questions/js-interview-question-by-namastedev.pdf",
-    "Front End System Design/5-Performance/7 Build Optmization.md",
     "Front End System Design/7-Logging and monitoring/1 Telemetry.md",
-    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_telemetry 1.png",
-    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_telemetry.png",
     "Front End System Design/5-Performance/5 Network Optimization.md",
     "Interview questions/react-75-by-namastedev.pdf",
     "Interview questions/JS interview questions better understanding.md",
     "Front End System Design/7-Logging and monitoring/0 Overview.md",
-    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_logging-monitoring-overview.png",
-    "OMSCS/2 KBAI/images/Pasted image 20260204082756.png",
-    "OMSCS/2 KBAI/images/Pasted image 20260204081549.png",
     "OMSCS/2 KBAI/8 Recording cases.md",
     "Front End System Design/7-Logging and monitoring",
-    "OMSCS/2 KBAI/images/Pasted image 20260203205224.png",
-    "OMSCS/2 KBAI/images/Pasted image 20260203205207.png",
-    "OMSCS/2 KBAI/images/Pasted image 20260203205102.png",
-    "OMSCS/2 KBAI/images/Pasted image 20260203204902.png",
-    "OMSCS/2 KBAI/images/Pasted image 20260203204553.png",
     "README.md",
     "2026-01-27.md",
     "Front End System Design/6-Database & Caching/8 State management.md",
@@ -268,17 +301,12 @@
     "OMSCS/2 KBAI/0 General information.md",
     "OMSCS/2 KBAI/7 Frames.md",
     "Front End System Design/6-Database & Caching/6 HTTP caching.md",
-    "Front End System Design/6-Database & Caching/7 Service worker caching.md",
     "Golang",
-    "Front End System Design/5-Performance/2 Performance importance.md",
-    "Front End System Design/5-Performance/1 Performance overview.md",
-    "Front End System Design/4-Testing/7 Security testing.md",
     "Commands",
     "Front End System Design/6-Database & Caching",
     "OMSCS/2 KBAI/images",
     "OMSCS/2 KBAI",
     "Interview questions/images",
-    "Front End System Design/5-Performance",
     "Untitled.canvas"
   ]
 }

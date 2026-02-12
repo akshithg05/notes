@@ -248,3 +248,68 @@ The browser creates the DOM after parsing the HTML. JavaScript can then **read, 
 The DOM tree starts with the `document` object at the top, followed by elements like `<html>`, `<head>`, and `<body>`, and continues down to individual elements and text nodes.
 
 Event listeners can be attached to DOM nodes to handle user interactions, and styles can be applied via CSS or modified dynamically through JavaScript.
+
+### [[2026-02-11]]
+
+# 113. Polyfills 
+
+A **polyfill** in JavaScript is code that adds support for a newer feature in environments (usually older browsers) that don’t support it yet.
+
+Think of it as:
+
+> “If the environment doesn’t have this feature, I’ll provide my own implementation.”
+
+---
+
+# 🧠 Why Polyfills Exist
+
+JavaScript evolves fast (ES6, ES2017, ES2020, etc.), but not all browsers update at the same speed.
+
+For example:
+
+- `Promise` didn’t exist in older browsers
+    
+- `Array.prototype.includes()` wasn’t always available
+    
+- `fetch()` wasn’t supported in older versions of Internet Explorer
+    
+
+Polyfills allow you to use modern features while still supporting older environments.
+
+---
+
+# 🔧 Example: Simple Polyfill
+
+### Problem:
+
+Older browsers don’t support:
+
+`Array.prototype.includes()`
+
+### Polyfill:
+
+`if (!Array.prototype.includes) {   Array.prototype.includes = function(value) {     return this.indexOf(value) !== -1;   }; }`
+
+### What’s happening:
+
+1. Check if `includes` exists
+    
+2. If not → define it
+    
+3. Older browsers now behave like modern ones
+    
+
+---
+
+# 🧩 Real Example: Promise Polyfill
+
+Before `Promise` was native, libraries like:
+
+- `core-js`
+    
+- `es6-promise`
+    
+
+provided Promise implementations for older browsers.
+
+

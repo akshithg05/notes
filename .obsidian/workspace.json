@@ -105,16 +105,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Front End System Design/8 - Accesibility/0 Overview.md",
+                "file": "Front End System Design/6-Database & Caching/0- Introduction.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "0 Overview"
+              "title": "0- Introduction"
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -258,7 +258,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 329.5
+    "width": 331.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -273,11 +273,17 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "d5df95e868ccabb7",
+  "active": "9e25115d3933d624",
   "lastOpenFiles": [
+    "Interview questions/js-interview-question-by-namastedev.pdf",
+    "Front End System Design/6-Database & Caching/0- Introduction.md",
+    "Front End System Design/6-Database & Caching/5 Normalization.md",
+    "Front End System Design/8 - Accesibility/1 Keyboard accessibility.md",
+    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_keyboard-accessibility 1.png",
+    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_keyboard-accessibility.png",
+    "Front End System Design/8 - Accesibility/0 Overview.md",
     "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_accessibility-overview.png",
     "OMSCS/2 KBAI/10 Incremental concept learning.md",
-    "Front End System Design/8 - Accesibility/0 Overview.md",
     "Front End System Design/8 - Accesibility",
     "OMSCS/2 KBAI/images/Pasted image 20260211154733.png",
     "OMSCS/2 KBAI/images/Pasted image 20260211154057.png",
@@ -286,11 +292,7 @@
     "OMSCS/2 KBAI/images/Pasted image 20260211152619.png",
     "OMSCS/2 KBAI/images/Pasted image 20260211151443.png",
     "OMSCS/2 KBAI/images/Pasted image 20260211151310.png",
-    "OMSCS/2 KBAI/images/Pasted image 20260211151028.png",
-    "OMSCS/2 KBAI/images/Pasted image 20260211150823.png",
-    "OMSCS/2 KBAI/images/Pasted image 20260211150134.png",
     "Interview questions/react-75-by-namastedev.pdf",
-    "Interview questions/js-interview-question-by-namastedev.pdf",
     "Front End System Design/7-Logging and monitoring/3 Fixing.md",
     "Interview questions/JS interview questions better understanding.md",
     "Javascript/NamasteJS Notes.md",
@@ -313,9 +315,6 @@
     "Front End System Design/6-Database & Caching/8 State management.md",
     "Front End System Design/5-Performance/4 Performance tools.md",
     "Front End System Design/5-Performance/3 Performance monitoring.md",
-    "Golang/Golang Day 3 Training.md",
-    "Golang/Golang Day 1 Training.md",
-    "OMSCS/2 KBAI/5 Means end analysis and problem reduction.md",
     "Golang",
     "Commands",
     "Front End System Design/6-Database & Caching",

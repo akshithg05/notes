@@ -63,12 +63,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Front End System Design/6-Database & Caching/2 Session storage.md",
+                "file": "OMSCS/2 KBAI/11 Classification.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2 Session storage"
+              "title": "11 Classification"
             }
           },
           {
@@ -258,7 +258,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 331.5
+    "width": 334.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -275,26 +275,29 @@
   },
   "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
+    "OMSCS/2 KBAI/images/Pasted image 20260216224825.png",
+    "OMSCS/2 KBAI/images/Pasted image 20260216224815.png",
+    "OMSCS/2 KBAI/images/Pasted image 20260216224711.png",
+    "OMSCS/2 KBAI/images/Pasted image 20260216224629.png",
+    "OMSCS/2 KBAI/images/Pasted image 20260216224438.png",
+    "OMSCS/2 KBAI/images/Pasted image 20260216224418.png",
+    "OMSCS/2 KBAI/images/Pasted image 20260216224329.png",
+    "OMSCS/2 KBAI/images/Pasted image 20260216224138.png",
+    "OMSCS/2 KBAI/images/Pasted image 20260216224049.png",
+    "OMSCS/2 KBAI/images/Pasted image 20260216223741.png",
+    "OMSCS/2 KBAI/images/Pasted image 20260216223617.png",
+    "Front End System Design/6-Database & Caching/2 Session storage.md",
+    "OMSCS/2 KBAI/11 Classification.md",
     "Front End System Design/8 - Accesibility/2 Screen reader.md",
-    "namastedev.com_learn_namaste-frontend-system-design_screen-reader (1) 1.png",
-    "namastedev.com_learn_namaste-frontend-system-design_screen-reader (1).png",
     "Front End System Design/6-Database & Caching/1 Local storage.md",
     "Front End System Design/8 - Accesibility/1 Keyboard accessibility.md",
-    "namastedev.com_learn_namaste-frontend-system-design_keyboard-accessibility.png",
     "Front End System Design/8 - Accesibility/0 Overview.md",
     "Front End System Design/5-Performance/7 Build Optmization.md",
     "Interview questions/js-interview-question-by-namastedev.pdf",
     "Front End System Design/6-Database & Caching/0- Introduction.md",
     "Front End System Design/6-Database & Caching/5 Normalization.md",
-    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_keyboard-accessibility 1.png",
-    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_keyboard-accessibility.png",
-    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_accessibility-overview.png",
     "OMSCS/2 KBAI/10 Incremental concept learning.md",
     "Front End System Design/8 - Accesibility",
-    "OMSCS/2 KBAI/images/Pasted image 20260211154733.png",
-    "OMSCS/2 KBAI/images/Pasted image 20260211154057.png",
-    "OMSCS/2 KBAI/images/Pasted image 20260211153021.png",
-    "OMSCS/2 KBAI/images/Pasted image 20260211152646.png",
     "Interview questions/react-75-by-namastedev.pdf",
     "Front End System Design/7-Logging and monitoring/3 Fixing.md",
     "Interview questions/JS interview questions better understanding.md",
@@ -313,8 +316,6 @@
     "OMSCS/2 KBAI/8 Recording cases.md",
     "Front End System Design/7-Logging and monitoring",
     "README.md",
-    "2026-01-27.md",
-    "Front End System Design/6-Database & Caching/8 State management.md",
     "Golang",
     "Commands",
     "Front End System Design/6-Database & Caching",

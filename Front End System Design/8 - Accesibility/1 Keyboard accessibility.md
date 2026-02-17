@@ -1,5 +1,5 @@
 
-![[namastedev.com_learn_namaste-frontend-system-design_keyboard-accessibility.png]]
+![[namastedev.com_learn_namaste-frontend-system-design_keyboard-accessibility 2.png]]
 ## Important Note
 
 Web applications are accessible by default.
@@ -112,7 +112,7 @@ Accessibility benefits everyone.
 [[2026-02-14]]
 
 Web accessibility
-![[namastedev.com_learn_namaste-frontend-system-design_keyboard-accessibility.png]]
+![[namastedev.com_learn_namaste-frontend-system-design_keyboard-accessibility 2.png]]
 ## Assistive Technology (AT)
 
 Assistive Technology helps users with disabilities interact with web applications.  

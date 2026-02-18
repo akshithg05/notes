@@ -26,3 +26,13 @@
 
 ![[Pasted image 20260216224815.png]]
 ![[Pasted image 20260216224825.png]]
+
+![[Pasted image 20260217212215.png]]
+Below this exemplar is qualia . Eg - Bitterness
+
+![[Pasted image 20260217212356.png]]
+
+
+![[Pasted image 20260217213053.png]]
+![[Pasted image 20260217213037.png]]
+

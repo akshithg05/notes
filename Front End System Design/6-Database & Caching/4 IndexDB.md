@@ -9,7 +9,7 @@ It is more powerful than Local Storage, Session Storage, and Cookies.
 ### 2. How It Works
 IndexedDB is based on a **transactional database model**:
 - Open a database using `indexedDB.open()`
-- Create **object stores** (similar to tables)
+- Create **object stores** (similar to tables) , NoSQL database
 - Perform operations using **transactions**
 - Supports indexes for faster lookup and search
 

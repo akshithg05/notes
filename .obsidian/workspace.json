@@ -49,12 +49,14 @@
             "id": "9e25115d3933d624",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Interview questions/react-75-by-namastedev.pdf"
+                "file": "Front End System Design/6-Database & Caching/4 IndexDB.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "react-75-by-namastedev"
+              "icon": "lucide-file",
+              "title": "4 IndexDB"
             }
           },
           {
@@ -86,7 +88,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -206,13 +208,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Front End System Design/8 - Accesibility/4 Color contrast.md",
+                "file": "Front End System Design/6-Database & Caching/4 IndexDB.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 4 Color contrast"
+              "title": "Outline of 4 IndexDB"
             }
           },
           {
@@ -247,9 +249,15 @@
   },
   "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
+    "Front End System Design/8 - Accesibility/5 Tools and techniques (Interview cheat sheet).md",
+    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_accessibility-tools 2.png",
+    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_accessibility-tools 1.png",
+    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_accessibility-tools.png",
+    "Interview questions/react-75-by-namastedev.pdf",
+    "Interview questions/js-interview-question-by-namastedev.pdf",
+    "Front End System Design/8 - Accesibility/4 Color contrast.md",
     "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_color-contrast.png",
     "Front End System Design/8 - Accesibility/3 Focus management.md",
-    "Front End System Design/8 - Accesibility/4 Color contrast.md",
     "Front End System Design/6-Database & Caching/3 Cookies.md",
     "Front End System Design/6-Database & Caching/4 IndexDB.md",
     "OMSCS/2 KBAI/12 Logic.md",
@@ -259,12 +267,7 @@
     "OMSCS/2 KBAI/images/Pasted image 20260218144107.png",
     "OMSCS/2 KBAI/images/Pasted image 20260218144052.png",
     "OMSCS/2 KBAI/images/Pasted image 20260218143630.png",
-    "OMSCS/2 KBAI/images/Pasted image 20260218143613.png",
-    "OMSCS/2 KBAI/images/Pasted image 20260218142218.png",
-    "OMSCS/2 KBAI/images/Pasted image 20260218141703.png",
-    "OMSCS/2 KBAI/images/Pasted image 20260218141630.png",
     "OMSCS/2 KBAI/11 Classification.md",
-    "Interview questions/react-75-by-namastedev.pdf",
     "Front End System Design/8 - Accesibility/2 Screen reader.md",
     "Front End System Design/7-Logging and monitoring/3 Fixing.md",
     "Front End System Design/6-Database & Caching/0- Introduction.md",
@@ -275,7 +278,6 @@
     "Front End System Design/8 - Accesibility/1 Keyboard accessibility.md",
     "Front End System Design/8 - Accesibility/0 Overview.md",
     "Front End System Design/5-Performance/7 Build Optmization.md",
-    "Interview questions/js-interview-question-by-namastedev.pdf",
     "Front End System Design/6-Database & Caching/5 Normalization.md",
     "OMSCS/2 KBAI/10 Incremental concept learning.md",
     "Front End System Design/8 - Accesibility",
@@ -286,7 +288,6 @@
     "Untitled.md",
     "OMSCS/2 KBAI/9 Case based reasoning/9 Case based reasoning.md",
     "OMSCS/2 KBAI/9 Case based reasoning",
-    "Front End System Design/5-Performance/6 Render optimization.md",
     "Front End System Design/7-Logging and monitoring",
     "Golang",
     "Commands",

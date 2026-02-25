@@ -72,7 +72,7 @@ Flow:
 
 ---
 
-### 4. ETag (P2)
+### 4. ETag (P3)
 A hash generated from the resource content.
 
 Flow:

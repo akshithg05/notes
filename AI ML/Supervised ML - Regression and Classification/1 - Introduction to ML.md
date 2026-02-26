@@ -29,3 +29,40 @@ Regression is a type of supervised learning where the output is **continuous**, 
 
 
 ![[Pasted image 20260220220815.png]]
+
+![[Pasted image 20260225152726.png]]
+
+Two or more inputs
+![[Pasted image 20260225153001.png]]
+
+Summary
+
+![[Pasted image 20260225153117.png]]
+
+## Unsupervised learning 
+
+Data is not associated with output label. 
+Find something interesting in the unlabeled data.
+
+![[Pasted image 20260225154840.png]]
+
+Clustering is shown in the above example. 
+Clustering is used in Google news.
+Example - 
+
+![[Pasted image 20260225155102.png]]
+
+![[Pasted image 20260225155421.png]]
+
+![[Pasted image 20260225155645.png]]
+
+
+### Other methods of unsupervised learning other than clustering 
+![[Pasted image 20260225155957.png]]
+
+Excercise
+![[Pasted image 20260225160132.png]]
+
+
+
+

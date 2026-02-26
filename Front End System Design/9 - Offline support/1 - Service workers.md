@@ -31,7 +31,9 @@ Service workers cannot access web storage APIs as well as it runs in a different
 
 - First check if service worker will be available in the web-browser while writing the script. We can do this by going to the browser console and checking -
 
+```js
 navigator.serviceWorker
+```
 
 if this is available it will show an object and we can see the results of the object in it.
 
@@ -56,10 +58,25 @@ Service worker is event-driven. There are certain events like installed, activat
 Since service worker does not have access to the DOM APIs, we cannot use window.add eventListener, we need to use "self" or "this".
 
 
+### WE can build a seamless offline experience using service worker
+
+We can do this using caching, by caching resources using service worker, and serve these cache when we are offline.
 
 
+## There are different ways to provide offline experience
+
+Whenever a file is requested - 
+1. Check the cache, and return it from the cache. If cache is not available then fetch from the network call. But this is not a very good way of doing things. If the cache is available we will never make a network call. We will always fetch from the cache itself. So if there are any updates which take place we will not be able to see any of these.
+
+So a better way of doing this is to -
+2.  First fetch from first netowrk. Update cache with new data. If there no network then use cache as a back up/ fall back. This is a good strategy to implement things
+
+Use cache as back up , not as a primary source.
+
+![[Pasted image 20260226085618.png]]
 
 
+Good caching strategy
 
-
+![[Pasted image 20260226092015.png]]
 

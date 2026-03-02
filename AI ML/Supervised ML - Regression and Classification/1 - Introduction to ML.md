@@ -32,6 +32,8 @@ Regression is a type of supervised learning where the output is **continuous**, 
 
 ![[Pasted image 20260225152726.png]]
 
+### [[2026-02-25]]
+
 Two or more inputs
 ![[Pasted image 20260225153001.png]]
 

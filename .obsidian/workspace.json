@@ -60,6 +60,30 @@
             }
           },
           {
+            "id": "d3d7c2850e2ac7d4",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Interview questions/React-interview-PDF.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "React-interview-PDF"
+            }
+          },
+          {
+            "id": "c715b40ecfdc68c4",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.12.4"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.12.4"
+            }
+          },
+          {
             "id": "939e9838b316bbfe",
             "type": "leaf",
             "state": {
@@ -72,21 +96,9 @@
               "icon": "lucide-file",
               "title": "1 - Introduction to ML"
             }
-          },
-          {
-            "id": "8dc18c1635226a12",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Pasted image 20260226092015.png"
-              },
-              "icon": "lucide-image",
-              "title": "Pasted image 20260226092015"
-            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -245,17 +257,17 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "d5df95e868ccabb7",
+  "active": "c715b40ecfdc68c4",
   "lastOpenFiles": [
+    "Interview questions/JS-interview-PDF.pdf",
+    "AI ML/Supervised ML - Regression and Classification/1 - Introduction to ML.md",
+    "Front End System Design/6-Database & Caching/7 Service worker caching.md",
     "Front End System Design/images/Pasted image 20260226092015.png",
     "AI ML/images/Pasted image 20260225155957.png",
     "Front End System Design/9 - Offline support/1 - Service workers.md",
     "Front End System Design/images/Pasted image 20260226085618.png",
-    "Front End System Design/6-Database & Caching/7 Service worker caching.md",
     "Front End System Design/6-Database & Caching/6 HTTP caching.md",
     "Commands/Android.md",
-    "Interview questions/JS-interview-PDF.pdf",
-    "AI ML/Supervised ML - Regression and Classification/1 - Introduction to ML.md",
     "AI ML/images/Pasted image 20260225160132.png",
     "AI ML/images/Pasted image 20260225155645.png",
     "AI ML/images/Pasted image 20260225155421.png",

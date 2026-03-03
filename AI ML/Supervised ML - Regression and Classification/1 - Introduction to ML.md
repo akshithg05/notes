@@ -68,3 +68,24 @@ Excercise
 
 
 
+[[2026-03-02]]
+
+## Linear Regression 
+
+![[Pasted image 20260302223332.png]]
+
+Infinite possibilities, predicitng some number in regression model
+
+Data table with graph
+![[Pasted image 20260302223500.png]]
+
+
+### Terminology
+![[Pasted image 20260302223923.png]]
+
+![[Pasted image 20260302223947.png]]
+
+
+### Univariate linear regression
+![[Pasted image 20260302224604.png]]
+

@@ -72,29 +72,17 @@
             }
           },
           {
-            "id": "c715b40ecfdc68c4",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.12.4"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.12.4"
-            }
-          },
-          {
             "id": "939e9838b316bbfe",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "AI ML/Supervised ML - Regression and Classification/1 - Introduction to ML.md",
-                "mode": "source",
-                "source": false
+                "aFile": "AI ML/Supervised ML - Regression and Classification/1 - Introduction to ML.md",
+                "bFile": "AI ML/Supervised ML - Regression and Classification/1 - Introduction to ML.md",
+                "aRef": ""
               },
-              "icon": "lucide-file",
-              "title": "1 - Introduction to ML"
+              "icon": "diff",
+              "title": "Diff: 1 - Introduction to ML"
             }
           }
         ],
@@ -257,10 +245,18 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "c715b40ecfdc68c4",
+  "active": "939e9838b316bbfe",
   "lastOpenFiles": [
-    "Interview questions/JS-interview-PDF.pdf",
+    "Front End System Design/6-Database & Caching/8 State management.md",
+    "Front End System Design/9 - Offline support/2 PWA (Progressive Web Apps).md",
+    "AI ML/images/Pasted image 20260302223332.png",
+    "Interview questions/React-interview-PDF.pdf",
     "AI ML/Supervised ML - Regression and Classification/1 - Introduction to ML.md",
+    "AI ML/images/Pasted image 20260302224604.png",
+    "AI ML/images/Pasted image 20260302223947.png",
+    "AI ML/images/Pasted image 20260302223923.png",
+    "AI ML/images/Pasted image 20260302223500.png",
+    "Interview questions/JS-interview-PDF.pdf",
     "Front End System Design/6-Database & Caching/7 Service worker caching.md",
     "Front End System Design/images/Pasted image 20260226092015.png",
     "AI ML/images/Pasted image 20260225155957.png",
@@ -270,12 +266,6 @@
     "Commands/Android.md",
     "AI ML/images/Pasted image 20260225160132.png",
     "AI ML/images/Pasted image 20260225155645.png",
-    "AI ML/images/Pasted image 20260225155421.png",
-    "AI ML/images/Pasted image 20260225155102.png",
-    "AI ML/images/Pasted image 20260225154840.png",
-    "AI ML/images/Pasted image 20260225153117.png",
-    "AI ML/images/Pasted image 20260225153001.png",
-    "Interview questions/React-interview-PDF.pdf",
     "Front End System Design/9 - Offline support",
     "OMSCS/2 KBAI/11 Classification.md",
     "OMSCS/2 KBAI/10 Incremental concept learning.md",
@@ -298,8 +288,6 @@
     "OMSCS/2 KBAI/12 Logic.md",
     "Front End System Design/8 - Accesibility/2 Screen reader.md",
     "Front End System Design/7-Logging and monitoring/3 Fixing.md",
-    "Front End System Design/6-Database & Caching/0- Introduction.md",
-    "OMSCS/2 KBAI/9 Case based reasoning.md",
     "Front End System Design/8 - Accesibility",
     "OMSCS/2 KBAI/9 Case based reasoning",
     "Front End System Design/7-Logging and monitoring",

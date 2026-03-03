@@ -72,17 +72,17 @@
             }
           },
           {
-            "id": "939e9838b316bbfe",
+            "id": "768f54b010a66d48",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": "AI ML/Supervised ML - Regression and Classification/1 - Introduction to ML.md",
-                "bFile": "AI ML/Supervised ML - Regression and Classification/1 - Introduction to ML.md",
-                "aRef": ""
+                "file": "Front End System Design/6-Database & Caching/8 State management.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "diff",
-              "title": "Diff: 1 - Introduction to ML"
+              "icon": "lucide-file",
+              "title": "8 State management"
             }
           }
         ],
@@ -245,7 +245,7 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "939e9838b316bbfe",
+  "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
     "Front End System Design/6-Database & Caching/8 State management.md",
     "Front End System Design/9 - Offline support/2 PWA (Progressive Web Apps).md",

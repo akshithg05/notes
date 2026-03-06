@@ -47,3 +47,20 @@ They are nothing but websites which behave like apps.
 Important file for making PWAs.
 It is kind of like a configuration file.
 It gives an option on the website to download the PWA version of the application.
+
+If you see an application icon in the browser , it is a pwa.
+
+Manifest.json should be in a specific format to see install option in website.
+
+There are many app manifest.json generator websites.
+
+## Disadvantages
+
+1. PWA may not work on every browser.
+2. All device APIs may not be available on PWAs like phone and native apps.
+3. It does not have infinite storage like native apps.
+4. Heavy operations will be costly on PWAs compared to native apps.
+5. Adoption in the market is less for PWA. People prefer native apps. in 2017-18 they were hyped a lot. PWA did not get the traction it deservers. Only google was pushing it, other companies did not push for it that much.
+
+
+Though PWAs are not very popular today, it is an easy way to create simple web applications for users.

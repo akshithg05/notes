@@ -77,12 +77,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Front End System Design/6-Database & Caching/8 State management.md",
+                "file": "Front End System Design/9 - Offline support/2 PWA (Progressive Web Apps).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "8 State management"
+              "title": "2 PWA (Progressive Web Apps)"
             }
           }
         ],
@@ -245,7 +245,7 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "d5df95e868ccabb7",
+  "active": "768f54b010a66d48",
   "lastOpenFiles": [
     "Front End System Design/6-Database & Caching/8 State management.md",
     "Front End System Design/9 - Offline support/2 PWA (Progressive Web Apps).md",

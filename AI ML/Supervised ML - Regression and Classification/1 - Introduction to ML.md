@@ -89,3 +89,20 @@ Data table with graph
 ### Univariate linear regression
 ![[Pasted image 20260302224604.png]]
 
+
+### [[2026-03-06]]
+
+### Cost function
+
+![[Pasted image 20260306163917.png]]
+
+![[Pasted image 20260306164139.png]]
+
+When we want to fit a straight line we want a line passing through most points in linear regression
+
+For this we need the cost function 
+### Cost function
+![[Pasted image 20260306164647.png]]
+
+What exactly does the cost function do, what is it computing ?
+

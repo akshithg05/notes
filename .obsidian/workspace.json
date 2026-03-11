@@ -60,33 +60,17 @@
             }
           },
           {
-            "id": "d3d7c2850e2ac7d4",
+            "id": "cd6f276e4dd13825",
             "type": "leaf",
             "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Interview questions/React-interview-PDF.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "React-interview-PDF"
-            }
-          },
-          {
-            "id": "768f54b010a66d48",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Front End System Design/9 - Offline support/2 PWA (Progressive Web Apps).md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "2 PWA (Progressive Web Apps)"
+              "title": "New tab"
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -143,7 +127,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 306.5
+    "width": 328.5
   },
   "right": {
     "id": "c1359012abc4e269",
@@ -230,7 +214,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 335.5
+    "width": 339.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -245,27 +229,37 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "768f54b010a66d48",
+  "active": "cd6f276e4dd13825",
   "lastOpenFiles": [
-    "Front End System Design/6-Database & Caching/8 State management.md",
-    "Front End System Design/9 - Offline support/2 PWA (Progressive Web Apps).md",
-    "AI ML/images/Pasted image 20260302223332.png",
-    "Interview questions/React-interview-PDF.pdf",
+    "Interview questions/JS-interview-PDF.pdf",
+    "AI ML/images/Pasted image 20260306163917.png",
+    "Front End System Design/7-Logging and monitoring/2 Alerting.md",
+    "Front End System Design/7-Logging and monitoring/1 Telemetry.md",
+    "Front End System Design/7-Logging and monitoring/0 Overview.md",
+    "NodeJS/Season 1.md",
+    "Golang/Golang Day 1 Training.md",
+    "Front End System Design/7-Logging and monitoring/3 Fixing.md",
+    "DSA/Companies to apply to -.md",
+    "DSA/Interview Prep.md",
     "AI ML/Supervised ML - Regression and Classification/1 - Introduction to ML.md",
+    "AI ML/images/Pasted image 20260306164647.png",
+    "AI ML/images/Pasted image 20260306164139.png",
+    "Interview questions/React-interview-PDF.pdf",
+    "Interview questions/React Interview Notes.md",
+    "Interview questions/JS interview questions better understanding.md",
+    "Front End System Design/9 - Offline support/2 PWA (Progressive Web Apps).md",
+    "Front End System Design/6-Database & Caching/8 State management.md",
+    "AI ML/images/Pasted image 20260302223332.png",
     "AI ML/images/Pasted image 20260302224604.png",
     "AI ML/images/Pasted image 20260302223947.png",
     "AI ML/images/Pasted image 20260302223923.png",
     "AI ML/images/Pasted image 20260302223500.png",
-    "Interview questions/JS-interview-PDF.pdf",
     "Front End System Design/6-Database & Caching/7 Service worker caching.md",
     "Front End System Design/images/Pasted image 20260226092015.png",
     "AI ML/images/Pasted image 20260225155957.png",
     "Front End System Design/9 - Offline support/1 - Service workers.md",
-    "Front End System Design/images/Pasted image 20260226085618.png",
     "Front End System Design/6-Database & Caching/6 HTTP caching.md",
     "Commands/Android.md",
-    "AI ML/images/Pasted image 20260225160132.png",
-    "AI ML/images/Pasted image 20260225155645.png",
     "Front End System Design/9 - Offline support",
     "OMSCS/2 KBAI/11 Classification.md",
     "OMSCS/2 KBAI/10 Incremental concept learning.md",
@@ -274,20 +268,10 @@
     "AI ML/images",
     "AI ML/Supervised ML - Regression and Classification",
     "AI ML",
-    "Interview questions/JS interview questions better understanding.md",
     "Interview questions/Frontend Interview path.md",
     "Front End System Design/8 - Accesibility/4 Color contrast.md",
     "Front End System Design/5-Performance/7 Build Optmization.md",
     "Front End System Design/5-Performance/6 Render optimization.md",
-    "Front End System Design/5-Performance/5 Network Optimization.md",
-    "Front End System Design/6-Database & Caching/4 IndexDB.md",
-    "Interview questions/React Interview Notes.md",
-    "Front End System Design/8 - Accesibility/5 Tools and techniques (Interview cheat sheet).md",
-    "Front End System Design/8 - Accesibility/3 Focus management.md",
-    "Front End System Design/6-Database & Caching/3 Cookies.md",
-    "OMSCS/2 KBAI/12 Logic.md",
-    "Front End System Design/8 - Accesibility/2 Screen reader.md",
-    "Front End System Design/7-Logging and monitoring/3 Fixing.md",
     "Front End System Design/8 - Accesibility",
     "OMSCS/2 KBAI/9 Case based reasoning",
     "Front End System Design/7-Logging and monitoring",

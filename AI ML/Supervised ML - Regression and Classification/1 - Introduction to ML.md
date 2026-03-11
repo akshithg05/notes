@@ -106,3 +106,65 @@ For this we need the cost function
 
 What exactly does the cost function do, what is it computing ?
 
+[[2026-03-11]] 
+
+## Cost function intuition
+![[Pasted image 20260311160802.png]]
+
+
+## f(x) and J(w) cost function for different values of w
+
+w = 1
+![[Pasted image 20260311161459.png]]
+
+w = 0.5
+![[Pasted image 20260311161805.png]]
+
+w = 0
+![[Pasted image 20260311161954.png]]
+
+
+### Overall picture
+![[Pasted image 20260311162128.png]]
+
+### How to choose the best w value ?
+
+W should be chosen to minimize the value of J / cost function. The squared error cost function should be as minimum as possible.
+
+![[Pasted image 20260311162311.png]]
+
+# 1. 3Visualization of cost function
+
+![[Pasted image 20260311164549.png]]
+
+## Cost function for w only
+![[Pasted image 20260311170058.png]]
+
+Now when we introduce w and b, the cost function becomes like a soup bowl as there is one more axis.
+![[Pasted image 20260311170136.png]]
+
+![[Pasted image 20260311170243.png]]
+
+
+### Representing 3d images using contour lines
+
+![[Pasted image 20260311170358.png]]
+
+TOp view
+![[Pasted image 20260311170409.png]]
+
+## Visualizing the cost function - contour plot
+![[Pasted image 20260311170703.png]]
+
+
+
+## Some examples
+![[Pasted image 20260311171739.png]]
+bad w and b values
+
+### Good values of w & b
+
+![[Pasted image 20260311171930.png]]
+
+
+

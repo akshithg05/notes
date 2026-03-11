@@ -313,3 +313,231 @@ Before `Promise` was native, libraries like:
 provided Promise implementations for older browsers.
 
 
+
+[[2026-03-11]]
+
+# 5. Simple Throttle Implementation
+
+function throttle(fn, delay) {  
+  let lastTime = 0;  
+  
+  return function () {  
+    const now = Date.now();  
+  
+    if (now - lastTime >= delay) {  
+      fn();  
+      lastTime = now;  
+    }  
+  };  
+}
+
+---
+
+# 6. How It Works
+
+### Step 1
+
+When the function runs the first time:
+
+lastTime = 0
+
+Current time:
+
+now = 1000
+
+Check:
+
+1000 - 0 >= delay
+
+True → run function.
+
+Update:
+
+lastTime = now
+
+---
+
+### Step 2 (next call quickly)
+
+now = 1200
+
+Check:
+
+1200 - 1000 >= 1000
+
+False.
+
+So the function **does not run**.
+
+---
+
+### Step 3 (after delay)
+
+now = 2100
+
+Check:
+
+2100 - 1000 >= 1000
+
+True → run again.
+
+---
+
+# 7. Using Throttle
+
+Example:
+
+function logScroll() {  
+  console.log("scroll event");  
+}  
+  
+const throttledScroll = throttle(logScroll, 1000);  
+  
+window.addEventListener("scroll", throttledScroll);
+
+Now even if scroll fires **100 times**, the function runs **once per second**.
+
+
+# Debouncing
+
+# 1. When `debounce` is first executed
+
+``` js
+const debouncedHello = debounce(sayHello, 2000);
+```
+
+
+At this moment:
+
+```js
+function debounce(fn, delay) {  
+  let timer;   // created here  
+  
+  return function () {  
+    clearTimeout(timer);  
+    timer = setTimeout(() => {  
+      fn();  
+    }, delay);  
+  };  
+}
+```
+
+A **single `timer` variable** is created.
+
+The returned function **remembers this variable** through a closure.
+
+So internally it looks like:
+
+debouncedHello  
+   ↓  
+closure memory  
+   timer
+
+---
+
+# 2. First call
+
+debouncedHello();
+
+Execution:
+
+timer = setTimeout(...)
+
+Suppose the browser gives timer id:
+
+timer = 101
+
+---
+
+# 3. Second call (before 2 seconds)
+
+debouncedHello();
+
+Now the same function runs again.
+
+But `timer` still exists in the closure.
+
+So:
+
+clearTimeout(timer)  
+clearTimeout(101)
+
+This **cancels the previous timer**.
+
+Then a new timer is created:
+
+timer = setTimeout(...)  
+timer = 102
+
+---
+
+# 4. Third call
+
+Again:
+
+clearTimeout(102)  
+timer = 103
+
+So every time:
+
+old timer → cancelled  
+new timer → created
+
+---
+
+# 5. Timeline example
+
+Calls happen quickly:
+
+t=0ms     debouncedHello() → timer=101  
+t=200ms   debouncedHello() → cancel 101 → timer=102  
+t=400ms   debouncedHello() → cancel 102 → timer=103
+
+No more calls.
+
+After **2000ms from last call**:
+
+timer 103 executes → sayHello()
+
+---
+
+# 6. Why the same timer variable works
+
+Because of **closure**.
+
+The returned function keeps access to the **same `timer` variable** created when `debounce` ran.
+
+So all calls operate on **one shared variable**, not separate ones.
+
+Visual:
+
+debouncedHello()  
+       │  
+       │  
+       ▼  
+  closure memory  
+  ┌──────────┐  
+  │ timer=103│  
+  └──────────┘
+
+Every call updates that same `timer`.
+
+---
+
+# 7. If closure didn't exist
+
+Each call would create a **new timer variable**, and debouncing would fail.
+
+You'd get:
+
+timer1  
+timer2  
+timer3
+
+All running independently.
+
+---
+
+✅ **Simple summary**
+
+The timer is cancelled because **all calls share the same `timer` variable stored in a closure**, allowing `clearTimeout(timer)` to cancel the previously scheduled execution.

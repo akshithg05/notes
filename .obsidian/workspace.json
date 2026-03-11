@@ -39,12 +39,14 @@
             "id": "5b1fd130aa7b7ef4",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Interview questions/JS-interview-PDF.pdf"
+                "file": "Interview questions/JS interview questions better understanding.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "JS-interview-PDF"
+              "icon": "lucide-file",
+              "title": "JS interview questions better understanding"
             }
           },
           {
@@ -60,17 +62,31 @@
             }
           },
           {
-            "id": "cd6f276e4dd13825",
+            "id": "19a27aee940d4f9c",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "type": "pdf",
+              "state": {
+                "file": "Interview questions/React-interview-PDF.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "React-interview-PDF"
+            }
+          },
+          {
+            "id": "119020508a70e65b",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "AI ML/images/Pasted image 20260311171930.png"
+              },
+              "icon": "lucide-image",
+              "title": "Pasted image 20260311171930"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -229,34 +245,38 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "cd6f276e4dd13825",
+  "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
+    "AI ML/images/Pasted image 20260311170409.png",
+    "AI ML/images/Pasted image 20260311170703.png",
+    "AI ML/images/Pasted image 20260311171739.png",
+    "AI ML/images/Pasted image 20260311171930.png",
+    "AI ML/Supervised ML - Regression and Classification/2 Gradient Descent.md",
+    "AI ML/Supervised ML - Regression and Classification/1 - Introduction to ML.md",
+    "AI ML/images/Pasted image 20260311170358.png",
+    "AI ML/images/Pasted image 20260311170243.png",
+    "AI ML/images/Pasted image 20260311170136.png",
+    "AI ML/images/Pasted image 20260311170058.png",
+    "AI ML/images/Pasted image 20260311170046.png",
+    "AI ML/images/Pasted image 20260311164549.png",
+    "Interview questions/React-interview-PDF.pdf",
     "Interview questions/JS-interview-PDF.pdf",
-    "AI ML/images/Pasted image 20260306163917.png",
     "Front End System Design/7-Logging and monitoring/2 Alerting.md",
+    "Interview questions/JS interview questions better understanding.md",
     "Front End System Design/7-Logging and monitoring/1 Telemetry.md",
+    "Front End System Design/10 - Low level design/Component Design.md",
+    "Front End System Design/10 - Low level design",
+    "Front End System Design/8 - Accesibility/1 Keyboard accessibility.md",
+    "Front End System Design/7-Logging and monitoring/3 Fixing.md",
     "Front End System Design/7-Logging and monitoring/0 Overview.md",
     "NodeJS/Season 1.md",
     "Golang/Golang Day 1 Training.md",
-    "Front End System Design/7-Logging and monitoring/3 Fixing.md",
     "DSA/Companies to apply to -.md",
     "DSA/Interview Prep.md",
-    "AI ML/Supervised ML - Regression and Classification/1 - Introduction to ML.md",
-    "AI ML/images/Pasted image 20260306164647.png",
-    "AI ML/images/Pasted image 20260306164139.png",
-    "Interview questions/React-interview-PDF.pdf",
     "Interview questions/React Interview Notes.md",
-    "Interview questions/JS interview questions better understanding.md",
     "Front End System Design/9 - Offline support/2 PWA (Progressive Web Apps).md",
     "Front End System Design/6-Database & Caching/8 State management.md",
-    "AI ML/images/Pasted image 20260302223332.png",
-    "AI ML/images/Pasted image 20260302224604.png",
-    "AI ML/images/Pasted image 20260302223947.png",
-    "AI ML/images/Pasted image 20260302223923.png",
-    "AI ML/images/Pasted image 20260302223500.png",
     "Front End System Design/6-Database & Caching/7 Service worker caching.md",
-    "Front End System Design/images/Pasted image 20260226092015.png",
-    "AI ML/images/Pasted image 20260225155957.png",
     "Front End System Design/9 - Offline support/1 - Service workers.md",
     "Front End System Design/6-Database & Caching/6 HTTP caching.md",
     "Commands/Android.md",
@@ -269,13 +289,9 @@
     "AI ML/Supervised ML - Regression and Classification",
     "AI ML",
     "Interview questions/Frontend Interview path.md",
-    "Front End System Design/8 - Accesibility/4 Color contrast.md",
-    "Front End System Design/5-Performance/7 Build Optmization.md",
-    "Front End System Design/5-Performance/6 Render optimization.md",
     "Front End System Design/8 - Accesibility",
     "OMSCS/2 KBAI/9 Case based reasoning",
     "Front End System Design/7-Logging and monitoring",
-    "Golang",
     "Untitled.canvas"
   ]
 }

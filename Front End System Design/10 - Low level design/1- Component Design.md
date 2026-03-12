@@ -223,3 +223,17 @@ Keeping them as **separate components** improves:
 - Code clarity
 
 This is a good way to do things. When we start writing code we will know how hard it is.
+
+### [[2026-03-12]]
+
+#### Pay a lot of attention to component design. Most of the time exactly what you see might not be the same way of writing code
+
+## SOLID Principles
+
+S - Single responsibility principle (SRP) - Give each React component a single responsibility. Break the component into smaller parts and smaller components. Do not make it too long or too big. One task only for the component.
+
+## Higher order components
+
+A Higher-Order Component (HOC) is a structural design pattern in React—a pure function that accepts a component and returns a new, enhanced component without modifying the original. HOCs are used for reusing component logic across an application, such as handling authentication, logging, or styling, promoting DRY (Don't Repeat Yourself) code.
+
+Eg - Modified card component with a new label

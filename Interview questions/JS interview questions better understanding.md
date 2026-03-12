@@ -541,3 +541,94 @@ All running independently.
 ✅ **Simple summary**
 
 The timer is cancelled because **all calls share the same `timer` variable stored in a closure**, allowing `clearTimeout(timer)` to cancel the previously scheduled execution.
+
+
+
+### [[2026-03-12]]
+# Web Workers in JavaScript (Basic Example)
+
+## What are Web Workers?
+
+Web Workers allow JavaScript to run code in a **separate thread** apart from the main thread.
+
+This is useful for **heavy computations** that might otherwise block the UI.
+
+Important:
+Web Workers **cannot access the DOM**.  
+They are meant for background computations only.
+
+---
+
+# Basic Flow
+
+1. Main thread creates a worker
+2. Main thread sends data using `postMessage`
+3. Worker performs heavy computation
+4. Worker sends result back using `postMessage`
+5. Main thread receives the result
+
+Communication between main thread and worker happens through **message passing**.
+
+---
+## Example
+``` js
+const worker = new Worker("worker.js");
+
+// Send work to worker
+worker.postMessage(40);
+
+worker.onmessage = function(e) {
+  console.log("Result from worker:", e.data);
+};
+
+console.log("Main thread continues running...");
+
+```
+---
+
+# Worker Script (worker.js)
+
+```js
+self.onmessage = function(e) {
+  const num = e.data;
+
+  function fibonacci(n) {
+    if (n <= 1) return n;
+    return fibonacci(n - 1) + fibonacci(n - 2);
+  }
+
+  const result = fibonacci(num);
+
+  self.postMessage(result);
+};
+```
+
+---
+
+# Simple HTML
+
+<button id="run">Run Heavy Task</button>
+
+<script src="main.js"></script>
+
+---
+
+# Why Web Workers Are Useful
+
+Without Web Workers:
+- Heavy computations run on the **main thread**
+- UI becomes **blocked or frozen**
+
+With Web Workers:
+- Computation runs in **background thread**
+- UI remains **responsive**
+
+---
+
+# Key Points
+
+- Created using `new Worker("file.js")`
+- Communication via `postMessage`
+- Worker listens using `onmessage`
+- Cannot access DOM
+- Best used for heavy computations

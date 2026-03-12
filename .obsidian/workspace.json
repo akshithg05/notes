@@ -65,12 +65,14 @@
             "id": "19a27aee940d4f9c",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Interview questions/React-interview-PDF.pdf"
+                "file": "AI ML/Supervised ML - Regression and Classification/2 Gradient Descent.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "React-interview-PDF"
+              "icon": "lucide-file",
+              "title": "2 Gradient Descent"
             }
           },
           {
@@ -88,7 +90,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -249,10 +251,17 @@
   },
   "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
+    "AI ML/images/Pasted image 20260312165154.png",
+    "AI ML/images/Pasted image 20260312164816.png",
+    "AI ML/images/Pasted image 20260312163948.png",
+    "AI ML/images/Pasted image 20260312160715.png",
+    "AI ML/images/Pasted image 20260312155758.png",
+    "Interview questions/React Interview Notes.md",
+    "Interview questions/React-interview-PDF.pdf",
+    "Interview questions/JS interview questions better understanding.md",
     "Front End System Design/7-Logging and monitoring/3 Fixing.md",
     "Interview questions/JS-interview-PDF.pdf",
     "Front End System Design/6-Database & Caching/7 Service worker caching.md",
-    "Interview questions/JS interview questions better understanding.md",
     "Front End System Design/10 - Low level design/1- Component Design.md",
     "AI ML/images/Pasted image 20260311171930.png",
     "AI ML/images/Pasted image 20260311170409.png",
@@ -262,11 +271,6 @@
     "AI ML/Supervised ML - Regression and Classification/1 - Introduction to ML.md",
     "AI ML/images/Pasted image 20260311170358.png",
     "AI ML/images/Pasted image 20260311170243.png",
-    "AI ML/images/Pasted image 20260311170136.png",
-    "AI ML/images/Pasted image 20260311170058.png",
-    "AI ML/images/Pasted image 20260311170046.png",
-    "AI ML/images/Pasted image 20260311164549.png",
-    "Interview questions/React-interview-PDF.pdf",
     "Front End System Design/7-Logging and monitoring/2 Alerting.md",
     "Front End System Design/7-Logging and monitoring/1 Telemetry.md",
     "Front End System Design/10 - Low level design",
@@ -276,7 +280,6 @@
     "Golang/Golang Day 1 Training.md",
     "DSA/Companies to apply to -.md",
     "DSA/Interview Prep.md",
-    "Interview questions/React Interview Notes.md",
     "Front End System Design/9 - Offline support/2 PWA (Progressive Web Apps).md",
     "Front End System Design/6-Database & Caching/8 State management.md",
     "Front End System Design/9 - Offline support/1 - Service workers.md",

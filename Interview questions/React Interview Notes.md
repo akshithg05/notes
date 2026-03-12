@@ -440,3 +440,11 @@ This design keeps React’s mental model predictable:
 - Browser runs the JS → React mounts SPA.
 - Data/API requests happen as needed → React updates UI.
 - Navigation is client-side, not full page reloads.
+
+[[2026-03-12]]
+
+In React, a **Synthetic Event** is a cross-browser wrapper around the browser's native event. It acts as an abstraction layer that ensures event handling is consistent, normalized, and performant across different browsers. 
+
+- **Normalization of Events:** Because different browsers (Chrome, Firefox, Safari, IE) handle events differently, React normalizes them to conform to the W3C specification. This means you can use the same code (e.g., `onClick`, `onChange`) and expect it to behave identically everywhere, without dealing with browser-specific quirks.
+- **Synthetic Event Pool (Pre-React 17):** In older versions of React, event objects were "pooled" for performance. After an event handler was called, all properties of the `SyntheticEvent` object were nullified to be reused for future events.
+- **Removal of Pooling (React 17+):** As of React 17, the event pooling optimization was removed because it caused confusion and did not improve performance in modern browsers

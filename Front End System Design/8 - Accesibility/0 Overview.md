@@ -1,6 +1,6 @@
 ![[namastedev.com_learn_namaste-frontend-system-design_accessibility-overview.png]]
 # Accessibility
-## Overview
+## 1. Overview
 
 Accessibility (a11y) ensures that the web applications we build are usable by **everyone**, including people with disabilities such as:
 
@@ -13,7 +13,7 @@ An inclusive web is a better web.
 
 ---
 
-## What is Accessibility?
+## 2. What is Accessibility?
 
 Accessibility means designing and building applications so that people using Assistive Technology (AT) can interact with them effectively.
 
@@ -21,7 +21,7 @@ Accessibility is not an optional feature — it is a core part of good system de
 
 ---
 
-## Why Accessibility is Important
+## 3. Why Accessibility is Important
 
 - Inclusivity and equal access
 - Legal compliance (many countries mandate accessibility standards)
@@ -31,7 +31,7 @@ Accessibility is not an optional feature — it is a core part of good system de
 
 ---
 
-## Assistive Technology (AT)
+## 4. Assistive Technology (AT)
 
 Assistive technologies help users interact with digital systems.
 
@@ -46,7 +46,7 @@ Our applications must be compatible with these tools.
 
 ---
 
-## Accessibility Standards
+## 5. Accessibility Standards
 
 ### WCAG (Web Content Accessibility Guidelines)
 
@@ -65,7 +65,7 @@ Following WCAG ensures structured and accessible experiences.
 
 ---
 
-## ARIA (Accessible Rich Internet Applications)
+## 6. ARIA (Accessible Rich Internet Applications)
 
 ARIA provides additional attributes to improve accessibility for dynamic content.
 
@@ -85,7 +85,7 @@ Use semantic HTML first. Use ARIA only when necessary.
 
 ---
 
-## Screen Readers
+## 7. Screen Readers
 
 Screen readers convert UI content into:
 - Speech output
@@ -104,7 +104,7 @@ Best practices:
 
 ---
 
-## Focus Management
+## 8. Focus Management
 
 Users navigating via keyboard rely on focus indicators.
 
@@ -119,11 +119,11 @@ Focus must never get trapped unintentionally.
 
 ---
 
-## Contrast & Themes
+## 9. Contrast & Themes
 
 Ensure proper visual accessibility.
-
 ### Color Contrast
+
 - Maintain proper contrast ratio
 - Avoid low contrast text
 - Support users with color blindness
@@ -136,7 +136,7 @@ Do not rely on color alone to convey meaning.
 
 ---
 
-## Tooling for Accessibility Testing
+## 10. Tooling for Accessibility Testing
 
 Automated Tools:
 - Lighthouse

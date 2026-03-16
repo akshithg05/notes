@@ -62,18 +62,6 @@
             }
           },
           {
-            "id": "8f31823cea9ad35c",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "AI ML/images/Pasted image 20260314174840.png"
-              },
-              "icon": "lucide-image",
-              "title": "Pasted image 20260314174840"
-            }
-          },
-          {
             "id": "41c5dc801edebcdd",
             "type": "leaf",
             "state": {
@@ -247,7 +235,7 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "d5df95e868ccabb7",
+  "active": "da9253a0220cbe6f",
   "lastOpenFiles": [
     "AI ML/images/Pasted image 20260314174419.png",
     "AI ML/Supervised ML - Regression and Classification/2 Gradient Descent.md",

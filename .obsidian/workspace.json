@@ -60,9 +60,37 @@
               "icon": "lucide-file-text",
               "title": "JS-interview-PDF"
             }
+          },
+          {
+            "id": "045e326e853b1086",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Front End System Design/10 - Low level design/4 Routing and protected routes.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "4 Routing and protected routes"
+            }
+          },
+          {
+            "id": "828287c09802efe0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Interview questions/Things to keep in mind and explain.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Things to keep in mind and explain"
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -119,7 +147,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 328.5
+    "width": 200
   },
   "right": {
     "id": "c1359012abc4e269",
@@ -221,14 +249,23 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "da9253a0220cbe6f",
+  "active": "045e326e853b1086",
   "lastOpenFiles": [
+    "Interview questions/Things to keep in mind and explain.md",
+    "Front End System Design/10 - Low level design/4 Routing and protected routes.md",
+    "Interview questions/React Interview Notes.md",
+    "Untitled.base",
+    "Interview questions/JS-interview-PDF.pdf",
+    "Untitled 5.base",
+    "Untitled 4.base",
+    "Untitled 3.base",
+    "Untitled 2.base",
+    "Untitled 1.base",
     "Typescript/1 - Typescript.md",
     "AI ML/Supervised ML - Regression and Classification/3 Regression with multiple input variables.md",
     "AI ML/images/Pasted image 20260316233315.png",
     "AI ML/images/Pasted image 20260316232650.png",
     "AI ML/images/Pasted image 20260316232354.png",
-    "Interview questions/JS-interview-PDF.pdf",
     "AI ML/images/Pasted image 20260314174840.png",
     "AI ML/images/Pasted image 20260314174419.png",
     "AI ML/Supervised ML - Regression and Classification/2 Gradient Descent.md",
@@ -243,7 +280,6 @@
     "Front End System Design/10 - Low level design/3 - Shimmer UI.md",
     "Front End System Design/8 - Accesibility/0 Overview.md",
     "Front End System Design/10 - Low level design/2 Config driven UI.md",
-    "Interview questions/React Interview Notes.md",
     "Front End System Design/7-Logging and monitoring/3 Fixing.md",
     "Front End System Design/6-Database & Caching/7 Service worker caching.md",
     "Front End System Design/10 - Low level design/1- Component Design.md",
@@ -260,15 +296,7 @@
     "Front End System Design/6-Database & Caching/8 State management.md",
     "Front End System Design/9 - Offline support/1 - Service workers.md",
     "Front End System Design/6-Database & Caching/6 HTTP caching.md",
-    "Commands/Android.md",
     "Front End System Design/9 - Offline support",
-    "OMSCS/2 KBAI/11 Classification.md",
-    "AI ML/images",
-    "AI ML/Supervised ML - Regression and Classification",
-    "AI ML",
-    "Front End System Design/8 - Accesibility",
-    "OMSCS/2 KBAI/9 Case based reasoning",
-    "Front End System Design/7-Logging and monitoring",
     "Untitled.canvas"
   ]
 }

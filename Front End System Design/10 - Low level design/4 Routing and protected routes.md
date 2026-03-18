@@ -38,4 +38,24 @@ Eg. /billing, /profile are protected routes
 ---REFER coding example of SHIMMER UI, we will be using the same React app--- 
 
 
+### For protected routes check code in GH FSD
 
+Bad way of having authenticated routes - 
+
+``` js
+<Route
+	path="/about"
+	element={isUserAuthenticated ? <AboutUs /> : <Login />}
+></Route>
+```
+
+This is because the url will be the same but the component which is loaded will be different. This is not the right way to do things as it will confuse users.
+
+
+##### Dont put auth logic where we have defined our routes, it will mess things up and does not scale well.
+
+For protected routes create a wrapper and pass the route inside and then use outlet.
+
+
+Outlet is used to outlet the children components 
+The `<Outlet />` component in **React Router** is a placeholder used in a parent route element to define where its corresponding child route elements should be rendered.

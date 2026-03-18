@@ -52,11 +52,13 @@ When tabindex="0" is used, focus follows DOM order.
 Keyboard shortcuts improve accessibility and productivity.
 
 Example:
+```js
 document.addEventListener("keydown", function(e) {
   if (e.key === "k" && e.ctrlKey) {
     console.log("Search shortcut triggered");
   }
 });
+```
 
 Guidelines:
 - Avoid overriding common browser shortcuts
@@ -73,9 +75,11 @@ To avoid tabbing through many header links, use a "Skip to main content" link.
 
 Example:
 
+```jsx
 <a href="#main-content" class="skip-link">
   Skip to main content
 </a>
+```
 
 ```html
 <main id="main-content">

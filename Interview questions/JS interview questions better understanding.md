@@ -632,3 +632,189 @@ With Web Workers:
 - Worker listens using `onmessage`
 - Cannot access DOM
 - Best used for heavy computations
+
+### [[2026-03-18]]
+
+## Design patterns
+
+## 1. Singleton pattern
+
+It ensures that:
+- Only **one object** of a class is ever created
+- That same object is **shared everywhere**
+
+Think of it like a **single global instance** you can access from anywhere.
+
+Example - 
+
+```js
+class Singleton {
+  constructor() {
+    if (Singleton.instance) {
+      return Singleton.instance;
+    }
+    Singleton.instance = this;
+  }
+}
+
+const a = new Singleton();
+const b = new Singleton();
+
+console.log(a === b); // true
+```
+
+Where to use-
+
+- Logging system
+- Configuration manager
+- Database connection
+- Cache
+## 2. Factory pattern
+
+A way to **create objects without exposing the exact class being used**, and decide **which object to create based on input**.
+
+```js
+class Dog {
+  speak() {
+    return "Bark";
+  }
+}
+
+class Cat {
+  speak() {
+    return "Meow";
+  }
+}
+
+function animalFactory(type) {
+  if (type === "dog") return new Dog();
+  if (type === "cat") return new Cat();
+}
+
+const animal = animalFactory("cat");
+console.log(animal.speak()); // Meow
+```
+
+## 3. Observer pattern
+
+A way for one object (**publisher**) to notify multiple other objects (**subscribers**) automatically when something changes.
+
+```js
+class Subject {
+  constructor() {
+    this.observers = [];
+  }
+
+  subscribe(fn) {
+    this.observers.push(fn);
+  }
+
+  notify(data) {
+    this.observers.forEach(fn => fn(data));
+  }
+}
+
+const subject = new Subject();
+
+subject.subscribe(data => console.log("Observer 1:", data));
+subject.subscribe(data => console.log("Observer 2:", data));
+
+subject.notify("Hello World");
+```
+
+
+### 1. Subject (Publisher)
+
+class Subject {  
+  constructor() {  
+    this.observers = [];  
+  }
+
+👉 This holds the list of all subscribers
+
+---
+
+### 2. Subscribe
+
+subscribe(fn) {  
+  this.observers.push(fn);  
+}
+
+👉 Observers register themselves  
+👉 You’re storing **functions as observers** (very common in JS)
+
+---
+
+### 3. Notify
+
+notify(data) {  
+  this.observers.forEach(fn => fn(data));  
+}
+
+👉 When something happens → notify everyone  
+👉 Each observer gets the same data
+
+---
+
+### 4. Usage
+
+subject.subscribe(data => console.log("Observer 1:", data));  
+subject.subscribe(data => console.log("Observer 2:", data));  
+  
+subject.notify("Hello World");
+
+👉 Output:
+
+Observer 1: Hello World  
+Observer 2: Hello World
+
+### Usage
+
+- Event systems (clicks, user actions)
+- State updates (React, Redux)
+- Notifications / messaging systems
+
+## 4. Module pattern
+
+A way to **group code together and hide internal details**, exposing only what you want.
+Encapsulation = **hide internal stuff, expose only necessary parts**
+
+With Module Pattern:
+- Variables/functions inside → **private**
+- Returned object → **public API**
+Outside code **cannot access private data directly**
+
+Example
+```js
+const CounterModule = (function () {
+  let count = 0; // private
+
+  function increment() {
+    count++;
+  }
+
+  function getCount() {
+    return count;
+  }
+
+  return {
+    increment,
+    getCount
+  };
+})();
+```
+
+Usage:
+```js
+CounterModule.increment();
+CounterModule.increment();
+
+console.log(CounterModule.getCount()); // 2
+```
+
+
+## Why SSR applications have better SEO than CSR applications ?
+
+It is because the page content is already present in the HTML response, making it easier for search engines to crawl and index and scrape.
+In case of CSR applications, empty HTML is sent to the browser, then the css and js bundle are sent separately and built on the client, only then the final HTML/ render tree is built.
+

@@ -100,7 +100,7 @@ We can control what gets sent using the `Referrer-Policy` header.
 
 ### **1. `no-referrer`**
 - Sends **no referrer information at all**.
-- Maximum privacy.
+- Maximum privacy.+
 
 ---
 

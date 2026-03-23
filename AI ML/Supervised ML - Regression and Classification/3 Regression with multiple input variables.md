@@ -33,3 +33,13 @@ Vectorization is better -
 Gradient descent 
 ![[Pasted image 20260318205451.png]]
 
+
+[[2026-03-19]]
+
+## Gradient descent for multiple linear regression
+
+![[Pasted image 20260319210538.png]]
+
+An alternative to gradient descent
+![[Pasted image 20260319210722.png]]
+ We will use gradient descent mostly 

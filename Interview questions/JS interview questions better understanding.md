@@ -268,11 +268,8 @@ JavaScript evolves fast (ES6, ES2017, ES2020, etc.), but not all browsers update
 For example:
 
 - `Promise` didn’t exist in older browsers
-    
 - `Array.prototype.includes()` wasn’t always available
-    
 - `fetch()` wasn’t supported in older versions of Internet Explorer
-    
 
 Polyfills allow you to use modern features while still supporting older environments.
 
@@ -293,11 +290,8 @@ Older browsers don’t support:
 ### What’s happening:
 
 1. Check if `includes` exists
-    
 2. If not → define it
-    
 3. Older browsers now behave like modern ones
-    
 
 ---
 
@@ -311,8 +305,6 @@ Before `Promise` was native, libraries like:
     
 
 provided Promise implementations for older browsers.
-
-
 
 [[2026-03-11]]
 
@@ -818,3 +810,301 @@ console.log(CounterModule.getCount()); // 2
 It is because the page content is already present in the HTML response, making it easier for search engines to crawl and index and scrape.
 In case of CSR applications, empty HTML is sent to the browser, then the css and js bundle are sent separately and built on the client, only then the final HTML/ render tree is built.
 
+
+[[2026-03-19]]
+
+### 5. Decorator Pattern
+
+A way to **add new behavior to an object without changing its original code**
+
+- You have a **base object**
+- You wrap it with **decorators**
+- Each decorator **adds something extra**
+
+#### Step 1: Base object
+```js
+function coffee() {  
+	return "Coffee";  
+}
+```
+
+---
+#### Step 2: Decorators
+```js
+function withMilk(fn) {  
+	return function () {  
+		return fn() + " + Milk";  
+	};  
+}
+
+function withSugar(fn) {  
+	return function () {  
+		return fn() + " + Sugar";  
+	};  
+}
+```
+
+---
+
+#### Step 3: Usage
+
+```js
+let myCoffee = coffee;
+
+myCoffee = withMilk(myCoffee);  
+myCoffee = withSugar(myCoffee);
+
+console.log(myCoffee());
+
+Output:  
+Coffee + Milk + Sugar
+
+```
+---
+- coffee stays unchanged ✅
+- Behavior is **added dynamically**
+- You can mix & match decorators
+
+---
+
+### ⚠️ Why not just modify the original class?
+
+If you keep modifying:
+- Code becomes **hard to maintain**
+- You create too many combinations
+    
+Decorator avoids this by:  
+👉 **composition instead of modification**
+
+---
+
+### 🧠 Real-world frontend examples
+
+#### 1. Higher Order Components (React)
+
+#### 2. Middleware (Express)
+
+#### 3. Wrapping functions
+debounce(fn)
+
+Decorator = “Wrap an object to add behavior without changing it”
+
+
+### 6. Strategy pattern
+
+ A way to **define multiple algorithms (behaviors) and switch between them at runtime**
+
+---
+
+### 🧃 Real-world Analogy
+
+Think of **Google Maps navigation**:
+
+- You can choose:    
+    - Car 
+    - Walking         
+    - Bike
+
+👉 Same destination, but **different strategies to reach it**
+
+---
+
+### ⚙️ How it works
+
+- You define multiple **strategies (functions/classes)**
+- A **context** chooses which strategy to use
+- You can **switch strategy dynamically**
+---
+
+### 💻 JavaScript Example
+
+#### Step 1: Define strategies
+
+```js
+function driveStrategy() {  
+	return "Driving route";  
+}
+
+function walkStrategy() {  
+	return "Walking route";  
+}
+
+function bikeStrategy() {  
+	return "Biking route";  
+}
+```
+
+
+#### Step 2: Context
+
+```js
+function Navigator(strategy) {  
+	this.strategy = strategy;  
+}
+
+Navigator.prototype.navigate = function () {  
+	return this.strategy();  
+};
+```
+
+
+#### Step 3: Usage
+
+```js
+const nav = new Navigator(driveStrategy);  
+console.log(nav.navigate()); // Driving route
+
+nav.strategy = walkStrategy;  
+console.log(nav.navigate()); // Walking route
+```
+
+
+### 🧠 What’s happening
+
+- Behavior is **not hardcoded**
+- You can **swap logic at runtime**
+- Each strategy is **independent**
+
+---
+
+### ⚠️ Why not use if-else?
+
+Without strategy:  
+if (type === "car") { ... }  
+else if (type === "walk") { ... }
+
+👉 This becomes:
+
+- messy
+- hard to extend
+- violates clean design
+
+Strategy solves this by:  
+👉 **separating behavior into reusable pieces**
+
+---
+
+### 🧠 Real-world frontend examples
+
+#### 1. Sorting with different comparators
+
+array.sort(compareByPrice)  
+array.sort(compareByRating)
+
+#### 2. Payment methods
+
+payWithCreditCard()  
+payWithUPI()  
+payWithNetBanking()
+
+#### 3. Feature toggles / configs
+
+renderUI(lightTheme)  
+renderUI(darkTheme)
+
+👉 Same action, different behavior
+
+---
+
+### ⚖️ When to use it
+
+- Multiple ways to perform a task
+    
+- Want to switch behavior dynamically
+    
+- Avoid large if-else or switch blocks
+    
+
+---
+
+### 🧠 One-line takeaway
+
+> Strategy = “Choose behavior at runtime”
+
+
+### 7 . Command pattern
+
+ A way to **wrap an action into an object**, so it can be executed, stored, or undone later.
+
+### 🧃 Analogy
+
+Think of a **remote control**:
+- Button → Command
+- Device → Receiver
+- Press button → Action executed
+
+### ⚙️ Key Components
+
+- **Command** → wraps the action (`execute`, optional `undo`)
+- **Receiver** → performs the actual work
+- **Invoker** → triggers the command
+- **Client** → creates and assigns commands
+
+
+### 💻 Example (JavaScript)
+
+#### Receiver
+
+```js
+const light = {  
+	on() {  
+			console.log("Light ON");  
+		},  
+	off() {  
+			console.log("Light OFF");  
+		}  
+};
+
+```
+#### Command
+
+```js
+function LightOnCommand(light) {  
+	return {  
+		execute() {  
+			light.on();  
+		},  
+		undo() {  
+			light.off();  
+		}  
+	};  
+}
+
+```
+---
+
+#### Invoker
+
+```js
+function RemoteControl(command) {  
+	this.command = command;  
+}
+
+RemoteControl.prototype.pressButton = function () {  
+	this.command.execute();  
+};
+```
+
+---
+
+#### Usage
+
+```js
+const onCommand = LightOnCommand(light);  
+const remote = new RemoteControl(onCommand);
+
+remote.pressButton(); // Light ON
+```
+
+---
+
+### 🧠 Benefits
+
+- Decouples sender and receiver    
+- Supports **undo/redo**
+- Enables **queuing and logging**
+- Easy to extend
+
+### 🧠 One-line takeaway
+
+> Command = “Turn an action into an object so it can be controlled and reused”

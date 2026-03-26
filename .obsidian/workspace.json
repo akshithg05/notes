@@ -27,16 +27,52 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OMSCS/2 KBAI/Mini project 5 content for report.md",
+                "file": "AI ML/Supervised ML - Regression and Classification/4 Gradient descent in practice.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Mini project 5 content for report"
+              "title": "4 Gradient descent in practice"
+            }
+          },
+          {
+            "id": "351a4b2efc6512e1",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "AI ML/images/Pasted image 20260326161419.png"
+              },
+              "icon": "lucide-image",
+              "title": "Pasted image 20260326161419"
+            }
+          },
+          {
+            "id": "c579d9e4f4777970",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "AI ML/images/Pasted image 20260326161628.png"
+              },
+              "icon": "lucide-image",
+              "title": "Pasted image 20260326161628"
+            }
+          },
+          {
+            "id": "5d4b3a37baecd001",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "AI ML/images/Pasted image 20260326161628.png"
+              },
+              "icon": "lucide-image",
+              "title": "Pasted image 20260326161628"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -195,8 +231,18 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "ee0464103646bcd6",
+  "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
+    "AI ML/images/Pasted image 20260326161419.png",
+    "AI ML/Supervised ML - Regression and Classification/4 Gradient descent in practice.md",
+    "AI ML/images/Pasted image 20260326162546.png",
+    "AI ML/images/Pasted image 20260326161845.png",
+    "AI ML/images/Pasted image 20260326161628.png",
+    "AI ML/images/Pasted image 20260326161016.png",
+    "AI ML/images/Pasted image 20260326154550.png",
+    "AI ML/images/Pasted image 20260326120930.png",
+    "AI ML/images/Pasted image 20260326120718.png",
+    "AI ML/Supervised ML - Regression and Classification/3 Regression with multiple input variables.md",
     "OMSCS/2 KBAI/Mini project 5 content for report.md",
     "Front End System Design/10 - Low level design/8 - Accordion.md",
     "Front End System Design/9 - Offline support/2 PWA (Progressive Web Apps).md",
@@ -216,20 +262,11 @@
     "React/Pasted image 20250815164002.png",
     "Front End System Design/3-Security/16 CSRF — Cross-Site Request Forgery.md",
     "Front End System Design/8 - Accesibility/4 Color contrast.md",
-    "AI ML/Supervised ML - Regression and Classification/3 Regression with multiple input variables.md",
-    "AI ML/images/Pasted image 20260319210722.png",
-    "AI ML/images/Pasted image 20260319210538.png",
-    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_lld-state-management (1) 2.png",
-    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_lld-state-management (1) 1.png",
     "Front End System Design/8 - Accesibility/3 Focus management.md",
-    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_lld-state-management (1).png",
-    "AI ML/images/Pasted image 20260318205451.png",
-    "AI ML/images/Pasted image 20260318205011.png",
     "Front End System Design/5-Performance/6 Render optimization.md",
     "Interview questions/Things to keep in mind and explain.md",
     "OMSCS/2 KBAI/11 Classification.md",
     "Front End System Design/10 - Low level design/4 Routing and protected routes.md",
-    "AI ML/images/Pasted image 20260317230613.png",
     "Front End System Design/8 - Accesibility/2 Screen reader.md",
     "Interview questions/React Interview Notes.md",
     "Untitled.base",
@@ -239,8 +276,6 @@
     "Untitled 2.base",
     "Untitled 1.base",
     "Typescript/1 - Typescript.md",
-    "AI ML/Supervised ML - Regression and Classification/2 Gradient Descent.md",
-    "Front End System Design/8 - Accesibility/1 Keyboard accessibility.md",
     "Front End System Design/10 - Low level design",
     "Front End System Design/9 - Offline support",
     "Untitled.canvas"

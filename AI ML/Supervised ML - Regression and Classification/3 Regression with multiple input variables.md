@@ -43,3 +43,4 @@ Gradient descent
 An alternative to gradient descent
 ![[Pasted image 20260319210722.png]]
  We will use gradient descent mostly 
+

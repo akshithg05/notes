@@ -35,7 +35,7 @@ PWAs are like websites which looks, behaves and acts like an app. They are built
 7. Look and feel - UX. PWAs are mostly built to use it on phones. 
 8. Responsive and mobile first.
 9. No upfront installation cost.
-10. Access to device apps (Eg- Camera, file system) - seamless experience.
+10. Access to device apis (Eg- Camera, file system) - seamless experience.
 ### Easy to get users on a PWA than on an app
 
 ##### Since PWAs have offline support, we very well know what is being used to achieve this. It is service workers. Service workers are used to make PWAs offline.

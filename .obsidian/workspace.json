@@ -4,75 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "04f960fe56ae49a2",
+        "id": "03b870f00b5e3f8b",
         "type": "tabs",
         "children": [
           {
-            "id": "0f34bbcab46a9b1f",
+            "id": "0fc90e70263f9a80",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI ML/Supervised ML - Regression and Classification/3 Regression with multiple input variables.md",
+                "file": "Front End System Design/10 - Low level design/1- Component Design.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3 Regression with multiple input variables"
+              "title": "1- Component Design"
             }
           },
           {
-            "id": "ee0464103646bcd6",
+            "id": "5be09bc7f5873446",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AI ML/Supervised ML - Regression and Classification/4 Gradient descent in practice.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "4 Gradient descent in practice"
-            }
-          },
-          {
-            "id": "351a4b2efc6512e1",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "AI ML/images/Pasted image 20260326161419.png"
-              },
-              "icon": "lucide-image",
-              "title": "Pasted image 20260326161419"
-            }
-          },
-          {
-            "id": "c579d9e4f4777970",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "AI ML/images/Pasted image 20260326161628.png"
-              },
-              "icon": "lucide-image",
-              "title": "Pasted image 20260326161628"
-            }
-          },
-          {
-            "id": "5d4b3a37baecd001",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "AI ML/images/Pasted image 20260326161628.png"
-              },
-              "icon": "lucide-image",
-              "title": "Pasted image 20260326161628"
+              "title": "New tab"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -233,11 +193,17 @@
   },
   "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
-    "AI ML/images/Pasted image 20260326161419.png",
+    "Front End System Design/10 - Low level design/1- Component Design.md",
+    "Front End System Design/3-Security/5 Security headers.md",
+    "Interview questions/React-interview-PDF.pdf",
+    "Front End System Design/3-Security/3 Cross site-scripting (XSS).md",
+    "Interview questions/JS-interview-PDF.pdf",
+    "Front End System Design/9 - Offline support/2 PWA (Progressive Web Apps).md",
     "AI ML/Supervised ML - Regression and Classification/4 Gradient descent in practice.md",
+    "AI ML/images/Pasted image 20260326161628.png",
+    "AI ML/images/Pasted image 20260326161419.png",
     "AI ML/images/Pasted image 20260326162546.png",
     "AI ML/images/Pasted image 20260326161845.png",
-    "AI ML/images/Pasted image 20260326161628.png",
     "AI ML/images/Pasted image 20260326161016.png",
     "AI ML/images/Pasted image 20260326154550.png",
     "AI ML/images/Pasted image 20260326120930.png",
@@ -245,19 +211,14 @@
     "AI ML/Supervised ML - Regression and Classification/3 Regression with multiple input variables.md",
     "OMSCS/2 KBAI/Mini project 5 content for report.md",
     "Front End System Design/10 - Low level design/8 - Accordion.md",
-    "Front End System Design/9 - Offline support/2 PWA (Progressive Web Apps).md",
     "Front End System Design/9 - Offline support/1 - Service workers.md",
     "Front End System Design/8 - Accesibility/6 How to fix accessibility.md",
     "Front End System Design/8 - Accesibility/5 Tools and techniques (Interview cheat sheet).md",
     "Front End System Design/10 - Low level design/7 - Infinite scroll.md",
     "Front End System Design/10 - Low level design/6 - Multi language support.md",
     "Front End System Design/10 - Low level design/5 - State management + Libraries.md",
-    "Interview questions/JS-interview-PDF.pdf",
     "OMSCS/2 KBAI/Homeowrk 3 content.md",
     "Interview questions/JS interview questions better understanding.md",
-    "Front End System Design/3-Security/5 Security headers.md",
-    "Interview questions/React-interview-PDF.pdf",
-    "Front End System Design/3-Security/3 Cross site-scripting (XSS).md",
     "React/Pasted image 20250815163937.png",
     "React/Pasted image 20250815164002.png",
     "Front End System Design/3-Security/16 CSRF — Cross-Site Request Forgery.md",

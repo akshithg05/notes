@@ -33,8 +33,20 @@ Above shows dividing by the largest value
 
 ## 3. Checking gradient descent convergence
 
-PLot cost function against the total number of iterations of gradient descent. That is everytime we do a simultaneous update.
+Plot cost function against the total number of iterations of gradient descent. That is everytime we do a simultaneous update.
 
 ![[Pasted image 20260326162546.png]]
 
 It is often difficult to choose a proper value of epsilon. It is better to look for a curve like the curve on LHS.
+
+## Choosing proper learning rate alpha
+
+1. Below image shows when learning rate is too big or there is a possible bug in the code such as updating the parameter (w1) in a wrong way.
+
+![[Pasted image 20260327214158.png]]
+
+But alpha should not be very small as well, it will cause slower convergence
+
+![[Pasted image 20260327215243.png]]
+
+(Next optional lab)

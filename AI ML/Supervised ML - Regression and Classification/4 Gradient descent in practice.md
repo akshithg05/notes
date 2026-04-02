@@ -50,3 +50,17 @@ But alpha should not be very small as well, it will cause slower convergence
 ![[Pasted image 20260327215243.png]]
 
 (Next optional lab)
+
+[[2026-04-01]]
+
+## Feature engineering
+
+![[Pasted image 20260401143254.png]]
+
+We are using x3 area as a new feature, so that we can get a better model.
+
+## Polynomial regression
+
+![[Pasted image 20260401143634.png]]
+
+(Optional labs next)

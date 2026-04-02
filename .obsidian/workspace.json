@@ -8,29 +8,15 @@
         "type": "tabs",
         "children": [
           {
-            "id": "0fc90e70263f9a80",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Front End System Design/10 - Low level design/1- Component Design.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "1- Component Design"
-            }
-          },
-          {
             "id": "5be09bc7f5873446",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Interview questions/JS-interview-PDF.pdf"
+                "file": "Interview questions/React-interview-PDF.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "JS-interview-PDF"
+              "title": "React-interview-PDF"
             }
           },
           {
@@ -53,12 +39,24 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI ML/Supervised ML - Regression and Classification/4 Gradient descent in practice.md",
+                "file": "Front End System Design/10 - Low level design/3 - Shimmer UI.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "4 Gradient descent in practice"
+              "title": "3 - Shimmer UI"
+            }
+          },
+          {
+            "id": "eb2660a24d12fbbd",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "AI ML/images/Pasted image 20260401143911.png"
+              },
+              "icon": "lucide-image",
+              "title": "Pasted image 20260401143911"
             }
           }
         ],
@@ -223,24 +221,29 @@
   },
   "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
+    "Front End System Design/10 - Low level design/10 Image slider.md",
+    "AI ML/Supervised ML - Regression and Classification/5 Classification.md",
+    "AI ML/Supervised ML - Regression and Classification/4 Gradient descent in practice.md",
+    "Interview questions/React-interview-PDF.pdf",
+    "AI ML/images/Pasted image 20260401143911.png",
+    "AI ML/images/Pasted image 20260401143634.png",
+    "AI ML/images/Pasted image 20260401143254.png",
+    "Interview questions/JS-interview-PDF.pdf",
+    "Front End System Design/10 - Low level design/3 - Shimmer UI.md",
+    "Front End System Design/10 - Low level design/2 Config driven UI.md",
+    "Front End System Design/10 - Low level design/9 - Reddit nested comments.md",
+    "Interview questions/JS interview questions better understanding.md",
     "AI ML/images/Pasted image 20260327215243.png",
     "AI ML/images/Pasted image 20260327214158.png",
-    "Interview questions/React-interview-PDF.pdf",
-    "Interview questions/JS-interview-PDF.pdf",
-    "Interview questions/JS interview questions better understanding.md",
     "Front End System Design/10 - Low level design/1- Component Design.md",
     "Front End System Design/3-Security/5 Security headers.md",
     "Front End System Design/3-Security/3 Cross site-scripting (XSS).md",
     "Front End System Design/9 - Offline support/2 PWA (Progressive Web Apps).md",
-    "AI ML/Supervised ML - Regression and Classification/4 Gradient descent in practice.md",
     "AI ML/images/Pasted image 20260326161628.png",
     "AI ML/images/Pasted image 20260326161419.png",
     "AI ML/images/Pasted image 20260326162546.png",
     "AI ML/images/Pasted image 20260326161845.png",
     "AI ML/images/Pasted image 20260326161016.png",
-    "AI ML/images/Pasted image 20260326154550.png",
-    "AI ML/images/Pasted image 20260326120930.png",
-    "AI ML/images/Pasted image 20260326120718.png",
     "AI ML/Supervised ML - Regression and Classification/3 Regression with multiple input variables.md",
     "OMSCS/2 KBAI/Mini project 5 content for report.md",
     "Front End System Design/10 - Low level design/8 - Accordion.md",
@@ -251,16 +254,11 @@
     "Front End System Design/10 - Low level design/6 - Multi language support.md",
     "Front End System Design/10 - Low level design/5 - State management + Libraries.md",
     "OMSCS/2 KBAI/Homeowrk 3 content.md",
-    "React/Pasted image 20250815163937.png",
     "Front End System Design/3-Security/16 CSRF — Cross-Site Request Forgery.md",
     "Front End System Design/8 - Accesibility/4 Color contrast.md",
     "Front End System Design/8 - Accesibility/3 Focus management.md",
     "Front End System Design/5-Performance/6 Render optimization.md",
     "Interview questions/Things to keep in mind and explain.md",
-    "OMSCS/2 KBAI/11 Classification.md",
-    "Front End System Design/10 - Low level design/4 Routing and protected routes.md",
-    "Front End System Design/8 - Accesibility/2 Screen reader.md",
-    "Interview questions/React Interview Notes.md",
     "Untitled.base",
     "Untitled 5.base",
     "Untitled 4.base",

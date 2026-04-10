@@ -8,34 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "5be09bc7f5873446",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Front End System Design/10 - Low level design/5 - State management + Libraries.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "5 - State management + Libraries"
-            }
-          },
-          {
-            "id": "e74e3df13fe5d30f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Interview questions/JS interview questions better understanding.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "JS interview questions better understanding"
-            }
-          },
-          {
             "id": "a01978f5045e0fe4",
             "type": "leaf",
             "state": {
@@ -50,21 +22,21 @@
             }
           },
           {
-            "id": "eb2660a24d12fbbd",
+            "id": "d21afd03275d6d01",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OMSCS/2 KBAI/Milestone D.md",
+                "file": "Front End System Design/10 - Low level design/6 - Multi language support.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Milestone D"
+              "title": "6 - Multi language support"
             }
           },
           {
-            "id": "d21afd03275d6d01",
+            "id": "9a3cfe56892e6636",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -78,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -239,30 +211,31 @@
   },
   "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
+    "AI ML/images/Pasted image 20260409141025.png",
+    "AI ML/images/Pasted image 20260409140741.png",
+    "AI ML/images/Pasted image 20260409125746.png",
+    "Front End System Design/10 - Low level design/6 - Multi language support.md",
+    "Front End System Design/10 - Low level design/5 - State management + Libraries.md",
+    "Front End System Design/10 - Low level design/4 - Routing and protected routes.md",
+    "Front End System Design/10 - Low level design/3 - Shimmer UI.md",
+    "Front End System Design/10 - Low level design/2 - Config driven UI.md",
+    "Front End System Design/10 - Low level design/11 - Pagination.md",
+    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_pagination 1 1.png",
+    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_pagination 1.png",
+    "AI ML/Supervised ML - Regression and Classification/6 Cost function in logistic regression.md",
     "AI ML/images/Pasted image 20260408222602.png",
     "AI ML/images/Pasted image 20260408222429.png",
-    "Front End System Design/10 - Low level design/11 - Pagination.md",
     "6027 demo.md",
     "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_pagination.png",
-    "Front End System Design/10 - Low level design/4 - Routing and protected routes.md",
     "Front End System Design/10 - Low level design/10 - Image slider.md",
     "AI ML/images/Pasted image 20260407214153.png",
     "AI ML/images/Pasted image 20260407213851.png",
     "AI ML/images/Pasted image 20260407213515.png",
-    "AI ML/images/Pasted image 20260407212818.png",
-    "AI ML/images/Pasted image 20260407212555.png",
-    "AI ML/images/Pasted image 20260404161723.png",
-    "AI ML/Supervised ML - Regression and Classification/6 Cost function in logistic regression.md",
     "OMSCS/2 KBAI/Milestone D.md",
     "AI ML/Supervised ML - Regression and Classification/5 Classification.md",
-    "AI ML/images/Pasted image 20260404162039.png",
-    "AI ML/images/Pasted image 20260404162005.png",
-    "Front End System Design/10 - Low level design/5 - State management + Libraries.md",
-    "Front End System Design/10 - Low level design/3 - Shimmer UI.md",
     "Interview questions/React-interview-PDF.pdf",
     "AI ML/Supervised ML - Regression and Classification/4 Gradient descent in practice.md",
     "Interview questions/JS-interview-PDF.pdf",
-    "Front End System Design/10 - Low level design/2 Config driven UI.md",
     "Front End System Design/10 - Low level design/9 - Reddit nested comments.md",
     "Interview questions/JS interview questions better understanding.md",
     "Front End System Design/10 - Low level design/1- Component Design.md",
@@ -276,7 +249,6 @@
     "Front End System Design/8 - Accesibility/6 How to fix accessibility.md",
     "Front End System Design/8 - Accesibility/5 Tools and techniques (Interview cheat sheet).md",
     "Front End System Design/10 - Low level design/7 - Infinite scroll.md",
-    "Front End System Design/10 - Low level design/6 - Multi language support.md",
     "Untitled.base",
     "Untitled 5.base",
     "Untitled 4.base",

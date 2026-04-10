@@ -24,7 +24,7 @@ In an interview dont be fixed with one appraoch. Suggest alternative approach, c
 1. The data is structured and hierarchical.
 2. Access to footer of an application
 3. Finite data and fixed number of pages
-4. If we want access to footer of an application use pagination.
+4. Easy to move back and forth.
 
 #### Infinite scroll pros/ when to use-
 
@@ -39,11 +39,11 @@ Cons of infinite scroll -
 
 #### Always decide infinite scroll vs pagination, which one is actually required.
 
-![[namastedev.com_learn_namaste-frontend-system-design_pagination.png]]
+![[Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_pagination 1.png]]
 
-Google search recently shifted from infinite scroll to pagination
+Google search recently shifted from pagination to infinite scroll
 
-## Types of pagination
+## 5. Types of pagination
 
 ### 1. Front end pagination 
 
@@ -70,4 +70,119 @@ Pros -
 Drawbacks / Cons -
 1. High initial load time. First API call will take a lot of time if dataset is huge.
 2. It is browser heavy, can make the application/ page very slow. Not fruitful for large amounts of data.
-3. 
+
+[[2026-04-09]]
+
+#### 2. Backend pagination (Server side pagination)
+
+Pros -
+1. Works well on large data.
+2. Initial load time is very fast. (only 10-50 entries if needed)
+
+Cons - 
+1. Many API calls, every page change requires an API call.
+2. Sorting, searching APIs must be written, everything must be done on backend. (Trickier than frontend pagination).
+3. Backend dependency.
+
+![[Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_pagination 1.png]]
+
+Mainly choose on data. More data - backend , less data- front end pagination.
+
+## 6. Server side pagination implementation (offset pagination)
+
+We need to send some things to the API -
+1. Offset - How many items to skip
+2. Limit - How many results to fetch and display
+3. Page - page generally = offset ((page-1) x limit)
+
+For example , If in the API we sent page 2 and limit 10
+then we would be skipping 10 records and showing the next 10.
+
+All this depends on the API design pattern on the backend.
+
+## 7. Another pagination - cursor pagination 
+
+Many people say we need to use this cursor pagination only.
+It was introduced by facebook, and they say we need toa
+
+### Problems with Offset pagination
+
+![[namastedev.com_learn_namaste-frontend-system-design_pagination 1 1.png]]
+## What is Offset Pagination
+
+Offset pagination is a commonly used pagination technique where we fetch data using:
+- `offset` → starting index
+- `limit` → number of items to fetch
+
+Example:
+- Page 1 → offset = 0, limit = 4
+- Page 2 → offset = 4, limit = 4
+- Page 3 → offset = 8, limit = 4
+---
+## Example Scenario
+
+Consider a list of users registering on a platform.
+Initial data:
+
+- Page 1 → x, y, z, d
+- Page 2 → j, k, l, m
+- Page 3 → t, y, u, i
+
+User navigates:
+- Page 1 → Page 2 → Page 3
+
+---
+## Problem with Offset Pagination
+
+### 1. Data is Dynamic (Real-Time Updates)
+
+While the user is navigating between pages:
+- New users may get added
+- Existing users may get deleted
+
+This causes **data shifting across pages**
+
+---
+### 2. Duplicate Data Issue
+
+Scenario:
+- User moves from Page 2 → Page 3
+- Meanwhile, new users (e.g., a, s) are added at the top (Page 1)
+
+Effect:
+- All existing data shifts forward
+- Some items that were on Page 2 may now appear again on Page 3
+
+Result:
+- User sees **duplicate entries across pages**
+
+---
+### 3. Missing / Skipped Data Issue
+
+If some data is deleted:
+- Items shift backward
+- Some entries may get skipped entirely
+
+Result:
+- User **misses certain data**
+- Inconsistent pagination experience
+---
+## Key Insight
+
+Offset pagination assumes that:
+- The dataset is **static**
+
+But in real-world applications:
+- Data is **frequently changing**    
+
+This makes offset pagination unreliable for dynamic data.
+
+---
+## Conclusion
+
+Offset pagination can lead to:
+- Duplicate data
+- Missing data
+- Inconsistent user experience
+
+Because of these issues, a better approach called **Cursor Pagination** was introduced (popularized by Facebook).

@@ -28,3 +28,17 @@ To put into perspective - For a given array of x, if our model predicts that mal
 Simplified cost function 
 ![[Pasted image 20260408222602.png]]
 
+[[2026-04-09]]
+
+## Summary -
+
+![[Pasted image 20260409125746.png]]
+
+## Minimizing cost function using Gradient Descent
+
+![[Pasted image 20260409140741.png]]
+
+Summary of gradient descent
+
+![[Pasted image 20260409141025.png]]
+

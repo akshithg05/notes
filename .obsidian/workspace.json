@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Front End System Design/10 - Low level design/12 - Pagination 2.md",
+                "file": "AI ML/Supervised ML - Regression and Classification/7 Overfitting and Underfitting.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "12 - Pagination 2"
+              "title": "7 Overfitting and Underfitting"
             }
           }
         ],
@@ -223,12 +223,18 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "f6f6d73ff3bc5966",
+  "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
-    "Front End System Design/10 - Low level design/11 - Pagination 1.md",
-    "Front End System Design/10 - Low level design/12 - Pagination 2.md",
-    "Front End System Design/10 - Low level design/8 - Accordion.md",
+    "AI ML/images/Pasted image 20260411163356.png",
+    "AI ML/images/Pasted image 20260411163200.png",
+    "AI ML/images/Pasted image 20260411162939.png",
+    "AI ML/images/Pasted image 20260411162739.png",
+    "AI ML/images/Pasted image 20260411162453.png",
     "AI ML/Supervised ML - Regression and Classification/6 Cost function in logistic regression.md",
+    "AI ML/Supervised ML - Regression and Classification/7 Overfitting and Underfitting.md",
+    "Front End System Design/10 - Low level design/12 - Pagination 2.md",
+    "Front End System Design/10 - Low level design/11 - Pagination 1.md",
+    "Front End System Design/10 - Low level design/8 - Accordion.md",
     "AI ML/images/Pasted image 20260409141025.png",
     "AI ML/images/Pasted image 20260409140741.png",
     "AI ML/images/Pasted image 20260409125746.png",
@@ -240,12 +246,8 @@
     "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_pagination 1 1.png",
     "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_pagination 1.png",
     "AI ML/images/Pasted image 20260408222602.png",
-    "AI ML/images/Pasted image 20260408222429.png",
     "6027 demo.md",
-    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_pagination.png",
     "Front End System Design/10 - Low level design/10 - Image slider.md",
-    "AI ML/images/Pasted image 20260407214153.png",
-    "AI ML/images/Pasted image 20260407213851.png",
     "OMSCS/2 KBAI/Milestone D.md",
     "AI ML/Supervised ML - Regression and Classification/5 Classification.md",
     "Interview questions/React-interview-PDF.pdf",
@@ -261,8 +263,6 @@
     "OMSCS/2 KBAI/Mini project 5 content for report.md",
     "Front End System Design/9 - Offline support/1 - Service workers.md",
     "Front End System Design/8 - Accesibility/6 How to fix accessibility.md",
-    "Front End System Design/8 - Accesibility/5 Tools and techniques (Interview cheat sheet).md",
-    "Front End System Design/10 - Low level design/7 - Infinite scroll.md",
     "Untitled.base",
     "Untitled 5.base",
     "Untitled 4.base",

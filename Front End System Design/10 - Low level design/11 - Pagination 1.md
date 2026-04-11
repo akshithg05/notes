@@ -108,7 +108,7 @@ It was introduced by facebook, and they say we need toa
 ### Problems with Offset pagination
 
 ![[namastedev.com_learn_namaste-frontend-system-design_pagination 1 1.png]]
-## What is Offset Pagination
+## 8. What is Offset Pagination
 
 Offset pagination is a commonly used pagination technique where we fetch data using:
 - `offset` → starting index
@@ -132,7 +132,7 @@ User navigates:
 - Page 1 → Page 2 → Page 3
 
 ---
-## Problem with Offset Pagination
+## 8. Problem with Offset Pagination
 
 ### 1. Data is Dynamic (Real-Time Updates)
 
@@ -186,3 +186,161 @@ Offset pagination can lead to:
 - Inconsistent user experience
 
 Because of these issues, a better approach called **Cursor Pagination** was introduced (popularized by Facebook).
+
+
+[[2026-04-10]]
+
+# 9. Cursor pagination
+
+## What is Cursor Pagination
+
+Cursor pagination is a technique where instead of using `offset`, we use a **cursor (unique identifier)** along with a `limit` to fetch data.
+
+- `cursor` → a unique value (like id or timestamp)    
+- `limit` → number of items to fetch
+
+The API returns data **relative to the cursor**, not based on position.
+
+---
+## Basic Idea
+
+Consider a large database table with many entries (e.g., 16 entries).
+In offset pagination:
+
+- limit = 4 → pages are:
+    - Page 1 → 1–4
+    - Page 2 → 5–8
+    - Page 3 → 9–12
+    - Page 4 → 13–16
+
+In cursor pagination:
+- We do not rely on page numbers or offsets
+- Instead, we use a **cursor value**
+
+Example:
+
+- cursor = 7, limit = 4    
+- Fetch → next 4 items starting after cursor 7
+
+Meaning:
+
+- “From this cursor, give me the next `limit` items”
+---
+## Key Property
+
+The cursor is **unique** (usually):
+- ID
+- Timestamp
+
+Because it is unique:
+
+- Even if new data is added before the cursor
+- The result remains **consistent**
+
+Example:
+
+If new data is inserted before cursor = 7:
+- It does **not affect** the result
+- We still fetch items after 7
+---
+## Why Cursor Pagination Works Better
+
+### 1. Handles Real-Time / Dynamic Data
+
+- New entries can be added anytime
+- Data before the cursor does not affect the result
+- Works well for dynamic systems (e.g., social media feeds)
+
+---
+
+### 2. No Duplicate or Missing Data
+
+- No shifting issues like offset pagination
+- No repeated entries
+- No skipped entries
+
+---
+
+### 3. Performance Improvement
+
+- Does not require skipping rows like offset    
+- Directly fetches from a specific position using cursor
+
+Note:
+
+- Offset pagination → needs to scan/skip rows
+- Cursor pagination → uses indexed lookup (faster in large datasets)    
+
+---
+
+## Backend vs Frontend Responsibility
+
+- Frontend:    
+    - Sends `cursor` and `limit`
+    - Stores the next cursor from API response
+- Backend:
+    
+    - Handles most of the logic
+    - Decides how to fetch data based on cursor
+
+Frontend implementation is relatively simple.  
+Most complexity lies in the backend.
+
+---
+
+## Pros
+
+1. No duplicate data    
+2. No missing/skipped data
+3. Works well with real-time data
+4. Better performance for large datasets
+5. Ideal for infinite scrolling use cases
+
+---
+
+## Cons / Limitations
+
+### 1. Not Suitable for Page-Based Navigation
+
+- Cannot easily jump to:
+    - Page 5
+    - Page 10
+- No concept of fixed pages
+
+Best suited for:
+- Infinite scroll (e.g., social media feeds)
+
+---
+### 2. Sorting Constraints
+
+- Works best when data is sorted by:
+    - ID or timestamp
+        
+- Changing sort order dynamically is difficult in real-time scenarios
+---
+
+### 3. Backend Complexity
+
+- More complex to implement compared to offset pagination
+- Requires careful handling of:
+    - Cursor generation
+    - Indexing
+    - Query logic
+
+---
+
+## Summary
+
+Cursor pagination:
+- Uses a **unique cursor instead of offset**
+- Fetches data relative to that cursor
+- Provides:
+    
+    - Consistent results
+    - Better performance
+    - Real-time compatibility
+
+It is widely used in systems like:
+
+- Social media feeds
+- Infinite scrolling applications

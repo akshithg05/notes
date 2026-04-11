@@ -41,16 +41,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI ML/Supervised ML - Regression and Classification/6 Cost function in logistic regression.md",
+                "file": "Front End System Design/10 - Low level design/11 - Pagination 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "6 Cost function in logistic regression"
+              "title": "11 - Pagination 1"
+            }
+          },
+          {
+            "id": "f6f6d73ff3bc5966",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Front End System Design/10 - Low level design/12 - Pagination 2.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "12 - Pagination 2"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -209,8 +223,12 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "d5df95e868ccabb7",
+  "active": "f6f6d73ff3bc5966",
   "lastOpenFiles": [
+    "Front End System Design/10 - Low level design/11 - Pagination 1.md",
+    "Front End System Design/10 - Low level design/12 - Pagination 2.md",
+    "Front End System Design/10 - Low level design/8 - Accordion.md",
+    "AI ML/Supervised ML - Regression and Classification/6 Cost function in logistic regression.md",
     "AI ML/images/Pasted image 20260409141025.png",
     "AI ML/images/Pasted image 20260409140741.png",
     "AI ML/images/Pasted image 20260409125746.png",
@@ -219,10 +237,8 @@
     "Front End System Design/10 - Low level design/4 - Routing and protected routes.md",
     "Front End System Design/10 - Low level design/3 - Shimmer UI.md",
     "Front End System Design/10 - Low level design/2 - Config driven UI.md",
-    "Front End System Design/10 - Low level design/11 - Pagination.md",
     "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_pagination 1 1.png",
     "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_pagination 1.png",
-    "AI ML/Supervised ML - Regression and Classification/6 Cost function in logistic regression.md",
     "AI ML/images/Pasted image 20260408222602.png",
     "AI ML/images/Pasted image 20260408222429.png",
     "6027 demo.md",
@@ -230,7 +246,6 @@
     "Front End System Design/10 - Low level design/10 - Image slider.md",
     "AI ML/images/Pasted image 20260407214153.png",
     "AI ML/images/Pasted image 20260407213851.png",
-    "AI ML/images/Pasted image 20260407213515.png",
     "OMSCS/2 KBAI/Milestone D.md",
     "AI ML/Supervised ML - Regression and Classification/5 Classification.md",
     "Interview questions/React-interview-PDF.pdf",
@@ -244,7 +259,6 @@
     "Front End System Design/9 - Offline support/2 PWA (Progressive Web Apps).md",
     "AI ML/Supervised ML - Regression and Classification/3 Regression with multiple input variables.md",
     "OMSCS/2 KBAI/Mini project 5 content for report.md",
-    "Front End System Design/10 - Low level design/8 - Accordion.md",
     "Front End System Design/9 - Offline support/1 - Service workers.md",
     "Front End System Design/8 - Accesibility/6 How to fix accessibility.md",
     "Front End System Design/8 - Accesibility/5 Tools and techniques (Interview cheat sheet).md",

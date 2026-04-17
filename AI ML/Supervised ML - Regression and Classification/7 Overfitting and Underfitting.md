@@ -44,5 +44,32 @@ Can be added or not that is the lambda term for the value b
 If the lambda value chosen is a very small value that is close to 0, then data will be overfitting as there is no regularization term.
 If it is very large then it will underfit
 
+## Regularized linear regression
 
+![[Pasted image 20260416213056.png]]
+
+#### Derivation (Optional course material)
+
+![[Pasted image 20260416213334.png]]
+
+
+![[Pasted image 20260416213546.png]]
+
+Above slide shows how regularizatio is reducing w
+
+Derivation
+![[Pasted image 20260416214447.png]]
+
+[[2026-04-17]]
+
+## Regularized logistic regression
+
+![[Pasted image 20260417203909.png]]
+
+Final plot
+
+![[Pasted image 20260417204033.png]]
+
+
+Final lab next
 

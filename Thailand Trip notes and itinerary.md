@@ -11,32 +11,6 @@ Sim cards -
 - ~299–399 THB (₹700–900) for 7–10 days unlimited data
 
 
-### Day 1 
-
-#### Option 1-
-
-- Walk to:
-    - Terminal 21
-- Eat:
-    - Cheap + great food court (Pier 21 🔥)
-- Do:
-    - Coffee / chill café
-    - 1-hour Thai massage 💆‍♂️
-
-
-#### Option 2
-
-- Go to:
-    - Wat Arun
-- Optional:
-    - River ferry ride - On Chao Praya River cruise
-
-
-Octave Rooftop Lounge & Bar - Costly but good if needed
-
-Night Plan — Soi Cowboy
-- Levels Club & Lounge
-- Or Sugar Club
 
 
 ## Day 2
@@ -46,3 +20,62 @@ Night Plan — Soi Cowboy
 - Evening → **Hotel chill + pool**
 - Dinner → **Chinatown**
 - Night → **Club**
+
+
+**DAY 1 – BANGKOK (ARRIVAL + TEMPLES + NIGHTLIFE)**
+
+- Arrive (~8 AM) → hotel (Sukhumvit) → drop bags
+
+**Late Morning / Afternoon:**
+
+- Wat Pho
+- Wat Arun
+- Grand Palace (optional, only if energy permits)
+- 2 PM: Check-in + rest / nap
+
+**Evening:**
+
+- Light rooftop / chill near hotel
+
+**Night:**
+
+- Soi Cowboy
+- Optional: club (Levels / Sugar)
+
+---
+
+**DAY 2 – BANGKOK (MALLS + CHILL + IMMERSIVE NIGHT)**
+
+- Late start (~11:30 AM)
+
+**Morning / Brunch:**
+
+- Terminal 21  
+    OR
+- MBK / Siam area (Siam Center, Paragon, Platinum Mall)
+
+---
+
+**Afternoon (Pick ONE):**
+
+- Talad Noi (local vibe, cafés, street art)
+- Jim Thompson House (quick cultural museum)
+- Benjakitti Park (chill + skyline walk)
+- EmQuartier / Sukhumvit cafés
+- Space & Time Cube Bangkok (immersive digital/light experience)
+
+---
+
+**Evening (~6 PM):**
+
+- Chinatown (Yaowarat Road)  
+    OR
+- Asiatique The Riverfront
+
+---
+
+**Night:**
+
+- Elysium night club - Bravo mall BKK
+- Atlas bangkok
+- - Immersive club (Onyx / Beam)

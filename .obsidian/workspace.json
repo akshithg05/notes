@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Front End System Design/10 - Low level design/9 - Reddit nested comments.md",
+                "file": "Front End System Design/10 - Low level design/14 - YouTube Live stream chat video.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "9 - Reddit nested comments"
+              "title": "14 - YouTube Live stream chat video"
             }
           },
           {
@@ -83,12 +83,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Thailand Trip notes and itinerary.md",
+                "file": "AI ML/Advanced Learning Algorithms/1 - Neural Networks.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Thailand Trip notes and itinerary"
+              "title": "1 - Neural Networks"
             }
           }
         ],
@@ -251,32 +251,35 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "e319ed483905e015",
+  "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
-    "README.md",
+    "AI ML/images/Pasted image 20260420220031.png",
+    "AI ML/images/Pasted image 20260420215542.png",
+    "AI ML/images/Pasted image 20260420215058.png",
+    "AI ML/images/Pasted image 20260420214158.png",
     "Thailand Trip notes and itinerary.md",
+    "AI ML/Advanced Learning Algorithms/1 - Neural Networks.md",
+    "AI ML/Advanced Learning Algorithms",
+    "Front End System Design/10 - Low level design/14 - YouTube Live stream chat video.md",
+    "Front End System Design/10 - Low level design/9 - Reddit nested comments.md",
+    "README.md",
     "AI ML/Supervised ML - Regression and Classification/7 Overfitting and Underfitting.md",
     "AI ML/images/Pasted image 20260417204033.png",
     "AI ML/images/Pasted image 20260417203909.png",
     "Front End System Design/10 - Low level design/10 - Image slider.md",
     "Hakathon.md",
-    "Front End System Design/10 - Low level design/14 - YouTube Live stream chat video.md",
     "Front End System Design/10 - Low level design/13 - Real time updates.md",
     "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_real-time-updates 1.png",
     "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_real-time-updates.png",
     "AI ML/images/Pasted image 20260416214447.png",
     "AI ML/images/Pasted image 20260416213546.png",
     "AI ML/images/Pasted image 20260416213334.png",
-    "AI ML/images/Pasted image 20260416213056.png",
-    "AI ML/images/Pasted image 20260416210635.png",
-    "AI ML/images/Pasted image 20260416210134.png",
     "Front End System Design/10 - Low level design/12 - Pagination 2.md",
     "Front End System Design/10 - Low level design/11 - Pagination 1.md",
     "OMSCS/2 KBAI/Final ARC Project report.md",
     "AI ML/Supervised ML - Regression and Classification/2 Gradient Descent.md",
     "AI ML/Supervised ML - Regression and Classification/1 Introduction to ML.md",
     "Front End System Design/10 - Low level design/2 - Config driven UI.md",
-    "Front End System Design/10 - Low level design/9 - Reddit nested comments.md",
     "AI ML/Supervised ML - Regression and Classification/6 Cost function in logistic regression.md",
     "Front End System Design/10 - Low level design/8 - Accordion.md",
     "Front End System Design/10 - Low level design/6 - Multi language support.md",
@@ -289,8 +292,6 @@
     "Interview questions/React-interview-PDF.pdf",
     "AI ML/Supervised ML - Regression and Classification/4 Gradient descent in practice.md",
     "Interview questions/JS-interview-PDF.pdf",
-    "Interview questions/JS interview questions better understanding.md",
-    "Front End System Design/10 - Low level design/1- Component Design.md",
     "Untitled.base",
     "Untitled 5.base",
     "Untitled 4.base",
@@ -298,7 +299,6 @@
     "Untitled 2.base",
     "Untitled 1.base",
     "Front End System Design/10 - Low level design",
-    "Front End System Design/9 - Offline support",
     "Untitled.canvas"
   ]
 }

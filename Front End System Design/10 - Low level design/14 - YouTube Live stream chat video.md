@@ -15,3 +15,9 @@ Answer - API polling
 2. If chat explodes with a lot of users, we cannot open too many web socket connections and leave it open for so long. It will consume a lot of CPU and memory and resources. This will increase server load massively and YouTube is a scale product.
 3. Retrying in WS is a challenge
 4. IN API polling load balancer can use LB algorithms and load can be distributed. In WS we cannot do this as its a live connection and we need 1 to 1 mapping constantly.
+
+
+## Always ask where will you get the CHat messages from
+
+Discuss these things with the interviewer. What are all the data fields and how the data will be coming.
+

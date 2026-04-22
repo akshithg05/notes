@@ -83,12 +83,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI ML/Advanced Learning Algorithms/1 - Neural Networks.md",
+                "file": "DSA/1- Graphs.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1 - Neural Networks"
+              "title": "1- Graphs"
+            }
+          },
+          {
+            "id": "b63146ad7b608a99",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DSA/Notes.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Notes"
             }
           }
         ],
@@ -253,27 +267,30 @@
   },
   "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
-    "AI ML/images/Pasted image 20260420220031.png",
-    "AI ML/images/Pasted image 20260420215542.png",
-    "AI ML/images/Pasted image 20260420215058.png",
-    "AI ML/images/Pasted image 20260420214158.png",
-    "Thailand Trip notes and itinerary.md",
+    "AI ML/images/Pasted image 20260422203459.png",
+    "DSA/Notes.md",
+    "DSA/1- Graphs.md",
+    "DSA/images/namastedev.com_learn_namaste-dsa_introduction-to-graphs 8.png",
+    "DSA/images/namastedev.com_learn_namaste-dsa_introduction-to-graphs 7.png",
+    "DSA/images/namastedev.com_learn_namaste-dsa_introduction-to-graphs 6.png",
+    "DSA/images/namastedev.com_learn_namaste-dsa_introduction-to-graphs 5.png",
+    "DSA/images/namastedev.com_learn_namaste-dsa_introduction-to-graphs 4.png",
+    "DSA/images/namastedev.com_learn_namaste-dsa_introduction-to-graphs 3.png",
+    "DSA/images/namastedev.com_learn_namaste-dsa_introduction-to-graphs 2.png",
+    "DSA/images/namastedev.com_learn_namaste-dsa_introduction-to-graphs 1.png",
+    "DSA/images/namastedev.com_learn_namaste-dsa_introduction-to-graphs.png",
+    "DSA/Interview Prep.md",
     "AI ML/Advanced Learning Algorithms/1 - Neural Networks.md",
-    "AI ML/Advanced Learning Algorithms",
+    "DSA/images/Pasted image 20260422172631.png",
+    "Thailand Trip notes and itinerary.md",
     "Front End System Design/10 - Low level design/14 - YouTube Live stream chat video.md",
+    "AI ML/Advanced Learning Algorithms",
     "Front End System Design/10 - Low level design/9 - Reddit nested comments.md",
     "README.md",
     "AI ML/Supervised ML - Regression and Classification/7 Overfitting and Underfitting.md",
-    "AI ML/images/Pasted image 20260417204033.png",
-    "AI ML/images/Pasted image 20260417203909.png",
     "Front End System Design/10 - Low level design/10 - Image slider.md",
     "Hakathon.md",
     "Front End System Design/10 - Low level design/13 - Real time updates.md",
-    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_real-time-updates 1.png",
-    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_real-time-updates.png",
-    "AI ML/images/Pasted image 20260416214447.png",
-    "AI ML/images/Pasted image 20260416213546.png",
-    "AI ML/images/Pasted image 20260416213334.png",
     "Front End System Design/10 - Low level design/12 - Pagination 2.md",
     "Front End System Design/10 - Low level design/11 - Pagination 1.md",
     "OMSCS/2 KBAI/Final ARC Project report.md",
@@ -287,10 +304,7 @@
     "Front End System Design/10 - Low level design/4 - Routing and protected routes.md",
     "Front End System Design/10 - Low level design/3 - Shimmer UI.md",
     "6027 demo.md",
-    "OMSCS/2 KBAI/Milestone D.md",
-    "AI ML/Supervised ML - Regression and Classification/5 Classification.md",
     "Interview questions/React-interview-PDF.pdf",
-    "AI ML/Supervised ML - Regression and Classification/4 Gradient descent in practice.md",
     "Interview questions/JS-interview-PDF.pdf",
     "Untitled.base",
     "Untitled 5.base",

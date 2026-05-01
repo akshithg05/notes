@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Front End System Design/10 - Low level design/14 - YouTube Live stream chat video.md",
+                "file": "Front End System Design/10 - Low level design/15 - Search bar and autocomplete.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "14 - YouTube Live stream chat video"
+              "title": "15 - Search bar and autocomplete"
             }
           },
           {
@@ -106,7 +106,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -265,11 +265,15 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "d5df95e868ccabb7",
+  "active": "f6f6d73ff3bc5966",
   "lastOpenFiles": [
-    "AI ML/images/Pasted image 20260422203459.png",
-    "DSA/Notes.md",
     "DSA/1- Graphs.md",
+    "Front End System Design/10 - Low level design/15 - Search bar and autocomplete.md",
+    "DSA/Notes.md",
+    "AI ML/Advanced Learning Algorithms/1 - Neural Networks.md",
+    "Thailand Trip notes and itinerary.md",
+    "Front End System Design/10 - Low level design/14 - YouTube Live stream chat video.md",
+    "AI ML/images/Pasted image 20260422203459.png",
     "DSA/images/namastedev.com_learn_namaste-dsa_introduction-to-graphs 8.png",
     "DSA/images/namastedev.com_learn_namaste-dsa_introduction-to-graphs 7.png",
     "DSA/images/namastedev.com_learn_namaste-dsa_introduction-to-graphs 6.png",
@@ -280,10 +284,6 @@
     "DSA/images/namastedev.com_learn_namaste-dsa_introduction-to-graphs 1.png",
     "DSA/images/namastedev.com_learn_namaste-dsa_introduction-to-graphs.png",
     "DSA/Interview Prep.md",
-    "AI ML/Advanced Learning Algorithms/1 - Neural Networks.md",
-    "DSA/images/Pasted image 20260422172631.png",
-    "Thailand Trip notes and itinerary.md",
-    "Front End System Design/10 - Low level design/14 - YouTube Live stream chat video.md",
     "AI ML/Advanced Learning Algorithms",
     "Front End System Design/10 - Low level design/9 - Reddit nested comments.md",
     "README.md",

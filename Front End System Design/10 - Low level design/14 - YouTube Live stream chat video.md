@@ -21,3 +21,9 @@ Answer - API polling
 
 Discuss these things with the interviewer. What are all the data fields and how the data will be coming.
 
+#### One more thing to discuss with interview - If asked what is better, to implement limiting on the front end or backend. -
+
+Limiting messages on the backend  is always the better answer. We dont have to overfetch data on the UI. Keep UI simple, fast and efficient.
+
+-> We need to limit total messages as well as accumulating a lot of messages and showing it on UI will explode the DOM. We need to limit the chat window for a certain number of messages. If messages go beyond a number , we need to prune the last message from the DOM.
+

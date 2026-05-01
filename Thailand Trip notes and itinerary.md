@@ -13,14 +13,6 @@ Sim cards -
 
 
 
-## Day 2
-
-- Late start → **MBK / Terminal 21**
-- Afternoon → **Lebua Sky Bar (Hangover spot)**
-- Evening → **Hotel chill + pool**
-- Dinner → **Chinatown**
-- Night → **Club**
-
 
 **DAY 1 – BANGKOK (ARRIVAL + TEMPLES + NIGHTLIFE)**
 

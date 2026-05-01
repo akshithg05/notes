@@ -70,3 +70,28 @@ Example of Acyclic graphs - NPM packages, version control in
 ## Summary
 ![[Pasted image 20260422203459.png]]
 
+[[2026-04-23]]
+
+## BFS Traversal - (21/11/2025)
+
+BFS Traversal
+![[Pasted image 20251121160159.png]]
+
+
+BFS Traversal example 2
+![[Pasted image 20251122102921.png]]
+
+BFS Example 3
+![[Pasted image 20251122103132.png]]
+
+One thing to remember is that BFS traversal can start from anywhere and have multiple solutions, there is no one single correct answer, we can also interchange Agra and Jaipur in the above example.
+
+
+Depth First Search
+![[Pasted image 20251202180156.png]]
+
+Another example
+![[Pasted image 20251202180251.png]]
+
+
+In BFS we use Queue, in DFS we use Stack

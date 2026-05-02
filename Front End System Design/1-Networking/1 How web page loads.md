@@ -69,7 +69,10 @@ This hybrid structure is how modern networks avoid “network hell” while stil
 
 ## 5/10/2025 - Understanding How the DNS works
 
-![[Pasted image 20251005135132.png]]1. **Goal**: Convert a human-readable domain (like `www.google.com`) into an IP address so your device can connect to the server.
+![[Pasted image 20251005135132.png]]
+
+
+1. **Goal**: Convert a human-readable domain (like `www.google.com`) into an IP address so your device can connect to the server.
     
 2. **Domain Levels**: DNS is hierarchical:
     

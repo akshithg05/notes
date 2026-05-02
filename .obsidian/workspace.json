@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI ML/2 - Advanced Learning Algorithms/2 - Neural Network Model.md",
+                "file": "Front End System Design/11 - High level design/0 - Overview.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2 - Neural Network Model"
+              "title": "0 - Overview"
             }
           },
           {
@@ -265,8 +265,24 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "f6f6d73ff3bc5966",
+  "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
+    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-overview 3.png",
+    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-overview 2.png",
+    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-overview 1.png",
+    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-overview.png",
+    "Interview questions/1- Interview list.md",
+    "Front End System Design/11 - High level design/0 - Overview.md",
+    "Front End System Design/11 - High level design",
+    "Interview questions/DSA revision Namaste DSA.md",
+    "Interview questions/Frontend Interview path.md",
+    "Interview questions/JS interview questions better understanding.md",
+    "Interview questions/JS-interview-PDF.pdf",
+    "Interview questions/React Interview Notes.md",
+    "Interview questions/React-interview-PDF.pdf",
+    "Interview questions/Things to keep in mind and explain.md",
+    "Front End System Design/1-Networking/1 How web page loads.md",
+    "AI ML/2 - Advanced Learning Algorithms/2 - Neural Network Model.md",
     "AI ML/images/Pasted image 20260501150716.png",
     "AI ML/images/Pasted image 20260501145351.png",
     "AI ML/images/Pasted image 20260501144930.png",
@@ -274,18 +290,12 @@
     "AI ML/images/Pasted image 20260501144334.png",
     "AI ML/images/Pasted image 20260501144115.png",
     "AI ML/images/Pasted image 20260501144038.png",
-    "AI ML/images/Pasted image 20260501143842.png",
-    "AI ML/images/Pasted image 20260501143755.png",
     "AI ML/2 - Advanced Learning Algorithms/1 - Neural Networks.md",
-    "AI ML/2 - Advanced Learning Algorithms/2 - Neural Network Model.md",
-    "Front End System Design/1-Networking/1 How web page loads.md",
     "Front End System Design/10 - Low level design/15 - Search bar and autocomplete.md",
     "DSA/1- Graphs.md",
     "DSA/Notes.md",
     "Thailand Trip notes and itinerary.md",
     "Front End System Design/10 - Low level design/14 - YouTube Live stream chat video.md",
-    "AI ML/images/Pasted image 20260422203459.png",
-    "DSA/images/namastedev.com_learn_namaste-dsa_introduction-to-graphs 8.png",
     "DSA/Interview Prep.md",
     "AI ML/2 - Advanced Learning Algorithms",
     "Front End System Design/10 - Low level design/9 - Reddit nested comments.md",
@@ -297,22 +307,12 @@
     "Front End System Design/10 - Low level design/12 - Pagination 2.md",
     "Front End System Design/10 - Low level design/11 - Pagination 1.md",
     "OMSCS/2 KBAI/Final ARC Project report.md",
-    "AI ML/1 - Supervised ML - Regression and Classification/2 Gradient Descent.md",
-    "AI ML/1 - Supervised ML - Regression and Classification/1 Introduction to ML.md",
-    "Front End System Design/10 - Low level design/2 - Config driven UI.md",
-    "AI ML/1 - Supervised ML - Regression and Classification/6 Cost function in logistic regression.md",
-    "Front End System Design/10 - Low level design/8 - Accordion.md",
-    "Front End System Design/10 - Low level design/6 - Multi language support.md",
-    "Front End System Design/10 - Low level design/5 - State management + Libraries.md",
-    "Interview questions/React-interview-PDF.pdf",
-    "Interview questions/JS-interview-PDF.pdf",
     "Untitled.base",
     "Untitled 5.base",
     "Untitled 4.base",
     "Untitled 3.base",
     "Untitled 2.base",
     "Untitled 1.base",
-    "Front End System Design/10 - Low level design",
     "Untitled.canvas"
   ]
 }

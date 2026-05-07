@@ -7,10 +7,10 @@
 
 ## 🟦 Arrays & Strings
 
-- [ ]  Two Sum
-- [ ]  Best Time to Buy and Sell Stock
-- [ ]  Contains Duplicate
-- [ ]  Product of Array Except Self
+- [x]  Two Sum
+- [x]  Best Time to Buy and Sell Stock
+- [x]  Contains Duplicate
+- [x]  Product of Array Except Self
 - [ ]  Maximum Subarray
 - [ ]  Maximum Product Subarray
 - [ ]  Move Zeroes

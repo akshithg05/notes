@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI ML/2 - Advanced Learning Algorithms/3 - Tensorflow implementation.md",
+                "file": "Interview questions/1- Interview list.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3 - Tensorflow implementation"
+              "title": "1- Interview list"
             }
           }
         ],
@@ -211,6 +211,7 @@
   },
   "active": "1d9b439f25e897ab",
   "lastOpenFiles": [
+    "AI ML/2 - Advanced Learning Algorithms/3 - Tensorflow implementation.md",
     "AI ML/images/Pasted image 20260508174412.png",
     "AI ML/images/Pasted image 20260508174122.png",
     "AI ML/images/Pasted image 20260508174103.png",
@@ -224,11 +225,9 @@
     "Front End System Design/1-Networking/3 REST APIs.md",
     "Front End System Design/1-Networking/2 Communication protocols.md",
     "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-photo-sharing-app-instagram 1 2.png",
-    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-photo-sharing-app-instagram 5.png",
     "Interview questions/1- Interview list.md",
     "Front End System Design/1-Networking/1 How web page loads.md",
     "Front End System Design/10 - Low level design/6 - Multi language support.md",
-    "AI ML/2 - Advanced Learning Algorithms/3 - Tensorflow implementation.md",
     "AI ML/2 - Advanced Learning Algorithms/2 - Neural Network Model.md",
     "Interview questions/DSA revision Namaste DSA.md",
     "Hakathon.md",

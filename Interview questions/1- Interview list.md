@@ -11,9 +11,9 @@
 - [x]  Best Time to Buy and Sell Stock
 - [x]  Contains Duplicate
 - [x]  Product of Array Except Self
-- [ ]  Maximum Subarray
-- [ ]  Maximum Product Subarray
-- [ ]  Move Zeroes
+- [x]  Maximum Subarray
+- [x]  Maximum Product Subarray
+- [x]  Move Zeroes
 - [ ]  Remove Duplicates from Sorted Array
 - [ ]  Container With Most Water
 - [ ]  Longest Consecutive Sequence

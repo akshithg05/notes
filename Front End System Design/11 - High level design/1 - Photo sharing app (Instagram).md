@@ -72,3 +72,31 @@ Example the feedlist api -
 
 ![[namastedev.com_learn_namaste-frontend-system-design_hld-photo-sharing-app-instagram 4.png]]
 
+CreatePost API
+
+![[namastedev.com_learn_namaste-frontend-system-design_hld-photo-sharing-app-instagram 1 2.png]]
+
+#### We can have CDN as well to serve certain data
+
+![[namastedev.com_learn_namaste-frontend-system-design_hld-photo-sharing-app-instagram 5.png]]
+
+
+## 6. Optimization
+
+1. Asset optimization
+2. Feed Optimization
+
+Assets - CSS, JS, images, videos
+
+#### 1.1 Images
+
+- Image format (WebP) - Superior image compression, one of the best format
+- srcset
+- userAgent - Which browser, OS, CPU related info and some other info. Using that we can decide image quality, etc. 
+- dpr (device pixel ratio)
+- Device connectivity / INternet connectivity
+- Prefetch images
+
+#### 1.2 Videos
+- Streaming, image placeholders, quality, captions.
+![[namastedev.com_learn_namaste-frontend-system-design_hld-photo-sharing-app-instagram 2 2.png]]

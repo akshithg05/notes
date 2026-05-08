@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Front End System Design/1-Networking/1 How web page loads.md",
+                "file": "Front End System Design/1-Networking/3 REST APIs.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1 How web page loads"
+              "title": "3 REST APIs"
             }
           },
           {
@@ -41,15 +41,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Front End System Design/11 - High level design/1 - Photo sharing app (Instagram).md",
+                "file": "AI ML/2 - Advanced Learning Algorithms/3 - Tensorflow implementation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1 - Photo sharing app (Instagram)"
+              "title": "3 - Tensorflow implementation"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -210,21 +211,23 @@
   },
   "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
-    "Front End System Design/10 - Low level design/6 - Multi language support.md",
-    "Front End System Design/1-Networking/1 How web page loads.md",
-    "AI ML/2 - Advanced Learning Algorithms/3 - Tensorflow implementation.md",
     "Front End System Design/11 - High level design/1 - Photo sharing app (Instagram).md",
+    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-photo-sharing-app-instagram 2 2.png",
+    "Front End System Design/1-Networking/3 REST APIs.md",
+    "Front End System Design/1-Networking/2 Communication protocols.md",
+    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-photo-sharing-app-instagram 1 2.png",
+    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-photo-sharing-app-instagram 5.png",
+    "Interview questions/1- Interview list.md",
+    "Front End System Design/1-Networking/1 How web page loads.md",
+    "Front End System Design/10 - Low level design/6 - Multi language support.md",
+    "AI ML/2 - Advanced Learning Algorithms/3 - Tensorflow implementation.md",
     "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-photo-sharing-app-instagram 4.png",
     "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-photo-sharing-app-instagram 3 1.png",
     "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-photo-sharing-app-instagram 2 1.png",
     "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-photo-sharing-app-instagram 1 1.png",
     "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-photo-sharing-app-instagram 3.png",
-    "Interview questions/1- Interview list.md",
     "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-photo-sharing-app-instagram 2.png",
     "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-photo-sharing-app-instagram 1.png",
-    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-photo-sharing-app-instagram.png",
-    "AI ML/images/Pasted image 20260502103640.png",
-    "AI ML/images/Pasted image 20260502103531.png",
     "AI ML/2 - Advanced Learning Algorithms/2 - Neural Network Model.md",
     "Interview questions/DSA revision Namaste DSA.md",
     "Hakathon.md",
@@ -247,9 +250,6 @@
     "Front End System Design/10 - Low level design/9 - Reddit nested comments.md",
     "README.md",
     "AI ML/1 - Supervised ML - Regression and Classification/7 Overfitting and Underfitting.md",
-    "Front End System Design/10 - Low level design/10 - Image slider.md",
-    "Front End System Design/10 - Low level design/13 - Real time updates.md",
-    "Front End System Design/10 - Low level design/12 - Pagination 2.md",
     "Untitled.base",
     "Untitled 5.base",
     "Untitled 4.base",

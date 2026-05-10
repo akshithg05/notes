@@ -166,5 +166,5 @@ You are exactly right—on the web, filtering is often done using **CSS Filters*
 | **Reliability**    | Low (can crash browser if string is too long).       | Medium (if connection drops, you restart).       | **High** (Resumable; only re-upload failed parts). | **High** (Offloads work to professional cloud storage).  |
 | **Server Impact**  | **High** (CPU/RAM used to decode string).            | **Medium** (Server must parse and relay data).   | **Medium** (Server must reassemble the chunks).    | **Lowest** (Server only generates a tiny text URL).      |
 | **Implementation** | Very Easy                                            | Standard (using Multer/Busboy)                   | Complex (requires state tracking of chunks).       | Moderate (requires Cloud IAM setup).                     |
-![[namastedev.com_learn_namaste-frontend-system-design_hld-photo-sharing-app-instagram.png]]
+![[namastedev.com_learn_namaste-frontend-system-design_hld-photo-sharing-app-instagram 6.png]]
 

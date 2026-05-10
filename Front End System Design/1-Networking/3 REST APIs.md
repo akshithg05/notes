@@ -76,7 +76,7 @@ Architecture
 
 - **Structure:**  
   - **Frontend:** Often a SPA (Single Page Application) or mobile client.  
-  - **Microservices:** Independent backend services communicating via APIs (usually REST or gRPC).  
+  - **Microservices:** Independent backend services communicating via APIs (usually REST or gRPC). 
   - **Database per service** (optional but common).  
 
 - **Advantages:**  
@@ -137,9 +137,6 @@ Architecture
   - Handle status codes (e.g., `200 OK`, `404 Not Found`, `500 Internal Server Error`).
   - Enable communication between different systems over the web.
 
-> 🧭 Think of it like this:
-> - **HTTP** → The road that connects two cities (handles data transfer).  
-> - **REST API** → The traffic rules that define *how* vehicles (data) move on that road.
 
 
 ## 🧭 Quick Summary: REST vs HTTP

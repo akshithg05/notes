@@ -95,3 +95,28 @@ Another example
 
 
 In BFS we use Queue, in DFS we use Stack
+
+
+[[2026-05-11]]
+
+## Topological sort
+
+![[namastedev.com_learn_namaste-dsa_topological-sort-dfs.png]]
+
+Here in the above example both the lists in the bottom are valid answers, and satisfy the definition of a linear order of nodes where u comes before v.
+
+### Why do we do topological sort -
+
+1. If the above graph represents npm packages, every node represents a dependency and what order they must be installed. In cases where we need to linearly install packages, this sort is useful.
+
+2. Perquisites representation
+
+There are 2 approaches to do this , DFS and BFS approach.
+BFS Algorithm - Kahn's Algorithm
+
+#### DFS method 
+
+![[namastedev.com_learn_namaste-dsa_topological-sort-dfs 2.png]]
+
+Doing this intuitively - Build solution bottom up in reverse order
+

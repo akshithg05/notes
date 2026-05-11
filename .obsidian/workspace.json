@@ -83,12 +83,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI ML/2 - Advanced Learning Algorithms/4 - Neural network (Python implementation).md",
+                "file": "DSA/1- Graphs.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "4 - Neural network (Python implementation)"
+              "title": "1- Graphs"
             }
           }
         ],
@@ -253,10 +253,13 @@
   },
   "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
+    "DSA/images/namastedev.com_learn_namaste-dsa_topological-sort-dfs 2.png",
+    "DSA/images/namastedev.com_learn_namaste-dsa_topological-sort-dfs 1.png",
+    "DSA/images/namastedev.com_learn_namaste-dsa_topological-sort-dfs.png",
+    "AI ML/2 - Advanced Learning Algorithms/4 - Neural network (Python implementation).md",
     "AI ML/images/Pasted image 20260510163520.png",
     "AI ML/images/Pasted image 20260510161821.png",
     "AI ML/images/Pasted image 20260510161659.png",
-    "AI ML/2 - Advanced Learning Algorithms/4 - Neural network (Python implementation).md",
     "Front End System Design/1-Networking/3 REST APIs.md",
     "Front End System Design/11 - High level design/2 - E-commerce app (Flipkart, Amazon).md",
     "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-e-commerce-app-amazon-flipkart.png",
@@ -267,9 +270,6 @@
     "AI ML/images/Pasted image 20260508174412.png",
     "AI ML/images/Pasted image 20260508174122.png",
     "AI ML/images/Pasted image 20260508174103.png",
-    "AI ML/images/Pasted image 20260508173716.png",
-    "AI ML/images/Pasted image 20260508173406.png",
-    "AI ML/images/Pasted image 20260508173210.png",
     "Front End System Design/1-Networking/2 Communication protocols.md",
     "Front End System Design/1-Networking/1 How web page loads.md",
     "Front End System Design/10 - Low level design/6 - Multi language support.md",

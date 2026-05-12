@@ -14,8 +14,8 @@
 - [x]  Maximum Subarray
 - [x]  Maximum Product Subarray
 - [x]  Move Zeroes
-- [ ]  Remove Duplicates from Sorted Array
-- [ ]  Container With Most Water
+- [x]  Remove Duplicates from Sorted Array
+- [x]  Container With Most Water
 - [ ]  Longest Consecutive Sequence
 
 ---

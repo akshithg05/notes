@@ -38,3 +38,28 @@ These are not absolutely necessary, but to have these will be good and it will e
 ## 2. Architecture
 
 
+![[namastedev.com_learn_namaste-frontend-system-design_hld-e-commerce-app-amazon-flipkart (1).png]]
+
+As a junior dev until API gateway and services, it is good to have knowledge. As a super senior level and full stack developer we need to have more knowledge about backend services, DB how it has been architecture , etc.
+
+## 3. Data model
+
+Very important 
+
+![[namastedev.com_learn_namaste-frontend-system-design_hld-e-commerce-app-amazon-flipkart (1) 1.png]]
+## 4. API
+
+Have a discussion if you want to use REST or GraphQl if you know GQL.
+
+![[namastedev.com_learn_namaste-frontend-system-design_hld-e-commerce-app-amazon-flipkart (2).png]]
+
+
+## Primary non- functional requirements for applications like ecommerce
+
+### Optimization 
+
+1. Lazy loading and code splitting.
+
+![[namastedev.com_learn_namaste-frontend-system-design_hld-e-commerce-app-amazon-flipkart (2) 2.png]]
+
+Adaptive loading hooks.

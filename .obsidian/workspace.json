@@ -106,7 +106,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -265,8 +265,14 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "e0d6e2cc4c89334e",
+  "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
+    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-e-commerce-app-amazon-flipkart (2) 2.png",
+    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-e-commerce-app-amazon-flipkart (2) 1.png",
+    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-e-commerce-app-amazon-flipkart (2).png",
+    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-e-commerce-app-amazon-flipkart (1) 1.png",
+    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-e-commerce-app-amazon-flipkart (1).png",
+    "Thailand Trip notes and itinerary.md",
     "Interview questions/1- Interview list.md",
     "DSA/1- Graphs.md",
     "DSA/images/namastedev.com_learn_namaste-dsa_topological-sort-dfs 2.png",
@@ -278,12 +284,8 @@
     "AI ML/images/Pasted image 20260510161659.png",
     "Front End System Design/1-Networking/3 REST APIs.md",
     "Front End System Design/11 - High level design/2 - E-commerce app (Flipkart, Amazon).md",
-    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-e-commerce-app-amazon-flipkart.png",
     "Front End System Design/11 - High level design/1 - Photo sharing app (Instagram).md",
-    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-photo-sharing-app-instagram 6.png",
     "AI ML/2 - Advanced Learning Algorithms/3 - Tensorflow implementation.md",
-    "AI ML/images/Pasted image 20260508174412.png",
-    "AI ML/images/Pasted image 20260508174122.png",
     "Front End System Design/1-Networking/2 Communication protocols.md",
     "Front End System Design/1-Networking/1 How web page loads.md",
     "Front End System Design/10 - Low level design/6 - Multi language support.md",
@@ -301,7 +303,6 @@
     "Interview questions/Things to keep in mind and explain.md",
     "AI ML/2 - Advanced Learning Algorithms/1 - Neural Networks.md",
     "Front End System Design/10 - Low level design/15 - Search bar and autocomplete.md",
-    "Thailand Trip notes and itinerary.md",
     "Front End System Design/10 - Low level design/14 - YouTube Live stream chat video.md",
     "DSA/Interview Prep.md",
     "AI ML/2 - Advanced Learning Algorithms",

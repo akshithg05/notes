@@ -106,7 +106,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -250,7 +250,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 379.5
+    "width": 381.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -265,8 +265,10 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "d5df95e868ccabb7",
+  "active": "1d9b439f25e897ab",
   "lastOpenFiles": [
+    "Front End System Design/1-Networking/3 REST APIs.md",
+    "Front End System Design/11 - High level design/2 - E-commerce app (Flipkart, Amazon).md",
     "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-e-commerce-app-amazon-flipkart (2) 2.png",
     "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-e-commerce-app-amazon-flipkart (2) 1.png",
     "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-e-commerce-app-amazon-flipkart (2).png",
@@ -281,9 +283,6 @@
     "AI ML/2 - Advanced Learning Algorithms/4 - Neural network (Python implementation).md",
     "AI ML/images/Pasted image 20260510163520.png",
     "AI ML/images/Pasted image 20260510161821.png",
-    "AI ML/images/Pasted image 20260510161659.png",
-    "Front End System Design/1-Networking/3 REST APIs.md",
-    "Front End System Design/11 - High level design/2 - E-commerce app (Flipkart, Amazon).md",
     "Front End System Design/11 - High level design/1 - Photo sharing app (Instagram).md",
     "AI ML/2 - Advanced Learning Algorithms/3 - Tensorflow implementation.md",
     "Front End System Design/1-Networking/2 Communication protocols.md",

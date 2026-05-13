@@ -16,7 +16,7 @@
 - [x]  Move Zeroes
 - [x]  Remove Duplicates from Sorted Array
 - [x]  Container With Most Water
-- [ ]  Longest Consecutive Sequence
+- [x]  Longest Consecutive Sequence
 
 ---
 

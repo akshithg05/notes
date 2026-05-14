@@ -22,7 +22,7 @@
 
 ## 🟨 Sliding Window / Two Pointers
 
-- [ ]  Longest Substring Without Repeating Characters
+- [x]  Longest Substring Without Repeating Characters
 - [ ]  Minimum Window Substring
 - [ ]  Permutation in String
 - [ ]  Find All Anagrams in a String

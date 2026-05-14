@@ -120,3 +120,14 @@ BFS Algorithm - Kahn's Algorithm
 
 Doing this intuitively - Build solution bottom up in reverse order
 
+[[2026-05-14]]
+## Kahn's Algorithm
+
+Based on indegree. Based on inward edges coming into the graph.
+
+put elements with indegree 0 into q
+
+Reduce indegree as you process the nodes.
+
+![[namastedev.com_learn_namaste-dsa_kahns-algorithm-topological-sort-bfs.png]]
+

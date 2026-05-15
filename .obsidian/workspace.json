@@ -69,16 +69,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interview questions/1- Interview list.md",
+                "file": "Thailand Trip notes and itinerary.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1- Interview list"
+              "title": "Thailand Trip notes and itinerary"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -237,26 +237,28 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "9962c9fffe4d16d3",
+  "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
+    "Thailand Trip notes and itinerary.md",
+    "AI ML/2 - Advanced Learning Algorithms/5 - AGI.md",
+    "AI ML/images/Pasted image 20260514213249.png",
+    "AI ML/images/Pasted image 20260514213017.png",
+    "AI ML/images/Pasted image 20260514212856.png",
+    "AI ML/images/Pasted image 20260514205355.png",
+    "AI ML/images/Pasted image 20260514201109.png",
+    "AI ML/images/Pasted image 20260514201046.png",
+    "Front End System Design/1-Networking/4 graphQL.md",
+    "Front End System Design/1-Networking/3 REST APIs.md",
+    "Interview questions/1- Interview list.md",
     "Interview questions/DSA revision Namaste DSA.md",
     "DSA/images/namastedev.com_learn_namaste-dsa_kahns-algorithm-topological-sort-bfs.png",
-    "Front End System Design/1-Networking/3 REST APIs.md",
     "DSA/2 - Shortest path algorithms.md",
     "Hakathon.md",
-    "Thailand Trip notes and itinerary.md",
     "DSA/images/namastedev.com_learn_namaste-dsa_shortest-path-algorithms-in-graphs.png",
     "DSA/1- Graphs.md",
-    "Interview questions/1- Interview list.md",
     "Front End System Design/11 - High level design/2 - E-commerce app (Flipkart, Amazon).md",
     "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-e-commerce-app-amazon-flipkart (2) 2.png",
     "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-e-commerce-app-amazon-flipkart (2) 1.png",
-    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-e-commerce-app-amazon-flipkart (2).png",
-    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-e-commerce-app-amazon-flipkart (1) 1.png",
-    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-e-commerce-app-amazon-flipkart (1).png",
-    "DSA/images/namastedev.com_learn_namaste-dsa_topological-sort-dfs 2.png",
-    "DSA/images/namastedev.com_learn_namaste-dsa_topological-sort-dfs 1.png",
-    "DSA/images/namastedev.com_learn_namaste-dsa_topological-sort-dfs.png",
     "AI ML/2 - Advanced Learning Algorithms/4 - Neural network (Python implementation).md",
     "Front End System Design/11 - High level design/1 - Photo sharing app (Instagram).md",
     "AI ML/2 - Advanced Learning Algorithms/3 - Tensorflow implementation.md",
@@ -275,8 +277,6 @@
     "Interview questions/Things to keep in mind and explain.md",
     "AI ML/2 - Advanced Learning Algorithms/1 - Neural Networks.md",
     "Front End System Design/10 - Low level design/15 - Search bar and autocomplete.md",
-    "Front End System Design/10 - Low level design/14 - YouTube Live stream chat video.md",
-    "DSA/Interview Prep.md",
     "AI ML/2 - Advanced Learning Algorithms",
     "Untitled.base",
     "Untitled 5.base",

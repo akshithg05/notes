@@ -71,3 +71,130 @@ Sim cards -
 - Elysium night club - Bravo mall BKK
 - Atlas bangkok
 - - Immersive club (Onyx / Beam)
+
+
+
+**PHUKET PLAN (May 25 – May 28)**
+
+---
+
+**MAY 25 – ARRIVAL + BEACH + NIGHTLIFE**
+
+- Arrive in Phuket (~afternoon)
+- Hotel check-in + relax
+
+**Evening Options:**
+
+- Patong Beach walk
+- Bangla Road nightlife
+- Beach clubs / bars
+- Optional rooftop / live music spots
+
+**Recommended Additions:**
+
+- Café Del Mar Phuket (beach club sunset)
+    
+- Illuzion Phuket (big nightclub)
+    
+- Kudo Beach Club
+    
+
+---
+
+**MAY 26 – PHUKET DAY**
+
+**Day Options (Pick based on mood):**
+
+- Relax at Kata Beach / Karon Beach
+    
+- Jet ski / parasailing / water sports
+    
+- Café hopping + beach clubs
+    
+- ATV / Big Buddha / Old Phuket Town
+    
+- Phuket viewpoints:
+    
+    - Karon Viewpoint
+        
+    - Windmill Viewpoint
+        
+    - Promthep Cape (sunset)
+        
+
+**Nature / Sightseeing Options:**
+
+- Big Buddha
+    
+- Old Phuket Town
+    
+- Elephant sanctuary (ethical ones only)
+    
+
+**Weed Café Options:**
+
+- High Society Phuket
+    
+- Juicy Buds Patong
+    
+- Cannabis cafés around Bangla Road / Patong
+    
+
+**Evening:**
+
+- Beach club sunset
+    
+- Bangla Road / clubs / bars
+    
+
+**Nightclub Options:**
+
+- Illuzion
+    
+- Sugar Club Phuket
+    
+- Shelter Phuket (more underground vibe)
+    
+
+---
+
+**MAY 27 – PHI PHI ISLAND DAY TOUR**
+
+- Early morning speedboat tour (~7 AM)
+    
+
+**Tour Highlights:**
+
+- Maya Bay
+    
+- Pileh Lagoon
+    
+- Bamboo Island
+    
+- Viking Cave
+    
+- Snorkeling + island hopping
+    
+- Return to Phuket by evening
+    
+
+**Night:**
+
+- Relaxed dinner / massage / light nightlife
+    
+
+---
+
+**MAY 28 – PHUKET → KRABI**
+
+- Breakfast + relaxed morning
+    
+- Optional:
+    
+    - Café stop
+        
+    - Beach walk
+        
+    - Last-minute massage
+        
+- Transfer to Krabi

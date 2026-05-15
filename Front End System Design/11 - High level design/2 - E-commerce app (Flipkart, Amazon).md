@@ -63,3 +63,4 @@ Have a discussion if you want to use REST or GraphQl if you know GQL.
 ![[namastedev.com_learn_namaste-frontend-system-design_hld-e-commerce-app-amazon-flipkart (2) 2.png]]
 
 Adaptive loading hooks.
+

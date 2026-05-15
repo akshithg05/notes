@@ -21,3 +21,13 @@ LRU is nothing compared to a neuron, the functionality done by neurons is far gr
 
 ![[Pasted image 20260514213249.png]]
 
+[[2026-05-15]]
+
+Matrix Multiplication
+
+![[Pasted image 20260515214803.png]]
+
+![[Pasted image 20260515214935.png]]
+
+![[Pasted image 20260515215203.png]]
+

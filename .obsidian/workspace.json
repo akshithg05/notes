@@ -13,15 +13,42 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Thailand Trip notes and itinerary.md",
+                "file": "Front End System Design/11 - High level design/3 - News Media Feed.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Thailand Trip notes and itinerary"
+              "title": "3 - News Media Feed"
+            }
+          },
+          {
+            "id": "a56fc65aa99b22a9",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-News-media-feed-facebook-twitter 1.png"
+              },
+              "icon": "lucide-image",
+              "title": "namastedev.com_learn_namaste-frontend-system-design_hld-News-media-feed-facebook-twitter 1"
+            }
+          },
+          {
+            "id": "f445bfd0818e09b9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Front End System Design/1-Networking/5 gRPC.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "5 gRPC"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -180,26 +207,27 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "9962c9fffe4d16d3",
+  "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
+    "Front End System Design/1-Networking/4 graphQL.md",
+    "Front End System Design/11 - High level design/3 - News Media Feed.md",
+    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-News-media-feed-facebook-twitter 1.png",
+    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-News-media-feed-facebook-twitter.png",
+    "Thailand Trip notes and itinerary.md",
     "AI ML/2 - Advanced Learning Algorithms/6 - Neural network training.md",
     "Interview questions/1- Interview list.md",
     "AI ML/2 - Advanced Learning Algorithms/5 - AGI.md",
     "AI ML/images/Pasted image 20260515215203.png",
     "AI ML/images/Pasted image 20260515214935.png",
     "AI ML/images/Pasted image 20260515214803.png",
-    "Front End System Design/1-Networking/4 graphQL.md",
     "Front End System Design/1-Networking/3 REST APIs.md",
     "Front End System Design/11 - High level design/2 - E-commerce app (Flipkart, Amazon).md",
-    "Thailand Trip notes and itinerary.md",
     "AI ML/images/Pasted image 20260514213249.png",
     "AI ML/images/Pasted image 20260514213017.png",
     "AI ML/images/Pasted image 20260514212856.png",
     "AI ML/images/Pasted image 20260514205355.png",
     "AI ML/images/Pasted image 20260514201109.png",
-    "AI ML/images/Pasted image 20260514201046.png",
     "Interview questions/DSA revision Namaste DSA.md",
-    "DSA/images/namastedev.com_learn_namaste-dsa_kahns-algorithm-topological-sort-bfs.png",
     "DSA/2 - Shortest path algorithms.md",
     "Hakathon.md",
     "DSA/1- Graphs.md",
@@ -219,8 +247,6 @@
     "Interview questions/React Interview Notes.md",
     "Interview questions/React-interview-PDF.pdf",
     "Interview questions/Things to keep in mind and explain.md",
-    "AI ML/2 - Advanced Learning Algorithms/1 - Neural Networks.md",
-    "Front End System Design/10 - Low level design/15 - Search bar and autocomplete.md",
     "AI ML/2 - Advanced Learning Algorithms",
     "Untitled.base",
     "Untitled 5.base",

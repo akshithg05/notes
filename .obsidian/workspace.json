@@ -39,12 +39,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Front End System Design/1-Networking/5 gRPC.md",
+                "file": "AI ML/2 - Advanced Learning Algorithms/6 - Neural network training.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "5 gRPC"
+              "title": "6 - Neural network training"
+            }
+          },
+          {
+            "id": "30fd638ebb4600b7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Interview questions/1- Interview list.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "1- Interview list"
             }
           }
         ],
@@ -209,13 +223,18 @@
   },
   "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
+    "AI ML/images/Pasted image 20260517201810.png",
+    "AI ML/images/Pasted image 20260517200649.png",
+    "Interview questions/1- Interview list.md",
+    "AI ML/2 - Advanced Learning Algorithms/6 - Neural network training.md",
+    "AI ML/images/Pasted image 20260517200305.png",
+    "AI ML/images/Pasted image 20260517200221.png",
+    "Front End System Design/1-Networking/5 gRPC.md",
     "Front End System Design/1-Networking/4 graphQL.md",
     "Front End System Design/11 - High level design/3 - News Media Feed.md",
     "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-News-media-feed-facebook-twitter 1.png",
     "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-News-media-feed-facebook-twitter.png",
     "Thailand Trip notes and itinerary.md",
-    "AI ML/2 - Advanced Learning Algorithms/6 - Neural network training.md",
-    "Interview questions/1- Interview list.md",
     "AI ML/2 - Advanced Learning Algorithms/5 - AGI.md",
     "AI ML/images/Pasted image 20260515215203.png",
     "AI ML/images/Pasted image 20260515214935.png",
@@ -224,9 +243,6 @@
     "Front End System Design/11 - High level design/2 - E-commerce app (Flipkart, Amazon).md",
     "AI ML/images/Pasted image 20260514213249.png",
     "AI ML/images/Pasted image 20260514213017.png",
-    "AI ML/images/Pasted image 20260514212856.png",
-    "AI ML/images/Pasted image 20260514205355.png",
-    "AI ML/images/Pasted image 20260514201109.png",
     "Interview questions/DSA revision Namaste DSA.md",
     "DSA/2 - Shortest path algorithms.md",
     "Hakathon.md",
@@ -246,7 +262,6 @@
     "Interview questions/JS-interview-PDF.pdf",
     "Interview questions/React Interview Notes.md",
     "Interview questions/React-interview-PDF.pdf",
-    "Interview questions/Things to keep in mind and explain.md",
     "AI ML/2 - Advanced Learning Algorithms",
     "Untitled.base",
     "Untitled 5.base",

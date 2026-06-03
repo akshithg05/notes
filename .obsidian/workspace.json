@@ -39,12 +39,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OMSCS/3 CN/5 - Distance vector routing.md",
+                "file": "OMSCS/3 CN/6 - OSPF.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "5 - Distance vector routing"
+              "title": "6 - OSPF"
             }
           },
           {
@@ -221,12 +221,14 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "d5df95e868ccabb7",
+  "active": "f445bfd0818e09b9",
   "lastOpenFiles": [
+    "OMSCS/3 CN/5 - Distance vector routing.md",
+    "OMSCS/3 CN/6 - OSPF.md",
+    "OMSCS/3 CN/Untitled",
     "OMSCS/3 CN/images",
     "OMSCS/3 CN/images/Pasted image 20260603183123.png",
     "OMSCS/3 CN/4 - Link State routing.md",
-    "OMSCS/3 CN/5 - Distance vector routing.md",
     "Thailand Trip notes and itinerary.md",
     "OMSCS/3 CN/3- Module 2.md",
     "OMSCS/3 CN/1 - Module 1 - Internet acrchitecture.md",
@@ -267,8 +269,6 @@
     "Untitled.base",
     "Untitled 5.base",
     "Untitled 4.base",
-    "Untitled 3.base",
-    "Untitled 2.base",
     "Untitled.canvas"
   ]
 }

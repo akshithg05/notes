@@ -39,12 +39,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OMSCS/3 CN/1 - Module 1 - Internet acrchitecture.md",
+                "file": "OMSCS/3 CN/5 - Distance vector routing.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1 - Module 1 - Internet acrchitecture"
+              "title": "5 - Distance vector routing"
             }
           },
           {
@@ -221,10 +221,16 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "f445bfd0818e09b9",
+  "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
-    "OMSCS/3 CN/2 - Brief history of internet.md",
+    "OMSCS/3 CN/images",
+    "OMSCS/3 CN/images/Pasted image 20260603183123.png",
+    "OMSCS/3 CN/4 - Link State routing.md",
+    "OMSCS/3 CN/5 - Distance vector routing.md",
+    "Thailand Trip notes and itinerary.md",
+    "OMSCS/3 CN/3- Module 2.md",
     "OMSCS/3 CN/1 - Module 1 - Internet acrchitecture.md",
+    "OMSCS/3 CN/2 - Brief history of internet.md",
     "AI ML/2 - Advanced Learning Algorithms/6 - Neural network training.md",
     "OMSCS/3 CN",
     "AI ML/images/Pasted image 20260517201810.png",
@@ -237,14 +243,12 @@
     "Front End System Design/11 - High level design/3 - News Media Feed.md",
     "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-News-media-feed-facebook-twitter 1.png",
     "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-News-media-feed-facebook-twitter.png",
-    "Thailand Trip notes and itinerary.md",
     "AI ML/2 - Advanced Learning Algorithms/5 - AGI.md",
     "AI ML/images/Pasted image 20260515215203.png",
     "AI ML/images/Pasted image 20260515214935.png",
     "AI ML/images/Pasted image 20260515214803.png",
     "Front End System Design/1-Networking/3 REST APIs.md",
     "Front End System Design/11 - High level design/2 - E-commerce app (Flipkart, Amazon).md",
-    "AI ML/images/Pasted image 20260514213249.png",
     "Interview questions/DSA revision Namaste DSA.md",
     "DSA/2 - Shortest path algorithms.md",
     "Hakathon.md",
@@ -256,11 +260,7 @@
     "Front End System Design/1-Networking/1 How web page loads.md",
     "Front End System Design/10 - Low level design/6 - Multi language support.md",
     "AI ML/2 - Advanced Learning Algorithms/2 - Neural Network Model.md",
-    "DSA/Notes.md",
-    "Front End System Design/11 - High level design/0 - Overview.md",
     "Front End System Design/11 - High level design",
-    "Interview questions/Frontend Interview path.md",
-    "Interview questions/JS interview questions better understanding.md",
     "Interview questions/JS-interview-PDF.pdf",
     "Interview questions/React-interview-PDF.pdf",
     "AI ML/2 - Advanced Learning Algorithms",

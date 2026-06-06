@@ -8,32 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "9962c9fffe4d16d3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Front End System Design/11 - High level design/3 - News Media Feed.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "3 - News Media Feed"
-            }
-          },
-          {
-            "id": "a56fc65aa99b22a9",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-News-media-feed-facebook-twitter 1.png"
-              },
-              "icon": "lucide-image",
-              "title": "namastedev.com_learn_namaste-frontend-system-design_hld-News-media-feed-facebook-twitter 1"
-            }
-          },
-          {
             "id": "f445bfd0818e09b9",
             "type": "leaf",
             "state": {
@@ -60,9 +34,37 @@
               "icon": "lucide-file",
               "title": "1- Interview list"
             }
+          },
+          {
+            "id": "16f2d1cac9b1ee1f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Front End System Design/10 - Low level design/11 - Pagination 1.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "11 - Pagination 1"
+            }
+          },
+          {
+            "id": "736592b3b13579e5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Front End System Design/11 - High level design/3 - News Media Feed.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "3 - News Media Feed"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -221,10 +223,24 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "f445bfd0818e09b9",
+  "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
-    "OMSCS/3 CN/5 - Distance vector routing.md",
+    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-News-media-feed-facebook-twitter 1 1.png",
+    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-News-media-feed-facebook-twitter 3.png",
+    "Front End System Design/10 - Low level design/11 - Pagination 1.md",
+    "Front End System Design/10 - Low level design/12 - Pagination 2.md",
+    "Front End System Design/11 - High level design/3 - News Media Feed.md",
+    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-News-media-feed-facebook-twitter 2.png",
+    "DSA/images/namastedev.com_learn_namaste-dsa_bellman-ford-algorithm-shortest-path-with-negative-weights.png",
+    "DSA/2 - Shortest path algorithms.md",
+    "Front End System Design/1-Networking/5 gRPC.md",
     "OMSCS/3 CN/6 - OSPF.md",
+    "Interview questions/1- Interview list.md",
+    "AI ML/2 - Advanced Learning Algorithms/7 - Activation functions.md",
+    "AI ML/2 - Advanced Learning Algorithms/6 - Neural network training.md",
+    "Front End System Design/1-Networking/4 graphQL.md",
+    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-News-media-feed-facebook-twitter 1.png",
+    "OMSCS/3 CN/5 - Distance vector routing.md",
     "OMSCS/3 CN/Untitled",
     "OMSCS/3 CN/images",
     "OMSCS/3 CN/images/Pasted image 20260603183123.png",
@@ -233,35 +249,21 @@
     "OMSCS/3 CN/3- Module 2.md",
     "OMSCS/3 CN/1 - Module 1 - Internet acrchitecture.md",
     "OMSCS/3 CN/2 - Brief history of internet.md",
-    "AI ML/2 - Advanced Learning Algorithms/6 - Neural network training.md",
     "OMSCS/3 CN",
     "AI ML/images/Pasted image 20260517201810.png",
     "AI ML/images/Pasted image 20260517200649.png",
-    "Interview questions/1- Interview list.md",
     "AI ML/images/Pasted image 20260517200305.png",
     "AI ML/images/Pasted image 20260517200221.png",
-    "Front End System Design/1-Networking/5 gRPC.md",
-    "Front End System Design/1-Networking/4 graphQL.md",
-    "Front End System Design/11 - High level design/3 - News Media Feed.md",
-    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-News-media-feed-facebook-twitter 1.png",
     "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-News-media-feed-facebook-twitter.png",
     "AI ML/2 - Advanced Learning Algorithms/5 - AGI.md",
-    "AI ML/images/Pasted image 20260515215203.png",
-    "AI ML/images/Pasted image 20260515214935.png",
-    "AI ML/images/Pasted image 20260515214803.png",
     "Front End System Design/1-Networking/3 REST APIs.md",
     "Front End System Design/11 - High level design/2 - E-commerce app (Flipkart, Amazon).md",
     "Interview questions/DSA revision Namaste DSA.md",
-    "DSA/2 - Shortest path algorithms.md",
     "Hakathon.md",
     "DSA/1- Graphs.md",
     "AI ML/2 - Advanced Learning Algorithms/4 - Neural network (Python implementation).md",
     "Front End System Design/11 - High level design/1 - Photo sharing app (Instagram).md",
     "AI ML/2 - Advanced Learning Algorithms/3 - Tensorflow implementation.md",
-    "Front End System Design/1-Networking/2 Communication protocols.md",
-    "Front End System Design/1-Networking/1 How web page loads.md",
-    "Front End System Design/10 - Low level design/6 - Multi language support.md",
-    "AI ML/2 - Advanced Learning Algorithms/2 - Neural Network Model.md",
     "Front End System Design/11 - High level design",
     "Interview questions/JS-interview-PDF.pdf",
     "Interview questions/React-interview-PDF.pdf",

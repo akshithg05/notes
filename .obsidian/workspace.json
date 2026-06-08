@@ -69,12 +69,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI ML/2 - Advanced Learning Algorithms/7 - Activation functions.md",
+                "file": "Front End System Design/11 - High level design/3 - News Media Feed.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "7 - Activation functions"
+              "title": "3 - News Media Feed"
             }
           }
         ],
@@ -239,6 +239,9 @@
   },
   "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
+    "namastedev.com_learn_namaste-frontend-system-design_hld-News-media-feed-facebook-twitter 1.png",
+    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-News-media-feed-facebook-twitter 4.png",
+    "AI ML/2 - Advanced Learning Algorithms/7 - Activation functions.md",
     "AI ML/images/Pasted image 20260606121648.png",
     "AI ML/images/Pasted image 20260606121427.png",
     "AI ML/images/Pasted image 20260606120501.png",
@@ -248,16 +251,13 @@
     "AI ML/images/Pasted image 20260606115316.png",
     "AI ML/images/Pasted image 20260606115123.png",
     "AI ML/2 - Advanced Learning Algorithms/6 - Neural network training.md",
-    "AI ML/2 - Advanced Learning Algorithms/7 - Activation functions.md",
     "AI ML/2 - Advanced Learning Algorithms/2 - Neural Network Model.md",
     "AI ML/2 - Advanced Learning Algorithms/1 - Neural Networks.md",
     "Front End System Design/1-Networking/5 gRPC.md",
     "Front End System Design/11 - High level design/3 - News Media Feed.md",
     "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-News-media-feed-facebook-twitter 1 1.png",
-    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-News-media-feed-facebook-twitter 3.png",
     "Front End System Design/10 - Low level design/11 - Pagination 1.md",
     "Front End System Design/10 - Low level design/12 - Pagination 2.md",
-    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-News-media-feed-facebook-twitter 2.png",
     "DSA/2 - Shortest path algorithms.md",
     "OMSCS/3 CN/6 - OSPF.md",
     "Interview questions/1- Interview list.md",

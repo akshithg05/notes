@@ -77,3 +77,41 @@ To handle updates, the client application tracks two distinct cursor pointers si
 ![[namastedev.com_learn_namaste-frontend-system-design_hld-News-media-feed-facebook-twitter 3.png]]
 ![[namastedev.com_learn_namaste-frontend-system-design_hld-News-media-feed-facebook-twitter 1 1.png]]
 
+Preserving scroll positions
+
+#### 3.Tagging functionality-
+
+For tagging people and using hashtags we cant use text/area
+We can use div + content editable
+We can use WYSYWIG editor , best option. - draft.js, slate.js
+
+#### Optimistic UI updates
+
+The Step-by-Step Flow
+
+1. **Instant Feedback:** You hit "Post" or "Like". The frontend instantly updates your local state and UI (e.g., your comment appears immediately, the heart button turns red).
+2. **Silent Syncing:** In the background, the app fires an asynchronous API request to the server to save the data.
+3. **Success:** The server processes the request and confirms it. The app does nothing (or silently swaps the temporary local ID for the permanent database ID).
+4. **Failure (Rollback):** If the network fails or the server rejects the action, the app quietly removes the post/like from your screen and displays an error message (e.g., "Failed to post. Try again").
+
+Common Use Cases
+
+- **Likes & Reactions:** Tapping a heart fills the icon instantly; the app updates the like count by +1 without waiting for the database response.
+- **Comments:** Your new comment is appended to the thread locally.
+- **Uploading Posts:** The app shows a greyed-out or blurred "posting..." placeholder image while the file uploads to cloud storage in the background.
+
+Why Frontends Use It
+
+- **Perceived Performance:** It eliminates the delay caused by network latency, making the app feel snappy and instant.
+- **Resilience:** Users can continue scrolling and interacting without waiting for one action to finish before starting another.
+- **Higher Engagement:** Apps that feel instantaneous psychologically encourage users to interact more freely. [[1](https://blog.devgenius.io/supercharge-your-next-js-f3fa298eaf10), [2](https://www.youtube.com/watch?v=cypK50wBCZs), [3](https://namastedev.com/blog/implementing-optimistic-ui-updates-in-react-applications/)]
+
+The Technical Challenges
+
+- **Handling Errors:** Developers must write complex rollback logic to undo the UI change if the network request fails.
+- **State Reconciliation:** When multiple actions happen rapidly, the frontend must ensure the local cache correctly syncs with the true server state. [[1](https://www.freecodecamp.org/news/how-to-use-the-optimistic-ui-pattern-with-the-useoptimistic-hook-in-react/)]
+
+![[namastedev.com_learn_namaste-frontend-system-design_hld-News-media-feed-facebook-twitter 4.png]]
+
+![[namastedev.com_learn_namaste-frontend-system-design_hld-News-media-feed-facebook-twitter 1.png]]
+

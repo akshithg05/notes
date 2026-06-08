@@ -113,5 +113,5 @@ The Technical Challenges
 
 ![[namastedev.com_learn_namaste-frontend-system-design_hld-News-media-feed-facebook-twitter 4.png]]
 
-![[namastedev.com_learn_namaste-frontend-system-design_hld-News-media-feed-facebook-twitter 1.png]]
+![[namastedev.com_learn_namaste-frontend-system-design_hld-News-media-feed-facebook-twitter 1 2.png]]
 

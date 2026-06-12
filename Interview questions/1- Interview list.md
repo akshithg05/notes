@@ -7,24 +7,24 @@
 
 ## 🟦 Arrays & Strings
 
-- [x]  Two Sum
-- [x]  Best Time to Buy and Sell Stock
-- [x]  Contains Duplicate
-- [x]  Product of Array Except Self
-- [x]  Maximum Subarray
-- [x]  Maximum Product Subarray
-- [x]  Move Zeroes
-- [x]  Remove Duplicates from Sorted Array
-- [x]  Container With Most Water
-- [x]  Longest Consecutive Sequence
+- [ ]  Two Sum
+- [ ]  Best Time to Buy and Sell Stock
+- [ ]  Contains Duplicate
+- [ ]  Product of Array Except Self
+- [ ]  Maximum Subarray
+- [ ]  Maximum Product Subarray
+- [ ]  Move Zeroes
+- [ ]  Remove Duplicates from Sorted Array
+- [ ]  Container With Most Water
+- [ ]  Longest Consecutive Sequence
 
 ---
 
 ## 🟨 Sliding Window / Two Pointers
 
-- [x]  Longest Substring Without Repeating Characters
-- [x]  Minimum Window Substring
-- [x]  Permutation in String
+- [ ]  Longest Substring Without Repeating Characters
+- [ ]  Minimum Window Substring
+- [ ]  Permutation in String
 - [ ]  Find All Anagrams in a String
 - [ ]  Sliding Window Maximum
 - [ ]  Longest Repeating Character Replacement

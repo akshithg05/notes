@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interview questions/1- Interview list.md",
+                "file": "AI ML/2 - Advanced Learning Algorithms/8 - Multiclass classification.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1- Interview list"
+              "title": "8 - Multiclass classification"
             }
           },
           {
@@ -222,8 +222,11 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "30fd638ebb4600b7",
+  "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
+    "AI ML/images/Pasted image 20260612161706.png",
+    "AI ML/images/Pasted image 20260612160930.png",
+    "Interview questions/1- Interview list.md",
     "DSA/2 - Shortest path algorithms.md",
     "DSA/images/namastedev.com_learn_namaste-dsa_comparing-all-shortest-path-graph-algorithms 1.png",
     "DSA/images/namastedev.com_learn_namaste-dsa_floyd-warshall-code.png",
@@ -234,16 +237,14 @@
     "Front End System Design/2-Communication/1 Communication Overview.md",
     "Front End System Design/11 - High level design/3 - News Media Feed.md",
     "Front End System Design/10 - Low level design/11 - Pagination 1.md",
-    "Interview questions/1- Interview list.md",
     "OMSCS/3 CN/6 - OSPF.md",
     "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-video-streaming-netflix-hotstar.png",
     "AI ML/2 - Advanced Learning Algorithms/8 - Multiclass classification.md",
     "AI ML/images/Pasted image 20260610201804.png",
-    "AI ML/2 - Advanced Learning Algorithms/Pasted image 20260610201630.png",
+    "AI ML/images/Pasted image 20260610201630.png",
     "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-News-media-feed-facebook-twitter 1 2.png",
     "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-News-media-feed-facebook-twitter 4.png",
     "AI ML/2 - Advanced Learning Algorithms/7 - Activation functions.md",
-    "AI ML/images/Pasted image 20260606121648.png",
     "AI ML/2 - Advanced Learning Algorithms/6 - Neural network training.md",
     "AI ML/2 - Advanced Learning Algorithms/2 - Neural Network Model.md",
     "AI ML/2 - Advanced Learning Algorithms/1 - Neural Networks.md",

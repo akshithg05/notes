@@ -63,8 +63,7 @@
               "title": "2 - Shortest path algorithms"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -223,11 +222,11 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "d5df95e868ccabb7",
+  "active": "30fd638ebb4600b7",
   "lastOpenFiles": [
+    "DSA/2 - Shortest path algorithms.md",
     "DSA/images/namastedev.com_learn_namaste-dsa_comparing-all-shortest-path-graph-algorithms 1.png",
     "DSA/images/namastedev.com_learn_namaste-dsa_floyd-warshall-code.png",
-    "DSA/2 - Shortest path algorithms.md",
     "DSA/images/namastedev.com_learn_namaste-dsa_comparing-all-shortest-path-graph-algorithms.png",
     "Front End System Design/2-Communication/2 Short Polling.md",
     "Front End System Design/11 - High level design/4 - Video streaming (Netflix YT).md",
@@ -245,7 +244,6 @@
     "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-News-media-feed-facebook-twitter 4.png",
     "AI ML/2 - Advanced Learning Algorithms/7 - Activation functions.md",
     "AI ML/images/Pasted image 20260606121648.png",
-    "AI ML/images/Pasted image 20260606121427.png",
     "AI ML/2 - Advanced Learning Algorithms/6 - Neural network training.md",
     "AI ML/2 - Advanced Learning Algorithms/2 - Neural Network Model.md",
     "AI ML/2 - Advanced Learning Algorithms/1 - Neural Networks.md",

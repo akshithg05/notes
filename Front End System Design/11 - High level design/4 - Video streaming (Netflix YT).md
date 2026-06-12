@@ -1,6 +1,6 @@
 
 
-![[namastedev.com_learn_namaste-frontend-system-design_hld-video-streaming-netflix-hotstar.png]]
+![[DSA/images/namastedev.com_learn_namaste-frontend-system-design_hld-video-streaming-netflix-hotstar.png]]
 
 Video streaming for different devices might be different protocols. Depending on OS, phone, laptop etc. Its not just the sizing angle.
 
@@ -145,5 +145,7 @@ Continue Watching → → → →
 - Netflix UI relies heavily on **horizontal carousels + vertical scrolling**.
 - Media previews and thumbnails are optimized for fast loading and caching.
 
-![[namastedev.com_learn_namaste-frontend-system-design_hld-video-streaming-netflix-hotstar.png]]
+![[DSA/images/namastedev.com_learn_namaste-frontend-system-design_hld-video-streaming-netflix-hotstar.png]]
+
+## 3. Data model
 

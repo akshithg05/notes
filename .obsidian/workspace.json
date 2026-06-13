@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Front End System Design/2-Communication/3 Long Polling.md",
+                "file": "DSA/3 - Spanning tree.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3 Long Polling"
+              "title": "3 - Spanning tree"
             }
           }
         ],
@@ -195,8 +195,11 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "d5df95e868ccabb7",
+  "active": "2cf922e37bcfb4fc",
   "lastOpenFiles": [
+    "DSA/images/namastedev.com_learn_namaste-dsa_minimum-spanning-tree.png",
+    "Front End System Design/2-Communication/3 Long Polling.md",
+    "DSA/3 - Spanning tree.md",
     "Front End System Design/11 - High level design/4 - Video streaming (Netflix YT).md",
     "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-video-streaming-netflix-hotstar 2.png",
     "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-video-streaming-netflix-hotstar 1 1.png",
@@ -233,8 +236,6 @@
     "OMSCS/3 CN/2 - Brief history of internet.md",
     "OMSCS/3 CN",
     "AI ML/2 - Advanced Learning Algorithms/5 - AGI.md",
-    "Front End System Design/1-Networking/3 REST APIs.md",
-    "Front End System Design/11 - High level design/2 - E-commerce app (Flipkart, Amazon).md",
     "Front End System Design/11 - High level design",
     "Interview questions/JS-interview-PDF.pdf",
     "Interview questions/React-interview-PDF.pdf",

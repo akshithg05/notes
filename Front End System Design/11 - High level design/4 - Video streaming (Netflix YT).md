@@ -149,3 +149,43 @@ Continue Watching → → → →
 
 ## 3. Data model
 
+![[Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-video-streaming-netflix-hotstar 1.png]]
+
+
+## Video player
+
+1. This is the recommended way of building video player.
+
+![[namastedev.com_learn_namaste-frontend-system-design_hld-video-streaming-netflix-hotstar 1 1.png]]
+
+1. We also have different media and video players to perform these actions.
+2. Videojs.com
+
+![[namastedev.com_learn_namaste-frontend-system-design_hld-video-streaming-netflix-hotstar 2.png]]
+
+Using an advanced external web media player (like [Shaka Player](https://www.google.com/url?sa=i&source=web&rct=j&url=https://github.com/shaka-project/shaka-player/issues/1351&ved=2ahUKEwiH8oD6yIOVAxV0UGwGHTZUE94Qy_kOegYIAAgHEAE&opi=89978449&cd&psig=AOvVaw1-Gmcn0wvnnM81gwcJ1PxY&ust=1781417899476000) or [Bitmovin](https://www.google.com/url?sa=i&source=web&rct=j&url=https://bitmovin.com/blog/html5-video-tag-guide/&ved=2ahUKEwiH8oD6yIOVAxV0UGwGHTZUE94Qy_kOegYIAAgHEAI&opi=89978449&cd&psig=AOvVaw1-Gmcn0wvnnM81gwcJ1PxY&ust=1781417899476000)) instead of a basic HTML5 `<video>` tag provides substantial enterprise-level benefits. While the native `<video>` tag is simple to deploy, it lacks the core infrastructure needed for premium streaming platforms. [[1](https://bitmovin.com/blog/html5-video-tag-guide/)]
+
+Based on the presentation in the image, here are the primary reasons to opt for an external media player over a standard video tag:
+
+Advanced Playback Control
+
+- **Automatically jump gaps in content:** Resolves issues with poorly encoded video files or network hiccups by skipping empty data gaps, preventing the video from freezing or buffering indefinitely. [[1](https://github.com/shaka-project/shaka-player/issues/1351)]
+- **Pre-Load feature:** Optimizes the user experience by fetching video data in the background before the user hits play, making playback instant.
+- **Thumbnails for seeking:** Enables visual preview boxes when a user hovers over or scrubs along the timeline, which is not supported natively by the basic `<video>` tag.
+- **Retries:** Configures automated attempts to reconnect and resume playback if a temporary network drop occurs, rather than throwing an immediate error.
+
+Content Security and Offline Capabilities
+
+- **Support for storing content offline:** Allows users to download videos directly within the web environment for later viewing. [[1](https://github.com/shaka-project/shaka-player/issues/1351)]
+- **Protected content (DRM) support:** Integrates digital rights management (DRM) like Widevine or FairPlay within offline and online video content to prevent piracy. [[1](https://github.com/shaka-project/shaka-player/issues/1351)]
+- **Authentication:** Seamlessly handles user authentication tokens directly inside the video player network layer to ensure only authorized users can pull the video chunks. [[1](https://github.com/shaka-project/shaka-player/issues/1351)]
+
+Streaming and Protocol Support
+
+- **Multi-protocol support (HLS & MSS):** Dynamically switches and plays diverse adaptive streaming formats like Apple's **HLS** (HTTP Live Streaming), Microsoft's **MSS** (Smooth Streaming), or Adobe protocols. A standard video tag cannot natively play these formats without external JavaScript libraries. [[1](https://bitmovin.com/blog/html5-video-tag-guide/), [2](https://github.com/shaka-project/shaka-player/issues/1351)]
+- **Network filters:** Allows developers to intercept and modify outgoing video data requests to apply custom headers, proxy settings, or security filters. [[1](https://github.com/shaka-project/shaka-player/issues/1351)]
+
+Ecosystem and Modern Web Integration
+
+- **Cast support:** Built-in integration for casting to external displays like Google Chromecast or smart TVs without writing complex custom API integrations.
+- **PWAs & service workers:** Fully optimizes the media architecture to run smoothly within Progressive Web Apps (PWAs), making background downloads and offline availability reliable. [[1](https://github.com/shaka-project/shaka-player/issues/1351)]

@@ -189,3 +189,9 @@ Ecosystem and Modern Web Integration
 
 - **Cast support:** Built-in integration for casting to external displays like Google Chromecast or smart TVs without writing complex custom API integrations.
 - **PWAs & service workers:** Fully optimizes the media architecture to run smoothly within Progressive Web Apps (PWAs), making background downloads and offline availability reliable. [[1](https://github.com/shaka-project/shaka-player/issues/1351)]
+
+
+![[namastedev.com_learn_namaste-frontend-system-design_hld-video-streaming-netflix-hotstar 3.png]]
+
+![[namastedev.com_learn_namaste-frontend-system-design_hld-video-streaming-netflix-hotstar 1 2.png]]
+

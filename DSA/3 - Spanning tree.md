@@ -1,4 +1,6 @@
-![[DSA/images/namastedev.com_learn_namaste-dsa_minimum-spanning-tree 1.png]]
+A **spanning tree** is a subset of a graph that connects all of its vertices (nodes) together without forming any cycles and using the minimum number of edges.
+
+You are completely correct: if the original graph has \(n\) nodes, any valid spanning tree will have exactly \(n-1\) edges![[DSA/images/namastedev.com_learn_namaste-dsa_minimum-spanning-tree 1.png]]
 ![[DSA/images/namastedev.com_learn_namaste-dsa_minimum-spanning-tree 1.png]]
 ![[namastedev.com_learn_namaste-dsa_minimum-spanning-tree 1 1.png]]
 ![[namastedev.com_learn_namaste-dsa_minimum-spanning-tree 2.png]]
@@ -20,4 +22,9 @@ Minimum cost spanning tree is a minimum spanning tree.
 
 1. Prim's algorithm 
 2. Kruskal's algorithm
+
+
+## Prim's Algorithm
+
+![[namastedev.com_learn_namaste-dsa_prims-algorithm.png]]
 

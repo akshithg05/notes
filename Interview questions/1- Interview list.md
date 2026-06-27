@@ -2,7 +2,8 @@
 1.  All namaste JS notes ( Book + word doc + 150 questions bank )
 2.  All namaste React notes ( Book + word doc + PDFs + 75 questions bank)
 3.  Front end System design (Long term reading strategy)
-
+4.  Backend System design
+5. Namaste node js
 # 🧠 DSA Problem List (70 Questions)
 
 ## 🟦 Arrays & Strings

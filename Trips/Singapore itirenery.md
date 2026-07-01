@@ -23,47 +23,29 @@ Four Points by Sheraton Bintan, Lagoi Bay
 ### 6:10 AM
 
 - Arrive at Changi Airport
-    
 - Clear immigration
-    
 - Store luggage / proceed towards city
-    
 
 ### Morning
 
 - Breakfast at Maxwell Food Centre
-    
 - Explore Chinatown
-    
 - Buddha Tooth Relic Temple area
-    
 - Heritage streets
-    
-
 ### Afternoon
 
 - Check in to Hotel Boss
-    
 - Rest / Power Nap
-    
-
 ### Evening
 
 - Marina Bay Waterfront Walk
-    
 - Merlion
-    
 - Helix Bridge
-    
 - Marina Bay Sands
-    
-
 ### Night
 
-- Spectra Light & Water Show
-    
+- Spectra Light & Water Show /Singapore River Cruise
 - Romantic Dinner
-    
 
 ---
 
@@ -74,29 +56,17 @@ Four Points by Sheraton Bintan, Lagoi Bay
 Universal Studios Singapore
 
 Must-do rides:
-
 - Battlestar Galactica
-    
 - Transformers
-    
 - Revenge of the Mummy
-    
 - Jurassic Park Rapids Adventure
-    
 - WaterWorld Show
-    
 - Sesame Street
-    
 - Shrek Attractions
-    
-
 ### Night
 
 - Dinner at VivoCity
-    
 - Return to Hotel Boss
-    
-
 ### Pre-book
 
 ✅ Universal Studios Ticket  
@@ -111,37 +81,17 @@ Must-do rides:
 Singapore Grand Prix Circuit Walk
 
 - Pit Building
-    
 - Esplanade
-    
 - Anderson Bridge
-    
 - Marina Bay Waterfront
-    
 - Singapore Flyer Area
-    
-
 ### Afternoon
 
 - Singapore Flyer
-    
-
-### Evening
-
-Gardens by the Bay
-
-- Cloud Forest
-    
-- Flower Dome
-    
-- Supertree Grove
-    
-
 ### Night
 
 - Garden Rhapsody Light Show
-    
-
+- 🦁 Night Safari
 ### Pre-book
 
 ✅ Singapore Flyer  
@@ -154,35 +104,24 @@ Gardens by the Bay
 ### Morning
 
 - Check out from Hotel Boss
-    
 - Check in to Sentosa Hotel
-    
 
 ### Afternoon
 
 - S.E.A. Aquarium
-    
-
 ### Late Afternoon
 
 - Siloso Beach
-    
 - Palawan Beach
-    
 - Palawan Suspension Bridge
-    
-
 ### Evening
 
 - Hotel Pool Time
-    
 - Sunset Walk
-    
 
 ### Night
 
 - Wings of Time
-    
 
 ### Pre-book
 
@@ -196,7 +135,6 @@ Gardens by the Bay
 ### Morning
 
 - Harry Potter: Visions of Magic
-    
 
 ### Afternoon
 
@@ -211,15 +149,15 @@ Gardens by the Bay
 
 ### Evening
 
-- Orchard Road Christmas Lights
-    
-- Christmas Shopping
-    
+Gardens by the Bay
+- Cloud Forest
+- Flower Dome
+- Supertree Grove
 
 ### Night
 
 - Special Christmas Eve Dinner
-    
+- Orchard Road Christmas Lights
 
 ### Pre-book
 
@@ -232,25 +170,18 @@ Gardens by the Bay
 ### Morning
 
 - Ferry from Tanah Merah Ferry Terminal
-    
 - Arrive in Bintan
-    
 
 ### Afternoon
 
 - Check in to Four Points by Sheraton Bintan
-    
 - Pool Time
-    
 - Beach Time
-    
 
 ### Evening
 
 - Sunset Walk
-    
 - Resort Dinner
-    
 
 ### Pre-book
 

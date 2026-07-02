@@ -1,5 +1,5 @@
 
-![[namastedev.com_learn_namaste-frontend-system-design_hld-music-streaming-spotify.png]]
+![[Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-music-streaming-spotify 2.png]]
 
 Main focus in the functional requirement side is -
 1. Music player
@@ -24,7 +24,7 @@ Tech stack and tech choices (In senior engineer roles)-
 Anytime the view layer (UI) makes a request to the controller, controller sends request to the service. Services says I need to get a song (binary files) -
 1. First the browser cache is checked (service worker)
 2. Service worker checks if data is present, if the user is online/ offline and then returns the data either from the cache or fetch it from the backend and serves the view layer.
-![[namastedev.com_learn_namaste-frontend-system-design_hld-music-streaming-spotify 1.png]]
+![[namastedev.com_learn_namaste-frontend-system-design_hld-music-streaming-spotify 1 1.png]]
 
 
 ### Offline support
@@ -34,3 +34,17 @@ Anytime the view layer (UI) makes a request to the controller, controller sends 
 #### 2. Offline support for browsers
 
 Music player implementation
+
+![[Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-music-streaming-spotify 2.png]]
+
+![[namastedev.com_learn_namaste-frontend-system-design_hld-music-streaming-spotify 1 1.png]]
+
+Refer the service worker section of the FSD course and read.
+
+### Background sync using service workers
+
+Sync user activity with backend.
+Use case - Suppose a users subscription ends, we need to disallow the access to the downloaded songs 
+![[namastedev.com_learn_namaste-frontend-system-design_hld-music-streaming-spotify 2 1.png]]
+
+

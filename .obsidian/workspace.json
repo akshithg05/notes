@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSA/images/4 - Disjoint set (Find and Union).md",
+                "file": "Front End System Design/11 - High level design/5 - Music streaming.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "4 - Disjoint set (Find and Union)"
+              "title": "5 - Music streaming"
             }
           }
         ],
@@ -225,13 +225,16 @@
   },
   "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
+    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-music-streaming-spotify 2 1.png",
+    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-music-streaming-spotify 1 1.png",
+    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-music-streaming-spotify 2.png",
+    "DSA/images/4 - Disjoint set (Find and Union).md",
     "DSA/images/namastedev.com_learn_namaste-dsa_disjoint-set-union-find (2) 2.png",
     "DSA/images/namastedev.com_learn_namaste-dsa_disjoint-set-union-find (2) 1.png",
     "DSA/images/namastedev.com_learn_namaste-dsa_disjoint-set-union-find (2).png",
     "DSA/images/namastedev.com_learn_namaste-dsa_disjoint-set-union-find (1) 1.png",
     "DSA/images/namastedev.com_learn_namaste-dsa_disjoint-set-union-find (1).png",
     "Trips/Singapore itirenery.md",
-    "DSA/images/4 - Disjoint set (Find and Union).md",
     "Daily schedule.md",
     "Abroad/Skills to cover.md",
     "Abroad/El plan.md",
@@ -254,11 +257,8 @@
     "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-music-streaming-spotify 1.png",
     "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-music-streaming-spotify.png",
     "Trips/Jaipur itinerary.md",
-    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-video-streaming-netflix-hotstar 1 2.png",
     "Front End System Design/11 - High level design/4 - Video streaming (Netflix YT).md",
-    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-video-streaming-netflix-hotstar 3.png",
     "DSA/2 - Shortest path algorithms.md",
-    "AI ML/images/Pasted image 20260613194411.png",
     "DSA/Interview Prep.md",
     "Front End System Design/2-Communication/3 Long Polling.md",
     "Front End System Design/2-Communication/2 Short Polling.md",

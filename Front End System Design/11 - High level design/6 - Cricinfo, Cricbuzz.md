@@ -24,4 +24,7 @@ Websockets are definitely good, but we need to see our scale and then decide if 
 ![[namastedev.com_learn_namaste-frontend-system-design_hld-live-commentary-cricinfo-crickbuzz 2.png]]
 
 
+## System architecture
+
+![[namastedev.com_learn_namaste-frontend-system-design_hld-live-commentary-cricinfo-crickbuzz.png]]
 

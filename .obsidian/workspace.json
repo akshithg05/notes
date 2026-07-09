@@ -39,12 +39,14 @@
             "id": "571b415f7162a614",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-live-commentary-cricinfo-crickbuzz 3.png"
+                "file": "Daily schedule.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "namastedev.com_learn_namaste-frontend-system-design_hld-live-commentary-cricinfo-crickbuzz 3"
+              "icon": "lucide-file",
+              "title": "Daily schedule"
             }
           }
         ],
@@ -207,13 +209,14 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "d5df95e868ccabb7",
+  "active": "571b415f7162a614",
   "lastOpenFiles": [
+    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-live-commentary-cricinfo-crickbuzz 3.png",
+    "Wedding/Photographer options.md",
     "Front End System Design/3-Security/3 Cross site-scripting (XSS).md",
     "Front End System Design/3-Security/2 Security Overview.md",
     "Front End System Design/3-Security/1 Introduction.md",
     "Front End System Design/11 - High level design/6 - Cricinfo, Cricbuzz.md",
-    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-live-commentary-cricinfo-crickbuzz 3.png",
     "Front End System Design/2-Communication/6 Webhooks.md",
     "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-live-commentary-cricinfo-crickbuzz 2.png",
     "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-live-commentary-cricinfo-crickbuzz 1.png",
@@ -239,7 +242,6 @@
     "Interview questions/Frontend Interview path.md",
     "Interview questions/Things to keep in mind and explain.md",
     "Abroad/Networking.md",
-    "Wedding/Photographer options.md",
     "Abroad",
     "DSA/3 - Spanning tree.md",
     "Wedding",
@@ -247,7 +249,6 @@
     "AI ML/2 - Advanced Learning Algorithms/8 - Multiclass classification.md",
     "Trips/Jaipur itinerary.md",
     "Front End System Design/11 - High level design/4 - Video streaming (Netflix YT).md",
-    "DSA/2 - Shortest path algorithms.md",
     "OMSCS/3 CN/Untitled",
     "OMSCS/3 CN/images",
     "OMSCS/3 CN",

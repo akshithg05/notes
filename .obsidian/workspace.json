@@ -194,7 +194,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 382.5
+    "width": 393.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -209,8 +209,10 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "571b415f7162a614",
+  "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
+    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-email-client 1 1.png",
+    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-email-client 4.png",
     "BGP measurements assignment.md",
     "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-email-client.png",
     "Front End System Design/11 - High level design/7 - Email client (Gmail, outlook).md",
@@ -231,7 +233,6 @@
     "Front End System Design/2-Communication/5 Server side events.md",
     "Front End System Design/11 - High level design/5 - Music streaming.md",
     "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-music-streaming-spotify 2 1.png",
-    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-music-streaming-spotify 1 1.png",
     "DSA/images/4 - Disjoint set (Find and Union).md",
     "Trips/Singapore itirenery.md",
     "Abroad/Skills to cover.md",

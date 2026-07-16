@@ -1,12 +1,12 @@
 As usual we start with functional and non-functional requirements.
 
-![[namastedev.com_learn_namaste-frontend-system-design_hld-email-client.png]]
+![[namastedev.com_learn_namaste-frontend-system-design_hld-email-client 4.png]]
 
 - SMTP (Simple mail transfer protocol) is the protocol generally used to send mails from one client to another client. Most email rules are defined by SMTP.
 - POP (Post office protocol) - Mainly for older systems and incoming emails. It deletes the mail after being read. Client is a single client. After reading the mail, it gets deleted.
 - IMAP (Internet message Access Protocol) - Does not delete the mail after reading the email. Useful when we want to retrieve mails from multiple sources.
 
-![[namastedev.com_learn_namaste-frontend-system-design_hld-email-client 1.png]]
+![[namastedev.com_learn_namaste-frontend-system-design_hld-email-client 1 1.png]]
 
 Differences between POP and IMAP.
 
@@ -127,3 +127,12 @@ Gmail Mail Server (MTA)
 - **Mail Server ↔ Mail Server communication is always SMTP.**
 - **Browsers never use IMAP or POP3 directly.**
 - **Desktop email clients use IMAP/POP3 to fetch emails from mail servers.**
+
+## API contract 
+
+![[namastedev.com_learn_namaste-frontend-system-design_hld-email-client 4.png]]
+
+## Email security
+
+![[namastedev.com_learn_namaste-frontend-system-design_hld-email-client 1 1.png]]
+

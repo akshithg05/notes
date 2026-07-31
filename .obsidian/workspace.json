@@ -194,7 +194,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 393.5
+    "width": 395.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -211,6 +211,10 @@
   },
   "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
+    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-analytics-dashboard-google-analytics 3.png",
+    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-analytics-dashboard-google-analytics 2.png",
+    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-analytics-dashboard-google-analytics 1 1.png",
+    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-analytics-dashboard-google-analytics 1.png",
     "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-analytics-dashboard-google-analytics.png",
     "Front End System Design/11 - High level design/8 - Diagram tools.md",
     "Front End System Design/12 - Analytics Dashboard (Google analytics, sentry).md",
@@ -220,13 +224,9 @@
     "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-diagram-tools-excalidraw 1 1.png",
     "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-diagram-tools-excalidraw 2.png",
     "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-diagram-tools-excalidraw 1.png",
-    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-diagram-tools-excalidraw.png",
     "Front End System Design/Bonus System design concepts.md",
     "Front End System Design/11 - High level design/6 - Cricinfo, Cricbuzz.md",
-    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_real-dom-vs-virtual-dom.png",
     "Front End System Design/11 - High level design/7 - Email client (Gmail, outlook).md",
-    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-email-client 1 1.png",
-    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-email-client 4.png",
     "BGP measurements assignment.md",
     "Front End System Design/3-Security/3 Cross site-scripting (XSS).md",
     "Daily schedule.md",

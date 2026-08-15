@@ -63,10 +63,25 @@ In google docs its better we have a client server model as every client should b
 	- Chair controller
 3. Lock model - whoever starts typing , that version is locked. This has its own challenges.
 4. Transaction based model 
-5.  Version detection model - Everyone has their own version and making updates. If u are on latest version server takes your delts and pushes it to all other peers. If you are not on the latest version then you take the latest version tehn apply your delts.
+5.  Version detection model - Everyone has their own version and making updates. If u are on latest version server takes your delts and pushes it to all other peers. If you are not on the latest version then you take the latest version then apply your delts.
 
 We will use the Optimistic approach and the version detection model.
 
 
+### 6. Conflict management
+
+#### 6.1 Operational Transformation (OT)
+
+Every user edits their own copy, and a central server manages the changes. If two people edit the same word at once, the server changes the position numbers of the letters so the text stays correct. It works beautifully for real-time text apps like Google Docs. However, it requires a constant internet connection and a complex central server to resolve the math.
+#### 6.2 CRDTs (Conflict free replicated data types)
+
+Users can make edits completely offline, and their copies will merge automatically once they reconnect. The data structures are designed with built-in math rules that prevent conflicts from happening in the first place. It works perfectly for decentralized systems because it does not need a central server. The downside is that it uses more memory over time because it has to track the history of every change.
+
+## Architecture model
+
+![[namastedev.com_learn_namaste-frontend-system-design_hld-google-docs 1.png]]
+
+When we make updates in the UI, every update is not directly sent to the server. All updates are batched together into a buffer and then sent to a sync service. The sync service sends the buffered update to the Server.
+Server adds it to its queue and processes the updates coming from the different peers and then after resolving the conflicts sends the updates back to the service and this comes back and reflects on the UI.
 
 

@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Daily schedule.md",
+                "file": "NamasteAI/Season 1/1 Introduction.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Daily schedule"
+              "title": "1 Introduction"
             }
           }
         ],
@@ -223,8 +223,23 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "92aed0fa446a992b",
+  "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
+    "NamasteAI/images/namastedev.com_learn_namaste-ai_welcome-to-namaste-ai (1) 1.png",
+    "NamasteAI/images/namastedev.com_learn_namaste-ai_welcome-to-namaste-ai (1).png",
+    "NamasteAI/images/namastedev.com_learn_namaste-ai_welcome-to-namaste-ai 2.png",
+    "NamasteAI/images",
+    "NamasteAI/images/namastedev.com_learn_namaste-ai_welcome-to-namaste-ai 1.png",
+    "NamasteAI/images/namastedev.com_learn_namaste-ai_welcome-to-namaste-ai.png",
+    "Abroad/Skills to cover.md",
+    "NamasteAI/Season 1/1 Introduction.md",
+    "NamasteAI/Season 1",
+    "NamasteAI",
+    "Abroad/Networking.md",
+    "Abroad/El plan.md",
+    "Abroad/Country research.md",
+    "Abroad/Application strategy.md",
+    "Daily schedule.md",
     "Front End System Design/11 - High level design/10 - Google docs design.md",
     "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-google-docs 1.png",
     "Front End System Design/3-Security/3 Cross site-scripting (XSS).md",
@@ -236,40 +251,26 @@
     "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-analytics-dashboard-google-analytics 2.png",
     "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-analytics-dashboard-google-analytics 1 1.png",
     "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-analytics-dashboard-google-analytics 1.png",
-    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-analytics-dashboard-google-analytics.png",
     "Front End System Design/11 - High level design/8 - Diagram tools.md",
-    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-diagram-tools-excalidraw 4.png",
-    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-diagram-tools-excalidraw 3.png",
-    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-diagram-tools-excalidraw 2 1.png",
     "Front End System Design/Bonus System design concepts.md",
     "Front End System Design/11 - High level design/6 - Cricinfo, Cricbuzz.md",
     "Front End System Design/11 - High level design/7 - Email client (Gmail, outlook).md",
     "BGP measurements assignment.md",
-    "Daily schedule.md",
     "Wedding/Photographer options.md",
     "Front End System Design/2-Communication/6 Webhooks.md",
     "Front End System Design/2-Communication/5 Server side events.md",
     "Front End System Design/11 - High level design/5 - Music streaming.md",
     "DSA/images/4 - Disjoint set (Find and Union).md",
     "Trips/Singapore itirenery.md",
-    "Abroad/Skills to cover.md",
-    "Abroad/El plan.md",
-    "Abroad/Country research.md",
-    "Abroad/Application strategy.md",
     "README.md",
     "Trips",
     "Interview questions/1- Interview list.md",
-    "Interview questions/Frontend Interview path.md",
-    "Interview questions/Things to keep in mind and explain.md",
     "Abroad",
     "Wedding",
     "OMSCS/3 CN/Untitled",
     "OMSCS/3 CN/images",
     "OMSCS/3 CN",
     "Front End System Design/11 - High level design",
-    "Interview questions/JS-interview-PDF.pdf",
-    "Interview questions/React-interview-PDF.pdf",
-    "AI ML/2 - Advanced Learning Algorithms",
     "Untitled.canvas"
   ]
 }

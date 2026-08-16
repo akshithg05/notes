@@ -41,30 +41,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Front End System Design/3-Security/3 Cross site-scripting (XSS).md",
+                "file": "NamasteAI/Season 1/2 The evolution of AI.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3 Cross site-scripting (XSS)"
-            }
-          },
-          {
-            "id": "92aed0fa446a992b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "NamasteAI/Season 1/1 Introduction.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "1 Introduction"
+              "title": "2 The evolution of AI"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -225,6 +211,12 @@
   },
   "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
+    "NamasteAI/Season 1/namastedev.com_learn_namaste-ai_the-evolution-of-ai 1.png",
+    "NamasteAI/images/namastedev.com_learn_namaste-ai_the-evolution-of-ai.png",
+    "Front End System Design/3-Security/3 Cross site-scripting (XSS).md",
+    "NamasteAI/Season 1/2 The evolution of AI.md",
+    "NamasteAI/Season 1/1 Introduction.md",
+    "NamasteAI/images/namastedev.com_learn_namaste-ai_welcome-to-namaste-ai (1) 2.png",
     "NamasteAI/images/namastedev.com_learn_namaste-ai_welcome-to-namaste-ai (1) 1.png",
     "NamasteAI/images/namastedev.com_learn_namaste-ai_welcome-to-namaste-ai (1).png",
     "NamasteAI/images/namastedev.com_learn_namaste-ai_welcome-to-namaste-ai 2.png",
@@ -232,7 +224,6 @@
     "NamasteAI/images/namastedev.com_learn_namaste-ai_welcome-to-namaste-ai 1.png",
     "NamasteAI/images/namastedev.com_learn_namaste-ai_welcome-to-namaste-ai.png",
     "Abroad/Skills to cover.md",
-    "NamasteAI/Season 1/1 Introduction.md",
     "NamasteAI/Season 1",
     "NamasteAI",
     "Abroad/Networking.md",
@@ -242,15 +233,11 @@
     "Daily schedule.md",
     "Front End System Design/11 - High level design/10 - Google docs design.md",
     "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-google-docs 1.png",
-    "Front End System Design/3-Security/3 Cross site-scripting (XSS).md",
     "Front End System Design/3-Security/2 Security Overview.md",
     "Front End System Design/3-Security/1 Introduction.md",
     "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-google-docs.png",
     "Front End System Design/11 - High level design/9 - Analytics Dashboard (Google analytics, sentry).md",
     "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-analytics-dashboard-google-analytics 3.png",
-    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-analytics-dashboard-google-analytics 2.png",
-    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-analytics-dashboard-google-analytics 1 1.png",
-    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-analytics-dashboard-google-analytics 1.png",
     "Front End System Design/11 - High level design/8 - Diagram tools.md",
     "Front End System Design/Bonus System design concepts.md",
     "Front End System Design/11 - High level design/6 - Cricinfo, Cricbuzz.md",
@@ -264,7 +251,6 @@
     "Trips/Singapore itirenery.md",
     "README.md",
     "Trips",
-    "Interview questions/1- Interview list.md",
     "Abroad",
     "Wedding",
     "OMSCS/3 CN/Untitled",

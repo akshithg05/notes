@@ -194,7 +194,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 395.5
+    "width": 396.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -211,7 +211,13 @@
   },
   "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
-    "NamasteAI/Season 1/namastedev.com_learn_namaste-ai_the-evolution-of-ai 1.png",
+    "NamasteAI/images/namastedev.com_learn_namaste-ai_the-evolution-of-ai 3.png",
+    "NamasteAI/images/namastedev.com_learn_namaste-ai_the-evolution-of-ai 2 1.png",
+    "NamasteAI/images/namastedev.com_learn_namaste-ai_the-evolution-of-ai 1 3.png",
+    "NamasteAI/images/namastedev.com_learn_namaste-ai_the-evolution-of-ai 2.png",
+    "NamasteAI/images/namastedev.com_learn_namaste-ai_the-evolution-of-ai 1 2.png",
+    "NamasteAI/images/namastedev.com_learn_namaste-ai_the-evolution-of-ai 1.png",
+    "NamasteAI/images/namastedev.com_learn_namaste-ai_the-evolution-of-ai 1 1.png",
     "NamasteAI/images/namastedev.com_learn_namaste-ai_the-evolution-of-ai.png",
     "Front End System Design/3-Security/3 Cross site-scripting (XSS).md",
     "NamasteAI/Season 1/2 The evolution of AI.md",
@@ -219,10 +225,7 @@
     "NamasteAI/images/namastedev.com_learn_namaste-ai_welcome-to-namaste-ai (1) 2.png",
     "NamasteAI/images/namastedev.com_learn_namaste-ai_welcome-to-namaste-ai (1) 1.png",
     "NamasteAI/images/namastedev.com_learn_namaste-ai_welcome-to-namaste-ai (1).png",
-    "NamasteAI/images/namastedev.com_learn_namaste-ai_welcome-to-namaste-ai 2.png",
     "NamasteAI/images",
-    "NamasteAI/images/namastedev.com_learn_namaste-ai_welcome-to-namaste-ai 1.png",
-    "NamasteAI/images/namastedev.com_learn_namaste-ai_welcome-to-namaste-ai.png",
     "Abroad/Skills to cover.md",
     "NamasteAI/Season 1",
     "NamasteAI",
@@ -232,12 +235,9 @@
     "Abroad/Application strategy.md",
     "Daily schedule.md",
     "Front End System Design/11 - High level design/10 - Google docs design.md",
-    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-google-docs 1.png",
     "Front End System Design/3-Security/2 Security Overview.md",
     "Front End System Design/3-Security/1 Introduction.md",
-    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-google-docs.png",
     "Front End System Design/11 - High level design/9 - Analytics Dashboard (Google analytics, sentry).md",
-    "Front End System Design/images/namastedev.com_learn_namaste-frontend-system-design_hld-analytics-dashboard-google-analytics 3.png",
     "Front End System Design/11 - High level design/8 - Diagram tools.md",
     "Front End System Design/Bonus System design concepts.md",
     "Front End System Design/11 - High level design/6 - Cricinfo, Cricbuzz.md",

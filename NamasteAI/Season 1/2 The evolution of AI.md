@@ -29,7 +29,7 @@ AI coined in 1955 by John McCarthy. First time the word AI was used.
 
 ### 2.3 Rule based AI
 
-![[namastedev.com_learn_namaste-ai_the-evolution-of-ai 3.png]]
+![[namastedev.com_learn_namaste-ai_the-evolution-of-ai 3 1.png]]
 
 These machines were called expert systems. This is because machines are trying to imitate experts.
 
@@ -44,4 +44,23 @@ We will not use rules but make the machine learn from examples and train the mac
 ![[namastedev.com_learn_namaste-ai_the-evolution-of-ai 4.png]]
 
 Machine learning gave rise to probabilities and predictions. Machine learning again requires / required human aid and human intelligence. Humans have to define the classes/ conditions. Machines needed a lot of help from humans.
-Machine lea
+
+
+### 2.5 Deep learning
+
+![[namastedev.com_learn_namaste-ai_the-evolution-of-ai 5.png|651]]
+
+![[namastedev.com_learn_namaste-ai_the-evolution-of-ai 6.png]]
+
+
+### 2.6 Computer vision
+
+![[namastedev.com_learn_namaste-ai_the-evolution-of-ai 2 2.png]]
+
+
+### 2.7 Natural Language Processing
+
+Text content is hardest to crack. English is funny language and complex.
+
+![[namastedev.com_learn_namaste-ai_the-evolution-of-ai 3 1.png]]
+

@@ -36,7 +36,7 @@ Communication Model
 - Client server model
 - Peer to peer model
 
-![[namastedev.com_learn_namaste-frontend-system-design_hld-google-docs.png]]
+![[NamasteAI/images/namastedev.com_learn_namaste-frontend-system-design_hld-google-docs.png]]
 
 In google docs its better we have a client server model as every client should be on the same version and sending delta works better. This is because in a system like Google docs, we cannot have any kind of data losses. Every bite and bit is important.
 
@@ -77,11 +77,16 @@ Every user edits their own copy, and a central server manages the changes. If tw
 
 Users can make edits completely offline, and their copies will merge automatically once they reconnect. The data structures are designed with built-in math rules that prevent conflicts from happening in the first place. It works perfectly for decentralized systems because it does not need a central server. The downside is that it uses more memory over time because it has to track the history of every change.
 
-## Architecture model
+## 7. Architecture model
 
-![[namastedev.com_learn_namaste-frontend-system-design_hld-google-docs 1.png]]
+![[NamasteAI/images/namastedev.com_learn_namaste-frontend-system-design_hld-google-docs 1.png]]
 
 When we make updates in the UI, every update is not directly sent to the server. All updates are batched together into a buffer and then sent to a sync service. The sync service sends the buffered update to the Server.
 Server adds it to its queue and processes the updates coming from the different peers and then after resolving the conflicts sends the updates back to the service and this comes back and reflects on the UI.
 
+## 8. Data model
+
+![[NamasteAI/images/namastedev.com_learn_namaste-frontend-system-design_hld-google-docs.png]]
+
+![[NamasteAI/images/namastedev.com_learn_namaste-frontend-system-design_hld-google-docs 1.png]]
 

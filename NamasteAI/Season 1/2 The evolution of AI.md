@@ -38,7 +38,7 @@ Then came machine learning
 
 We will not use rules but make the machine learn from examples and train the machine using these examples so that when it sees a new sample, it can classify or regress a value.
 
-![[namastedev.com_learn_namaste-ai_the-evolution-of-ai 4.png]]
+![[namastedev.com_learn_namaste-ai_the-evolution-of-ai 4 1.png]]
 
 Machine learning gave rise to probabilities and predictions. Machine learning again requires / required human aid and human intelligence. Humans have to define the classes/ conditions. Machines needed a lot of help from humans.
 
@@ -83,7 +83,7 @@ GPU and Data in very large quantities are required to create LLMs. It is very co
 
 ### 2.10 Generative AI
 
-Earlier AI was used to do classification, regression, prediction and recommendation systems. In modern times (2024 - present). 
+Earlier AI was used to do classification, regression, prediction and recommendation systems. In modern times (2022 - present). 
 After the transformer architecture was adopted, AI is able to create content - New text, images, videos, etc. Something totally new, never seen before.
 
 It is multimodal -AI can generate Text, videos, images, etc.
@@ -92,3 +92,22 @@ It is multimodal -AI can generate Text, videos, images, etc.
 
 This genAI is where most top tech companies are putting their money right now.
 
+### 2.11 The chatGPT moment (Nov 2022)
+
+chatGPT = LLMs + genAI
+
+Machine can converse with humans. In 2022 this became public. 2017-2022 all the research was done closely within company boundaries. All these companies scraped a lot of data from the internet. This was revolutionary. Then everyone followed - Gemini, Claude, DeepSeek, etc.
+
+![[namastedev.com_learn_namaste-ai_the-evolution-of-ai 9.png]]
+
+### 2.11 Multimodal AI
+
+![[namastedev.com_learn_namaste-ai_the-evolution-of-ai 1 6.png]]
+
+### 2.12 The AI today
+
+![[namastedev.com_learn_namaste-ai_the-evolution-of-ai 3 2.png]]
+
+### 2.13 Recap
+
+![[namastedev.com_learn_namaste-ai_the-evolution-of-ai 4 1.png]]

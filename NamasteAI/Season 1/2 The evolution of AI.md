@@ -111,3 +111,9 @@ Machine can converse with humans. In 2022 this became public. 2017-2022 all the 
 ### 2.13 Recap
 
 ![[namastedev.com_learn_namaste-ai_the-evolution-of-ai 4 1.png]]
+
+### 2.14 Future
+
+![[namastedev.com_learn_namaste-ai_the-evolution-of-ai 10.png]]
+
+In the course we will be covering from 2017. Transformer architecture onwards.

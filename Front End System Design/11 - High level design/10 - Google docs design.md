@@ -90,3 +90,9 @@ Server adds it to its queue and processes the updates coming from the different 
 
 ![[NamasteAI/images/namastedev.com_learn_namaste-frontend-system-design_hld-google-docs 1.png]]
 
+How the communication is happening 
+ Initial state or initialization API and response-
+ ![[namastedev.com_learn_namaste-frontend-system-design_hld-google-docs.png]]
+
+
+

@@ -1,11 +1,8 @@
 
 ### 2.1 Agenda
 
-![[NamasteAI/images/namastedev.com_learn_namaste-ai_the-evolution-of-ai 1.png]]
-
 Top most 10 companies. 9 out of 10 of these companies are betting and working on AI revolution. They are all into tech and AI space.
 
-![[namastedev.com_learn_namaste-ai_the-evolution-of-ai 1 2.png]]
 ## 2.2 History of AI
 
 ![[NamasteAI/images/namastedev.com_learn_namaste-ai_the-evolution-of-ai 1.png]]
@@ -29,7 +26,7 @@ AI coined in 1955 by John McCarthy. First time the word AI was used.
 
 ### 2.3 Rule based AI
 
-![[namastedev.com_learn_namaste-ai_the-evolution-of-ai 3 1.png]]
+![[namastedev.com_learn_namaste-ai_the-evolution-of-ai 7.png]]
 
 These machines were called expert systems. This is because machines are trying to imitate experts.
 
@@ -63,4 +60,35 @@ Machine learning gave rise to probabilities and predictions. Machine learning ag
 Text content is hardest to crack. English is funny language and complex.
 
 ![[namastedev.com_learn_namaste-ai_the-evolution-of-ai 3 1.png]]
+
+### 2.8 Transformers
+
+This is the main driving force of the AI models today - ChatGPT, Claude, DeepSeek, etc. Transformers are the most remarkable creation in the history of CS and mankind.
+It is insanely important to the foundation of AI.
+
+Google research paper - "Attention is all you need". Foundation for major LLMs today.
+
+Concept of attention inside machine, genAI, etc is due to transformers and this research paper.
+
+![[namastedev.com_learn_namaste-ai_the-evolution-of-ai 1 5.png]]
+
+Finally machines recognized and understood that "it" here refers to the "Lion".
+
+What are transformers ? We will study this. It is an architecture model which came from google's paper.
+### 2.9 Large Language Models (LLMs)
+
+![[namastedev.com_learn_namaste-ai_the-evolution-of-ai 2 3.png]]
+
+GPU and Data in very large quantities are required to create LLMs. It is very cost intensive. A lot of compute and data is required to create such LLMs.
+
+### 2.10 Generative AI
+
+Earlier AI was used to do classification, regression, prediction and recommendation systems. In modern times (2024 - present). 
+After the transformer architecture was adopted, AI is able to create content - New text, images, videos, etc. Something totally new, never seen before.
+
+It is multimodal -AI can generate Text, videos, images, etc.
+
+![[namastedev.com_learn_namaste-ai_the-evolution-of-ai 8.png]]
+
+This genAI is where most top tech companies are putting their money right now.
 

@@ -92,7 +92,7 @@ Server adds it to its queue and processes the updates coming from the different 
 
 How the communication is happening 
  Initial state or initialization API and response-
- ![[namastedev.com_learn_namaste-frontend-system-design_hld-google-docs.png]]
+ ![[namastedev.com_learn_namaste-frontend-system-design_hld-google-docs 2.png]]
 
 
 

@@ -162,4 +162,37 @@ Base models are very raw. They might give any information like hacking info, sui
 But chat assistants will not do that.
 
 Base models can give information which shouldn't be given.
+The model you interact with in ChatGPT is part of a larger system: model + instruction hierarchy + conversation context + tools + safety mechanisms + other serving infrastructure.
+
+Companies don't usually provide their **base models directly for use**. At most, we can access them through **APIs** provided by the companies.
+
+### 3.7 Inferencing vs Training
+
+**Training** is the process of training a model on data and adjusting its **parameters, biases, and weights** so that it learns patterns from the data.
+
+**Inferencing** happens after training. When we query or prompt a model and ask it a question, the process through which the model generates and returns a response is called **inferencing**.
+
+Training is very computationally intensive and requires a lot of **compute power and GPUs**.
+
+Inferencing is comparatively less computationally intensive because it is primarily the process of **generating a response using the already-trained model**. It allows the model to generate information on the fly based on the prompt and the knowledge it has learned during training.
+
+### 3.8 Hallucination and why models produce wrong answers confidently
+
+![[namastedev.com_learn_namaste-ai_does-chatgpt-know-or-does-it-guess 4.png]]
+
+**Fluent language does not necessarily mean truthful information.** LLMs and chat assistants can produce very fluent and convincing answers, but that does not mean the answers are always true.
+
+These incorrect or misleading outputs are commonly called **hallucinations**. A hallucination occurs when an AI model generates a response that may appear plausible but is **unsupported, incorrect, misleading, or fabricated**.
+
+We should not treat LLMs as an absolute **source of truth**. We should be especially careful when using them for **medical advice, therapy, or personal information**. At times, an AI can provide useful support or reassurance, but we should not depend on it completely. Use AI as an assistant, but **don't hand over your own thinking to it**.
+
+**Language quality and factual accuracy are two separate things.** Confidence in language is not the same as confidence in truth.
+
+Never fall for the **“illusion of certainty.”** AI can produce incorrect information confidently and convincingly.
+
+### 3.9 Why does hallucination occur -
+
+![[namastedev.com_learn_namaste-ai_does-chatgpt-know-or-does-it-guess 1 2.png]]
+
+### 3.10 Types of hallucination
 

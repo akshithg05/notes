@@ -202,5 +202,5 @@ This refers specifically to **base models**, not AI assistants.
 
 AI assistants can have additional capabilities, such as **advanced tools, APIs, calculators, code execution, web search, and other external tools**, which can help them perform these tasks more accurately.
 
-![[namastedev.com_learn_namaste-ai_does-chatgpt-know-or-does-it-guess.png]]
+![[namastedev.com_learn_namaste-ai_does-chatgpt-know-or-does-it-guess 5.png]]
 

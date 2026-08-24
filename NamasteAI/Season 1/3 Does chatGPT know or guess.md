@@ -196,3 +196,11 @@ Never fall for the **“illusion of certainty.”** AI can produce incorrect inf
 
 ### 3.10 Types of hallucination
 
+Base models can be unreliable at tasks such as **counting operations, complex mathematical calculations, counting shapes, and other tasks that require precise computation**.
+
+This refers specifically to **base models**, not AI assistants.
+
+AI assistants can have additional capabilities, such as **advanced tools, APIs, calculators, code execution, web search, and other external tools**, which can help them perform these tasks more accurately.
+
+![[namastedev.com_learn_namaste-ai_does-chatgpt-know-or-does-it-guess.png]]
+

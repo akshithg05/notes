@@ -204,3 +204,39 @@ AI assistants can have additional capabilities, such as **advanced tools, APIs, 
 
 ![[namastedev.com_learn_namaste-ai_does-chatgpt-know-or-does-it-guess 5.png]]
 
+[[2026-08-25]]
+
+![[namastedev.com_learn_namaste-ai_does-chatgpt-know-or-does-it-guess 6.png]]
+
+We can trick systems and breaking them by using various tricks, but models and companies are making various safety measures, guardrails and other security features.
+
+### 3.11 The Confidence Illusion
+
+Humans often use **tone and confidence as cues** when judging whether to believe something. This can make us more likely to believe LLMs when they provide fluent and confident responses.
+
+Newer models are becoming more capable and accurate, but LLMs can still produce responses in a way that **sounds convincing even when the information is incorrect**.
+
+Therefore, a confident or convincing tone should **not be treated as evidence that the information is true**.
+
+![[namastedev.com_learn_namaste-ai_does-chatgpt-know-or-does-it-guess 1 3.png]]
+
+![[namastedev.com_learn_namaste-ai_does-chatgpt-know-or-does-it-guess 2 2.png]]
+
+### 3.12 Web Search + LLMs
+
+**Web search + LLMs** is a very powerful combination because it brings together **retrieval + generation**.
+
+Modern chat assistants such as ChatGPT, Gemini, and Claude can use web search to retrieve information and then use an LLM to generate a useful response from that information.
+
+LLMs are particularly good at **language, grammar, and generating content**. This is one reason search engines such as Google have also introduced AI-powered search experiences.
+
+Every time you ask the same question, an AI can potentially answer it in a **different way**, even when the underlying information is the same.
+
+**Retrieval** provides external evidence.  
+**Generation** converts that information into a useful response.
+
+We will discuss **RAG (Retrieval-Augmented Generation)** later in the course. RAG is commonly used to retrieve information from **private or specialized data**, whereas web search + LLMs can retrieve information from **publicly available information on the web**.
+
+Many modern chatbots use RAG or **RAG-like retrieval systems** to provide responses in company websites and chatbots on websites.
+
+![[namastedev.com_learn_namaste-ai_does-chatgpt-know-or-does-it-guess 3 2.png]]

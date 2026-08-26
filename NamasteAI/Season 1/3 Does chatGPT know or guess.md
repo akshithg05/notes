@@ -240,3 +240,14 @@ We will discuss **RAG (Retrieval-Augmented Generation)** later in the course. RA
 Many modern chatbots use RAG or **RAG-like retrieval systems** to provide responses in company websites and chatbots on websites.
 
 ![[namastedev.com_learn_namaste-ai_does-chatgpt-know-or-does-it-guess 3 2.png]]
+
+### 3.13 Are LLMs self aware 
+
+An AI model can have **information about itself**, such as its knowledge cut-off date, model information, capabilities, or limitations. However, having information about itself does **not mean that it is self-aware or conscious**.
+
+What an AI model can say about itself depends on things such as its **training data, context, system prompts, and available tools**.
+
+LLMs can sometimes behave in unexpected ways, and even their creators cannot always fully explain or predict why a particular response was generated. They can also potentially reveal information they were not intended to reveal if appropriate safeguards fail.
+
+![[namastedev.com_learn_namaste-ai_does-chatgpt-know-or-does-it-guess 7.png]]
+

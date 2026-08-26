@@ -36,6 +36,7 @@ Example of tokenization
 
 ![[namastedev.com_learn_namaste-ai_the-secret-language-of-llms 2.png]]
 
+![[namastedev.com_learn_namaste-ai_the-secret-language-of-llms 1 1.png]]
 
 ### 4.2 Words vs Characters vs Tokens
 
@@ -57,5 +58,8 @@ Therefore, we need a **balance between word-level and character-level tokenizati
 
 This is why modern LLMs commonly use **subword tokenization**: it allows the model to represent common words efficiently while still being able to handle uncommon, new, or complex words by breaking them into reusable pieces.
 
-![[namastedev.com_learn_namaste-ai_the-secret-language-of-llms 1 1.png]]
+![[namastedev.com_learn_namaste-ai_the-secret-language-of-llms 3.png]]
 
+### 4.3 Vocabulary and token ID
+
+![[namastedev.com_learn_namaste-ai_the-secret-language-of-llms 4.png]]

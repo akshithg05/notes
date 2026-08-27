@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OMSCS/4 SDP/Lesson 1.md",
+                "file": "OMSCS/4 SDP/P1 L2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lesson 1"
+              "title": "P1 L2"
             }
           }
         ]
@@ -184,23 +184,25 @@
   },
   "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
+    "OMSCS/4 SDP/images/Screenshot 2026-08-27 002607.png",
+    "OMSCS/4 SDP/images/Screenshot 2026-08-27 002422.png",
+    "OMSCS/4 SDP/images/Screenshot 2026-08-27 002234.png",
+    "OMSCS/4 SDP/images/Screenshot 2026-08-27 002112.png",
+    "OMSCS/4 SDP/images/Screenshot 2026-08-27 001947.png",
+    "OMSCS/4 SDP/images/Screenshot 2026-08-27 001743.png",
+    "OMSCS/4 SDP/P1 L1.md",
+    "OMSCS/4 SDP/P1 L2.md",
+    "OMSCS/4 SDP/images/Screenshot 2026-08-27 001558.png",
+    "OMSCS/4 SDP/images/Screenshot 2026-08-27 001136.png",
+    "OMSCS/4 SDP/images/Screenshot 2026-08-27 001107.png",
+    "OMSCS/4 SDP/images/Screenshot 2026-08-27 000831.png",
+    "OMSCS/4 SDP/images/Screenshot 2026-08-27 000519.png",
     "OMSCS/4 SDP/images",
-    "OMSCS/4 SDP/images/Screenshot 2026-08-26 234504.png",
     "OMSCS/4 SDP",
     "NamasteAI/Season 1/4 The secret language of LLMs.md",
-    "OMSCS/4 SDP/Lesson 1.md",
-    "NamasteAI/images/namastedev.com_learn_namaste-ai_the-secret-language-of-llms 4.png",
-    "NamasteAI/images/namastedev.com_learn_namaste-ai_the-secret-language-of-llms 3.png",
-    "NamasteAI/images/namastedev.com_learn_namaste-ai_the-secret-language-of-llms 1 1.png",
-    "NamasteAI/images/namastedev.com_learn_namaste-ai_the-secret-language-of-llms 2.png",
-    "NamasteAI/images/namastedev.com_learn_namaste-ai_the-secret-language-of-llms 1.png",
-    "NamasteAI/images/namastedev.com_learn_namaste-ai_the-secret-language-of-llms.png",
     "Daily schedule.md",
     "NamasteAI/Season 1/Untitled",
     "NamasteAI/Season 1/3 Does chatGPT know or guess.md",
-    "NamasteAI/images/namastedev.com_learn_namaste-ai_does-chatgpt-know-or-does-it-guess 7.png",
-    "NamasteAI/images/namastedev.com_learn_namaste-ai_does-chatgpt-know-or-does-it-guess 3 2.png",
-    "NamasteAI/images/namastedev.com_learn_namaste-ai_does-chatgpt-know-or-does-it-guess 2 2.png",
     "Front End System Design/11 - High level design/10 - Google docs design.md",
     "Front End System Design/Bonus System design concepts.md",
     "NamasteAI/Season 1/2 The evolution of AI.md",
@@ -224,12 +226,10 @@
     "Front End System Design/3-Security/2 Security Overview.md",
     "Front End System Design/3-Security/1 Introduction.md",
     "Front End System Design/11 - High level design/9 - Analytics Dashboard (Google analytics, sentry).md",
-    "Front End System Design/11 - High level design/8 - Diagram tools.md",
     "Trips",
     "Abroad",
     "Wedding",
     "OMSCS/3 CN/Untitled",
-    "OMSCS/3 CN/images",
     "Untitled.canvas"
   ]
 }

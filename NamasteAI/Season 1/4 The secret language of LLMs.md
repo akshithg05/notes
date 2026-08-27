@@ -12,7 +12,7 @@ At a high level, LLMs predict the **next token** based on the sequence of tokens
 
 **This is the “secret language” of LLMs.**
 
-![[namastedev.com_learn_namaste-ai_the-secret-language-of-llms 2.png]]
+![[namastedev.com_learn_namaste-ai_the-secret-language-of-llms 2 1.png]]
 
 ### 4.1 What is a token
 
@@ -34,7 +34,7 @@ So, one word can be split into multiple tokens. Similarly, a token can sometimes
 
 Example of tokenization
 
-![[namastedev.com_learn_namaste-ai_the-secret-language-of-llms 2.png]]
+![[namastedev.com_learn_namaste-ai_the-secret-language-of-llms 2 1.png]]
 
 ![[namastedev.com_learn_namaste-ai_the-secret-language-of-llms 1 1.png]]
 
@@ -58,8 +58,97 @@ Therefore, we need a **balance between word-level and character-level tokenizati
 
 This is why modern LLMs commonly use **subword tokenization**: it allows the model to represent common words efficiently while still being able to handle uncommon, new, or complex words by breaking them into reusable pieces.
 
-![[namastedev.com_learn_namaste-ai_the-secret-language-of-llms 3.png]]
+![[namastedev.com_learn_namaste-ai_the-secret-language-of-llms 3 1.png]]
 
 ### 4.3 Vocabulary and token ID
 
-![[namastedev.com_learn_namaste-ai_the-secret-language-of-llms 4.png]]
+![[namastedev.com_learn_namaste-ai_the-secret-language-of-llms 4 1.png]]
+
+[[2026-08-27]]
+
+### 4.4 Byte pair encoding 
+
+**Byte Pair Encoding (BPE)** builds a vocabulary by repeatedly merging frequently occurring neighboring pieces of text.
+
+For example, common sequences such as **“low”** can become a single token and be reused in words like _lower_ and _lowest_.
+
+BPE starts from smaller byte-level pieces and merges frequently occurring pairs to create new tokens and token IDs.
+
+This provides a balance between **character-level and word-level tokenization**, allowing the tokenizer to efficiently represent both common and uncommon words.
+
+![[NamasteAI/images/namastedev.com_learn_namaste-ai_the-secret-language-of-llms 5.png]]
+
+### 4.5 Other encoding algorithms
+
+![[namastedev.com_learn_namaste-ai_the-secret-language-of-llms 1 2.png]]
+
+BPE is not the only tokenization algorithm. Other approaches include **WordPiece** and **Unigram**.
+
+Token creation is **not strictly bound to a particular language**. Different tokenizers can handle multiple languages and scripts.
+
+As a tokenizer's vocabulary and efficiency improve, the same text can often be represented using **fewer tokens**. Better tokenizers generally produce more efficient token sequences.
+
+If we type **gibberish or uncommon text**, it may require more tokens than common, well-formed words because the tokenizer has fewer reusable pieces for it.
+
+LLMs process tokens through numerical representations. The **token ID itself has no inherent meaning** to the model—it is simply an identifier. However, during training, the model learns useful patterns and relationships between tokens.
+
+**Token boundaries are not necessarily meaning boundaries.** A token can represent a complete word, part of a word, or a piece that does not have a meaningful interpretation on its own.
+
+![[namastedev.com_learn_namaste-ai_the-secret-language-of-llms 2 1.png]]
+
+### 4.6 English vs Other languages
+
+Amount of tokens can be different for different languages
+
+![[namastedev.com_learn_namaste-ai_the-secret-language-of-llms 3 1.png]]
+
+Line one takes - 5 tokens
+Line 2 in Hindi takes - 15 tokens
+Line 3 in takes - 8 tokens
+Line 4 takes - 9 tokens.
+
+![[namastedev.com_learn_namaste-ai_the-secret-language-of-llms 4 1.png]]
+
+**Hinglish** is an interesting case because we may type using English vocabulary and Roman characters, while the **meaning and sentence structure can be Hindi**. Humans can easily understand this combination.
+
+Hinglish can involve:
+
+- English vocabulary
+- Hindi grammar and meaning
+- Roman script
+- Informal spellings
+- Language-specific expressions
+
+The same word can also be written in different ways while having the same meaning. For example, **“samjha”**, **“samjhaa”**, and **“samjhaao”** may be interpreted based on context.
+
+The tokenizer does not understand the **meaning** of these words. It simply breaks the text into tokens and maps them to numerical token IDs. However, the **LLM itself can learn patterns in different languages and language combinations during training**, so it can often understand and generate Hinglish.
+
+Also, **two sentences with the same meaning do not necessarily have the same token count**.
+
+**Also an important thing to note is that based on model / tokenizer number of tokens change for the same word. A legacy model or tokenizer may take far more tokens than a new modern day model**
+### 4.7 Token fertility
+
+![[namastedev.com_learn_namaste-ai_the-secret-language-of-llms 5 1.png]]
+### 4.8 Tokenization of special characters
+
+
+Emoticons
+![[namastedev.com_learn_namaste-ai_the-secret-language-of-llms 6.png]]
+
+In older models these same emojis take more tokens. Nowadays every emoji has a token, new ones might need 2 or 3
+
+White spaces , Capital letters, Code, Indentation etc changes tokenId and number of tokens.
+
+![[namastedev.com_learn_namaste-ai_the-secret-language-of-llms 1 3.png]]
+
+### 4.9 Special tokens 
+
+![[namastedev.com_learn_namaste-ai_the-secret-language-of-llms 7.png]]
+
+When we write a prompt and it is tokenized, **our input tokens are not necessarily the only tokens sent to the model** for processing.
+
+The AI assistant may add additional context and tokens, such as **system instructions, conversation history, tool outputs, and other context** relevant to the interaction.
+
+Therefore, what we type into the prompt is **not necessarily the complete set of tokens that the model receives**. The actual input to the model can include additional information added by the assistant or surrounding system.
+
+

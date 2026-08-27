@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "03b870f00b5e3f8b",
+        "id": "adb8fcdc2feba492",
         "type": "tabs",
         "children": [
           {
-            "id": "13aefad022024f4b",
+            "id": "0c0f8a9638412de3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OMSCS/4 SDP/P1 L2.md",
+                "file": "NamasteAI/Season 1/4 The secret language of LLMs.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "P1 L2"
+              "title": "4 The secret language of LLMs"
             }
           }
         ]
@@ -184,22 +184,22 @@
   },
   "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
+    "NamasteAI/images/namastedev.com_learn_namaste-ai_the-secret-language-of-llms 7.png",
+    "NamasteAI/images/namastedev.com_learn_namaste-ai_the-secret-language-of-llms 1 3.png",
+    "NamasteAI/images/namastedev.com_learn_namaste-ai_the-secret-language-of-llms 6.png",
+    "NamasteAI/images/namastedev.com_learn_namaste-ai_the-secret-language-of-llms 5 1.png",
+    "NamasteAI/images/namastedev.com_learn_namaste-ai_the-secret-language-of-llms 4 1.png",
+    "NamasteAI/images/namastedev.com_learn_namaste-ai_the-secret-language-of-llms 3 1.png",
+    "NamasteAI/Season 1/4 The secret language of LLMs.md",
+    "NamasteAI/images/namastedev.com_learn_namaste-ai_the-secret-language-of-llms 2 1.png",
+    "NamasteAI/images/namastedev.com_learn_namaste-ai_the-secret-language-of-llms 1 2.png",
+    "NamasteAI/images/namastedev.com_learn_namaste-ai_the-secret-language-of-llms 5.png",
+    "OMSCS/4 SDP/P1 L2.md",
     "OMSCS/4 SDP/images/Screenshot 2026-08-27 002607.png",
     "OMSCS/4 SDP/images/Screenshot 2026-08-27 002422.png",
-    "OMSCS/4 SDP/images/Screenshot 2026-08-27 002234.png",
-    "OMSCS/4 SDP/images/Screenshot 2026-08-27 002112.png",
-    "OMSCS/4 SDP/images/Screenshot 2026-08-27 001947.png",
-    "OMSCS/4 SDP/images/Screenshot 2026-08-27 001743.png",
     "OMSCS/4 SDP/P1 L1.md",
-    "OMSCS/4 SDP/P1 L2.md",
-    "OMSCS/4 SDP/images/Screenshot 2026-08-27 001558.png",
-    "OMSCS/4 SDP/images/Screenshot 2026-08-27 001136.png",
-    "OMSCS/4 SDP/images/Screenshot 2026-08-27 001107.png",
-    "OMSCS/4 SDP/images/Screenshot 2026-08-27 000831.png",
-    "OMSCS/4 SDP/images/Screenshot 2026-08-27 000519.png",
     "OMSCS/4 SDP/images",
     "OMSCS/4 SDP",
-    "NamasteAI/Season 1/4 The secret language of LLMs.md",
     "Daily schedule.md",
     "NamasteAI/Season 1/Untitled",
     "NamasteAI/Season 1/3 Does chatGPT know or guess.md",

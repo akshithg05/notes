@@ -151,4 +151,32 @@ The AI assistant may add additional context and tokens, such as **system instruc
 
 Therefore, what we type into the prompt is **not necessarily the complete set of tokens that the model receives**. The actual input to the model can include additional information added by the assistant or surrounding system.
 
+![[namastedev.com_learn_namaste-ai_the-secret-language-of-llms 8.png]]
+Companies can structure the input to an LLM by adding additional information, such as **system instructions, user messages, assistant messages, and other context**. This helps the model understand **where the information comes from and how it should respond**.
+
+The exact format varies across models and systems. The model may receive **special tokens** rather than the visible labels such as `<SYSTEM>`, `<USER>`, and `<ASSISTANT>` shown in the example.
+### 4.10 Context window
+
+The **context window** is the maximum amount of **tokenized information** that an LLM can process as context in a given request.
+
+The context can include things such as **PDFs, documents, previous messages, code, system instructions, tool outputs, and the current prompt**.
+
+There is a **maximum context-window size** for every model, measured in tokens. If the amount of information exceeds this limit, the model cannot process all of it within the same context.
+
+Modern LLMs have much larger context windows than earlier models. Earlier models had relatively small context windows, making it difficult to provide large code blocks or long documents without losing important context. Today, models can process much larger amounts of information in a single context.
+
+![[namastedev.com_learn_namaste-ai_the-secret-language-of-llms 1 4.png]]
+
+Context window also determines output size. But these days new assistants can generate very large outputs as well.
+
+### 4.11 What if context window is full
+
+![[namastedev.com_learn_namaste-ai_the-secret-language-of-llms 9.png]]
+
+### 4.12 long prompts are not always better 
+
+![[namastedev.com_learn_namaste-ai_the-secret-language-of-llms 1 5.png]]
+
+Sometimes elucidating what we want is definitely good, like the third example, but it is not always necessary to have long prompts like the second example. The first and the second example here provide similar results. The third one is a good prompt.
+Not all long prompts are better prompts , but some long prompts are definitely better propmts.
 

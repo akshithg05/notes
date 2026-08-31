@@ -184,5 +184,25 @@ There are tools to reduce prompt size as well.
 
 ### 4.13 Common misconceptions
 
-![[namastedev.com_learn_namaste-ai_the-secret-language-of-llms 10.png]]
+![[namastedev.com_learn_namaste-ai_the-secret-language-of-llms 11.png]]
 
+### Summary
+
+- Tokenizer converts
+- Every token has a token ID
+- The language of tokens is the "secret language" of LLMs.
+
+
+If each token is represented by just a **token ID**, how does an LLM know that **cats, dogs, and cows are related**?
+
+How does a sequence of numbers make sense?
+
+Similarly, how does an LLM know that **JavaScript, Python, and C** are programming languages?
+
+There are many such relationships and connections that the model needs to learn.
+
+For example, how does an LLM know that **“Python”** in the context of programming is different from **“python”** referring to the snake, even though they may use the same token ID?
+
+All of this will be covered in further lessons as part of **embeddings**.
+
+![[namastedev.com_learn_namaste-ai_the-secret-language-of-llms 12.png]]

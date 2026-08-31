@@ -178,5 +178,11 @@ Context window also determines output size. But these days new assistants can ge
 ![[namastedev.com_learn_namaste-ai_the-secret-language-of-llms 1 5.png]]
 
 Sometimes elucidating what we want is definitely good, like the third example, but it is not always necessary to have long prompts like the second example. The first and the second example here provide similar results. The third one is a good prompt.
-Not all long prompts are better prompts , but some long prompts are definitely better propmts.
+Not all long prompts are better prompts , but some long prompts are definitely better prompts.
+
+There are tools to reduce prompt size as well.
+
+### 4.13 Common misconceptions
+
+![[namastedev.com_learn_namaste-ai_the-secret-language-of-llms 10.png]]
 

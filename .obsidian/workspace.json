@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NamasteAI/Season 1/4 The secret language of LLMs.md",
+                "file": "NamasteAI/Season 1/5 How machines represent meaning.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "4 The secret language of LLMs"
+              "title": "5 How machines represent meaning"
             }
           }
         ]
@@ -182,8 +182,18 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "0c0f8a9638412de3",
+  "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
+    "NamasteAI/images/namastedev.com_learn_namaste-ai_how-machines-represent-meaning 1 1.png",
+    "NamasteAI/images/namastedev.com_learn_namaste-ai_how-machines-represent-meaning 1.png",
+    "NamasteAI/Season 1/4 The secret language of LLMs.md",
+    "NamasteAI/Season 1/5 How machines represent meaning.md",
+    "NamasteAI/images/namastedev.com_learn_namaste-ai_how-machines-represent-meaning.png",
+    "NamasteAI/Season 1/3 Does chatGPT know or guess.md",
+    "NamasteAI/Season 1/2 The evolution of AI.md",
+    "NamasteAI/Season 1/1 Introduction.md",
+    "OMSCS/4 SDP/P1 L4.md",
+    "OMSCS/4 SDP/images/Pasted image 20260831223319.png",
     "NamasteAI/images/namastedev.com_learn_namaste-ai_the-secret-language-of-llms 12.png",
     "NamasteAI/images/namastedev.com_learn_namaste-ai_the-secret-language-of-llms 11.png",
     "NamasteAI/images/namastedev.com_learn_namaste-ai_the-secret-language-of-llms 10.png",
@@ -192,20 +202,13 @@
     "NamasteAI/images/namastedev.com_learn_namaste-ai_the-secret-language-of-llms 1 4.png",
     "NamasteAI/images/namastedev.com_learn_namaste-ai_the-secret-language-of-llms 8.png",
     "OMSCS/4 SDP/P1 L2.md",
-    "OMSCS/4 SDP/images/Pasted image 20260827233241.png",
-    "OMSCS/4 SDP/images/Pasted image 20260827233134.png",
-    "OMSCS/4 SDP/images/Pasted image 20260827232912.png",
-    "OMSCS/4 SDP/images/Pasted image 20260827232716.png",
-    "NamasteAI/Season 1/4 The secret language of LLMs.md",
     "OMSCS/4 SDP/P1 L1.md",
     "OMSCS/4 SDP/images",
     "OMSCS/4 SDP",
     "Daily schedule.md",
     "NamasteAI/Season 1/Untitled",
-    "NamasteAI/Season 1/3 Does chatGPT know or guess.md",
     "Front End System Design/11 - High level design/10 - Google docs design.md",
     "Front End System Design/Bonus System design concepts.md",
-    "NamasteAI/Season 1/2 The evolution of AI.md",
     "Typescript/JS type coercion.md",
     "Typescript/5 - TS Advanced type narrowing.md",
     "Typescript/4 - Typescript Abstract classes.md",
@@ -214,7 +217,6 @@
     "Typescript/1 - Typescript.md",
     "Front End System Design/11 - High level design/6 - Cricinfo, Cricbuzz.md",
     "Front End System Design/3-Security/3 Cross site-scripting (XSS).md",
-    "NamasteAI/Season 1/1 Introduction.md",
     "NamasteAI/images",
     "Abroad/Skills to cover.md",
     "NamasteAI/Season 1",
@@ -224,8 +226,6 @@
     "Abroad/Country research.md",
     "Abroad/Application strategy.md",
     "Front End System Design/3-Security/2 Security Overview.md",
-    "Front End System Design/3-Security/1 Introduction.md",
-    "Front End System Design/11 - High level design/9 - Analytics Dashboard (Google analytics, sentry).md",
     "Trips",
     "Abroad",
     "Wedding",

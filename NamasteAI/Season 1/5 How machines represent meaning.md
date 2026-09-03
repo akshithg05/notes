@@ -49,3 +49,57 @@ As the model trains on data, its parameters are adjusted, which causes the numer
 
 ### 5.2 Embeddings
 
+When we want to represent the **meaning and relationships of words**, we use **embeddings**.
+
+An embedding is also an **array of numbers**, but unlike a token ID, the numbers in an embedding are **learned numerical representations** that capture useful patterns and relationships.
+
+The meaning is not represented through English words or explicitly defined properties. Instead, it is represented through **numerical relationships across many dimensions**.
+
+**Embeddings are learned numerical representations that capture useful relationships with other items.**
+
+The dimensions are **automatically learned by the model during training** rather than being explicitly defined by humans. As the model is trained on large amounts of data, it learns how tokens are used in different contexts, and their embeddings are adjusted accordingly.
+
+Tokens that appear in similar linguistic contexts can develop **similar or related embeddings**. By comparing these embeddings, the model can identify relationships and similarities between words.
+
+For example, **“king”** and **“queen”** may have embeddings that are more similar to each other than to **“banana”**, because they frequently appear in related contexts.
+
+> **An embedding is not the meaning of a word. It is a numerical representation that captures useful patterns and relationships about that word.**
+
+![[namastedev.com_learn_namaste-ai_how-machines-represent-meaning (1) 4.png]]
+
+### 5.3 Embeddings as coordinates
+
+![[namastedev.com_learn_namaste-ai_how-machines-represent-meaning (1) 1 1.png]]
+
+Since humans cannot easily visualize **high-dimensional spaces**, we can simplify embeddings to just **2 dimensions** and plot them on a graph.
+
+Each item can be represented as a point with coordinates `(X, Y)`. Items with **similar embeddings** will tend to appear closer together, while items with less similar embeddings will tend to be farther apart.
+
+For example, in the image, words such as **king, queen, man, and woman** appear relatively close to each other, while **fruits** and **programming languages** form separate groups.
+
+In real LLMs, embeddings usually have **hundreds or thousands of dimensions**, not just two. The 2D graph is simply a way to visualize the idea.
+
+![[namastedev.com_learn_namaste-ai_how-machines-represent-meaning (1) 2.png]]
+
+### 5.4 Dimensions in embeddings
+
+![[namastedev.com_learn_namaste-ai_how-machines-represent-meaning (1) 3.png]]
+
+![[namastedev.com_learn_namaste-ai_how-machines-represent-meaning (1) 4.png]]
+
+Language is very complex. There are different languages, and words can have **synonyms, antonyms, homophones, homonyms**, and many other relationships.
+
+Words can also have **multiple meanings depending on the context**. For example:
+
+- **Java** → an island
+- **Java** → a programming language
+- **Java** → coffee
+
+Other complexities include things like **sarcasm, context, grammar, and language-specific expressions**.
+
+Because of all these complexities and relationships, language can require many dimensions to represent effectively.
+
+**NLP (Natural Language Processing) is therefore a challenging problem**, because understanding human language requires capturing many different patterns and relationships.
+
+![[namastedev.com_learn_namaste-ai_how-machines-represent-meaning (1) 1 1.png]]
+

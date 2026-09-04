@@ -1,6 +1,3 @@
-
-![[NamasteAI/images/namastedev.com_learn_namaste-ai_how-machines-represent-meaning 1.png]]
-
 When I say:
 
 > **I ate an Apple.**
@@ -63,9 +60,8 @@ Tokens that appear in similar linguistic contexts can develop **similar or relat
 
 For example, **“king”** and **“queen”** may have embeddings that are more similar to each other than to **“banana”**, because they frequently appear in related contexts.
 
-> **An embedding is not the meaning of a word. It is a numerical representation that captures useful patterns and relationships about that word.**
 
-![[namastedev.com_learn_namaste-ai_how-machines-represent-meaning (1) 4.png]]
+![[namastedev.com_learn_namaste-ai_how-machines-represent-meaning (1) 4 1.png]]
 
 ### 5.3 Embeddings as coordinates
 
@@ -79,13 +75,11 @@ For example, in the image, words such as **king, queen, man, and woman** appear 
 
 In real LLMs, embeddings usually have **hundreds or thousands of dimensions**, not just two. The 2D graph is simply a way to visualize the idea.
 
-![[namastedev.com_learn_namaste-ai_how-machines-represent-meaning (1) 2.png]]
+![[namastedev.com_learn_namaste-ai_how-machines-represent-meaning (1) 2 1.png]]
 
 ### 5.4 Dimensions in embeddings
 
-![[namastedev.com_learn_namaste-ai_how-machines-represent-meaning (1) 3.png]]
-
-![[namastedev.com_learn_namaste-ai_how-machines-represent-meaning (1) 4.png]]
+![[namastedev.com_learn_namaste-ai_how-machines-represent-meaning (1) 3 1.png]]
 
 Language is very complex. There are different languages, and words can have **synonyms, antonyms, homophones, homonyms**, and many other relationships.
 
@@ -101,5 +95,45 @@ Because of all these complexities and relationships, language can require many d
 
 **NLP (Natural Language Processing) is therefore a challenging problem**, because understanding human language requires capturing many different patterns and relationships.
 
-![[namastedev.com_learn_namaste-ai_how-machines-represent-meaning (1) 1 1.png]]
+
+### 5.5 Semantic similarity
+
+![[namastedev.com_learn_namaste-ai_how-machines-represent-meaning (1) 5.png]]
+
+**Semantic similarity** measures how close two pieces of text are in **meaning or intent**.
+
+In the given example:
+
+> **Query A:** How do I centre a div?  
+> **Query B:** How can I align an HTML element in the middle of its parent?
+
+The wording is different, but the **intent and meaning are essentially the same**.
+
+A keyword-based system may struggle because the two queries do not have much exact word overlap.
+
+An embedding-based system can represent both inputs as **vectors** and determine that they are close in meaning. The embedding model transforms each input into a vector whose pattern captures useful information about the **meaning of the entire input**.
+
+Inputs with similar meanings tend to produce **vectors that are close together in the embedding space**.
+
+![[namastedev.com_learn_namaste-ai_how-machines-represent-meaning (1) 6.png]]
+
+### Cosine similarity
+
+![[namastedev.com_learn_namaste-ai_how-machines-represent-meaning (1) 1 2.png]]
+
+The mathematical operation commonly used to measure **semantic similarity between embeddings** is **cosine similarity**. It compares the **angle between two vectors**, focusing on their direction rather than their magnitude (length).
+
+- If **θ = 0°**, the vectors point in the same direction, so **cos(θ) = 1**, indicating maximum similarity.
+- If **θ = 90°**, the vectors are perpendicular, so **cos(θ) = 0**, indicating little or no similarity according to this measure.
+- If **θ = 180°**, the vectors point in opposite directions, so **cos(θ) = -1**, indicating the strongest possible opposite direction.
+
+So, in general, **the closer the cosine similarity is to 1, the more similar the vectors are in direction**.
+
+![[namastedev.com_learn_namaste-ai_how-machines-represent-meaning (1) 2 1.png]]
+
+![[namastedev.com_learn_namaste-ai_how-machines-represent-meaning (1) 3 1.png]]
+
+![[namastedev.com_learn_namaste-ai_how-machines-represent-meaning (1) 4 1.png]]
+
+Amazing website for visualizing multi dimensional vector representations - [Embedding projector - visualization of high-dimensional data](https://projector.tensorflow.org/)
 

@@ -95,7 +95,7 @@ Because of all these complexities and relationships, language can require many d
 
 **NLP (Natural Language Processing) is therefore a challenging problem**, because understanding human language requires capturing many different patterns and relationships.
 
-
+[[2026-09-04]]
 ### 5.5 Semantic similarity
 
 ![[namastedev.com_learn_namaste-ai_how-machines-represent-meaning (1) 5.png]]
@@ -117,7 +117,7 @@ Inputs with similar meanings tend to produce **vectors that are close together i
 
 ![[namastedev.com_learn_namaste-ai_how-machines-represent-meaning (1) 6.png]]
 
-### Cosine similarity
+### 5.6 Cosine similarity
 
 ![[namastedev.com_learn_namaste-ai_how-machines-represent-meaning (1) 1 2.png]]
 
@@ -136,4 +136,42 @@ So, in general, **the closer the cosine similarity is to 1, the more similar the
 ![[namastedev.com_learn_namaste-ai_how-machines-represent-meaning (1) 4 1.png]]
 
 Amazing website for visualizing multi dimensional vector representations - [Embedding projector - visualization of high-dimensional data](https://projector.tensorflow.org/)
+
+[[2026-09-05]]
+
+### 5.7 Token embeddings
+
+![[namastedev.com_learn_namaste-ai_how-machines-represent-meaning (1) 7.png]]
+
+When we give an input, it is first converted into a **sequence of token IDs**.
+
+Each token ID is mapped to its own **dense numerical vector**. This vector is called the **token embedding** for that token.
+
+This process essentially replaces the **meaningless token ID** with a dense numerical vector that contains a learned representation of the token.
+
+The embedding values are **learned during model training** and capture useful patterns and relationships between tokens.
+
+**Important distinction:** the token's initial embedding does **not change based on the context**. As the model processes the sequence through the Transformer, the representation of each token is updated based on the surrounding context. This produces a **contextual representation** of the token.
+
+For example, the representation of **“Java”** can become different depending on whether the surrounding context is about programming, an island, or coffee.
+
+![[namastedev.com_learn_namaste-ai_how-machines-represent-meaning (2).png]]
+Token embeddings alone identify **which tokens are present**, but the model also needs information about **their order or position**.
+
+For example:
+
+> **Dog bites man**  
+> **Man bites dog**
+
+The same tokens are present, but the meaning is different because their **order is different**.
+
+Therefore, models incorporate **positional information** using architecture-specific techniques.
+
+- **Token embeddings** tell the model which token is present.
+- **Positional information** tells the model where that token appears in the sequence.
+- The model needs both **identity and order** to understand the input correctly.
+
+The Transformer uses this positional information along with token representations to process the sequence and produce **contextual representations**.
+
+### 5.8 Token embeddings vs Text embeddings
 

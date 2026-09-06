@@ -267,3 +267,8 @@ Embedding search is useful for finding information based on **meaning and semant
 
 Therefore, we cannot rely on only one type of search. **Modern search and AI systems often combine both approaches**, using a hybrid search to get the benefits of semantic and exact matching.
 
+### 5.12 Uses of embeddings
+
+![[namastedev.com_learn_namaste-ai_how-machines-represent-meaning (3) 1.png]]
+![[namastedev.com_learn_namaste-ai_how-machines-represent-meaning (3).png]]
+

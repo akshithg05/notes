@@ -175,3 +175,69 @@ The Transformer uses this positional information along with token representation
 
 ### 5.8 Token embeddings vs Text embeddings
 
+So far, we have seen **token embeddings**, where each token is represented by its own embedding vector. However, an **entire piece of text** can also be represented as a single embedding vector. This is called a **text embedding**.
+
+When we type an input or prompt:
+
+1. The input is **tokenized** into a sequence of token IDs.
+2. An **embedding lookup** maps these token IDs to their corresponding token embedding vectors, producing a **matrix of embeddings**.
+3. These representations can then be processed by a **Transformer**, which uses the context and positional information to produce contextual representations.
+4. For text-embedding systems, these contextual representations are then **combined (pooled)** to produce a single **text embedding vector** representing the overall text.
+
+**Important correction:** A text embedding is not simply something that every generative LLM automatically produces as the final output of its Transformer. Dedicated **embedding models** are commonly used to convert an entire piece of text into a single vector for tasks such as semantic search and similarity.
+
+![[namastedev.com_learn_namaste-ai_how-machines-represent-meaning (2).png]]
+
+![[namastedev.com_learn_namaste-ai_how-machines-represent-meaning (3).png]]
+
+### 5.9 Modern LLMs and context (contextualization)
+
+![[namastedev.com_learn_namaste-ai_how-machines-represent-meaning (3) 1.png]]
+
+The flow is:
+
+**Prompt → Tokenization → Token IDs → Embedding lookup → Matrix of initial token embeddings → Transformer layers → Contextual representations**
+
+The important part is what happens inside the Transformer:
+
+- The **initial token embedding** tells the model about the identity of each token.
+- **Positional information** tells it where each token occurs.
+- The Transformer processes these representations together, allowing each token's representation to incorporate information from the **surrounding context**.
+- After passing through multiple Transformer layers, the representations become **contextualized**.
+
+For example, the initial embedding for **“bank”** can be the same in:
+
+> I deposited money in the **bank**.
+
+and
+
+> We sat beside the river **bank**.
+
+But after the Transformer processes the surrounding words, the **contextual representation of “bank” becomes different** in the two sentences.
+
+So your mental model is right:
+
+> **Embedding lookup gives the initial representations; the Transformer processes them in context and produces contextual representations.**
+
+Yes. **Contextual representations are also numerical vectors (embedding-like vectors).**
+
+The distinction is:
+
+- **Token embedding:** An initial vector assigned to a token through the embedding lookup. It is context-independent.
+- **Contextual representation:** A vector produced after the Transformer processes that token along with the surrounding context. It is **context-dependent**.
+
+For example, the token **“bank”** starts with its initial embedding, but after Transformer processing:
+
+> I deposited money in the **bank**.
+
+and
+
+> We sat beside the river **bank**.
+
+the **contextual vectors for “bank” will be different**, because the surrounding context is different.
+
+So you can think of it as:
+
+**Token ID → Initial embedding vector → Transformer processing → Contextual representation vector**
+
+And yes, this contextual representation is still represented as a **vector of numbers**.

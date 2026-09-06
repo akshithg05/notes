@@ -187,11 +187,11 @@ When we type an input or prompt:
 
 ![[namastedev.com_learn_namaste-ai_how-machines-represent-meaning (2) 1.png]]
 
-![[namastedev.com_learn_namaste-ai_how-machines-represent-meaning (3).png]]
+![[namastedev.com_learn_namaste-ai_how-machines-represent-meaning (3) 2.png]]
 
 ### 5.9 Modern LLMs and context (contextualization)
 
-![[namastedev.com_learn_namaste-ai_how-machines-represent-meaning (3) 1.png]]
+![[namastedev.com_learn_namaste-ai_how-machines-represent-meaning (3) 1 1.png]]
 
 The flow is:
 
@@ -242,4 +242,28 @@ So you can think of it as:
 And yes, this contextual representation is still represented as a **vector of numbers**.
 
 [[2026-09-06]]
+
+### 5.10 Bias in embeddings 
+
+![[namastedev.com_learn_namaste-ai_how-machines-represent-meaning (3) 2.png]]
+
+Human-generated data contains many **flaws and biases**. Since models are trained on large amounts of human-generated data, they can learn and reproduce some of these biases.
+
+Historical and online data can contain **inequalities, stereotypes, and undesirable associations** related to gender, race, social groups, and other aspects of society. As a result, models can sometimes develop biased or undesirable associations in their learned representations.
+
+This is somewhat similar to how humans learn. Depending on where children grow up and what they are exposed to, they can develop different perceptions, beliefs, and stereotypes about the world.
+
+Therefore, AI companies have a **social responsibility to reduce harmful biases and make models more fair and equitable**. A significant amount of **fine-tuning, evaluation, and other safety work** goes into addressing these issues.
+
+### 5.11 Embeddings in semantic search
+
+![[namastedev.com_learn_namaste-ai_how-machines-represent-meaning (3) 1 1.png]]
+
+A **hybrid approach** that combines **embedding-based search and keyword-based search** often works best, even though embedding search can seem more advanced than keyword search.
+
+Sometimes we need **exact keyword matching**, such as when searching for a specific **product ID, date, legal term, error code, or other exact information** inside a document.
+
+Embedding search is useful for finding information based on **meaning and semantic similarity**, while keyword search is useful when we need an **exact match**.
+
+Therefore, we cannot rely on only one type of search. **Modern search and AI systems often combine both approaches**, using a hybrid search to get the benefits of semantic and exact matching.
 

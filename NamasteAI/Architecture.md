@@ -14,5 +14,5 @@ When we type an input or prompt:
 
 ![[namastedev.com_learn_namaste-ai_how-machines-represent-meaning (2) 1.png]]
 
-![[namastedev.com_learn_namaste-ai_how-machines-represent-meaning (3).png]]
+![[namastedev.com_learn_namaste-ai_how-machines-represent-meaning (3) 2.png]]
 

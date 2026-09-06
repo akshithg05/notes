@@ -155,7 +155,6 @@ The embedding values are **learned during model training** and capture useful pa
 
 For example, the representation of **“Java”** can become different depending on whether the surrounding context is about programming, an island, or coffee.
 
-![[namastedev.com_learn_namaste-ai_how-machines-represent-meaning (2).png]]
 Token embeddings alone identify **which tokens are present**, but the model also needs information about **their order or position**.
 
 For example:
@@ -186,7 +185,7 @@ When we type an input or prompt:
 
 **Important correction:** A text embedding is not simply something that every generative LLM automatically produces as the final output of its Transformer. Dedicated **embedding models** are commonly used to convert an entire piece of text into a single vector for tasks such as semantic search and similarity.
 
-![[namastedev.com_learn_namaste-ai_how-machines-represent-meaning (2).png]]
+![[namastedev.com_learn_namaste-ai_how-machines-represent-meaning (2) 1.png]]
 
 ![[namastedev.com_learn_namaste-ai_how-machines-represent-meaning (3).png]]
 

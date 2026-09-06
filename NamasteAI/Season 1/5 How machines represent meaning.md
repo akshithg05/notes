@@ -240,3 +240,6 @@ So you can think of it as:
 **Token ID → Initial embedding vector → Transformer processing → Contextual representation vector**
 
 And yes, this contextual representation is still represented as a **vector of numbers**.
+
+[[2026-09-06]]
+

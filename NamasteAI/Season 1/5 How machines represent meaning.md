@@ -269,6 +269,10 @@ Therefore, we cannot rely on only one type of search. **Modern search and AI sys
 
 ### 5.12 Uses of embeddings
 
-![[namastedev.com_learn_namaste-ai_how-machines-represent-meaning (3) 1.png]]
-![[namastedev.com_learn_namaste-ai_how-machines-represent-meaning (3).png]]
+![[namastedev.com_learn_namaste-ai_how-machines-represent-meaning (3) 1 2.png]]
+![[namastedev.com_learn_namaste-ai_how-machines-represent-meaning (3) 3.png]]
 
+### 5.13 Summary 
+
+![[namastedev.com_learn_namaste-ai_how-machines-represent-meaning (4) 1.png]]
+![[namastedev.com_learn_namaste-ai_how-machines-represent-meaning (4) 1.png]]

@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NamasteAI/Season 1/5 How machines represent meaning.md",
+                "file": "Daily schedule.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "5 How machines represent meaning"
+              "title": "Daily schedule"
             }
           }
         ],
@@ -197,21 +197,21 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "d5df95e868ccabb7",
+  "active": "a38979b1ac472bbf",
   "lastOpenFiles": [
+    "NamasteAI/Season 1/6 The computational brain of machine.md",
+    "NamasteAI/images/namastedev.com-learn-namaste-ai-the-computational-brain-of-4.png",
+    "NamasteAI/images/namastedev.com-learn-namaste-ai-the-computational-brain-of-3.png",
+    "NamasteAI/images/namastedev.com-learn-namaste-ai-the-computational-brain-of- 2.png",
+    "NamasteAI/images/namastedev.com-learn-namaste-ai-the-computational-brain-of- 1.png",
+    "NamasteAI/images/namastedev.com-learn-namaste-ai-the-computational-brain-of-.png",
+    "NamasteAI/Season 1/5 How machines represent meaning.md",
     "NamasteAI/images/namastedev.com_learn_namaste-ai_how-machines-represent-meaning (4) 1.png",
     "NamasteAI/images/namastedev.com_learn_namaste-ai_how-machines-represent-meaning (4).png",
     "NamasteAI/images/namastedev.com_learn_namaste-ai_how-machines-represent-meaning (3) 1 2.png",
     "NamasteAI/images/namastedev.com_learn_namaste-ai_how-machines-represent-meaning (3) 3.png",
     "NamasteAI/images/namastedev.com_learn_namaste-ai_how-machines-represent-meaning (3) 1 1.png",
-    "NamasteAI/images/namastedev.com_learn_namaste-ai_how-machines-represent-meaning (3) 2.png",
     "NamasteAI/Architecture.md",
-    "NamasteAI/Season 1/5 How machines represent meaning.md",
-    "NamasteAI/images/namastedev.com_learn_namaste-ai_how-machines-represent-meaning (3) 1.png",
-    "NamasteAI/images/namastedev.com_learn_namaste-ai_how-machines-represent-meaning (3).png",
-    "NamasteAI/images/namastedev.com_learn_namaste-ai_how-machines-represent-meaning (2) 1.png",
-    "NamasteAI/images/namastedev.com_learn_namaste-ai_how-machines-represent-meaning (2).png",
-    "NamasteAI/images/namastedev.com_learn_namaste-ai_how-machines-represent-meaning (1) 7.png",
     "Trips/Singapore itirenery.md",
     "OMSCS/4 SDP/P1 L4.md",
     "NamasteAI/Season 1/4 The secret language of LLMs.md",
@@ -240,7 +240,6 @@
     "NamasteAI",
     "Abroad/Networking.md",
     "Abroad/El plan.md",
-    "Abroad/Country research.md",
     "Trips",
     "Abroad",
     "Wedding",

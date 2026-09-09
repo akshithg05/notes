@@ -187,11 +187,10 @@ When we type an input or prompt:
 
 ![[namastedev.com_learn_namaste-ai_how-machines-represent-meaning (2) 1.png]]
 
-![[namastedev.com_learn_namaste-ai_how-machines-represent-meaning (3) 2.png]]
 
 ### 5.9 Modern LLMs and context (contextualization)
 
-![[namastedev.com_learn_namaste-ai_how-machines-represent-meaning (3) 1 1.png]]
+
 
 The flow is:
 
@@ -274,5 +273,4 @@ Therefore, we cannot rely on only one type of search. **Modern search and AI sys
 
 ### 5.13 Summary 
 
-![[namastedev.com_learn_namaste-ai_how-machines-represent-meaning (4) 1.png]]
 ![[namastedev.com_learn_namaste-ai_how-machines-represent-meaning (4) 1.png]]

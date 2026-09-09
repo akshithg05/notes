@@ -39,3 +39,6 @@ Models and systems such as ChatGPT, Gemini, Claude, and others are built using T
 **GPT** stands for **Generative Pre-trained Transformer**. GPT is a model family developed by OpenAI, while **ChatGPT** is a chat assistant built using GPT models along with additional systems and capabilities.
 
 ![[namastedev.com-learn-namaste-ai-the-computational-brain-of-4.png]]
+
+### 6.3 Attention
+

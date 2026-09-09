@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Daily schedule.md",
+                "file": "OMSCS/4 SDP/P2 L1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Daily schedule"
+              "title": "P2 L1"
             }
           }
         ],
@@ -197,9 +197,16 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "a38979b1ac472bbf",
+  "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
+    "OMSCS/4 SDP/images/Pasted image 20260909231453.png",
+    "OMSCS/4 SDP/images/Pasted image 20260909231339.png",
+    "OMSCS/4 SDP/images/Screenshot 2026-09-09 230805.png",
+    "OMSCS/4 SDP/images/Pasted image 20260909230326.png",
+    "OMSCS/4 SDP/images/Pasted image 20260909230205.png",
     "NamasteAI/Season 1/6 The computational brain of machine.md",
+    "OMSCS/4 SDP/P2 L1.md",
+    "Daily schedule.md",
     "NamasteAI/images/namastedev.com-learn-namaste-ai-the-computational-brain-of-4.png",
     "NamasteAI/images/namastedev.com-learn-namaste-ai-the-computational-brain-of-3.png",
     "NamasteAI/images/namastedev.com-learn-namaste-ai-the-computational-brain-of- 2.png",
@@ -207,10 +214,6 @@
     "NamasteAI/images/namastedev.com-learn-namaste-ai-the-computational-brain-of-.png",
     "NamasteAI/Season 1/5 How machines represent meaning.md",
     "NamasteAI/images/namastedev.com_learn_namaste-ai_how-machines-represent-meaning (4) 1.png",
-    "NamasteAI/images/namastedev.com_learn_namaste-ai_how-machines-represent-meaning (4).png",
-    "NamasteAI/images/namastedev.com_learn_namaste-ai_how-machines-represent-meaning (3) 1 2.png",
-    "NamasteAI/images/namastedev.com_learn_namaste-ai_how-machines-represent-meaning (3) 3.png",
-    "NamasteAI/images/namastedev.com_learn_namaste-ai_how-machines-represent-meaning (3) 1 1.png",
     "NamasteAI/Architecture.md",
     "Trips/Singapore itirenery.md",
     "OMSCS/4 SDP/P1 L4.md",
@@ -222,7 +225,6 @@
     "OMSCS/4 SDP/P1 L1.md",
     "OMSCS/4 SDP/images",
     "OMSCS/4 SDP",
-    "Daily schedule.md",
     "NamasteAI/Season 1/Untitled",
     "Front End System Design/11 - High level design/10 - Google docs design.md",
     "Front End System Design/Bonus System design concepts.md",
@@ -239,7 +241,6 @@
     "NamasteAI/Season 1",
     "NamasteAI",
     "Abroad/Networking.md",
-    "Abroad/El plan.md",
     "Trips",
     "Abroad",
     "Wedding",

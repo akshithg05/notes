@@ -40,5 +40,107 @@ Models and systems such as ChatGPT, Gemini, Claude, and others are built using T
 
 ![[namastedev.com-learn-namaste-ai-the-computational-brain-of-4.png]]
 
+[[2026-09-10]]
 ### 6.3 Attention
 
+Consider the sentence:
+
+> **The cat sat on the mat because it was tired.**
+
+The model needs to understand what **“it”** refers to. In this case, **“it” refers to the cat**.
+
+Similarly:
+
+> **The cat sat on the mat because it was comfortable.**
+
+Here, **“it” could refer to the mat**, depending on the context.
+
+Understanding such relationships between words requires the model to determine **which pieces of information it should focus on and how much**.
+
+This is where **attention** comes in. Attention allows the model to consider relationships between different tokens in a sequence and determine which tokens are more relevant to each other.
+
+### Self-Attention
+
+**Self-attention** means that tokens in the same sequence can attend to other tokens in that sequence.
+
+The model calculates numerical relationships between tokens and uses these relationships to determine **how much attention each token should pay to the other tokens**.
+
+This helps the model understand the context and relationships between words, even when the relevant words are far apart in the sentence.
+
+![[Pasted image 20260910122158.png]]
+
+### 6.4 Transformer architecture detail
+
+![[namastedev.com-learn-namaste-ai-the-computational-brain-of-6.png]]
+
+![[namastedev.com-learn-namaste-ai-the-computational-brain-of-7.png]]
+
+### 6.5 Layer normalization
+When **token embeddings + positional information** are passed into a Transformer, they form a matrix of numerical representations that is processed through multiple Transformer layers.
+
+![[namastedev.com-learn-namaste-ai-the-computational-brain-of-8.png]]
+
+**Layer normalization** is a technique used throughout Transformer architectures to help keep the numerical representations at a **stable scale** during computation.
+
+As the model performs many mathematical operations, the values in the representations can become very large, very small, or otherwise poorly scaled. This can make training and computation unstable.
+
+Layer normalization **normalizes the values within each token's representation**, helping keep them in a more stable numerical range.
+
+The basic idea is to:
+
+- Calculate the **mean** and **variance** of the values.
+- Subtract the mean and scale by the standard deviation.
+- Apply learned parameters to allow the model to adjust the resulting values.
+
+**Correction to your understanding:** It does **not simply reduce all values by the same ratio**. It changes the values based on their mean and variance, so the relative relationships can change somewhat. The learned parameters allow the model to preserve or adjust useful information.
+
+Layer normalization is used repeatedly within Transformer layers to help maintain **stable and effective information flow** through the network.
+
+> **Note:** The exact placement of layer normalization varies between Transformer architectures. Modern LLMs commonly use **pre-normalization**, where normalization is applied before major sublayers such as attention and the feed-forward network.
+
+
+### 6.6 Multi head Causal masked self attention
+
+![[namastedev.com-learn-namaste-ai-the-computational-brain-of-9.png]]
+
+The next phase is **Multi-Head Causal Self-Attention**.
+
+We have already discussed **self-attention**, where each token can attend to other tokens in the same sequence and use their information to build a contextual representation.
+
+In **causal self-attention**, a token can attend to **itself and previous tokens**, but it cannot attend to future tokens.
+
+For example, while predicting the next token, the model can use the information that has already appeared, but it cannot look ahead at the tokens that come after it.
+
+This creates a **flow of information from past to future**, which is important for autoregressive language generation.
+
+
+For example:
+
+```
+The cat sat on the mat
+```
+
+All six input tokens are available to the model.
+
+But the causal mask makes the attention behave as though each position only has access to its **past and itself**:
+
+```
+             The  cat  sat  on  the  mat
+The           ✓
+cat           ✓    ✓
+sat           ✓    ✓    ✓
+on            ✓    ✓    ✓    ✓
+the           ✓    ✓    ✓    ✓    ✓
+mat           ✓    ✓    ✓    ✓    ✓    ✓
+```
+
+So the `"cat"` position cannot use `"sat"`, `"on"`, `"the"`, or `"mat"` to construct its representation.
+
+This is crucial because the model is being trained to predict the **next token**.
+
+Causal masked self-attention prevents each token position from attending to tokens that occur later in the sequence. During generation, this means the model cannot see tokens it hasn't generated yet.
+
+#### Why multi head ?
+Different attention heads can learn to focus on **different types of relationships** between tokens. For example, one head may learn relationships related to grammar, while another may focus on relationships between words that are farther apart.
+
+The outputs from these attention heads are combined to produce a richer representation of the sequence.

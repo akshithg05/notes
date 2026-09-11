@@ -144,3 +144,58 @@ Causal masked self-attention prevents each token position from attending to toke
 Different attention heads can learn to focus on **different types of relationships** between tokens. For example, one head may learn relationships related to grammar, while another may focus on relationships between words that are farther apart.
 
 The outputs from these attention heads are combined to produce a richer representation of the sequence.
+
+[[2026-09-11]]
+
+### 6.7 Residual steps
+
+![[namastedev.com-learn-namaste-ai-the-computational-brain-of-10.png]]
+
+This makes sure the original information is not lost. Useful updates are added rather than completely replacing with new information.
+
+### 6.8 Feed forward networks
+
+![[namastedev.com-learn-namaste-ai-the-computational-brain-of-11.png]]
+
+During **self-attention**, tokens interact with each other and, in causal self-attention, can use information from previous tokens.
+
+During the **Feed-Forward Network (FFN)**, each token is processed **independently**. The FFN applies the same neural network to each token's representation, without directly interacting with the other tokens.
+
+The FFN further **processes and transforms the contextual representation** of each token based on what the model has learned during training.
+
+So:
+
+- **Attention:** Tokens communicate with each other.
+- **FFN:** Each token is processed independently.
+
+The representation of a token can therefore change as it passes through the Transformer layers, becoming a richer **contextual representation**.
+
+The **number of attention heads, number of Transformer layers, training configuration, and other architectural details** depend on the specific model. These are design and architecture decisions, so there is no single fixed number that applies to all LLMs.
+
+### 6.9 Linear and softmax
+
+![[Pasted image 20260911115156.png]]
+
+After the Transformer layers have processed the input, a **linear layer** maps the final contextual representations to a score for every possible token in the model's vocabulary.
+
+These scores are called **logits**. Logits are raw scores and are difficult to interpret directly as probabilities.
+
+**Softmax** converts the logits into values between **0 and 1**, with all the values adding up to **1**. These values can then be interpreted as a **probability distribution** over the possible next tokens.
+
+For example:
+
+- cat → 62%
+- dog → 23%
+- car → 10%
+- pizza → 5%
+
+The model can then select the next token based on this probability distribution. In a simple case, the token with the highest probability would be selected.
+
+In modern LLMs, this distribution can contain probabilities for **the entire vocabulary**, which may contain hundreds of thousands of possible tokens.
+
+So the simplified flow is:
+
+**Transformer → Linear layer → Logits → Softmax → Probability distribution → Next token**
+
+All of this is part of the model's **inference process**.
+

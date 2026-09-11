@@ -199,3 +199,20 @@ So the simplified flow is:
 
 All of this is part of the model's **inference process**.
 
+[[2026-09-12]]
+
+
+
+In **Multi-Head Self-Attention**, there are multiple attention heads, and each attention head uses **Q, K, and V** representations.
+
+- **Q → Query**
+- **K → Key**
+- **V → Value**
+
+Q, K, and V are **numerical vectors** derived from the token representations. The transformations that produce Q, K, and V use **learned parameters**, which are adjusted during training.
+
+Q, K, and V are used in the self-attention process, where each token can interact with the other tokens it is allowed to attend to. In **causal self-attention**, a token can attend to itself and previous tokens, but not future tokens.
+
+The attention mechanism uses Q and K to determine **how much attention to give to different tokens**, and then uses the V vectors to produce the resulting representation.
+
+This allows the LLM to determine **which tokens and context are important when processing each token**.

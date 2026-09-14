@@ -172,6 +172,7 @@ The representation of a token can therefore change as it passes through the Tran
 
 The **number of attention heads, number of Transformer layers, training configuration, and other architectural details** depend on the specific model. These are design and architecture decisions, so there is no single fixed number that applies to all LLMs.
 
+FFN is also called MLP (Multi layered Perceptron) - Basically FFN has many hidden layers in its NN, that is why its called MLP.
 ### 6.9 Linear and softmax
 
 ![[Pasted image 20260911115156.png]]
@@ -216,3 +217,41 @@ Q, K, and V are used in the self-attention process, where each token can interac
 The attention mechanism uses Q and K to determine **how much attention to give to different tokens**, and then uses the V vectors to produce the resulting representation.
 
 This allows the LLM to determine **which tokens and context are important when processing each token**.
+
+![[namastedev.com-learn-namaste-ai-the-computational-brain-of-14.png]]
+
+**Q + K → “How much should I pay attention to each token?”**  
+**Attention scores + V → “What information should I take from those tokens?”**
+
+### 6.10 Causal Self-Attention Matrix
+
+![[Pasted image 20260913214150.png]]
+
+The attention matrix in **causal self-attention** has a triangular structure.
+
+The values **above the main diagonal are masked (effectively set to zero)**, because a token is not allowed to attend to future tokens.
+
+For example, when processing:
+
+> **I went to the bank to deposit money.**
+
+The token **“bank”** can attend to **“I,” “went,” “to,” and itself**, but it cannot attend to **“deposit”** or **“money”**, because those tokens come later in the sequence.
+
+So:
+
+- **Past tokens + current token → accessible**
+- **Future tokens → masked**
+
+This is what makes the attention **causal** and ensures that the model cannot look at the answer before predicting it.
+
+The outputs of all the **attention heads** are combined (concatenated and then projected) to form a **single output representation**.
+
+This output is then processed further through the Transformer block using a **residual connection (residual pathway)**.
+
+The residual connection helps preserve the original information by providing a direct pathway for the input to be combined with the output of the attention layer.
+
+So, in simplified form:
+
+**Multi-Head Attention → Combine head outputs → Linear projection → Residual connection → Further processing**
+
+

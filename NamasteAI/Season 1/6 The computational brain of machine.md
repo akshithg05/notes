@@ -252,6 +252,4 @@ The residual connection helps preserve the original information by providing a d
 
 So, in simplified form:
 
-**Multi-Head Attention → Combine head outputs → Linear projection → Residual connection → Further processing**
-
-
+**Multi-Head Attention → Combine head outputs → Linear projection → Residual connection → Further processing**.

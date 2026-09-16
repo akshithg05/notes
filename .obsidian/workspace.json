@@ -22,35 +22,21 @@
             }
           },
           {
-            "id": "a38979b1ac472bbf",
+            "id": "0464b6fdad7fd0f3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NodeJS/Season 1.md",
+                "file": "NamasteAI/Season 1/7 Sharpening the brain.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Season 1"
-            }
-          },
-          {
-            "id": "a4636d3484ace47e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "NamasteAI/Season 1/6 The computational brain of machine.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "6 The computational brain of machine"
+              "title": "7 Sharpening the brain"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -84,7 +70,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "ML",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -213,6 +199,14 @@
   },
   "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
+    "NamasteAI/images/namastedev.com-learn-namaste-ai-sharpening-the-brain-3.png",
+    "NamasteAI/images/namastedev.com-learn-namaste-ai-sharpening-the-brain-2.png",
+    "NamasteAI/images/namastedev.com-learn-namaste-ai-sharpening-the-brain.png",
+    "NamasteAI/Season 1/7 Sharpening the brain.md",
+    "Untitled.base",
+    "NamasteAI/Season 1/6 The computational brain of machine.md",
+    "Trips/Singapore itirenery.md",
+    "NodeJS/Season 1.md",
     "OMSCS/4 SDP/images/Pasted image 20260913214150.png",
     "NamasteAI/images/namastedev.com-learn-namaste-ai-the-computational-brain-of-14.png",
     "OMSCS/4 SDP/images/Pasted image 20260911115156.png",
@@ -222,13 +216,7 @@
     "OMSCS/4 SDP/images/Pasted image 20260910155518.png",
     "OMSCS/4 SDP/images/Pasted image 20260910155251.png",
     "OMSCS/4 SDP/images/Pasted image 20260910154806.png",
-    "OMSCS/4 SDP/images/Pasted image 20260910154714.png",
-    "OMSCS/4 SDP/images/Pasted image 20260910153717.png",
-    "OMSCS/4 SDP/images/Pasted image 20260910153425.png",
-    "NodeJS/Season 1.md",
-    "Trips/Singapore itirenery.md",
     "NodeJS/Dev-tinder-UI using React.md",
-    "NamasteAI/Season 1/6 The computational brain of machine.md",
     "Daily schedule.md",
     "NamasteAI/Season 1/5 How machines represent meaning.md",
     "NamasteAI/Architecture.md",
@@ -251,14 +239,12 @@
     "Typescript/2 - TypeScript notes.md",
     "Typescript/1 - Typescript.md",
     "Front End System Design/11 - High level design/6 - Cricinfo, Cricbuzz.md",
-    "Front End System Design/3-Security/3 Cross site-scripting (XSS).md",
     "NamasteAI/images",
     "NamasteAI/Season 1",
     "NamasteAI",
     "Trips",
     "Abroad",
     "Wedding",
-    "OMSCS/3 CN/Untitled",
     "Untitled.canvas"
   ]
 }

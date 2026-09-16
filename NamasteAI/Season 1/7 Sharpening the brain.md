@@ -74,5 +74,7 @@ The model uses the loss to adjust its parameters. It then makes another predicti
 
 Repeating this process over large amounts of training data gradually improves the model's parameters and its predictions.
 
+![[namastedev.com-learn-namaste-ai-sharpening-the-brain-5.png]]
+
 
 

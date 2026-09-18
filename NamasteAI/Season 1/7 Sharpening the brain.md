@@ -137,3 +137,6 @@ For example, an optimizer such as **Gradient Descent** uses the gradients to det
 - **Backpropagation:** Calculate gradients to determine how each parameter contributed to the error.
 - **Optimizer (Gradient Descent):** Use the gradients to update the model’s parameters.
 - **Better Model:** After repeating this process many times, the model’s predictions improve.
+
+![[namastedev.com-learn-namaste-ai-sharpening-the-brain-10.png]]
+

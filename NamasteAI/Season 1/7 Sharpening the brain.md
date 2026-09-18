@@ -123,3 +123,17 @@ For example, an optimizer such as **Gradient Descent** uses the gradients to det
 
 ![[namastedev.com-learn-namaste-ai-sharpening-the-brain-8.png]]
 
+
+[[2026-09-18]]
+
+### 7.4 Training summary
+
+![[namastedev.com-learn-namaste-ai-sharpening-the-brain-9.png]]
+
+
+- **Sample Data:** Provide the model with an example input and its expected output.
+- **Forward Pass:** The model processes the input and makes a prediction.
+- **Calculate Loss:** Measure how far the prediction is from the expected output.
+- **Backpropagation:** Calculate gradients to determine how each parameter contributed to the error.
+- **Optimizer (Gradient Descent):** Use the gradients to update the model’s parameters.
+- **Better Model:** After repeating this process many times, the model’s predictions improve.

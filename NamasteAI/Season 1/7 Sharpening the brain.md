@@ -76,5 +76,50 @@ Repeating this process over large amounts of training data gradually improves th
 
 ![[namastedev.com-learn-namaste-ai-sharpening-the-brain-5.png]]
 
+[[2026-09-17]]
 
+#### 3. Backpropagation
+
+When the model makes a wrong prediction, we need to **adjust the parameters that contributed to the error**.
+
+This is where **backpropagation** comes in. The loss is propagated backward through the network to determine:
+
+- Which layers contributed to the loss
+- How much each parameter contributed to the loss
+- How sensitive the loss is to a change in each parameter
+
+This sensitivity is represented by a **gradient**.
+
+A gradient tells us **how much the loss would change if a particular parameter were changed slightly**.
+
+So, in simplified form:
+
+**Prediction → Loss → Backpropagation → Gradients → Adjust parameters**
+
+The gradients tell the optimizer **which parameters to change and in which direction** to reduce the loss.
+
+![[namastedev.com-learn-namaste-ai-sharpening-the-brain-6 1.png]]
+
+#### 4. Gradient
+
+![[namastedev.com-learn-namaste-ai-sharpening-the-brain-7.png]]
+**Backpropagation does not directly update the parameters.** Its job is to calculate the **gradients** of the loss with respect to each parameter.
+
+The gradients tell us:
+
+- **Which parameters contributed to the loss**
+- **How sensitive the loss is to each parameter**
+- **Which direction each parameter should move** — increase or decrease
+
+The **optimization algorithm** then uses these gradients to actually update the parameters.
+
+So the process is:
+
+**Forward pass → Loss calculation → Backpropagation → Gradients → Optimizer updates parameters**
+
+For example, an optimizer such as **Gradient Descent** uses the gradients to determine how much each parameter should be adjusted.
+
+#### 5. Gradient descent
+
+![[namastedev.com-learn-namaste-ai-sharpening-the-brain-8.png]]
 

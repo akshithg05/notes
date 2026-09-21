@@ -140,3 +140,6 @@ For example, an optimizer such as **Gradient Descent** uses the gradients to det
 
 ![[namastedev.com-learn-namaste-ai-sharpening-the-brain-10.png]]
 
+
+![[namastedev.com-learn-namaste-ai-sharpening-the-brain-11.png]]
+

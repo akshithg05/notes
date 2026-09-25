@@ -143,3 +143,43 @@ For example, an optimizer such as **Gradient Descent** uses the gradients to det
 
 ![[namastedev.com-learn-namaste-ai-sharpening-the-brain-11.png]]
 
+[[2026-09-25]]
+
+### 7.5 Important Jargons
+
+- **Dataset:** The entire collection of training examples used to train the model.
+- **Batch:** A group of training examples from the dataset processed together in one iteration.
+- **Training Step:** One complete optimization update: **forward pass → loss → backpropagation → optimizer updates parameters**.
+- **Epoch:** One complete pass through the **entire training dataset**.
+
+
+![[Pasted image 20260925124925.png]]
+
+**Relationship:**  
+`Dataset → split into Batches → each Batch = one Training Step → all Batches = one Epoch`
+
+### 7.6 Training vs Inference
+
+![[Pasted image 20260925125151.png]]
+
+- **Training:** Slow and computationally expensive because the model repeatedly processes training data, calculates loss, computes gradients, and updates millions/billions of parameters.
+- **Inference:** Generally faster and less computationally expensive because the model uses its **already-trained parameters** to generate predictions without updating them.
+
+### 7.7 Generalization
+
+![[Pasted image 20260925130842.png]]
+
+### 7.8 Overfitting and distributed training
+
+![[Pasted image 20260925131242.png]]
+
+Training large frontier models is not just a machine learning problem but also a **large distributed-systems problem**.
+
+Because the models require enormous amounts of data and compute, training is distributed across **many GPUs/machines**, which must coordinate efficiently and exchange data and gradients.
+
+### 7.9 Token embeddings
+
+![[Pasted image 20260925131817.png]]
+
+![[Pasted image 20260925132806.png]]
+

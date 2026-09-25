@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OMSCS/4 SDP/P2 L3 Android.md",
+                "file": "NamasteAI/Season 1/7 Sharpening the brain.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "P2 L3 Android"
+              "title": "7 Sharpening the brain"
             }
           }
         ],
@@ -211,21 +211,22 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "27690a0ad9128353",
+  "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
+    "NamasteAI/images/Pasted image 20260925132806.png",
+    "NamasteAI/images/Pasted image 20260925131817.png",
+    "NamasteAI/images/Pasted image 20260925131242.png",
+    "NamasteAI/images/Pasted image 20260925130842.png",
+    "NamasteAI/images/Pasted image 20260925125151.png",
+    "NamasteAI/images/Pasted image 20260925124925.png",
+    "OMSCS/4 SDP/P2 L2.md",
+    "OMSCS/4 SDP/P2 L1.md",
+    "OMSCS/4 SDP/P2 L3 Android.md",
     "OMSCS/4 SDP/images/Pasted image 20260921203134.png",
     "OMSCS/4 SDP/images/Pasted image 20260918192233.png",
-    "OMSCS/4 SDP/P2 L2.md",
-    "OMSCS/4 SDP/P2 L3 Android.md",
     "OMSCS/4 SDP/images/Pasted image 20260918190944.png",
     "OMSCS/4 SDP/images/Pasted image 20260918190627.png",
     "OMSCS/4 SDP/images/Pasted image 20260918190447.png",
-    "OMSCS/4 SDP/images/Pasted image 20260918190353.png",
-    "OMSCS/4 SDP/images/Pasted image 20260918190047.png",
-    "OMSCS/4 SDP/images/Pasted image 20260918185855.png",
-    "OMSCS/4 SDP/images/Pasted image 20260918180513.png",
-    "OMSCS/4 SDP/images/Pasted image 20260918175807.png",
-    "OMSCS/4 SDP/images/Pasted image 20260918175648.png",
     "NamasteAI/Season 1/7 Sharpening the brain.md",
     "AI ML/2 - Advanced Learning Algorithms/8 - Multiclass classification.md",
     "AI ML/1 - Supervised ML - Regression and Classification/2 Gradient Descent.md",
@@ -234,7 +235,6 @@
     "NamasteAI/Season 1/6 The computational brain of machine.md",
     "Trips/Singapore itirenery.md",
     "NodeJS/Season 1.md",
-    "OMSCS/4 SDP/P2 L1.md",
     "NodeJS/Dev-tinder-UI using React.md",
     "Daily schedule.md",
     "NamasteAI/Season 1/5 How machines represent meaning.md",

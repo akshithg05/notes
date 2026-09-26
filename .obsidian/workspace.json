@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NamasteAI/Season 1/7 Sharpening the brain.md",
+                "file": "OMSCS/4 SDP/P3 L1 Software architecture.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "7 Sharpening the brain"
+              "title": "P3 L1 Software architecture"
             }
           }
         ],
@@ -211,8 +211,14 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "d5df95e868ccabb7",
+  "active": "27690a0ad9128353",
   "lastOpenFiles": [
+    "NamasteAI/Season 1/8 From base model to AI assistant.md",
+    "OMSCS/4 SDP/P3 L1 Software architecture.md",
+    "NamasteAI/images/Pasted image 20260926141526.png",
+    "NamasteAI/images/Pasted image 20260926141418.png",
+    "NamasteAI/images/Pasted image 20260926130348.png",
+    "NamasteAI/Season 1/7 Sharpening the brain.md",
     "NamasteAI/images/Pasted image 20260925132806.png",
     "NamasteAI/images/Pasted image 20260925131817.png",
     "NamasteAI/images/Pasted image 20260925131242.png",
@@ -223,11 +229,6 @@
     "OMSCS/4 SDP/P2 L1.md",
     "OMSCS/4 SDP/P2 L3 Android.md",
     "OMSCS/4 SDP/images/Pasted image 20260921203134.png",
-    "OMSCS/4 SDP/images/Pasted image 20260918192233.png",
-    "OMSCS/4 SDP/images/Pasted image 20260918190944.png",
-    "OMSCS/4 SDP/images/Pasted image 20260918190627.png",
-    "OMSCS/4 SDP/images/Pasted image 20260918190447.png",
-    "NamasteAI/Season 1/7 Sharpening the brain.md",
     "AI ML/2 - Advanced Learning Algorithms/8 - Multiclass classification.md",
     "AI ML/1 - Supervised ML - Regression and Classification/2 Gradient Descent.md",
     "AI ML/1 - Supervised ML - Regression and Classification/1 Introduction to ML.md",
@@ -252,7 +253,6 @@
     "Front End System Design/11 - High level design/10 - Google docs design.md",
     "Front End System Design/Bonus System design concepts.md",
     "Typescript/JS type coercion.md",
-    "Typescript/5 - TS Advanced type narrowing.md",
     "NamasteAI/images",
     "NamasteAI/Season 1",
     "NamasteAI",

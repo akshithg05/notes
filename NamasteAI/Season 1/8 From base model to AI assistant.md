@@ -39,3 +39,37 @@ Checkout FineWeb web page for more information and insights and read about URL f
 ![[Pasted image 20260926141526.png|653]]
 
 De duplication prevents overfitting in certain models
+
+[[2026-09-27]]
+
+![[Pasted image 20260927114233.png]]
+
+### 8.4 Base model
+
+![[Pasted image 20260927115543.png]]
+
+### 8.5 What happens inside post training ?
+
+![[Pasted image 20260927121215.png]]
+
+Post-training teaches the model **how it should behave**, rather than simply predicting the next token blindly.
+
+The goal is to make the model:
+
+- **Helpful:** Understand the user's request and answer it appropriately.
+- **Knowledgeable:** Provide useful and accurate information.
+- **Aligned:** Follow instructions and appropriate safety guidelines.
+- **Respectful:** Communicate in a humble, clear, and non-arrogant manner.
+
+**In simple terms:**  
+**Pre-training → teaches the model knowledge and language patterns**  
+**Post-training → teaches the model how to use that capability effectively**
+
+To achieve all this we use SFT supervised fine tuning
+
+### 8.6 Supervised fine tuning
+
+![[Pasted image 20260927121511.png]]
+
+![[Pasted image 20260927122454.png]]
+

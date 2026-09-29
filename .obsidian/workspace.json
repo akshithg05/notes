@@ -25,10 +25,14 @@
             "id": "5de87ed41021f9e3",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "NamasteAI/Season 1/8 From base model to AI assistant.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "8 From base model to AI assistant"
             }
           }
         ],
@@ -193,8 +197,11 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "d5df95e868ccabb7",
+  "active": "5de87ed41021f9e3",
   "lastOpenFiles": [
+    "NamasteAI/images/namastedev.com_learn_namaste-ai_from-a-base-model-to-an-ai-assistant 2.png",
+    "NamasteAI/images/namastedev.com_learn_namaste-ai_from-a-base-model-to-an-ai-assistant 1.png",
+    "NamasteAI/images/namastedev.com_learn_namaste-ai_from-a-base-model-to-an-ai-assistant.png",
     "Trips/Singapore itirenery.md",
     "AI ML/2 - Advanced Learning Algorithms/8 - Multiclass classification.md",
     "Front End System Design/1-Networking/3 REST APIs.md",
@@ -207,8 +214,6 @@
     "NamasteAI/images/Pasted image 20260928231550.png",
     "NamasteAI/images/Pasted image 20260928231151.png",
     "NamasteAI/images/Pasted image 20260927122454.png",
-    "NamasteAI/images/Pasted image 20260927121511.png",
-    "NamasteAI/images/Pasted image 20260927121215.png",
     "NamasteAI/Season 1/2 The evolution of AI.md",
     "NamasteAI/Season 1/1 Introduction.md",
     "OMSCS/4 SDP/P3 L1 Software architecture.md",
@@ -234,7 +239,6 @@
     "OMSCS/4 SDP",
     "NamasteAI/Season 1/Untitled",
     "Front End System Design/11 - High level design/10 - Google docs design.md",
-    "Front End System Design/Bonus System design concepts.md",
     "NamasteAI/images",
     "NamasteAI/Season 1",
     "NamasteAI",

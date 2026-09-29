@@ -93,8 +93,6 @@ Example:
 
 Key idea: Instruction tuning helps turn a base model into a model that follows instructions and responds helpfully.
 
-![[Pasted image 20260928231550.png]]
-
 ### 8.8 Diversity matters a lot
 
 ![[Pasted image 20260928232207.png]]
@@ -113,11 +111,8 @@ Key idea: The model's knowledge is largely learned during training, while specif
 AI assistants use a structured conversation format with special tokens or markers to distinguish messages from different roles, such as `system`, `user`, and `assistant`.
 
 - These markers help the model identify who said what and distinguish instructions from user messages and assistant responses.
-    
 - They also help structure conversations and control how the model generates its output, including tool calls in supported formats.
-    
 - Users generally don't need to type these markers manually. The system typically formats the conversation into the model's expected structure before processing it.
-    
 
 Key idea: Conversational formatting provides structure and context so the model can interpret the conversation correctly and respond appropriately.
 
@@ -130,3 +125,53 @@ These are small nitty gritty things which makes the models so good.
 ![[Pasted image 20260928233553.png]]
 
 These are the three main roles. Many companies and modern LLMs can have various other and more complex roles to get better outputs.
+
+[[2026-09-29]]
+
+### 8.11 SFT is cool but not enough
+
+Supervised Fine-Tuning (SFT) teaches a model to follow instructions using examples of prompts and desired responses. However, the same question can have multiple valid answers — simple, technical, confusing, incorrect but confident, or overly detailed.
+
+The challenge is deciding which answer a human would prefer. Different people have different preferences for accuracy, tone, detail, and answer length, so creating a perfect answer is difficult.
+
+- How do we teach a model which answer is better?
+- How do we make responses consistently helpful, accurate, and appropriately sized?    
+- How do we account for different human preferences?
+
+![[namastedev.com_learn_namaste-ai_from-a-base-model-to-an-ai-assistant.png]]
+
+Who solves this ? Humans 
+
+### 8.12 Generator vs Discriminator Evaluation Gap
+
+Ultimately, AI responses are meant to be read and used by humans, so human feedback plays an important role in aligning models with human preferences.
+
+Companies such as OpenAI and Anthropic use human feedback, including evaluations by domain experts (SMEs), to assess and compare model responses.
+
+Generator vs. Discriminator Evaluation Gap:
+
+- Generator: Creating an ideal answer from scratch can be difficult, even for humans, and may introduce mistakes or bias.
+    
+- Discriminator (Evaluator): Comparing two or more existing answers and ranking them from best to worst is often easier and faster than generating an ideal answer.
+    
+
+Therefore, humans can act as evaluators rather than always having to generate the perfect answer. Their rankings provide preference data that can be used to train models to produce responses people prefer.
+
+![[namastedev.com_learn_namaste-ai_from-a-base-model-to-an-ai-assistant 1.png]]
+
+### 8.13 Reward model 
+
+Humans have limitations: evaluating responses repeatedly is time-consuming, and human feedback is difficult to scale. Therefore, we use human preferences to train machines that can evaluate responses at scale.
+
+How do we create a Reward Model?
+
+1. Collect human preferences: Humans compare multiple model responses and rank them based on quality.
+2. Train a Reward Model: A separate model learns to predict which responses humans are more likely to prefer.
+3. Calculate loss: Compare the reward model's predictions with the human preference rankings.
+4. Backpropagation: Calculate gradients based on the loss.
+5. Update parameters: An optimizer updates the reward model to improve its predictions.
+6. Repeat: Continue training until the reward model learns to predict human preferences more effectively.
+
+Example: ChatGPT may sometimes show you two responses and ask which one you prefer. This is an example of collecting preference feedback, although the exact way that feedback is used depends on the system.
+
+![[namastedev.com_learn_namaste-ai_from-a-base-model-to-an-ai-assistant 2.png]]

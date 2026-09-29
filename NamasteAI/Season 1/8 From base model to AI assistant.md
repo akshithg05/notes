@@ -73,3 +73,60 @@ To achieve all this we use SFT supervised fine tuning
 
 ![[Pasted image 20260927122454.png]]
 
+[[2026-09-28]]
+
+Fine tuning continued (its a part of the post training process) -
+
+![[Pasted image 20260928231151.png]]
+
+Fine tuning is extra training to achieve a desired behavior of a model.
+### 8.7 Instruction tuning
+
+Instruction tuning uses examples of instructions and their desired responses to teach the model how to follow user requests.
+
+Instead of merely autocomplete-style text generation, the model learns to respond appropriately to questions, understand the context of a request, and provide useful answers.
+
+Example:
+
+- Before: Given “What is the capital of France?”, the model might continue the text in various ways.
+- After: The model is trained to recognize the question and respond with “Paris.”
+
+Key idea: Instruction tuning helps turn a base model into a model that follows instructions and responds helpfully.
+
+![[Pasted image 20260928231550.png]]
+
+### 8.8 Diversity matters a lot
+
+![[Pasted image 20260928232207.png]]
+
+Fine tuning is what makes models of different companies different. The fine tuning , diversity and post training matters. Base models of various companies can be similar but after fine tuning the models and AI assistants can be very different because of the fine tuning.
+
+![[Pasted image 20260928232724.png]]
+
+- System instructions: These can explicitly provide information about the assistant's identity, role, and behavior.
+- Additional tools or configuration: The system may provide current information about the model or its capabilities.
+
+Key idea: The model's knowledge is largely learned during training, while specific details about its identity and behavior may be supplied through system instructions or configuration.
+
+### 8.9 Conversational formatting
+
+AI assistants use a structured conversation format with special tokens or markers to distinguish messages from different roles, such as `system`, `user`, and `assistant`.
+
+- These markers help the model identify who said what and distinguish instructions from user messages and assistant responses.
+    
+- They also help structure conversations and control how the model generates its output, including tool calls in supported formats.
+    
+- Users generally don't need to type these markers manually. The system typically formats the conversation into the model's expected structure before processing it.
+    
+
+Key idea: Conversational formatting provides structure and context so the model can interpret the conversation correctly and respond appropriately.
+
+![[Pasted image 20260928233341.png]]
+
+These are small nitty gritty things which makes the models so good.
+
+### 8.10 Roles
+
+![[Pasted image 20260928233553.png]]
+
+These are the three main roles. Many companies and modern LLMs can have various other and more complex roles to get better outputs.

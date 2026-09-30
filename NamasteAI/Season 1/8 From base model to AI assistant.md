@@ -138,7 +138,7 @@ The challenge is deciding which answer a human would prefer. Different people ha
 - How do we make responses consistently helpful, accurate, and appropriately sized?    
 - How do we account for different human preferences?
 
-![[namastedev.com_learn_namaste-ai_from-a-base-model-to-an-ai-assistant.png]]
+![[namastedev.com_learn_namaste-ai_from-a-base-model-to-an-ai-assistant 3 1.png]]
 
 Who solves this ? Humans 
 
@@ -157,7 +157,7 @@ Generator vs. Discriminator Evaluation Gap:
 
 Therefore, humans can act as evaluators rather than always having to generate the perfect answer. Their rankings provide preference data that can be used to train models to produce responses people prefer.
 
-![[namastedev.com_learn_namaste-ai_from-a-base-model-to-an-ai-assistant 1.png]]
+![[namastedev.com_learn_namaste-ai_from-a-base-model-to-an-ai-assistant 1 1.png]]
 
 ### 8.13 Reward model 
 
@@ -174,4 +174,49 @@ How do we create a Reward Model?
 
 Example: ChatGPT may sometimes show you two responses and ask which one you prefer. This is an example of collecting preference feedback, although the exact way that feedback is used depends on the system.
 
-![[namastedev.com_learn_namaste-ai_from-a-base-model-to-an-ai-assistant 2.png]]
+![[namastedev.com_learn_namaste-ai_from-a-base-model-to-an-ai-assistant 2 1.png]]
+
+[[2026-09-30]]
+
+### 8.14 Reinforcement learning with Human Feedback
+
+#### 8.14.1 Reinforcement learning 
+
+Reinforcement Learning trains a model using rewards for preferred behavior and penalties (lower rewards) for less-preferred behavior. It works through trial and error, improving the model's decisions based on feedback.
+
+1. Generate responses: The model produces responses to a prompt.
+2. Assign rewards: A reward model scores the responses based on how well they meet the desired criteria.
+3. Update the model: The model's policy is optimized to increase the expected reward, making preferred responses more likely.
+4. Repeat: This process continues, helping the model produce responses that better align with human preferences.
+
+In Reinforcement Learning from Human Feedback (RLHF), the reward model is trained on human preference data, such as rankings of different model responses.
+
+- Humans: Compare and rank responses based on their preferences.    
+- Reward Model: Learns from these preferences and assigns scores to new responses.
+- Reinforcement Learning: Uses these reward scores to update the language model so that it is more likely to generate preferred responses.
+
+Key idea: Humans indirectly reward the model through the reward model, allowing human preferences to guide training at scale without humans needing to evaluate every response.
+
+![[namastedev.com_learn_namaste-ai_from-a-base-model-to-an-ai-assistant 3 1.png]]
+
+### 8.15 Summary until now in the training process
+
+![[namastedev.com_learn_namaste-ai_from-a-base-model-to-an-ai-assistant 1 1.png]]
+
+![[namastedev.com_learn_namaste-ai_from-a-base-model-to-an-ai-assistant 2 1.png]]
+
+### 8.16 Flaws with RLHF
+
+There are flaws with RLHF as well. Humans are themselves different and prefers different answers. So this can create problems.
+
+![[namastedev.com_learn_namaste-ai_from-a-base-model-to-an-ai-assistant 3 1.png]]
+
+### 8.17 Lossy simulation of Human preferences
+
+![[namastedev.com_learn_namaste-ai_from-a-base-model-to-an-ai-assistant 4 1.png]]
+
+Human judgment considers factors like correctness, nuance, tone, and ethics. A reward model compresses these complex preferences into numerical scores, inevitably losing some information.
+
+A reward model is not human judgment itself, but a learned approximation based on a limited sample of human preferences. The score may indicate which response is preferred without explaining exactly why.
+
+

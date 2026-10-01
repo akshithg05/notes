@@ -22,7 +22,7 @@
             }
           },
           {
-            "id": "5de87ed41021f9e3",
+            "id": "0dfe982cbf101e71",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -95,7 +95,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 340.5
+    "width": 371.5
   },
   "right": {
     "id": "c1359012abc4e269",
@@ -197,23 +197,23 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "d5df95e868ccabb7",
+  "active": "da9253a0220cbe6f",
   "lastOpenFiles": [
-    "NamasteAI/images/namastedev.com_learn_namaste-ai_from-a-base-model-to-an-ai-assistant 4 1.png",
     "NamasteAI/images/namastedev.com_learn_namaste-ai_from-a-base-model-to-an-ai-assistant 3 1.png",
-    "NamasteAI/images/namastedev.com_learn_namaste-ai_from-a-base-model-to-an-ai-assistant 2 1.png",
-    "NamasteAI/images/namastedev.com_learn_namaste-ai_from-a-base-model-to-an-ai-assistant 1 1.png",
+    "NamasteAI/Season 1/8 From base model to AI assistant.md",
+    "NamasteAI/images/namastedev.com-learn-namaste-ai-the-computational-brain-of-10.png",
     "NamasteAI/images/namastedev.com_learn_namaste-ai_from-a-base-model-to-an-ai-assistant 4.png",
-    "NamasteAI/images/namastedev.com_learn_namaste-ai_from-a-base-model-to-an-ai-assistant 3.png",
-    "NamasteAI/images/namastedev.com_learn_namaste-ai_from-a-base-model-to-an-ai-assistant 2.png",
-    "NamasteAI/images/namastedev.com_learn_namaste-ai_from-a-base-model-to-an-ai-assistant 1.png",
-    "NamasteAI/images/namastedev.com_learn_namaste-ai_from-a-base-model-to-an-ai-assistant.png",
+    "NamasteAI/images/namastedev.com_learn_namaste-ai_from-a-base-model-to-an-ai-assistant 4 1.png",
+    "NamasteAI/images/namastedev.com-learn-namaste-ai-the-computational-brain-of-11.png",
+    "NamasteAI/images/namastedev.com-learn-namaste-ai-the-computational-brain-of-14.png",
+    "NamasteAI/Season 1/6 The computational brain of machine.md",
+    "NamasteAI/images/Pasted image 20260925125151.png",
+    "NamasteAI/images/namastedev.com-learn-namaste-ai-the-computational-brain-of-3.png",
+    "NamasteAI/images/namastedev.com-learn-namaste-ai-sharpening-the-brain-11.png",
+    "NamasteAI/images/namastedev.com-learn-namaste-ai-sharpening-the-brain-2.png",
     "Trips/Singapore itirenery.md",
     "AI ML/2 - Advanced Learning Algorithms/8 - Multiclass classification.md",
     "Front End System Design/1-Networking/3 REST APIs.md",
-    "NamasteAI/Season 1/8 From base model to AI assistant.md",
-    "NamasteAI/images/Pasted image 20260928233553.png",
-    "NamasteAI/images/Pasted image 20260928233416.png",
     "NamasteAI/Season 1/2 The evolution of AI.md",
     "NamasteAI/Season 1/1 Introduction.md",
     "OMSCS/4 SDP/P3 L1 Software architecture.md",
@@ -224,7 +224,6 @@
     "AI ML/1 - Supervised ML - Regression and Classification/2 Gradient Descent.md",
     "AI ML/1 - Supervised ML - Regression and Classification/1 Introduction to ML.md",
     "Untitled.base",
-    "NamasteAI/Season 1/6 The computational brain of machine.md",
     "NodeJS/Season 1.md",
     "NodeJS/Dev-tinder-UI using React.md",
     "Daily schedule.md",

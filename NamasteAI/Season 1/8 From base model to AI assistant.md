@@ -138,7 +138,7 @@ The challenge is deciding which answer a human would prefer. Different people ha
 - How do we make responses consistently helpful, accurate, and appropriately sized?    
 - How do we account for different human preferences?
 
-![[namastedev.com_learn_namaste-ai_from-a-base-model-to-an-ai-assistant 3.png]]
+![[NamasteAI/Season 1/namastedev.com_learn_namaste-ai_from-a-base-model-to-an-ai-assistant 3.png]]
 
 Who solves this ? Humans 
 
@@ -197,7 +197,7 @@ In Reinforcement Learning from Human Feedback (RLHF), the reward model is traine
 
 Key idea: Humans indirectly reward the model through the reward model, allowing human preferences to guide training at scale without humans needing to evaluate every response.
 
-![[namastedev.com_learn_namaste-ai_from-a-base-model-to-an-ai-assistant 3.png]]
+![[NamasteAI/Season 1/namastedev.com_learn_namaste-ai_from-a-base-model-to-an-ai-assistant 3.png]]
 
 ### 8.15 Summary until now in the training process
 
@@ -219,4 +219,48 @@ Human judgment considers factors like correctness, nuance, tone, and ethics. A r
 
 A reward model is not human judgment itself, but a learned approximation based on a limited sample of human preferences. The score may indicate which response is preferred without explaining exactly why.
 
+[[2026-10-01]]
 
+### 8.18 Reward hacking
+
+Reward hacking occurs when a model finds a way to achieve a high reward score without actually fulfilling the intended goal.
+
+- The model learns to maximize the score rather than provide genuinely useful or correct answers.
+- Example: If the reward model tends to favor long answers, the model may produce unnecessarily lengthy responses to get higher scores.
+- This happens partly because the reward model is a lossy approximation of human preferences and cannot capture every aspect of a good answer.
+
+Key idea: The goal is not simply to maximize reward scores, but to produce accurate, helpful responses that fulfil the user's needs.
+
+![[namastedev.com_learn_namaste-ai_from-a-base-model-to-an-ai-assistant 5 1.png]]
+
+#### 8.18.1 Goodhart's law
+
+![[Golang/namastedev.com_learn_namaste-ai_from-a-base-model-to-an-ai-assistant.png]]
+
+If an AI model is rewarded for long answers, it may generate unnecessarily lengthy responses to score higher, even when a short, accurate answer would be more useful.
+
+Key idea: Optimizing a met
+
+The model should aim for a high reward score, but that should not be its only target. It must also prioritize the actual goal: providing accurate, helpful, and useful responses.
+
+![[namastedev.com_learn_namaste-ai_from-a-base-model-to-an-ai-assistant 1 2.png]]
+
+
+### 8.19 Knowledge vs Behavior
+
+![[namastedev.com_learn_namaste-ai_from-a-base-model-to-an-ai-assistant 2 2.png]]
+
+Pre-training builds knowledge and language capabilities, while post-training shapes behaviour—teaching the model to follow instructions, respond helpfully, and align with human preferences.
+
+Note: This is a useful simplification; pre-training also teaches language patterns and capabilities, while post-training can further improve knowledge and reasoning.
+
+### 8.20 Training vs Post training
+
+![[NamasteAI/Season 1/namastedev.com_learn_namaste-ai_from-a-base-model-to-an-ai-assistant 3.png]]
+
+
+### 8.21 FULL SUMMARY
+
+![[namastedev.com_learn_namaste-ai_from-a-base-model-to-an-ai-assistant 6.png]]
+
+![[namastedev.com_learn_namaste-ai_from-a-base-model-to-an-ai-assistant 7.png]]

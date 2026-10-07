@@ -138,7 +138,7 @@ The challenge is deciding which answer a human would prefer. Different people ha
 - How do we make responses consistently helpful, accurate, and appropriately sized?    
 - How do we account for different human preferences?
 
-![[NamasteAI/Season 1/namastedev.com_learn_namaste-ai_from-a-base-model-to-an-ai-assistant 3.png]]
+![[namastedev.com_learn_namaste-ai_from-a-base-model-to-an-ai-assistant 3 2.png]]
 
 Who solves this ? Humans 
 
@@ -197,7 +197,7 @@ In Reinforcement Learning from Human Feedback (RLHF), the reward model is traine
 
 Key idea: Humans indirectly reward the model through the reward model, allowing human preferences to guide training at scale without humans needing to evaluate every response.
 
-![[NamasteAI/Season 1/namastedev.com_learn_namaste-ai_from-a-base-model-to-an-ai-assistant 3.png]]
+![[namastedev.com_learn_namaste-ai_from-a-base-model-to-an-ai-assistant 3 2.png]]
 
 ### 8.15 Summary until now in the training process
 
@@ -256,7 +256,7 @@ Note: This is a useful simplification; pre-training also teaches language patter
 
 ### 8.20 Training vs Post training
 
-![[NamasteAI/Season 1/namastedev.com_learn_namaste-ai_from-a-base-model-to-an-ai-assistant 3.png]]
+![[namastedev.com_learn_namaste-ai_from-a-base-model-to-an-ai-assistant 3 2.png]]
 
 
 ### 8.21 FULL SUMMARY

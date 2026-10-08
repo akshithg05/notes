@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NamasteAI/Season 1/8 From base model to AI assistant.md",
+                "file": "NamasteAI/Season 1/9 Can AI really think.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "8 From base model to AI assistant"
+              "title": "9 Can AI really think"
             }
           }
         ],
@@ -197,10 +197,14 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "0dfe982cbf101e71",
+  "active": "d5df95e868ccabb7",
   "lastOpenFiles": [
-    "NamasteAI/Season 1/9 Can AI really think.md",
+    "NamasteAI/images/namastedev.com_learn_namaste-ai_can-ai-really-think 3.png",
+    "NamasteAI/images/namastedev.com_learn_namaste-ai_can-ai-really-think 2.png",
+    "NamasteAI/images/namastedev.com_learn_namaste-ai_can-ai-really-think 1.png",
+    "NamasteAI/images/namastedev.com_learn_namaste-ai_can-ai-really-think.png",
     "NamasteAI/Season 1/8 From base model to AI assistant.md",
+    "NamasteAI/Season 1/9 Can AI really think.md",
     "OMSCS/4 SDP/P3L3 Design patterns.md",
     "OMSCS/4 SDP/images/Pasted image 20261006201145.png",
     "OMSCS/4 SDP/images/Pasted image 20261006201057.png",
@@ -209,9 +213,6 @@
     "OMSCS/4 SDP/images/Pasted image 20261006200624.png",
     "OMSCS/4 SDP/images/Pasted image 20261006200611.png",
     "NamasteAI/images/namastedev.com_learn_namaste-ai_from-a-base-model-to-an-ai-assistant 7.png",
-    "NamasteAI/images/namastedev.com_learn_namaste-ai_from-a-base-model-to-an-ai-assistant 6.png",
-    "NamasteAI/images/namastedev.com_learn_namaste-ai_from-a-base-model-to-an-ai-assistant 5 1.png",
-    "NamasteAI/images/namastedev.com_learn_namaste-ai_from-a-base-model-to-an-ai-assistant 4 2.png",
     "NamasteAI/Season 1/6 The computational brain of machine.md",
     "Trips/Singapore itirenery.md",
     "AI ML/2 - Advanced Learning Algorithms/8 - Multiclass classification.md",
@@ -235,7 +236,6 @@
     "NamasteAI/Season 1/4 The secret language of LLMs.md",
     "NamasteAI/Season 1/3 Does chatGPT know or guess.md",
     "OMSCS/4 SDP/P1 L2.md",
-    "OMSCS/4 SDP/P1 L1.md",
     "OMSCS/4 SDP/images",
     "OMSCS/4 SDP",
     "NamasteAI/Season 1/Untitled",

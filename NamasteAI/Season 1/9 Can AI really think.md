@@ -141,3 +141,6 @@ Key idea: Visible reasoning can help us understand an answer, but it is not a gu
 
 ![[namastedev.com_learn_namaste-ai_can-ai-really-think 5 1.png]]
 
+
+![[namastedev.com_learn_namaste-ai_can-ai-really-think 10.png]]
+

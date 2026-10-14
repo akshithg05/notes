@@ -61,6 +61,7 @@ Model Aggregators: Platforms like Together AI allow users to access and run mode
 
 ![[namastedev.com_learn_namaste-ai_can-ai-really-think 4 1.png]]
 
+
 ### 9.5 Chain of though
 
 Chain-of-Thought (CoT) prompting encourages an LLM to solve a problem through a series of intermediate reasoning steps before producing its final answer.
@@ -143,4 +144,8 @@ Key idea: Visible reasoning can help us understand an answer, but it is not a gu
 
 
 ![[namastedev.com_learn_namaste-ai_can-ai-really-think 10.png]]
+
+### 9.13 Summary
+
+![[namastedev.com_learn_namaste-ai_can-ai-really-think 1 5.png]]
 

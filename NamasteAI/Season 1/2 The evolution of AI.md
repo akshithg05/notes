@@ -38,8 +38,6 @@ Then came machine learning
 
 We will not use rules but make the machine learn from examples and train the machine using these examples so that when it sees a new sample, it can classify or regress a value.
 
-![[namastedev.com_learn_namaste-ai_the-evolution-of-ai 4 1.png]]
-
 Machine learning gave rise to probabilities and predictions. Machine learning again requires / required human aid and human intelligence. Humans have to define the classes/ conditions. Machines needed a lot of help from humans.
 
 

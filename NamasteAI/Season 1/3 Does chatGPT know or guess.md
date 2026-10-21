@@ -31,11 +31,9 @@ Search engines find relevant information from pages on the web. ChatGPT has alre
 
 LLMs are therefore **generating an answer rather than directly retrieving a specific answer from a webpage**.
 
-![[namastedev.com_learn_namaste-ai_does-chatgpt-know-or-does-it-guess 2 1.png]]
-
 ### 3.2 How search engines find information
 
-![[namastedev.com_learn_namaste-ai_does-chatgpt-know-or-does-it-guess 1 1.png]]
+![[namastedev.com_learn_namaste-ai_does-chatgpt-know-or-does-it-guess 1.png]]
 
 Search engines like Google **retrieve information from an index**. These indices contain web pages that are ranked based on various factors such as relevance, authority, user engagement, speed, etc. The search engine then returns the most relevant results to the user.
 
@@ -63,7 +61,7 @@ Google’s exact ranking algorithms are **not publicly disclosed**, and there ar
 
 To recap -
 
-![[namastedev.com_learn_namaste-ai_does-chatgpt-know-or-does-it-guess 2 1.png]]
+![[namastedev.com_learn_namaste-ai_does-chatgpt-know-or-does-it-guess.png]]
 
 ### 3.3 How LLMs generate responses
 

@@ -22,35 +22,21 @@
             }
           },
           {
-            "id": "0dfe982cbf101e71",
+            "id": "71d6d3516e1c9972",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI ML/2 - Advanced Learning Algorithms/7 - Activation functions.md",
+                "file": "NamasteAI/Season 1/3 Does chatGPT know or guess.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "7 - Activation functions"
-            }
-          },
-          {
-            "id": "f151976ae66ce19b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "NamasteAI/Season 2/2 Ideation and brainstorming features using AI.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2 Ideation and brainstorming features using AI"
+              "title": "3 Does chatGPT know or guess"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -211,10 +197,11 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "f151976ae66ce19b",
+  "active": "71d6d3516e1c9972",
   "lastOpenFiles": [
-    "namastedev.com_learn_namaste-ai_ideation-brainstorming-features-using-ai 1.png",
-    "namastedev.com_learn_namaste-ai_ideation-brainstorming-features-using-ai.png",
+    "NamasteAI/Season 2/2 Ideation and brainstorming features using AI.md",
+    "NamasteAI/images/namastedev.com_learn_namaste-ai_ideation-brainstorming-features-using-ai 1.png",
+    "NamasteAI/images/namastedev.com_learn_namaste-ai_ideation-brainstorming-features-using-ai.png",
     "NamasteAI/Season 1/2 The evolution of AI.md",
     "AI ML/2 - Advanced Learning Algorithms/7 - Activation functions.md",
     "AI ML/2 - Advanced Learning Algorithms/8 - Multiclass classification.md",
@@ -232,7 +219,6 @@
     "AI ML/1 - Supervised ML - Regression and Classification/2 Gradient Descent.md",
     "AI ML/1 - Supervised ML - Regression and Classification/1 Introduction to ML.md",
     "NamasteAI/Season 1/1 Introduction.md",
-    "NamasteAI/Season 2/2 Ideation and brainstorming features using AI.md",
     "NamasteAI/Season 2/1 Fundamentals of building with AI.md",
     "NamasteAI/images/namastedev.com_learn_namaste-ai_fundamentals-of-building-with-ai 1 1.png",
     "NamasteAI/images/namastedev.com_learn_namaste-ai_fundamentals-of-building-with-ai 2.png",
@@ -245,7 +231,6 @@
     "OMSCS/4 SDP/images/Pasted image 20261014162120.png",
     "OMSCS/4 SDP/images/Pasted image 20261014160340.png",
     "OMSCS/4 SDP/images/Pasted image 20261014160241.png",
-    "OMSCS/4 SDP/images/Pasted image 20261014160226.png",
     "NamasteAI/Season 1/9 Can AI really think.md",
     "NamasteAI/Season 1/8 From base model to AI assistant.md",
     "OMSCS/4 SDP/P3L3 Design patterns.md",

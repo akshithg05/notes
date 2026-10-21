@@ -7,3 +7,6 @@
 
 ![[namastedev.com_learn_namaste-ai_ideation-brainstorming-features-using-ai 1.png]]
 
+
+1. Try using speech to text from now on for chatGPT and prompting.
+

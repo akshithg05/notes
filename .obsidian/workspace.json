@@ -27,12 +27,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NamasteAI/Season 1/3 Does chatGPT know or guess.md",
+                "file": "NamasteAI/Season 2/3 Building PRD using AI.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3 Does chatGPT know or guess"
+              "title": "3 Building PRD using AI"
+            }
+          },
+          {
+            "id": "81665d834e98c6e7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "NamasteAI/Season 1/4 The secret language of LLMs.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "4 The secret language of LLMs"
             }
           },
           {
@@ -48,7 +62,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -107,7 +121,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 491.5
+    "width": 375.5
   },
   "right": {
     "id": "c1359012abc4e269",
@@ -209,10 +223,14 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "01c6533e3053b7b6",
+  "active": "81665d834e98c6e7",
   "lastOpenFiles": [
-    "NamasteAI/images/namastedev.com_learn_namaste-ai_does-chatgpt-know-or-does-it-guess.png",
+    "NamasteAI/Season 2/4 System design architecture doc using AI.md",
+    "NamasteAI/images/namastedev.com_learn_namaste-ai_system-design-architecture-documentation-using-ai.png",
+    "NamasteAI/Season 2/2 Ideation and brainstorming features using AI.md",
+    "NamasteAI/Season 2/3 Building PRD using AI.md",
     "NamasteAI/Season 1/3 Does chatGPT know or guess.md",
+    "NamasteAI/images/namastedev.com_learn_namaste-ai_does-chatgpt-know-or-does-it-guess.png",
     "NamasteAI/images/namastedev.com_learn_namaste-ai_does-chatgpt-know-or-does-it-guess 1.png",
     "NamasteAI/images/namastedev.com_learn_namaste-ai_does-chatgpt-know-or-does-it-guess 1 1.png",
     "NamasteAI/images/namastedev.com_learn_namaste-ai_does-chatgpt-know-or-does-it-guess 1 2.png",
@@ -221,9 +239,7 @@
     "NamasteAI/images/namastedev.com_learn_namaste-ai_does-chatgpt-know-or-does-it-guess 2 1.png",
     "NamasteAI/images/namastedev.com_learn_namaste-ai_the-secret-language-of-llms 1.png",
     "NamasteAI/images/namastedev.com_learn_namaste-ai_does-chatgpt-know-or-does-it-guess 2 2.png",
-    "NamasteAI/images/namastedev.com_learn_namaste-ai_does-chatgpt-know-or-does-it-guess 3.png",
     "Trips/Singapore itirenery.md",
-    "NamasteAI/Season 2/2 Ideation and brainstorming features using AI.md",
     "NamasteAI/Season 1/2 The evolution of AI.md",
     "AI ML/2 - Advanced Learning Algorithms/7 - Activation functions.md",
     "AI ML/2 - Advanced Learning Algorithms/8 - Multiclass classification.md",
@@ -245,8 +261,6 @@
     "OMSCS/4 SDP/P4 L2 Black box testing.md",
     "NamasteAI/Season 2",
     "OMSCS/4 SDP/P4 L1 (General concepts).md",
-    "NamasteAI/Season 1/9 Can AI really think.md",
-    "NamasteAI/Season 1/8 From base model to AI assistant.md",
     "Untitled.base",
     "OMSCS/4 SDP/images",
     "OMSCS/4 SDP",

@@ -36,7 +36,6 @@ Example of tokenization
 
 ![[namastedev.com_learn_namaste-ai_the-secret-language-of-llms 2 1.png]]
 
-![[namastedev.com_learn_namaste-ai_the-secret-language-of-llms 1 1.png]]
 
 ### 4.2 Words vs Characters vs Tokens
 

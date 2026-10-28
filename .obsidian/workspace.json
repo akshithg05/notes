@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NamasteAI/Season 1/4 The secret language of LLMs.md",
+                "file": "NamasteAI/Season 2/4 System design architecture doc using AI.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "4 The secret language of LLMs"
+              "title": "4 System design architecture doc using AI"
             }
           },
           {
@@ -225,6 +225,8 @@
   },
   "active": "81665d834e98c6e7",
   "lastOpenFiles": [
+    "NamasteAI/Season 1/9 Can AI really think.md",
+    "NamasteAI/Season 1/4 The secret language of LLMs.md",
     "NamasteAI/Season 2/4 System design architecture doc using AI.md",
     "NamasteAI/images/namastedev.com_learn_namaste-ai_system-design-architecture-documentation-using-ai.png",
     "NamasteAI/Season 2/2 Ideation and brainstorming features using AI.md",
@@ -260,7 +262,6 @@
     "NamasteAI/Season 2/1 Fundamentals of building with AI.md",
     "OMSCS/4 SDP/P4 L2 Black box testing.md",
     "NamasteAI/Season 2",
-    "OMSCS/4 SDP/P4 L1 (General concepts).md",
     "Untitled.base",
     "OMSCS/4 SDP/images",
     "OMSCS/4 SDP",

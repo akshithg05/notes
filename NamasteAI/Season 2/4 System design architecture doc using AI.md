@@ -12,6 +12,11 @@ These are my preferences. Ask me questions for clarity and give me suggestions w
 
 (Guide AI to do well, sometimes it can give total garbage and gibberish. We need to be patient and ask questions. Understand whatever AI is doing and ask the decision. DO not fully blindly let it do the work).
 
+Use mongodb atlas
+
+Important decision - database, techstack.
+Driver - mongoose (library), it is a JS library used to interact with mongodb using javascript.
+also we can use Zod for API requests.
 
 
 

@@ -12,7 +12,7 @@ At a high level, LLMs predict the **next token** based on the sequence of tokens
 
 **This is the “secret language” of LLMs.**
 
-![[namastedev.com_learn_namaste-ai_the-secret-language-of-llms 2 1.png]]
+![[namastedev.com_learn_namaste-ai_the-secret-language-of-llms.png]]
 
 ### 4.1 What is a token
 

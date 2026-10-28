@@ -6,7 +6,7 @@ Things we have done until now
 From here it will be the Engineering standpoint of things. Until now we have done what a Project / Product manager would do things.
 
 Next things of action - PRD looks good, now lets move to creating a System design architecture document.  Preferences - Build a monolith application . Use MERN stack and use NextJS instead of React for UI along with TypeScript. NodeJS for backend. MongoDB hosted on the web for database managed by mongoDB.
-IMage storage im thinking we can use google drive. If I use s3 I might be charged I guess.
+IMage storage im thinking we can use google drive. If I use s3, cloudflare r2 I might be charged I guess.
 These are my preferences. Ask me questions for clarity and give me suggestions which best suits our application.
 (For now I just want us to discuss the architecture not create the document as of now. I want to discuss important questions and ask me questions if required)
 
@@ -17,6 +17,13 @@ Use mongodb atlas
 Important decision - database, techstack.
 Driver - mongoose (library), it is a JS library used to interact with mongodb using javascript.
 also we can use Zod for API requests.
+
+Wedding member invitation flow in the email.
+Wedding members need not verify email ID.
+
+Photos should never go into mongoDB. Itsnot meant for it.
+
+Image maybe s3, cloudflare, but I want free services.
 
 
 

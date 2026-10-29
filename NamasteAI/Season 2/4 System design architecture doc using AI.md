@@ -23,7 +23,23 @@ Wedding members need not verify email ID.
 
 Photos should never go into mongoDB. Itsnot meant for it.
 
-Image maybe s3, cloudflare, but I want free services.
+Image maybe s3, cloudflare r2. whichever has a free plan,, but I want free services., else I need to use my google drive link only.
+
+Email maybe Resend, because free service, we want to stick to free services.
+
+Maybe vercel for nodejs deployment. (AWS is paid and I want to stick to free services, maybe later migrate it). Or any free providers is enough , aws is not free i suppose. What if i take a cheap instance, will it be free ?
+
+Basic application logs, do not require complex logging systems like cloudwatch or sentry.
+
+Rate limiting.
+
+Multi- tenancy for weddings.
+
+
+
+
+
+
 
 
 

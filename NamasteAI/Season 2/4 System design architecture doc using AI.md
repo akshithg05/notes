@@ -35,9 +35,15 @@ Rate limiting.
 
 Multi- tenancy for weddings.
 
+ Guest approvals need not require any approval mechanism.
+ 
+ Analytics may not be required, activity is enough in the workspace.
+
+(Dont create a sys design doc, first consider all points above and give a summary of all decisions, once I approve it, we can create the system design document.)
 
 
-
+More time you spend on planning ,lesser time you spend on bugs and defects and changes.
+If requirements are clear things will be clear and go ahead smoothly.
 
 
 

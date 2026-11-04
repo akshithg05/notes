@@ -61,11 +61,12 @@ Tokens that appear in similar linguistic contexts can develop **similar or relat
 For example, **“king”** and **“queen”** may have embeddings that are more similar to each other than to **“banana”**, because they frequently appear in related contexts.
 
 
-![[namastedev.com_learn_namaste-ai_how-machines-represent-meaning (1) 4 1.png]]
+![[namastedev.com_learn_namaste-ai_how-machines-represent-meaning (1).png]]
 
 ### 5.3 Embeddings as coordinates
 
-![[namastedev.com_learn_namaste-ai_how-machines-represent-meaning (1) 1 1.png]]
+![[namastedev.com_learn_namaste-ai_how-machines-represent-meaning (1) 1.png]]
+
 
 Since humans cannot easily visualize **high-dimensional spaces**, we can simplify embeddings to just **2 dimensions** and plot them on a graph.
 
@@ -75,11 +76,7 @@ For example, in the image, words such as **king, queen, man, and woman** appear 
 
 In real LLMs, embeddings usually have **hundreds or thousands of dimensions**, not just two. The 2D graph is simply a way to visualize the idea.
 
-![[namastedev.com_learn_namaste-ai_how-machines-represent-meaning (1) 2 1.png]]
-
 ### 5.4 Dimensions in embeddings
-
-![[namastedev.com_learn_namaste-ai_how-machines-represent-meaning (1) 3 1.png]]
 
 Language is very complex. There are different languages, and words can have **synonyms, antonyms, homophones, homonyms**, and many other relationships.
 
@@ -190,11 +187,9 @@ When we type an input or prompt:
 
 ### 5.9 Modern LLMs and context (contextualization)
 
-
-
 The flow is:
 
-**Prompt → Tokenization → Token IDs → Embedding lookup → Matrix of initial token embeddings → Transformer layers → Contextual representations**
+**Prompt → Tokenization → Token IDs → Embedding lookup → Matrix of initial token embeddings + (positional information)→ Transformer layers → Contextual representations**
 
 The important part is what happens inside the Transformer:
 

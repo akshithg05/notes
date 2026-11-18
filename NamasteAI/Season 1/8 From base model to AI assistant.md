@@ -263,4 +263,3 @@ Note: This is a useful simplification; pre-training also teaches language patter
 
 ![[namastedev.com_learn_namaste-ai_from-a-base-model-to-an-ai-assistant 6.png]]
 
-![[namastedev.com_learn_namaste-ai_from-a-base-model-to-an-ai-assistant 7.png]]

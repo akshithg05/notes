@@ -53,12 +53,14 @@
             "id": "bffa96f2486947f1",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.15.1"
+                "file": "NamasteAI/Season 1/8 From base model to AI assistant.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.15.1"
+              "icon": "lucide-file",
+              "title": "8 From base model to AI assistant"
             }
           }
         ],

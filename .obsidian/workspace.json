@@ -41,16 +41,28 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NamasteAI/Season 1/7 Sharpening the brain.md",
+                "file": "NamasteAI/Season 1/8 From base model to AI assistant.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "7 Sharpening the brain"
+              "title": "8 From base model to AI assistant"
+            }
+          },
+          {
+            "id": "bffa96f2486947f1",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.15.1"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.15.1"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -211,8 +223,9 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "a3533d4320976691",
+  "active": "bffa96f2486947f1",
   "lastOpenFiles": [
+    "NamasteAI/Season 1/7 Sharpening the brain.md",
     "NamasteAI/Season 1/6 The computational brain of machine.md",
     "NamasteAI/Season 1/5 How machines represent meaning.md",
     "React/Namaste-react-notes.md",
@@ -248,7 +261,6 @@
     "AI ML/1 - Supervised ML - Regression and Classification/5 Classification.md",
     "AI ML/1 - Supervised ML - Regression and Classification/4 Gradient descent in practice.md",
     "AI ML/1 - Supervised ML - Regression and Classification/3 Regression with multiple input variables.md",
-    "AI ML/1 - Supervised ML - Regression and Classification/2 Gradient Descent.md",
     "NamasteAI/Season 2",
     "Untitled.base",
     "OMSCS/4 SDP/images",
